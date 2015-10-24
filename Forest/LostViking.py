@@ -27,8 +27,8 @@ while steps <= 35:
             sideSteps += sidemove
     sideSteps += sidemove
     if(sideSteps>SLIDE):
-        sideSteps = 1;
+        sideSteps = 1
     if(sideSteps<1):        
-        sideSteps = SLIDE;       
+        sideSteps = SLIDE
 
     steps += 1    
