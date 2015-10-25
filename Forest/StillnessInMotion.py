@@ -1,5 +1,5 @@
 loop:
-    enemy = self.findNearestEnemy()    
+    enemy = self.findNearestEnemy()
     if enemy:
        distance = self.distanceTo(enemy)
        if distance and distance<5:

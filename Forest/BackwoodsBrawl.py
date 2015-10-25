@@ -13,9 +13,9 @@ loop:
             if(dist<15):            
                  if(self.isReady("cleave") and dist<5):
                     self.cleave(enemy)
-                 elif(this.isReady("bash") and dist<5):
+                 elif(self.isReady("bash") and dist<5):
                     self.bash(enemy)
-                 elif(this.isReady("power-up")):
+                 elif(self.isReady("power-up")):
                     self.powerUp()
                  elif(dist<5):
                     self.attack(enemy)      
