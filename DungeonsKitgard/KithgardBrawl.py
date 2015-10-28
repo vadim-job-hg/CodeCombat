@@ -4,20 +4,24 @@ loop:
     if item is not None:
         self.moveXY(item.pos.x, item.pos.y)
     if enemy is not None:
-        dist = this.distanceTo(enemy)
+        dist = self.distanceTo(enemy)
         if(enemy.type == 'thrower'):
-            this.attack(enemy)   
-        elif(this.isReady("power-up") and (enemy.type == "burl" or enemy.type == "ogre")):
+            self.attack(enemy)   
+            self.attack(enemy)
+        elif(self.isReady("power-up") and (enemy.type == "burl" or enemy.type == "ogre")):
             self.powerUp()
         else:
-            if(dist<15):            
-                 if(self.isReady("cleave") and dist<5):
+            if(dist<15):
+                 if(self.isReady("cleave") and dist<15):
                     self.cleave(enemy)
-                 elif(this.isReady("bash") and dist<5):
+                 elif(self.isReady("bash") and dist<15):
                     self.bash(enemy)
-                 elif(this.isReady("power-up") and dist<5):
+                 elif(self.isReady("power-up")):
                     self.powerUp()
-                 elif(dist<5):
-                    self.attack(enemy)      
+                 elif(dist>10):
+                    self.attack(enemy)
+                    self.attack(enemy)
+                 else:
+                    self.shield()
             else:
-                 self.shield()
+                self.shield()
