@@ -1,20 +1,27 @@
 loop:
-    array = [[76, 52],[4, 50],[77, 20],[5, 20]]
     enemys = self.findEnemies()
     items = self.findItems()
     item = self.findNearest(items)
     enemy = self.findNearest(enemys)
-    if(enemy and self.distanceTo(enemy)<20):
+    if(enemy and self.distanceTo(enemy)<5):
         if(self.pos.y>35):
             if(self.pos.x>40):
-                self.moveXY(76, 52)
+                X = 76
+                Y = 52
             else:
-                self.moveXY(4, 50)
+                X = 4
+                Y = 50
         else:
             if(self.pos.x>40):
-                self.moveXY(77, 20)
+                X = 77
+                Y = 20
             else:
-                self.moveXY(5, 20)     
+                X = 5
+                Y = 20  
+        if(self.isReady('jump')):
+            self.jumpTo({'x':X, 'y':Y})
+        else:
+            self.moveXY(X, Y)
     elif(item):
         if(self.isReady('jump')):
             self.jumpTo(item.pos)
