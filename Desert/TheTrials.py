@@ -1,15 +1,18 @@
-array = [[60, 22], [76, 22], [127, 24],[90, 24],[127, 24],[76, 22],[60, 22],[76, 22],[60, 22], [34, 21],[12, 55],[11, 75],[11, 110], [58, 125], [91, 131], [112, 119], [91, 131], [57, 122], [39, 92], [78, 75]]
+array = [[31, 26], [53, 21], [74, 21], [86, 21], [112, 23], [127, 25], [68, 20], [51, 25], [12, 53], [10, 86], [16, 115], [34, 126], [12,112], [34, 126], [12,112], [34, 126], [12,112], [34, 126], [12,112], [34, 126],[12,112],[44, 130], [60, 125],[85,32],[103, 125],[85,32],[103, 125],[85,32],[103, 125],[85,32],[103, 125], [41, 95], [40, 84], [100, 89], [130, 72], 102, 55]
 arrayIndex = 0;
 while arrayIndex<len(array):
     enemy = self.findNearest(self.findEnemies())
     item = self.findNearest(self.findItems())
     if(enemy and self.distanceTo(enemy)<50):
-        if(self.isReady("cleave")):
+        if(self.isReady('jump') and self.distanceTo(enemy)>10):
+            self.jumpTo(enemy.pos)
+        elif(self.isReady("cleave")):
             self.cleave(enemy)
         elif(self.isReady("bash")):
             self.bash(enemy)
         elif(self.isReady("power-up")):
             self.powerUp()
+            self.attack(enemy)
         else:
             self.attack(enemy)
     elif(item):
