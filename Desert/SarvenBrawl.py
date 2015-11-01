@@ -3,7 +3,7 @@ loop:
     item  = self.findNearestItem()
     if item is not None:
         self.moveXY(item.pos.x, item.pos.y)
-    if enemy is not None:
+    if enemy is not None and enemy.type != "sand-yak":
         dist = self.distanceTo(enemy)
         if(enemy.type == 'thrower'):
             self.attack(enemy)   
