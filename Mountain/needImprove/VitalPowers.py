@@ -1,18 +1,23 @@
-#pickup coin
+# Этом уровень покажет, как определять собственные функции.
+# Код внутри функции не выполняется сразу. Он откладывается на потом.
+# Эта функция заставляет вашего героя поднять ближайшую монету.
 def pickUpNearestCoin():
     items = self.findItems()
     nearestCoin = self.findNearest(items)
-    if nearestCoin:
-        self.move(nearestCoin.pos)
+    if nearestCoin and self.distanceTo(nearestCoin)<30:
+        if self.isReady("jump"):
+            self.jumpTo(nearestCoin.pos)
+        else:
+            self.move(nearestCoin.pos)
 
-# add soldier
+# С помощью этой функции ваш герой призывает солдата.
 def summonSoldier():
     # Заполни код здесь, что призвать солдата, если у тебя достаточно золота.
     if self.gold > self.costOf("soldier"):
         self.summon("soldier")
 
 
-# commands attack
+# Эта функция приказывает вашим солдатам атаковать ближайшего врага.
 def commandSoldiers():
     for soldier in self.findFriends():
         enemy = soldier.findNearestEnemy()
@@ -43,3 +48,10 @@ def tacktick():
         attack(nearest)
     else:
         pickUpNearestCoin()
+
+loop:
+    # В своем цикле ты можешь "вызывать" функции, определенные выше.
+    # Эта строка вызывает выполнение кода внутри функции "pickUpNearestCoin" .
+    pickUpNearestCoin()
+    summonSoldier()  
+    commandSoldiers()
