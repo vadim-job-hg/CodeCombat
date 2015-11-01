@@ -14,7 +14,7 @@ def summonSoldier():
 
 # commands attack
 def commandSoldiers():
-    for soldier in self.findFriends():
+    for soldier in self.findByType("soldier"):
         enemy = soldier.findNearestEnemy()
         if enemy:
             self.command(soldier, "attack", enemy)
