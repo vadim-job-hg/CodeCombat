@@ -44,6 +44,8 @@ loop:
     items  = self.findItems()
     if len(items)>0:
         pickUpNearestCoin()
+    if enemy is not None and enemy.type != "sand-yak":
+        attack(enemy)
     summonSoldier()
     commandSoldiers()
         
