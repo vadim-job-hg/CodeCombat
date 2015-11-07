@@ -1,28 +1,34 @@
+def moveTo(position, fast = True):
+    if(self.isReady("jump") and self.distanceTo>10 and fast):
+        self.jumpTo(position)
+    else:
+        self.move(position)
+
 #pickup coin
-def pickUpNearestCoin():
-    items = self.findItems()
-    nearestCoin = self.findNearest(items)
-    if nearestCoin:
-        self.move(nearestCoin.pos)
+def pickUpNearestItem(items):
+    nearestItem = self.findNearest(items)
+    if nearestItem:
+        moveTo(items.pos)
 
 # add soldier
+list = ['soldier']
+indexSoldier = 1
 def summonSoldier():
-    # Заполни код здесь, что призвать солдата, если у тебя достаточно золота.
-    if self.gold > self.costOf("soldier"):
-        self.summon("soldier")
-
+    if self.gold > self.costOf(list[indexSoldier%len(list)]):
+        self.summon(list[indexSoldier%len(list)])
+        indexSoldier +=1
 
 # commands attack
 def commandSoldiers():
-    for soldier in self.findByType("soldier"):
-        enemy = soldier.findNearestEnemy()
+    for soldier in self.findFriends():
+        enemy = self.findNearest(self.findEnemies())
         if enemy:
-            self.command(soldier, "attack", enemy)
+             self.command(soldier, "attack", enemy)
 
 def attack(target):
     if target:
-        if(self.isReady("jump") and self.distanceTo>10):
-            self.jumpTo(enemy.pos)
+        if(self.distanceTo(target)>10):
+            moveTo(enemy.pos)
         elif(self.isReady("bash")):
             self.bash(enemy)
         elif(self.isReady("power-up")):
@@ -33,16 +39,11 @@ def attack(target):
         else:
             self.attack(enemy)
 
-def tacktick():
-    enemies = self.findEnemies()
-    nearest = self.findNearest(enemies)
-    friends = self.findFriends()
-    if self.distanceTo(nearest)<10:
-        attack(nearest)
-    elif len(friends)/3<len(enemies):
-        attack(nearest)
-    else:
-        pickUpNearestCoin()
+def commandSoldiers2():
+    for soldier in self.findByType("soldier"):
+        enemy = self.findNeares(self.findEnemies())
+        if enemy:
+             self.command(soldier, "attack", enemy)
 
 # Теперь у тебя есть Кольца Цветов! Ты можешь:
 # toggleFlowers(true/false) - включить или выключить.

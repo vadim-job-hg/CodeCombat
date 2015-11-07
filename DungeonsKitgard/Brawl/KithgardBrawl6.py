@@ -23,24 +23,20 @@ def attack(target):
         else:
             self.attack(enemy)
        
-def summonSoldier(lenlist):
-    soldier = 'archer'
-    if self.gold > self.costOf(soldier):
-        self.summon(soldier)
-        indexSoldier +=1
+def summonSoldier():
+    if self.gold > self.costOf('archer')*3:
+        self.summon('archer')
+        self.summon('archer')
+        self.summon('archer')
 
 # commands attack
 def commandSoldiers():
     for soldier in self.findFriends():
         enemy = self.findNearest(self.findEnemies())
-        if enemy and soldier.type == 'archer':
+        if enemy:
              self.command(soldier, "attack", enemy)
-
-list = ['soldier', 'archer']
-indexSoldier = len(list)
 loop:
-    if self.now()>10:
-        summonSoldier(len(list))    
+    summonSoldier()
     commandSoldiers()
     items = self.findItems()
     if(len(items)>0):

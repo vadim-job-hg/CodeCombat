@@ -33,7 +33,7 @@ def summonSoldier(lenlist):
 def commandSoldiers():
     for soldier in self.findFriends():
         enemy = self.findNearest(self.findEnemies())
-        if enemy and soldier.type == 'archer':
+        if enemy:
              self.command(soldier, "attack", enemy)
 
 list = ['soldier', 'archer']
