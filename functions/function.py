@@ -17,7 +17,7 @@ def summonTroops():
     if self.gold > self.costOf(type):
         self.summon(type)
 # commands attack
-def commandSoldiers():
+def commandTroops():
     for soldier in self.findFriends():
         enemy = self.findNearest(self.findEnemies())
         if enemy:
