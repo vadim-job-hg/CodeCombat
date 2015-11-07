@@ -8,16 +8,14 @@ def moveTo(position, fast = True):
 def pickUpNearestItem(items):
     nearestItem = self.findNearest(items)
     if nearestItem:
-        moveTo(items.pos)
+        moveTo(nearestItem.pos)
 
 # add soldier
-list = ['soldier']
-indexSoldier = 1
-def summonSoldier():
-    if self.gold > self.costOf(list[indexSoldier%len(list)]):
-        self.summon(list[indexSoldier%len(list)])
-        indexSoldier +=1
-
+summonTypes = ['soldier']
+def summonTroops():
+    type = summonTypes[len(self.built)%len(summonTypes)]
+    if self.gold > self.costOf(type):
+        self.summon(type)
 # commands attack
 def commandSoldiers():
     for soldier in self.findFriends():
