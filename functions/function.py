@@ -26,16 +26,16 @@ def commandTroops():
 def attack(target):
     if target:
         if(self.distanceTo(target)>10):
-            moveTo(enemy.pos)
+            moveTo(target.pos)
         elif(self.isReady("bash")):
-            self.bash(enemy)
+            self.bash(target)
         elif(self.isReady("power-up")):
             self.powerUp()
-            self.attack(enemy)
+            self.attack(target)
         elif(self.isReady("cleave")):
-            self.cleave(enemy)
+            self.cleave(target)
         else:
-            self.attack(enemy)
+            self.attack(target)
 
 def commandSoldiers2():
     for soldier in self.findByType("soldier"):
