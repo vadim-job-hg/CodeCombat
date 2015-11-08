@@ -34,24 +34,50 @@ def commandPaladin(paladin):
             self.command(paladin, "attack", target)
 
 
-def commandSoldier(soldier):
-     if(len(self.findByType('catapult'))>0):
-        target = self.findNearest(self.findByType('catapult'))
-     else:              
-        target = self.findNearest(self.findEnemies()) 
+def commandSoldier(soldier):         
+     target = self.findNearest(self.findEnemies()) 
      if(target):
         self.command(soldier, "attack", target)
+
+def commandArcher(soldier):
+     if(len(self.findByType('ogre'))>0):
+        target = self.findNearest(self.findByType('ogre'))
+     else:
+        target = self.findNearest(self.findEnemies())
+     if(target):
+        self.command(soldier, "attack", target)
+
+def commandElse(soldier):      
+     if self.findNearest(self.findByType('catapult')):
+         target = self.findNearest(self.findByType('catapult'))
+     elif(len(self.findByType('ogre'))>0):
+        target = self.findNearest(self.findByType('ogre'))
+     else:
+        target = self.findNearest(self.findEnemies())
+     if(target):
+        self.command(soldier, "attack", target)
+        
+def commandSlize(soldier, missiles):
+    pass
     
 def commandFriends():
     friends = self.findFriends()
-    for friend in friends:
-        if friend.type == "paladin":
+    for friend in friends: 
+        if self.now()<15:            
+            self.command(friend, "defend", {'x':6, 'y':38})
+        elif(self.now()<60 and self.now()>40):            
+            self.command(friend, "defend", self)
+        elif friend.type == "paladin":
             commandPaladin(friend)
-        else:
+        elif friend.type == "soldier":
             commandSoldier(friend)
+        elif friend.type == "archer":
+            commandArcher(friend)
+        else:
+            commandElse(friend)
             
 def moveTo(position, fast = True):
-    if(self.isReady("jump") and self.distanceTo>10 and fast):
+    if(self.isReady("jump")):
         self.jumpTo(position)
     else:
         self.move(position)
@@ -69,7 +95,19 @@ def attack(target):
         else:
             self.attack(target)
             
+def pickUpNearestItem():
+    nearestItem = self.findNearest(self.findItems())
+    if nearestItem:
+        moveTo(nearestItem.pos)
+        
 loop:
     commandFriends()
     summonTroops()
-    attack(self.findNearest(self.findEnemies()))
+    target = self.findNearest(self.findByType('catapult'))
+    nearestItem = self.findNearest(self.findItems())
+    if self.distanceTo(nearestItem)<30:
+        pickUpNearestItem()
+    elif target:
+        attack(target)
+    else:
+        attack(self.findNearest(self.findEnemies()))
