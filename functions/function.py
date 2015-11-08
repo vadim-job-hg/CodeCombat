@@ -11,7 +11,7 @@ def pickUpNearestItem(items):
         moveTo(nearestItem.pos)
 
 # add soldier
-summonTypes = ['soldier']
+summonTypes = ['griffin-rider','soldier', 'archer']
 def summonTroops():
     type = summonTypes[len(self.built)%len(summonTypes)]
     if self.gold > self.costOf(type):
@@ -37,12 +37,33 @@ def attack(target):
         else:
             self.attack(target)
 
-def commandSoldiers2():
-    for soldier in self.findByType("soldier"):
-        enemy = self.findNeares(self.findEnemies())
-        if enemy:
-             self.command(soldier, "attack", enemy)
+def lowestHealthFriend():
+    lowestHealth = 99999
+    lowestFriend = None
+    friends = self.findFriends()
+    for friend in friends:
+        if friend.health < lowestHealth and friend.health < friend.maxHealth:
+            lowestHealth = friend.health
+            lowestFriend = friend
 
+    return lowestFriend
+
+def commandPeasant(peasant):
+   item = peasant.findNearestItem()
+   if item:
+       self.command(peasant, 'move', item.pos)
+
+def commandPaladin(paladin):
+    if(paladin.canCast ("heal")):
+        target = lowestHealthPaladin()
+        if target:
+            self.command(paladin, "cast", "heal", target)
+    elif(paladin.health<100):
+        self.command(paladin, "shield")
+    else:
+        target = paladin.findNearestEnemy()
+        if(target):
+            self.command(paladin, "attack", target)
 # Теперь у тебя есть Кольца Цветов! Ты можешь:
 # toggleFlowers(true/false) - включить или выключить.
 # setFlowerColor("random") - также можно выбрать "pink", "red", "blue", "purple", "yellow", или "white".
