@@ -1,4 +1,7 @@
-summonTypes = ['griffin-rider', 'soldier', 'archer']
+summonTypes = ['griffin-rider']
+move = [{'x':153, 'y':34},{'x':191, 'y':21},{'x':245, 'y':25},{'x':360, 'y':40}]
+index = len(move)
+tactick = 'hold'
 def summonTroops():
     type = summonTypes[len(self.built)%len(summonTypes)]
     if self.gold > self.costOf(type):
@@ -17,66 +20,44 @@ def lowestHealthPaladin():
 
 def commandPaladin(paladin):
     if(paladin.canCast ("heal")):
-        if(self.health<100):
+        if(self.health<self.maxHealth*0.7):
             target = self
         else:
             target = lowestHealthPaladin()        
         if target:
             self.command(paladin, "cast", "heal", target)
+    elif now>45 and now<60:
+        self.command(paladin, "move", self.pos)
     elif(paladin.health<200):
-        self.command(paladin, "shield")
+        self.command(paladin, "shield")    
     else:
-        if(len(self.findByType('catapult'))>0):
-            target = self.findNearest(self.findByType('catapult'))
-        else:
-            target = self.findNearest(self.findEnemies())
+        target = self.findNearest(self.findEnemies())
+        if(warlock):
+            target = warlock
         if(target):
             self.command(paladin, "attack", target)
 
 
 def commandSoldier(soldier):         
-     target = self.findNearest(self.findEnemies()) 
+     target = self.findNearest(self.findEnemies())
+     if(warlock):
+            target = warlock
      if(target):
         self.command(soldier, "attack", target)
 
-def commandArcher(soldier):
-     if(len(self.findByType('ogre'))>0):
-        target = self.findNearest(self.findByType('ogre'))
-     else:
-        target = self.findNearest(self.findEnemies())
-     if(target):
-        self.command(soldier, "attack", target)
-
-def commandElse(soldier):      
-     if self.findNearest(self.findByType('catapult')):
-         target = self.findNearest(self.findByType('catapult'))
-     elif(len(self.findByType('ogre'))>0):
-        target = self.findNearest(self.findByType('ogre'))
-     else:
-        target = self.findNearest(self.findEnemies())
-     if(target):
-        self.command(soldier, "attack", target)
-        
-def commandSlize(soldier, missiles):
-    pass
-    
 def commandFriends():
     friends = self.findFriends()
     for friend in friends: 
-        if self.now()<15:            
-            self.command(friend, "defend", {'x':6, 'y':38})
-        elif(self.now()<60 and self.now()>40):            
-            self.command(friend, "defend", self)
+        if tactick == 'hold':            
+            self.command(friend, "defend", {'x':1, 'y':40})
+        elif(tactick == 'defend'):            
+            self.command(friend, "defend", self.pos)
         elif friend.type == "paladin":
             commandPaladin(friend)
-        elif friend.type == "soldier":
-            commandSoldier(friend)
-        elif friend.type == "archer":
-            commandArcher(friend)
         else:
-            commandElse(friend)
+            commandSoldier(friend)
             
-def moveTo(position, fast = True):
+def moveTo(position):
     if(self.isReady("jump")):
         self.jumpTo(position)
     else:
@@ -84,14 +65,7 @@ def moveTo(position, fast = True):
 def attack(target):
     if target:
         if(self.distanceTo(target)>10):
-            moveTo(target.pos)
-        elif(self.isReady("bash")):
-            self.bash(target)
-        elif(self.isReady("power-up")):
-            self.powerUp()
-            self.attack(target)
-        elif(self.isReady("cleave")):
-            self.cleave(target)
+            moveTo(target.pos)        
         else:
             self.attack(target)
             
@@ -100,14 +74,49 @@ def pickUpNearestItem():
     if nearestItem:
         moveTo(nearestItem.pos)
         
-loop:
-    commandFriends()
-    summonTroops()
-    target = self.findNearest(self.findByType('catapult'))
+commandFriends()
+self.moveXY(31, 56)
+loop: 
+    catapult = self.findNearest(self.findByType('catapult'))
+    warlock = self.findNearest(self.findByType('warlock'))
+    target = self.findNearest(self.findEnemies())
     nearestItem = self.findNearest(self.findItems())
-    if self.distanceTo(nearestItem)<30:
+    now = self.now()
+    if nearestItem and self.distanceTo(nearestItem)<10:
         pickUpNearestItem()
-    elif target:
-        attack(target)
+        tactick = 'attack'
+        summonTroops()
+    elif catapult:
+        attack(catapult)
+        tactick = 'hold'
+    elif self.now()<45:
+        tactick = 'defend'
+        commandFriends()
+        moveTo({"x":82, "y":33})
+    elif self.pos.x<150 and self.now()>90:
+        tactick = 'attack'
+        commandFriends()
+        moveTo({"x":154, "y":34})
+    elif target and target.type!='tower':
+        if(warlock):
+            target = warlock
+            summonTroops()
+            attack(target)
+        elif target:
+            attack(target)
+        elif nearestItem and self.distanceTo(nearestItem)<30:
+            pickUpNearestItem()
+            tactick = 'defend'
+            summonTroops()  
+        else:
+            attack(target)
+        tactick = 'attack'
     else:
-        attack(self.findNearest(self.findEnemies()))
+        tactick = 'deffend'
+        if now<120:
+            moveTo({"x":247, "y":34})
+        else:
+            attack(target)
+            summonTroops()
+            tactick = 'attack'
+    commandFriends()
