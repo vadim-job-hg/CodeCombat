@@ -5,20 +5,21 @@ def moveTo(position, fast = True):
         self.move(position)
 
 #pickup coin
-def pickUpNearestItem(items):
+def pickUpNearestItem():
+    items = self.findItems()
     nearestItem = self.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
 # add soldier
+coors = [[67, 41], [24, 54], [69, 55], [25,  34], [69, 32]]
 buildTypes = ['arrow-tower']
 def buildTroops():
+    coor = coors[len(self.built)%len(coors)]
     type = buildTypes[len(self.built)%len(buildTypes)]
     if self.gold > self.costOf(type):
-        self.summon(type)
-# commands attack
-#def commandTroops():
-#    for soldier in self.findFriends():
-#        enemy = self.findNearest(self.findEnemies())
-#        if enemy:
-#             self.command(soldier, "attack", enemy)
+        self.buildXY(type, coor[0], coor[1])
+
+loop: 
+    pickUpNearestItem()
+    buildTroops()
