@@ -18,10 +18,10 @@ def summonTroops():
         self.summon(type)
 # commands attack
 def commandTroops():
-    for soldier in self.findFriends():
+    for index, friend in enumerate(self.findFriends()):
         enemy = self.findNearest(self.findEnemies())
         if enemy:
-             self.command(soldier, "attack", enemy)
+             self.command(friend, "attack", enemy)
 
 def attack(target):
     if target:
