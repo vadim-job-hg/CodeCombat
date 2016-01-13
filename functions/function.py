@@ -16,6 +16,15 @@ def summonTroops():
     type = summonTypes[len(self.built)%len(summonTypes)]
     if self.gold > self.costOf(type):
         self.summon(type)
+#build
+coors = [[67, 41], [24, 54], [69, 55], [25,  34], [69, 32]]
+buildTypes = ["fire-trap", "decoy", "arrow-tower"]
+def buildTroops():
+    coor = coors[len(self.built)%len(coors)]
+    type = buildTypes[len(self.built)%len(buildTypes)]
+    if self.gold > self.costOf(type):
+        self.buildXY(type, coor[0], coor[1])
+
 # commands attack
 def commandTroops():
     for index, friend in enumerate(self.findFriends()):
