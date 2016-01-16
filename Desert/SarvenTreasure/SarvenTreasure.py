@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/sarven-treasure
 loop:
     enemys = self.findEnemies()
     items = self.findItems()
