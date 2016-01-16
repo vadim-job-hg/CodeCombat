@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/cavern-survival
 def moveTo(position, fast = True):
     if(self.isReady("jump") and fast):
         self.jumpTo(position)

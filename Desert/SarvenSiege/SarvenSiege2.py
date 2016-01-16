@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/sarven-siege
 def pickUpNearestItem(items):
     nearestItem = self.findNearest(items)
     if nearestItem:
