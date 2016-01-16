@@ -1,3 +1,3 @@
 loop:
-    self.moveLeft()
     self.moveRight()
+    self.moveLeft()
