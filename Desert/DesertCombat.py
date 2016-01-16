@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/desert-combat
 ordersGiven = 0
 while ordersGiven < 5:
     x = self.pos.x
@@ -9,18 +10,9 @@ while ordersGiven < 5:
     if(ordersGiven>=5):
         break;
 self.moveXY(48, 31)
-enemy = self.findNearestEnemy()
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
-self.attack(enemy)
+while True:
+    enemy = self.findNearestEnemy()
+    self.attack(enemy)
+
+
 
