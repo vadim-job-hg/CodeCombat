@@ -29,7 +29,13 @@ loop:
     commandTroops()
     target = self.findNearest(self.findEnemies())
     knight = self.findNearest(self.findByType('knight'))
+    captain = self.findNearest(self.findByType('captain'))
+    #Enemies = self.findEnemies()
+    #for en in Enemies:
+        #self.say(en.type)
     if(knight and self.distanceTo(knight)<20):
         target = knight
+    if(captain and self.distanceTo(captain)<20):
+        target = captain
     attack(target)
 
