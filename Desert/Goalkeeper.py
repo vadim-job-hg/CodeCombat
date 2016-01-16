@@ -1,25 +1,55 @@
+# http://codecombat.com/play/level/goalkeeper
 # Управляйте крестьянами, чтобы не позволить ограм забить гол.
 # Тип огненного шара (файербол) - "ball"
-def commandSoldiers(x, y):
-    index = 0
+def commandSoldiers(x, y, base = False):
     move = 0;
-    for soldier in self.findFriends():
+    for index, friend in enumerate(self.findFriends()):
         if(index==1):
-            xx = 18
-            if x<60 and y<45:
-                yy = y + 2
+            if base:
+                self.command(friend, "move", {'x':18, 'y':43})
             else:
-                yy = 42
+                self.command(friend, "move", {'x':x, 'y':y+2})
         else:
-            xx = 18
-            if(x<30 and y>25):
-                yy = y - 2
-            else:                
-                yy = 35
-        self.command(soldier, "move", {'x':xx, 'y':yy})  
-        index +=1
-             
-loop:  
+            if base:
+                self.command(friend, "move", {'x':18, 'y':39})
+            else:
+                self.command(friend, "move", {'x':x, 'y':y-2})
+
+
+def findTheY(x1, x2, y1, y2, x):
+    if(y2!=y1):
+        y = (x - x1)/(x2 - x1)*(y2 - y1) + y1
+    else:
+        y = y1
+    return y
+def findOtskok(num):
+    if num>50:
+        num = 50 - (num - 50)
+        num = findOtskok(num)
+    elif num<20:
+        num = 20 - (20 - num)
+        num = findOtskok(num)
+    return num
+
+pos1 = []
+pos2 = []
+loop:
+    base = False
     item = self.findNearest(self.findByType('ball'))
-    if(item):
-        commandSoldiers(item.pos.x, item.pos.y)
+    if pos2[1] != item.pos.y or pos2[0] != item.pos.x:
+        pos1[0] = pos2[0]
+        pos1[1] = pos2[1]
+        pos2[0] = item.pos.x
+        pos2[1] = item.pos.y
+    if len(pos1)>0 and len(pos2)>0:
+        yCatch = findTheY(pos1[0], pos2[0], pos1[1], pos2[1], 18)
+       # yCatch = findOtskok(yCatch)
+        if yCatch>50:
+            yCatch = 50 - (yCatch - 50)
+        elif yCatch<20:
+            yCatch = 20 - (20 - yCatch)
+        #self.say(yCatch)
+        if(item and yCatch):
+            if pos2[1]>pos1[1] and yCatch>5 and yCatch<20:
+                base = True
+            commandSoldiers(18, yCatch, base)
