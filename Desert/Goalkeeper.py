@@ -2,7 +2,6 @@
 # Управляйте крестьянами, чтобы не позволить ограм забить гол.
 # Тип огненного шара (файербол) - "ball"
 def commandSoldiers(x, y, base = False):
-    move = 0;
     for index, friend in enumerate(self.findFriends()):
         if(index==1 and y>36):
             if base:
