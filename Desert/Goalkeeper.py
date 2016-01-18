@@ -4,16 +4,16 @@
 def commandSoldiers(x, y, base = False):
     move = 0;
     for index, friend in enumerate(self.findFriends()):
-        if(index==1):
+        if(index==1 and y>36):
             if base:
                 self.command(friend, "move", {'x':18, 'y':43})
             else:
-                self.command(friend, "move", {'x':x, 'y':y+2})
-        else:
+                self.command(friend, "move", {'x':x, 'y':y})
+        elif y<=36 and index==0:
             if base:
                 self.command(friend, "move", {'x':18, 'y':39})
             else:
-                self.command(friend, "move", {'x':x, 'y':y-2})
+                self.command(friend, "move", {'x':x, 'y':y})
 
 
 def findTheY(x1, x2, y1, y2, x):
@@ -22,14 +22,6 @@ def findTheY(x1, x2, y1, y2, x):
     else:
         y = y1
     return y
-def findOtskok(num):
-    if num>50:
-        num = 50 - (num - 50)
-        num = findOtskok(num)
-    elif num<20:
-        num = 20 - (20 - num)
-        num = findOtskok(num)
-    return num
 
 pos1 = []
 pos2 = []
@@ -43,11 +35,12 @@ loop:
         pos2[1] = item.pos.y
     if len(pos1)>0 and len(pos2)>0:
         yCatch = findTheY(pos1[0], pos2[0], pos1[1], pos2[1], 18)
-       # yCatch = findOtskok(yCatch)
         if yCatch>50:
             yCatch = 50 - (yCatch - 50)
         elif yCatch<20:
             yCatch = 20 - (20 - yCatch)
+        if(yCatch>44 or yCatch<28):
+            yCatch = 39
         #self.say(yCatch)
         if(item and yCatch):
             if pos2[1]>pos1[1] and yCatch>5 and yCatch<20:
