@@ -105,3 +105,6 @@ def findTheY(x1, x2, y1, y2, x):
     else:
         y = y1
     return y
+
+def findTheMiddle(pos1, pos2):
+    return {'x':(pos1.x+pos2.x)/2,'y':(pos1.y+pos2.y)/2}
