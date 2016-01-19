@@ -99,3 +99,9 @@ def drawSquare(x, y, size):
     self.moveXY(x - cornerOffset, y + cornerOffset)
     self.moveXY(x - cornerOffset, y - cornerOffset)
 
+def findTheY(x1, x2, y1, y2, x):
+    if(y2!=y1):
+        y = (x - x1)/(x2 - x1)*(y2 - y1) + y1
+    else:
+        y = y1
+    return y
