@@ -10,14 +10,6 @@ def pickUpNearestItem(items):
     if nearestItem:
         moveTo(nearestItem.pos)
 
-# add soldier
-summonTypes = ['griffin-rider','soldier', 'archer']
-def summonTroops():
-    type = summonTypes[len(self.built)%len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
-#build
-coors = [[67, 41], [24, 54], [69, 55], [25,  34], [69, 32]]
 buildTypes = ["fire-trap", "decoy", "arrow-tower"]
 def buildTroops():
     coor = coors[len(self.built)%len(coors)]
@@ -25,26 +17,7 @@ def buildTroops():
     if self.gold > self.costOf(type):
         self.buildXY(type, coor[0], coor[1])
 
-# commands attack
-def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
-        enemy = self.findNearest(self.findEnemies())
-        if enemy:
-             self.command(friend, "attack", enemy)
 
-def attack(target):
-    if target:
-        if(self.distanceTo(target)>10):
-            moveTo(target.pos)
-        elif(self.isReady("bash")):
-            self.bash(target)
-        elif(self.isReady("power-up")):
-            self.powerUp()
-            self.attack(target)
-        elif(self.isReady("cleave")):
-            self.cleave(target)
-        else:
-            self.attack(target)
 
 def lowestHealthFriend():
     lowestHealth = 99999
@@ -108,3 +81,15 @@ def findTheY(x1, x2, y1, y2, x):
 
 def findTheMiddle(pos1, pos2):
     return {'x':(pos1.x+pos2.x)/2,'y':(pos1.y+pos2.y)/2}
+
+route = [[33, 14, True], [34, 7, False]]
+index = 0
+def moveHero():
+    if len(route)>index:
+        moveTo({'x':route[index][0],'y':route[index][1]}, route[index][2])
+        if(self.pos.x==route[index][0] and self.pos.y==route[index][1]):
+            return True
+        else:
+            return False
+if(moveHero()):
+    index = index + 1
