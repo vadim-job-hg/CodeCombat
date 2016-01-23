@@ -108,6 +108,7 @@ loop:
     сommandTroops()
     items = self.findItems()
     enimies = self.findEnemies()
+    enemy = self.findNearest(enimies)
     if(len(items)>0 and self.health<self.maxHealth*0.5):
         pickUpNearestItem(items)
     else:            
