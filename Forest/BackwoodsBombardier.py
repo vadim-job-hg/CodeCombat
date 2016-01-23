@@ -2,7 +2,6 @@
 # The pos property is an object with x and y properties.
 # pos.x is a number representing the horizontal position on the map
 # pos.y is a number representing the vertical position on the map
-
 loop:
     enemy = self.findNearestEnemy()
     if enemy:
@@ -12,4 +11,3 @@ loop:
         self.say(x+','+y)
     else:
         self.say("Cease Fire!")
-
