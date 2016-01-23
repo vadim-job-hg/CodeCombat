@@ -21,6 +21,8 @@ def findTarget():
             if enemy and self.distanceTo(enemy)<enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
+    if danger<3:
+        enemy_return = None
     return enemy_return
 
 def pickUpNearestItem(items):
@@ -47,7 +49,7 @@ def attack(target):
         else:
             self.shield()
        
-summonTypes = ['archer']
+summonTypes = ['paladin','archer','soldier']
 def summonTroops():
     type = summonTypes[len(self.built)%len(summonTypes)]
     if self.gold > self.costOf(type):
@@ -100,6 +102,7 @@ def lowestHealthFriend():
 
     return lowestFriend
 loop:
+    summonTroops()
     сommandTroops()
     items = self.findItems()
     if(len(items)>0 and self.health<self.maxHealth*0.5):
