@@ -1,5 +1,3 @@
-attack = [42, 62]
-aInd = 0
 step = 0
 def choiseTarget(enemies):
     self.say(enemies)
@@ -10,7 +8,11 @@ def choiseTarget(enemies):
     return None
 def сommandTroops():    
     for index, friend in enumerate(self.findFriends()):
-        if friend.type == 'archer':
+        if (step==0 and friend.pos.y>60 and (friend.type != 'archer' or self.now()>3.7)):
+            enemy = friend.findNearestEnemy()
+            if enemy:  
+                self.command(friend, "attack", enemy) 
+        elif friend.type == 'archer':
             CommandArcher(friend)        
         elif friend.type == 'paladin':
             CommandPaladin(friend)   
@@ -23,35 +25,14 @@ def CommandPaladin(soldier):
         self.command(soldier, "shield")
     pass
 def CommandSoldier(soldier):
-    if self.now()<7.6:
-        self.command(soldier, "move", {'x':75, 'y':75})
-    elif self.now()<15:
-         enemies = soldier.findEnemies()
-         for enemy in enemies:
-            if enemy and enemy.pos.x>36:
-                self.command(soldier, "attack", enemy)
-                break    
-    else:
+   if step==1:
         enemy = soldier.findNearestEnemy()
         if enemy:  
-            self.command(soldier, "attack", enemy)
+            self.command(soldier, "attack", enemy) 
 
-def CommandArcher(soldier):
-        enemies = soldier.findEnemies()
-        if ((self.now()>2.5 or soldier.pos.x>20) and (self.now()<10)):
-            for enemy in enemies:
-                if enemy and (enemy.type=='yeti' and enemy.health>99):
-                    self.command(soldier, "attack", enemy)
-                    break      
-        elif(self.now()<60 and self.now()>=10):
-            if self.pos.y>21:
-                enemy = soldier.findNearestEnemy();
-                if enemy:
-                    self.command(soldier, "attack", enemy)
-                else:
-                    self.command(soldier, "move", {'x':21, 'y':67})  
-                
-        
+def CommandArcher(soldier):       
+    if step == 1:   
+        self.command(soldier, "move", {'x':22, 'y':55})
 def moveTo(position, fast = True):
     if(self.isReady("jump") and fast):
         self.jumpTo(position)
@@ -67,6 +48,9 @@ def moveHero():
         else:
             return False    
 loop:
+    if(self.now()>6 and self.now()<600):
+        step = 1
     сommandTroops()    
     if moveHero():
-        index = index + 1
+        index = index + 1    
+        
