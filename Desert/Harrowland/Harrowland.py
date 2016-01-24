@@ -1,4 +1,4 @@
-# Make Better Later
+# http://codecombat.com/play/level/harrowland
 loop:
     enemy = None
     dist = 99999
