@@ -57,7 +57,7 @@ def attack(target):
         else:
             self.shield()
        
-summonTypes = ['paladin','archer','archer','archer','archer','archer','archer','archer','archer','archer','archer','archer','archer']
+summonTypes = ['paladin','paladin','paladin','archer','archer','archer','archer','archer','archer','archer','archer','archer','archer']
 def summonTroops():
     type = summonTypes[len(self.built)%len(summonTypes)]
     if self.gold > self.costOf(type):
