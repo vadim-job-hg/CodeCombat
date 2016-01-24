@@ -23,7 +23,9 @@ def commandArmy():
         if self.now() < 30:
             self.command(friend, "defend", point.pos)
         else:
-            self.command(friend, "attack", friend.findNearest(enemies))
+            enemies = self.findEnemies()
+            nearestEnemy = self.findNearest(enemies)
+            self.command(friend, "attack", nearestEnemy)
 def attack(target):
     if target:
         if self.isReady("throw") and self.distanceTo(target)<self.throwRange:
