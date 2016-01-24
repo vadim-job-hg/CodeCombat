@@ -25,7 +25,7 @@ def attack(target):
 loop:
     items = self.findItems()
     enemyattack = self.findNearest(self.findEnemies())
-    if enemyattack:
+    if enemyattack and self.distanceTo(enemyattack)<2:
         if(enemyattack):       
             attack(enemyattack)
         else:
@@ -33,4 +33,3 @@ loop:
     else:
         if len(items)>0:
             pickUpNearestItem(items)
-       
