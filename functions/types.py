@@ -3,6 +3,7 @@ enemy_types['shaman'] = {'danger':10, 'focus':100}
 enemy_types['warlock'] = {'danger':10, 'focus':30}
 enemy_types['arrow-tower'] = {'danger':10, 'focus':20}
 enemy_types['catapult'] = {'danger':10, 'focus':100}
+enemy_types['burl'] = {'danger':10, 'focus':20}
 enemy_types['artillery'] = {'danger':10, 'focus':100}
 enemy_types['witch'] = {'danger':8, 'focus':100}
 enemy_types['brawler'] = {'danger':7, 'focus':55}
