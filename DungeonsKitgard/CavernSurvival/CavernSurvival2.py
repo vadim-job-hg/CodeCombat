@@ -1,5 +1,5 @@
 enemy_types = {}
-enemy_types['door'] = {'danger':1000, 'focus':200}
+#enemy_types['door'] = {'danger':1000, 'focus':200}
 enemy_types['knight'] = {'danger':100, 'focus':50}
 enemy_types['ranger'] = {'danger':100, 'focus':50}
 enemy_types['trapper'] = {'danger':100, 'focus':50}
@@ -18,6 +18,7 @@ enemy_types['brawler'] = {'danger':7, 'focus':55}
 enemy_types['ogre'] = {'danger':5, 'focus':40}
 enemy_types['chieftain'] = {'danger':6, 'focus':35}
 enemy_types['thrower'] = {'danger':3, 'focus':22}
+enemy_types['fangrider'] = {'danger':4, 'focus':22}
 enemy_types['munchkin'] = {'danger':2, 'focus':15}
 enemy_types['yak'] = {'danger':-1, 'focus':0}
 enemy_types['ice-yak'] = {'danger':-1, 'focus':0}
