@@ -55,18 +55,8 @@ def сommandTroops():
             CommandPeasant(friend)
 
 def CommandPaladin(paladin):
-    if(paladin.canCast ("heal")):
-        if(self.health<self.maxHealth*0.6):
-            target = self
-        else:
-            target = lowestHealthFriend()
-        if target:
-            self.command(paladin, "cast", "heal", target)
-    elif(paladin.health<100):
-        self.command(paladin, "shield")
-    else:
-        if enemyattack:
-            self.command(paladin, "attack", enemyattack)
+    if enemyattack:
+        self.command(soldier, "attack", enemyattack)
 
 def CommandSoldier(soldier):
     pass
