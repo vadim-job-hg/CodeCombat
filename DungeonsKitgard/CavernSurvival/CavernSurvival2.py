@@ -1,6 +1,11 @@
 enemy_types = {}
 enemy_types['door'] = {'danger':1000, 'focus':200}
 enemy_types['knight'] = {'danger':100, 'focus':50}
+enemy_types['ranger'] = {'danger':100, 'focus':50}
+enemy_types['trapper'] = {'danger':100, 'focus':50}
+enemy_types['samurai'] = {'danger':100, 'focus':50}
+enemy_types['sorcerer'] = {'danger':100, 'focus':50}
+enemy_types['burl'] = {'danger':10, 'focus':20}
 enemy_types['necromancer'] = {'danger':100, 'focus':50}
 enemy_types['captain'] = {'danger':100, 'focus':50}
 enemy_types['shaman'] = {'danger':10, 'focus':50}
@@ -108,7 +113,8 @@ loop:
     сommandTroops()
     items = self.findItems()
     enimies = self.findEnemies()
-    enemy = self.findNearest(enimies)
+    #for enemy in enimies:
+    #    self.say(enemy.type)
     if(len(items)>0 and self.health<self.maxHealth*0.5):
         pickUpNearestItem(items)
     else:            
