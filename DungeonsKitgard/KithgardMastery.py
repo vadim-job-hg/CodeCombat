@@ -6,6 +6,7 @@ loop:
     enemy = self.findNearestEnemy()
     if enemy:
         self.attack(enemy)
+        self.attack(enemy)
     self.moveLeft()
     self.moveUp()
     self.moveUp()
