@@ -25,5 +25,7 @@ def findTarget():
             if enemy and self.distanceTo(enemy)<enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
+    if type is not None:
+        enemy =  self.findNearest(self.findEnemies())
     return enemy_return
 
