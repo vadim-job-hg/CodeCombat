@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/vital-powers
 # Этом уровень покажет, как определять собственные функции.
 # Код внутри функции не выполняется сразу. Он откладывается на потом.
 # Эта функция заставляет вашего героя поднять ближайшую монету.
@@ -27,24 +28,21 @@ def commandSoldiers():
 def attack(target):
     if target:
         if(self.isReady("jump") and self.distanceTo>10):
-            self.jumpTo(enemy.pos)
+            self.jumpTo(target.pos)
         elif(self.isReady("bash")):
-            self.bash(enemy)
-        elif(self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
-        elif(self.isReady("cleave")):
-            self.cleave(enemy)
+            self.bash(target)
+        elif(self.canCast('chain-lightning', target)):
+            self.cast('chain-lightning', target)
         else:
-            self.attack(enemy)
+            self.attack(target)
 
 def tacktick():
     enemies = self.findEnemies()
     nearest = self.findNearest(enemies)
     friends = self.findFriends()
-    if self.distanceTo(nearest)<10:
+    if nearest and (self.distanceTo(nearest)<10 or self.now()>25):
         attack(nearest)
-    elif len(friends)/3<len(enemies):
+    elif nearest and len(friends)/3<len(enemies):
         attack(nearest)
     else:
         pickUpNearestCoin()
@@ -52,6 +50,6 @@ def tacktick():
 loop:
     # В своем цикле ты можешь "вызывать" функции, определенные выше.
     # Эта строка вызывает выполнение кода внутри функции "pickUpNearestCoin" .
-    pickUpNearestCoin()
-    summonSoldier()  
+    tacktick()
+    summonSoldier()
     commandSoldiers()
