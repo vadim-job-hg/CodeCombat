@@ -30,13 +30,19 @@ def CommandPaladin(paladin):
         self.command(paladin, "attack", target)
 
 def CommandSoldier(soldier):
-    pass
+    target = self.findNearest(self.findEnemies())
+    if target:
+        self.command(soldier, "attack", target)
 
 def CommandArcher(soldier):
-    pass
+    target = self.findNearest(self.findEnemies())
+    if target:
+        self.command(soldier, "attack", target)
 
 def CommandPeasant(soldier):
-    pass
+    item = soldier.findNearestItem()
+    if item:
+        self.command(soldier, "move", item.pos)
 
 def lowestHealthFriend():
     lowestHealth = 99999
