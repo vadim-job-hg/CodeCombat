@@ -16,7 +16,7 @@ while(true) {
     if(black)
         attacked = true;
     if(green){
-        this.pickUpFlag(green);        
+        this.pickUpFlag(green);
     }
     if(this.now()>75)
      go=true;
@@ -24,15 +24,15 @@ while(true) {
         attacked = false;
         while(this.gold >= 20){
             this.moveXY(58, 20);
-            this.moveXY(58, 16);  
-        }     
+            this.moveXY(58, 16);
+        }
         if(green)
-            this.pickUpFlag(green); 
+            this.pickUpFlag(green);
        if(go)
-            this.moveXY(43, 37);        
-        
+            this.moveXY(43, 37);
+
     } else if(go){
-        if(enemy && enemy.type=='ogres'){
+        if(enemy && enemy.team=='ogres'){
             if(this.isReady('power-up')){
                 this.powerUp();
                 this.attack(enemy);
