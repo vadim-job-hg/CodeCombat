@@ -1,4 +1,11 @@
 enemy_types = {}
+#humans hero types
+enemy_types['knight'] = {'danger':100, 'focus':100}
+enemy_types['ranger'] = {'danger':100, 'focus':100}
+enemy_types['librarian'] = {'danger':100, 'focus':100}
+enemy_types['captain'] = {'danger':100, 'focus':100}
+enemy_types['trapper'] = {'danger':100, 'focus':100}
+#ogres types
 enemy_types['shaman'] = {'danger':10, 'focus':100}
 enemy_types['warlock'] = {'danger':10, 'focus':30}
 enemy_types['arrow-tower'] = {'danger':10, 'focus':20}
@@ -23,7 +30,7 @@ def findTarget():
     for type in enemy_types.keys():
         if enemy_types[type].danger>danger:
             enemy =  self.findNearest(self.findByType(type))
-            if enemy and self.distanceTo(enemy)<enemy_types[type].focus:
+            if enemy and enemy.team!='humans' and self.distanceTo(enemy)<enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if enemy_return is None:
