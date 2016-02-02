@@ -26,7 +26,7 @@ enemy_types['thrower'] = {'danger':3, 'focus':22}
 enemy_types['munchkin'] = {'danger':2, 'focus':15}
 enemy_types['yak'] = {'danger':-1, 'focus':0}
 enemy_types['ice-yak'] = {'danger':-1, 'focus':0}
-if self.team=='hunans':
+if self.team=='humans':
     team = 'humans'
 else:
     team = 'ogres'
