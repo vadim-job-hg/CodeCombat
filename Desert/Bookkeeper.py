@@ -9,6 +9,7 @@ def attack(target):
             self.attack(target)
 eCount = 0
 iCount = 0
+self.wait(1)
 loop:
     #enemy = self.findNearestEnemy()
     enemy = self.findNearest(self.findEnemies())
