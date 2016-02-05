@@ -1,6 +1,3 @@
-http://codecombat.com/play/ladder/harrowland/clan/553aa691f435a38b05120277
-http://codecombat.com/play/level/zone-of-danger
-http://codecombat.com/play/level/criss-cross
 http://codecombat.com/play/level/k-means-cluster-wars
 Harvest Time
 http://codecombat.com/play/ladder/greed
@@ -12,3 +9,47 @@ http://codecombat.com/play/ladder/greed
  http://codecombat.com/play/level/dungeon-arena
 http://codecombat.com/play/level/mod-squad-supplies-party
 http://codecombat.com/play/level/sword-loop
+   {
+      "_id":"569aacafb55fd82e00116484",
+      "state":{
+         "complete":true
+      },
+      "levelID":"coin-mania"
+   },
+   {
+      "_id":"569ba16961dc604b00fbecb7",
+      "state":{
+         "complete":false
+      },
+      "levelID":"munchkin-masher"
+   },
+   
+   {
+      "_id":"56ab55dace8cb220000f0456",
+      "state":{
+         "complete":false
+      },
+      "levelID":"lets-go-fly-a-kite"
+   },
+   {
+      "_id":"56ab569a89f60b2f00914a5c",
+      "state":{
+         "complete":false
+      },
+      "levelID":"all-is-well"
+   },
+   
+   {
+      "_id":"56addf99afe6f744009447ab",
+      "state":{
+         "complete":false
+      },
+      "levelID":"cross-bones"
+   },
+   {
+      "_id":"56b3c6bc64fd642500ad396b",
+      "state":{
+         "complete":false
+      }
+   }
+]
