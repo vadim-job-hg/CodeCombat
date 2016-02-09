@@ -2,19 +2,16 @@ enemy_types = {}
 #ogres types
 enemy_types['shaman'] = {'danger':10, 'focus':10}
 enemy_types['warlock'] = {'danger':10, 'focus':10}
-enemy_types['arrow-tower'] = {'danger':10, 'focus':10}
-enemy_types['catapult'] = {'danger':10, 'focus':10}
-enemy_types['burl'] = {'danger':10, 'focus':10}
-enemy_types['artillery'] = {'danger':10, 'focus':10}
+#enemy_types['burl'] = {'danger':10, 'focus':5}
 enemy_types['witch'] = {'danger':8, 'focus':10}
-enemy_types['brawler'] = {'danger':7, 'focus':10}
-enemy_types['ogre'] = {'danger':5, 'focus':10}
-enemy_types['chieftain'] = {'danger':6, 'focus':10}
+#enemy_types['brawler'] = {'danger':7, 'focus':5}
+#enemy_types['ogre'] = {'danger':5, 'focus':5}
+#enemy_types['chieftain'] = {'danger':6, 'focus':10}
 enemy_types['fangrider'] = {'danger':4, 'focus':20}
-enemy_types['skeleton'] = {'danger':5, 'focus':10}
-enemy_types['scout'] = {'danger':4, 'focus':10}
-enemy_types['thrower'] = {'danger':3, 'focus':15}
-enemy_types['munchkin'] = {'danger':2, 'focus':5}
+#enemy_types['skeleton'] = {'danger':5, 'focus':10}
+#enemy_types['scout'] = {'danger':4, 'focus':10}
+#enemy_types['thrower'] = {'danger':3, 'focus':15}
+#enemy_types['munchkin'] = {'danger':2, 'focus':5}
 enemy_types['yak'] = {'danger':-1, 'focus':0}
 enemy_types['ice-yak'] = {'danger':-1, 'focus':0}
 
@@ -80,14 +77,14 @@ def attack(target):
             moveTo(target.pos)
         elif(self.isReady("bash")):
             self.bash(target)
-        elif(self.canCast('chain-lightning', target)):
+        elif(self.canCast('chain-lightning', target) and yak_alert==False):
             self.cast('chain-lightning', target)
         elif(self.isReady("attack")):
             self.attack(target)
         else:
             self.shield()
 index = 0
-route = [[27, 27, True], [130, 26, True], [130, 111, True], [28, 110, True]]
+route = [[20, 20, True], [140, 20, True], [140, 117, True], [20, 110, True]]
 def moveHero():
     ind = index%len(route)
     moveTo({'x':route[ind][0],'y':route[ind][1]}, route[ind][2])
@@ -97,7 +94,11 @@ def moveHero():
         return False
             
 loop:
+    yak_alert = False
     enemyattack = findTarget()  
+    yak = self.findNearest(self.findByType('sand-yak'))
+    if yak and self.distanceTo(yak)<40:
+        yak_alert = True
     commandTroops()
     summonTroops()     
     if enemyattack:
