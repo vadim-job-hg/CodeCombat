@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def moveTo(position, fast = True):
     if(self.isReady("jump") and fast):
         self.jumpTo(position)
@@ -36,3 +37,6 @@ loop:
     #    self.cast('chain-lightning', enemy)
     elif(moveHero()):
         index = index + 1
+=======
+
+>>>>>>> origin/master
