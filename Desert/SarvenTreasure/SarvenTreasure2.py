@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 def moveTo(position, fast = True):
     if(self.isReady("jump") and fast):
         self.jumpTo(position)
@@ -15,7 +14,7 @@ def attack(target):
         if(self.distanceTo(target)<10 and self.isReady("bash")):
             self.bash(target)
 index = 0            
-route = [[11, 20, True, [5, 20]], [75, 19, True, [77, 20]]]
+route = [[7, 19, True, [5, 20]], [75, 19, True, [77, 20]]]
 def moveHero():
     ind = index%len(route)
     moveTo({'x':route[ind][0],'y':route[ind][1]}, route[ind][2])
@@ -29,7 +28,8 @@ loop:
     enemies = self.findEnemies()
     enemy = self.findNearest(enemies)
     items = self.findItems()
-    if enemy and self.distanceTo(enemy)>10:
+    item = self.findNearest(items)
+    if enemy and self.distanceTo(enemy)>10 and items and (item.pos.x<30 or item.pos.x>60):
         pickUpNearestItem(items)
     #elif(enemy and self.isReady("bash")):
     #    self.bash(enemy)
@@ -37,6 +37,3 @@ loop:
     #    self.cast('chain-lightning', enemy)
     elif(moveHero()):
         index = index + 1
-=======
-
->>>>>>> origin/master
