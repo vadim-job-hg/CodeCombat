@@ -1,4 +1,4 @@
-#http://codecombat.com/play/ladder/dungeon-arena#ogres
+//http://codecombat.com/play/ladder/dungeon-arena#ogres
 this.attacksomeone = function (e, type) {
     if (!this.getCooldown('stomp') && type.indexOf('stomp') != -1) {
         this.stomp();
