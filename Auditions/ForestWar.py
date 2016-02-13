@@ -17,8 +17,6 @@ def CommandPaladin(paladin):
             target = self
         if target:
             self.command(paladin, "cast", "heal", target)
-    elif(paladin.health<100):
-        self.command(paladin, "shield")
     else:
         target = self.findNearest(self.findEnemies())
         self.command(paladin, "attack", target)
