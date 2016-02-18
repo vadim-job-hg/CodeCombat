@@ -23,18 +23,25 @@ def commandPeasant(peasant):
    if item:
        self.command(peasant, 'move', item.pos)
        
-summonTypes = ['peasant']
+def CommandArcher(soldier):
+    target = self.findNearest(self.findEnemies())
+    if target:
+        self.command(soldier, "attack", target)       
+        
+summonTypes = ['peasant', 'archer','peasant', 'archer','peasant', 'archer','peasant','peasant','peasant','peasant', 'archer', 'archer','peasant','peasant']
 def summonTroops():
     type = summonTypes[len(self.built)%len(summonTypes)]
     if self.gold > self.costOf(type):
         self.summon(type)
 
-loop:
-    summonTroops()
+loop:    
     friends = self.findFriends()
+    summonTroops()
     tails = self.findEnemies()
     coins = self.findItems()
-    pickUpNearestItem(coins)
+    #pickUpNearestItem(coins)
     for friend in friends:
-        if friend.type == 'peasant':
-            CommandPeasant(friend)
+        if friend.type == 'archer':
+            CommandArcher(friend)
+        elif friend.type == 'peasant':
+            commandPeasant(friend)
