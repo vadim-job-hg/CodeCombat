@@ -3,6 +3,7 @@ enemy_types = {}
 enemy_types['knight'] = {'danger':100, 'focus':100}
 enemy_types['ranger'] = {'danger':100, 'focus':100}
 enemy_types['librarian'] = {'danger':100, 'focus':100}
+enemy_types['potion-master'] = {'danger':100, 'focus':50}
 enemy_types['captain'] = {'danger':100, 'focus':100}
 enemy_types['trapper'] = {'danger':100, 'focus':100}
 enemy_types['samurai'] = {'danger':100, 'focus':50}
