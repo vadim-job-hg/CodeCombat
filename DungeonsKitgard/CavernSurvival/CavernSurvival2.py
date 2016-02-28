@@ -2,6 +2,7 @@ enemy_types = {}
 #enemy_types['door'] = {'danger':1000, 'focus':200}
 enemy_types['knight'] = {'danger':100, 'focus':50}
 enemy_types['ranger'] = {'danger':100, 'focus':50}
+enemy_types['potion-master'] = {'danger':100, 'focus':50}
 enemy_types['trapper'] = {'danger':100, 'focus':50}
 enemy_types['samurai'] = {'danger':100, 'focus':50}
 enemy_types['sorcerer'] = {'danger':100, 'focus':50}
