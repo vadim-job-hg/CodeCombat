@@ -8,6 +8,7 @@ enemy_types['samurai'] = {'danger':100, 'focus':50}
 enemy_types['sorcerer'] = {'danger':100, 'focus':50}
 enemy_types['burl'] = {'danger':10, 'focus':20}
 enemy_types['necromancer'] = {'danger':100, 'focus':50}
+enemy_types['sorcerer'] = {'danger':100, 'focus':50}
 enemy_types['captain'] = {'danger':100, 'focus':50}
 enemy_types['shaman'] = {'danger':10, 'focus':50}
 enemy_types['warlock'] = {'danger':10, 'focus':30}
