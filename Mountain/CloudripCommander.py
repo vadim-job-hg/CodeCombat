@@ -27,9 +27,7 @@ def summonSoldier():
 # commands attack
 def commandSoldiers():
     for soldier in self.findByType("soldier"):
-        enemy = self.findNearestEnemy()
-        if enemy:
-            self.command(soldier, "attack", enemy)
+        self.command(soldier, "move", {'x':50, 'y':41})
             
 loop:
     enemies = self.findEnemies()
@@ -46,5 +44,3 @@ loop:
         pickUpNearestCoin()
     summonSoldier()
     commandSoldiers()
-        
-        
