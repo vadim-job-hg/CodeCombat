@@ -1,4 +1,4 @@
-# Ваша цель - защитить Рейнальдо.
+# http://codecombat.com/play/level/grim-determination
 summonTypes = ['griffin-rider']
 def summonTroops():
     type = summonTypes[len(self.built)%len(summonTypes)]
