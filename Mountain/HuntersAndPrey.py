@@ -1,5 +1,4 @@
-# Ogres are trying to kill your reindeer!
-# Keep your archers back while summoning soldiers to attack.
+# http://codecombat.com/play/level/hunters-and-prey
 
 def pickUpCoin():
     items = self.findItems()
