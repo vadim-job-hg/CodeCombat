@@ -40,6 +40,8 @@ def attack(target):
             self.attack(target)
         elif(self.isReady("cleave")):
             self.cleave(target)
+        elif(self.canCast('chain-lightning', target)):
+            self.cast('chain-lightning', target)
         else:
             self.attack(target)
             self.shield()
