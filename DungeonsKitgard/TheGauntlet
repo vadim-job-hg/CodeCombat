@@ -1,5 +1,0 @@
-# http://codecombat.com/play/level/the-gauntlet
-while True:
-    self.moveRight()
-    self.attack(self.findNearestEnemy())
-    self.attack(self.findNearestEnemy())
