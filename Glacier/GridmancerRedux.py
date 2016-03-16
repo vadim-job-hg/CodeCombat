@@ -10,7 +10,7 @@
 # Rectangles cannot collide with themselves or walls
 # You need to make at most 55 rectangles to beat this level!
 array_greed = self.navGrid
-def getRectngle(cell):
+def getRectngle(cell, index1, index2):
   
   return {x:,y:,w:,h:}
 rect = []#{x, y, w, h}
