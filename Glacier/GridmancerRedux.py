@@ -11,8 +11,16 @@
 # You need to make at most 55 rectangles to beat this level!
 array_greed = self.navGrid
 def getRectngle(cell, index1, index2):
-  
-  return {x:,y:,w:,h:}
+  weight = 0
+  height = 0
+  if cell=='Coin':
+    indy = index1
+    indx = index2
+    while indx<len(array_greed):
+      indx++
+  else:
+    return None
+  #return {x:,y:,w:,h:}
 rect = []#{x, y, w, h}
 for index1, row in enumerate(array_greed):
   for index2, cell in enumerate(row):
