@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/gridmancer-redux
 # Welcome to Gridmancer!
 # A relic of days long past, the puzzle returns!
 # Your task is to collect all the coins.
@@ -9,42 +10,43 @@
 # Rectangles cannot collide with themselves or walls
 # You need to make at most 55 rectangles to beat this level!
 array_greed = self.navGrid
-def getRectngle(cell, index1, index2):
-    width = 1
+
+def getRectngle(index1, index2):
+    width = 0
     height = 1
-    if cell=='Coin':
-        indy = index1 + 1
-        indx = index2
-        while indy<len(array_greed):      
-            if(array_greed[indy][indx]=='Coin'):
-                height = height + 1
+    if array_greed[index1][index2]=='Coin':
+        indy = index2
+        indx = index1
+        for x in range(indx, lenght_xy):            
+            if array_greed[x][indy]=='Coin':
+                width = width + 1
             else:
                 break
-            indy = indy + 1
-            
-        indx = indx + 1
-        indy = index1
-        while indx<len(array_greed[0]):
-            tmp_height = 0;
-            while indy<len(array_greed):      
-                if(array_greed[indy][indx]!='Coin'):
+        for y in range(indy, lenght_xy):
+            width_tmp = 0
+            for x in range(indx, lenght_xy):
+                width_tmp = width_tmp + 1
+                if array_greed[x][y]!='Coin':
                     break 2
-                indy = indy + 1
-            tmp_height = tmp_height + 1
-            if tmp_height == height:
-                width = width + 1
-                break
-            indx = indx + 1
-        
-        return {index1, index2, height, width}
+                if(width_tmp==width):
+                    height= height + 1
+                    break         
+        return_object = {'x':index1, 'y':index2, 'width':width, 'height':height}
+        return return_object
     else:
         return None
   #return {x:,y:,w:,h:}
 rect = []#{x, y, w, h}
-for index1, row in enumerate(array_greed):
-    for index2, cell in enumerate(row):
-        rect = getRectngle(cell, index1, index2)
-        if rect:
-            self.say(rect);
-#self.addRect(0, 18, 4, 2)
+lenght_xy = 20 
+for x in range(lenght_xy):
+    for y in range(lenght_xy):
+        rectg = getRectngle(x, y)
+        if rectg:
+            #self.say([rectg.x, rectg.y, rectg.width, rectg.height])
+            rect.push(rectg)         
+            for xi in range(rectg.x, rectg.x + rectg.width):
+                for yi in range(rectg.y, rectg.x + rectg.height):
+                    array_greed[xi][yi] = 'Got'
+self.say([rect[0].x, rect[0].y, rect[0].width, rect[0].height])
+self.addRect(rect[0].x, rect[0].y, rect[0].width, rect[0].height)
 #self.addRect(0, 0, 4, 3)
