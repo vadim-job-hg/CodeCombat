@@ -23,13 +23,18 @@ def getRectngle(cell, index1, index2):
             indy = indy + 1
             
         indx = indx + 1
+        indy = index1
         while indx<len(array_greed[0]):
-          while indy<len(array_greed):      
-              if(array_greed[indy][indx]=='Coin'):
-                  height = height + 1
-              else:
-                  break
-              indy = indy + 1
+            tmp_height = 0;
+            while indy<len(array_greed):      
+                if(array_greed[indy][indx]!='Coin'):
+                    break 2
+                indy = indy + 1
+            tmp_height = tmp_height + 1
+            if tmp_height == height:
+                width = width + 1
+                break
+            indx = indx + 1
         
         return {index1, index2, height, width}
     else:
