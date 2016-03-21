@@ -1,4 +1,5 @@
 # http://codecombat.com/play/level/serpent-savings
+# todo this logic need to be improved
 # You cannot collect coins.
 # Summon peasants to collect coins for you.
 # Collecting coins spawns a growing 'tail' behind the peasants.
