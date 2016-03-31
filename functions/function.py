@@ -1,23 +1,3 @@
-def moveTo(position, fast = True):
-    if(self.isReady("jump") and fast):
-        self.jumpTo(position)
-    else:
-        self.move(position)
-
-#pickup coin
-def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
-    if nearestItem:
-        moveTo(nearestItem.pos)
-
-buildTypes = ["fire-trap", "decoy", "arrow-tower"]
-def buildTroops():
-    coor = coors[len(self.built)%len(coors)]
-    type = buildTypes[len(self.built)%len(buildTypes)]
-    if self.gold > self.costOf(type):
-        self.buildXY(type, coor[0], coor[1])
-
-
 
 def lowestHealthFriend():
     lowestHealth = 99999
@@ -82,14 +62,3 @@ def findTheY(x1, x2, y1, y2, x):
 def findTheMiddle(pos1, pos2):
     return {'x':(pos1.x+pos2.x)/2,'y':(pos1.y+pos2.y)/2}
 
-route = [[33, 14, True], [34, 7, False]]
-index = 0
-def moveHero():
-    if len(route)>index:
-        moveTo({'x':route[index][0],'y':route[index][1]}, route[index][2])
-        if(self.pos.x==route[index][0] and self.pos.y==route[index][1]):
-            return True
-        else:
-            return False
-if(moveHero()):
-    index = index + 1

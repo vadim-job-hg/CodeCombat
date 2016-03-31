@@ -1,5 +1,4 @@
-# Ogres are trying to kill your reindeer!
-# Keep your archers back while summoning soldiers to attack.
+# http://codecombat.com/play/level/hunters-and-prey
 
 def pickUpCoin():
     items = self.findItems()
@@ -32,7 +31,9 @@ loop:
     summonTroops()
     friends = self.findFriends()
     for friend in friends:
-        if friend.type == "soldier":
+        if friend.health<100 and (friend.type == "soldier"):
+            self.command(friend, "defend", self.pos)
+        elif friend.type == "soldier":
             # This friend will be assigned to the variable soldier in commandSoldier
             commandSoldier(friend)
         elif friend.type == "archer":

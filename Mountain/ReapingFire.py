@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/reaping-fire
 def moveTo(position, fast = True):
     if(self.isReady("jump") and self.distanceTo>10 and fast):
         self.jumpTo(position)

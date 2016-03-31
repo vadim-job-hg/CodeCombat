@@ -26,8 +26,21 @@ def commandSoldiers():
         enemy = self.findNearest(self.findEnemies())
         if enemy and (soldier.type =='archer'  or soldier.type =='soldier'):
              self.command(soldier, "attack", enemy)
-             
+def attack(target):
+    if target:
+        if(self.distanceTo(target)>10):
+            moveTo(target.pos)
+        elif(self.isReady("bash")):
+            self.bash(target)
+        elif(self.isReady("attack")):
+            self.attack(target)
+        else:
+            self.shield()             
 loop:
     summonTroops()
     commandSoldiers()
-    pickUpNearestItem()
+    enemy = self.findNearest(self.findEnemies())
+    if(enemy and self.distanceTo(enemy)<10):
+        attack(enemy)
+    else:
+        pickUpNearestItem()
