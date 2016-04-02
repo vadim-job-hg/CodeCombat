@@ -48,16 +48,22 @@ def moveTo(position, fast = True):
         
 def attack(target):
     if target:
-        if(self.distanceTo(target)>10):
+        if(self.canCast('invisibility', self)):
+            self.cast('invisibility', self)
+        elif self.hasEffect('invisibility'):
             moveTo(target.pos)
-        elif(self.isReady("bash")):
-            self.bash(target)
-        elif(self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
-        elif(self.isReady("attack")):
-            self.attack(target)
         else:
-            self.shield()
+            if(self.distanceTo(target)>10):
+                moveTo(target.pos)
+            elif(self.isReady("bash")):
+                self.bash(target)
+            elif(self.canCast('chain-lightning', target)):
+                self.cast('chain-lightning', target)
+            elif(self.isReady("attack")):
+                self.attack(target)
+            else:
+                self.shield()
+
        
 summonTypes = ['paladin','paladin','paladin','paladin']
 def summonTroops():
@@ -77,18 +83,14 @@ def сommandTroops():
             CommandPeasant(friend)
             
 def CommandPaladin(paladin):
-    if(paladin.canCast ("heal")):
-        if(self.health<self.maxHealth*0.6):
-            target = self
-        else:
-            target = lowestHealthFriend()        
-        if target:
-            self.command(paladin, "cast", "heal", target)
-    elif(paladin.health<100):
-        self.command(paladin, "shield")   
+    if(paladin.canCast ("heal") and self.health<self.maxHealth*0.6):
+        self.command(paladin, "cast", "heal", self)
     else:
+        enemyattack = findTarget()
         if enemyattack:
             self.command(paladin, "attack", enemyattack)
+        else:
+            self.command(paladin, "defend", self)
 
 def CommandSoldier(soldier):
     pass
