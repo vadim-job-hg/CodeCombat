@@ -8,15 +8,12 @@ number = secret + 7
 # Move to Erzsebet and say her magic number.
 self.moveXY(17, 26)
 self.say(number)
-secret = self.findNearestFriend().getSecret()
 number = (7 + secret)%4
 # Move to Simonyi and say his magic number.
 self.moveXY(30, 39)
 self.say(number)
-secret = self.findNearestFriend().getSecret()
-number = (secret)*secretr
+number = number*secretr
 # Move to Agata and say her magic number.
 self.moveXY(43, 26)
-self.say(0)
+self.say(number)
 #self.say(number)
-
