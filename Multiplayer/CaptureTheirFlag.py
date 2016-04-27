@@ -30,7 +30,7 @@ loop:
     if target and self.distanceTo(target)<3:
          flag = self.findEnemyFlags()
          self.captureFlag(flag[0])
-    elif len(flag)>0 and self.distanceTo(target)<3:
+    elif len(flag)>0 and self.distanceTo(target)>3:
          self.move(target)
     elif(moveHero()):
          index = index + 1
