@@ -1,3 +1,3 @@
 # MultiPlayer
 # Cavern Survival
-![Hero Picture](ladder/cavernsurv.png?raw=true "Cavern Survival")
+![Cavern Survival](ladder/cavernsurv.png?raw=true "Cavern Survival")
