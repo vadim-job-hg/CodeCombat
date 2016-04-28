@@ -37,7 +37,6 @@ while True:
     if enemy and enemy.health > 15:
         while enemy.health > 0:
             hero.attack(enemy)
-            hero.wait(2)
     else:
         coins = hero.findItems()
         coin = None
