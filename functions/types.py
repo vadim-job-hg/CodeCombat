@@ -10,6 +10,8 @@ enemy_types['trapper'] = {'danger':100, 'focus':100}
 enemy_types['samurai'] = {'danger':100, 'focus':50}
 enemy_types['forest-archer'] = {'danger':100, 'focus':50}
 enemy_types['sorcerer'] = {'danger':100, 'focus':50}
+enemy_types['ninja'] = {'danger':100, 'focus':50}
+
 #ogres types
 enemy_types['shaman'] = {'danger':10, 'focus':100}
 enemy_types['warlock'] = {'danger':10, 'focus':30}
