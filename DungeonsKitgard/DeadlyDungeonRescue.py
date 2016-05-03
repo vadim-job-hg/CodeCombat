@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/deadly-dungeon-rescue?session=56c5ebfded946a44004fb659&observing=true
+#http://codecombat.com/play/level/deadly-dungeon-rescue
 # Сбегите из подземелья после спасения измученного крестьянина.
 # Вы можете спрятаться за горгульями.
 # Убийство охранников может привести к нежелательным последствиям.
