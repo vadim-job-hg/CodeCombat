@@ -42,8 +42,8 @@ while True:
         coin = None
         coin = findOptimalCoin(coins) # ∆ Uncomment this once you've written the function.
         if coin:
-            if hero.isReady('jump'):
-                hero.jumpTo(coin)
-            else:
+            if hero.isReady('jump'): #jump if you hero to slow
+                hero.jumpTo(coin)# also your hero can be too fast and grub too much coins
+            else:# use week but fast sword. Use best boots with jumps or ring of speed, but not both of them
                 hero.moveXY(coin.pos.x, coin.pos.y)
 
