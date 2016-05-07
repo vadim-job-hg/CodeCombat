@@ -1,15 +1,17 @@
 enemy_types = {}
 enemy_types['door'] = {'danger':1000, 'focus':200}
-enemy_types['knight'] = {'danger':100, 'focus':50}
-enemy_types['potion-master'] = {'danger':100, 'focus':50}
-enemy_types['ranger'] = {'danger':100, 'focus':50}
-enemy_types['trapper'] = {'danger':100, 'focus':50}
-enemy_types['samurai'] = {'danger':100, 'focus':50}
-enemy_types['librarian'] = {'danger':100, 'focus':50}
-enemy_types['sorcerer'] = {'danger':100, 'focus':50}
-enemy_types['burl'] = {'danger':10, 'focus':20} 
-enemy_types['necromancer'] = {'danger':100, 'focus':50}
-enemy_types['captain'] = {'danger':100, 'focus':50} 
+enemy_types['knight'] = {'danger':100, 'focus':100}
+enemy_types['potion-master'] = {'danger':100, 'focus':100}
+enemy_types['ranger'] = {'danger':100, 'focus':100}
+enemy_types['trapper'] = {'danger':100, 'focus':100}
+enemy_types['samurai'] = {'danger':100, 'focus':100}
+enemy_types['librarian'] = {'danger':100, 'focus':100}
+enemy_types['sorcerer'] = {'danger':100, 'focus':100}
+enemy_types['hero-placeholder-1'] = {'danger':99, 'focus':100}
+enemy_types['hero-placeholder-2'] = {'danger':99, 'focus':100}
+enemy_types['burl'] = {'danger':10, 'focus':20}
+enemy_types['necromancer'] = {'danger':100, 'focus':100}
+enemy_types['captain'] = {'danger':100, 'focus':100}
 enemy_types['shaman'] = {'danger':10, 'focus':50} 
 enemy_types['warlock'] = {'danger':10, 'focus':30}
 enemy_types['arrow-tower'] = {'danger':10, 'focus':20}
@@ -33,6 +35,8 @@ def findTarget():
             if enemy and self.distanceTo(enemy)<enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
+    if enemy_return is None:
+        enemy_return =  self.findNearest(self.findEnemies())
     return enemy_return
 
 def pickUpNearestItem(items):
@@ -63,7 +67,6 @@ def attack(target):
                 self.attack(target)
             else:
                 self.shield()
-
        
 summonTypes = ['paladin','paladin','paladin','paladin']
 def summonTroops():
@@ -113,13 +116,11 @@ def lowestHealthFriend():
             lowestFriend = friend
 
     return lowestFriend
-loop:
-    summonTroops()
-    сommandTroops()
+loop:    
     items = self.findItems()
     enimies = self.findEnemies()
     #for enemy in enimies:
-    #    self.say(enemy.type)
+     #   self.say(enemy.type)
     if(len(items)>0 and self.health<self.maxHealth*0.5):
         pickUpNearestItem(items)
     else:            
@@ -130,3 +131,7 @@ loop:
             attack(enemyattack)
         else:
             self.shield()
+    if self.health<self.maxHealth*0.6:
+        summonTroops()
+    
+    сommandTroops()
