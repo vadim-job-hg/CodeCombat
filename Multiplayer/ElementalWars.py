@@ -1,11 +1,10 @@
-#elemental-wars
-#http://codecombat.com/play/ladder/ace-of-coders
+#http://codecombat.com/play/level/elemental-wars
 # Победите героя противника менее, чем за три минуты.
 
 def buildArmy():
     # Ваш герой может вызывать дружественные отряды и управлять ими.
 
-    buildOrder = ["fire-soldier","fire-soldier","fire-soldier","fire-soldier","fire-soldier","fire-soldier","fire-soldier","fire-soldier","fire-soldier","fire-soldier", "fire-archer","fire-soldier", "fire-archer", "fire-soldier", "fire-archer"]
+    buildOrder = ["water-soldier","wood-soldier","fire-soldier","wood-soldier","wood-soldier",  "archer", "soldier", "water-soldier","wood-soldier","fire-soldier","wood-soldier","wood-soldier",  "archer", "soldier", "water-soldier","wood-soldier","fire-soldier","wood-soldier","wood-soldier",  "archer", "soldier", "water-soldier","wood-soldier","fire-soldier","wood-soldier","wood-soldier",  "archer", "soldier", "wood-artillery"]
     #"arrow-tower" "artillery"
     type = buildOrder[len(self.built) % len(buildOrder)]
     if self.gold >= self.costOf(type):
