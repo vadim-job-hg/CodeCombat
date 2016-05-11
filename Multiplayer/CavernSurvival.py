@@ -6,17 +6,17 @@ enemy_types['ranger'] = {'danger':100, 'focus':100}
 enemy_types['trapper'] = {'danger':100, 'focus':100}
 enemy_types['samurai'] = {'danger':100, 'focus':100}
 enemy_types['librarian'] = {'danger':100, 'focus':100}
-enemy_types['sorcerer'] = {'danger':100, 'focus':100}
+enemy_types['sorcerer'] = {'danger':100, 'focus':100} 
 enemy_types['hero-placeholder-1'] = {'danger':99, 'focus':100}
 enemy_types['hero-placeholder-2'] = {'danger':99, 'focus':100}
 enemy_types['burl'] = {'danger':10, 'focus':20}
 enemy_types['necromancer'] = {'danger':100, 'focus':100}
-enemy_types['captain'] = {'danger':100, 'focus':100}
+enemy_types['captain'] = {'danger':100, 'focus':100} 
 enemy_types['shaman'] = {'danger':10, 'focus':50} 
 enemy_types['warlock'] = {'danger':10, 'focus':30}
 enemy_types['arrow-tower'] = {'danger':10, 'focus':20}
 enemy_types['catapult'] = {'danger':10, 'focus':100}
-enemy_types['artillery'] = {'danger':10, 'focus':100}
+enemy_types['artillery'] = {'danger':10, 'focus':100} 
 enemy_types['witch'] = {'danger':8, 'focus':50}
 enemy_types['brawler'] = {'danger':7, 'focus':55}
 enemy_types['ogre'] = {'danger':5, 'focus':40}
@@ -57,7 +57,10 @@ def attack(target):
         elif self.hasEffect('invisibility'):
             moveTo(target.pos)
         else:
-            if(self.distanceTo(target)>10):
+            if(self.canCast('earthskin', self)):
+                self.say('cast');
+                self.cast('earthskin', self)
+            elif(self.distanceTo(target)>10):
                 moveTo(target.pos)
             elif(self.isReady("bash")):
                 self.bash(target)
@@ -130,7 +133,7 @@ loop:
         if(enemyattack):       
             attack(enemyattack)
         else:
-            self.shield()
+            self.shield() 
     if self.health<self.maxHealth*0.6:
         summonTroops()
     
