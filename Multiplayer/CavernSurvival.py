@@ -30,7 +30,7 @@ def findTarget():
     danger = 0
     enemy_return = None
     for type in enemy_types.keys():
-        if enemy_types[type].danger>danger:
+        if enemy_types[type] and enemy_types[type].danger>danger:
             enemy =  self.findNearest(self.findByType(type))
             if enemy and self.distanceTo(enemy)<enemy_types[type].focus:
                 enemy_return = enemy
