@@ -49,12 +49,13 @@ def buildTroops():
     enemy = self.findNearest(self.findEnemies())
     items = self.findItems()
     if enemy:
-        if(self.isReady("bash")):
-            self.bash(enemy)
-        elif(self.canCast('chain-lightning', enemy)):
-            self.cast('chain-lightning', enemy)
+        pass
+        #if(self.isReady("bash")):
+        #    self.bash(enemy)
+        #elif(self.canCast('chain-lightning', enemy)):
+        #    self.cast('chain-lightning', enemy)
     paladins = self.findByType('paladin')
-    if len(items)>0:
+    if len(items)>0 and hero.distanceTo(items[0])<10:
         pickUpNearestItem(items)
     elif len(paladins)>1:
          self.shield()
