@@ -1,4 +1,4 @@
-#
+# todo: make like here https://gist.githubusercontent.com/a1ip/eb7939872dc85b5ddc2f/raw/ddeb26fbdb2885963c72d44a01742851342fc6a9/26.1-lost-viking.js
 
 #
 
