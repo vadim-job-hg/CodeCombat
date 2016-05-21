@@ -1,5 +1,5 @@
 #http://codecombat.com/play/level/brewball?session=56c5ebfded946a44004fb659&observing=true
-#http://codecombat.com/play/level/brewball?session=56c5ebfded946a44004fb659&observing=true
+#todo:
 # Скажи кое-что в расстоянии 10м от Омарна чтобы он кинул зелье.
 # Поймай зелье стоя рядом с ним прежде чем он упадет.
 # НЕ ДАЙ ЗЕЛЬЮ УПАСТЬ НА ЗЕМЛЮ!
