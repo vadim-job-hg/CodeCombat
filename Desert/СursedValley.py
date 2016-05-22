@@ -3,15 +3,17 @@
 # You need to kill 3 enemy skeletons.
 # You can only drink one potion. Choose your time wisely.
 # Graverobbing is bad luck! Do not steal the coins.
-#todo:
-while (True):
+
+while(True):
     enemy = hero.findNearestEnemy()
     # Attack only skeletons AND if they are on the "ogres" team.
     if enemy and enemy.team == "ogres" and enemy.type == "skeleton":
         hero.attack(enemy)
 
     item = hero.findNearestItem()
-    if item and item.type == 'potion':
+    if hero.health<hero.maxHealth/7 and item and item.type == 'potion':
         self.move(item.pos)
-        # Take only the "potion" type AND when your health less than quarter of the maxHealth.
+    # Take only the "potion" type AND when your health less than quarter of the maxHealth.
+
+
 
