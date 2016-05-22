@@ -1,5 +1,4 @@
 #http://codecombat.com/play/level/reindeer-tender
-#http://codecombat.com/play/level/reindeer-tender
 # This array contains the positions of the pens that we want to put the reindeer in.
 penPositions = [ {"x":20,"y":24}, {"x":28,"y":24}, {"x":36,"y":24}, {"x":44,"y":24}, {"x":52,"y":24} ]
 # This array is used to track which reindeer have been asssigned to which pen.
