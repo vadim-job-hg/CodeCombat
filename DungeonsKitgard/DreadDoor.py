@@ -1,2 +1,2 @@
 loop:
-    self.attack("Door");
+    self.attack("Door")

@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/the-raised-sword
 self.attack("Rig")
 self.attack("Rig")
 self.attack("Gurt")

@@ -1,3 +1,4 @@
+#http://codecombat.com/play/level/haunted-kithmaze
 # Циклы гораздо удобнее для повторяющихся участков кода.
 
 loop:
