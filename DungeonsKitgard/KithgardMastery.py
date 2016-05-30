@@ -1,3 +1,4 @@
+#todo:
 i = 1;
 loop:    
     self.moveRight()
