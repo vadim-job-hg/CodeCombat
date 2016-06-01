@@ -16,7 +16,7 @@ for x in range(leftBorder, rightBorder, step):
     for y in range(leftBorder, rightBorder, step):
         # Move to the point with coordinates X, Y and say anything.
         hero.moveXY(x, y)
-        hero.say('Dgigurda')
+        hero.say('Djigurda')
 
 # Allow peasants to check the last point.
 hero.moveXY(20, 10)
