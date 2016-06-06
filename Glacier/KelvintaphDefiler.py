@@ -84,11 +84,11 @@ def attack(target):
         else:
             self.attack(target)
 loop:
-    if(self.now()>6 and self.now()<10):
+    if(self.now()>6 and self.now()<12):
         step = 1
-    elif(self.now()>10 and self.now()<15):
+    elif(self.now()>10 and self.now()<17):
         step = 2
-    elif(self.now()>15 and self.now()<28):
+    elif(self.now()>15 and self.now()<30):
         step = 3
     elif(self.now()>28 and self.now()<600):
         step = 4
@@ -102,4 +102,6 @@ loop:
             attack(enemy)
         else:
             moveTo({'x':74, 'y':44})
+        
+
         
