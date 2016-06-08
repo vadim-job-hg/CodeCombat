@@ -21,5 +21,5 @@ illumina = findByName("Illumina", friends)
 vaelia = findByName("Vaelia", friends)
 # Command both to move to the corners of the square.
 # Remember squares have equal-length sides!
-self.command(illumina, 'move',{'x':28,'y':22})
-self.command(vaelia, 'move',{'x':54,'y':22})
+self.command(illumina, 'move',{'x':celadia.pos.x,'y':celadia.pos.y-sideLength})
+self.command(vaelia, 'move',{'x':dedalia.pos.x,'y':dedalia.pos.y-sideLength})
