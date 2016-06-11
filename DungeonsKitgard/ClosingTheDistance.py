@@ -1,4 +1,3 @@
-todo:
 loop:
     self.moveRight()
     enemy = self.findNearestEnemy()

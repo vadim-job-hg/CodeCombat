@@ -1,4 +1,3 @@
-todo:
 enemy = self.findNearestEnemy();
 self.attack(enemy);
 self.attack(enemy);
