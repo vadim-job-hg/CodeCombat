@@ -58,7 +58,6 @@ def attack(target):
             moveTo(target.pos)
         else:
             if(self.canCast('earthskin', self)):
-                self.say('cast');
                 self.cast('earthskin', self)
             elif(self.distanceTo(target)>10):
                 moveTo(target.pos)
