@@ -3,5 +3,5 @@
 while True:
     enemy = hero.findNearestEnemy()
     # Но когда он появится, атакуйте!
-    if enemy:
+    if enemy and hero.distanceTo(enemy)<20:
         hero.attack(enemy)
