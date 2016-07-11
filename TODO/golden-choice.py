@@ -1,16 +1,15 @@
-#https://codecombat.com/play/level/golden-choice
-# You must collect the required amount of gold.
-# The gate keeper will tell you how much you need.
-# Always move in the direction of the exit.
-# For each row you can take only one coin.
-# Choose only one from the nearest coins in the next row.
+# Вы должны собрать требуемое количество золота.
+# Хранитель врат скажет вам сколько вам нужно.
+# Всё время двигаетесь в направлении выхода.
+# В каждом ряды вы можете взять лишь одну монету.
+# Выберите только одну из ближайших монет в слудующем ряду.
 
-# Distance between rows and coins.
+# Дистанция между рядами и монетками.
 distanceX = 4
 distanceY = 6
 zeroPoint = {"x": 14, "y": 14}
 coinLines = 10
-needCollect = 74
+
 def makeGoldMap(coins):
     template = [[0 for j in range(2 * coinLines - 1)] for i in range(coinLines)]
     for coin in coins:
@@ -18,42 +17,22 @@ def makeGoldMap(coins):
         col = int((coin.pos.x - zeroPoint.x) / distanceX)
         template[row][col] = coin.value
     return template
-def getNum(number, delimer = 2):
-    return number%delimer
-    
-# Prepare the gold map. It looks like:
+def getMax():
+    pass
+# Подготовьте карту золота. Она выглядит так:
 # [[1, 0, 9, 0, 4],
 #  [0, 1, 0, 9, 0],
 #  [8, 0, 2, 0, 9]]
+# Найдите ваш путь.
 goldMap = makeGoldMap(hero.findItems())
-for routeIndex in range(0, 100):
-    number = routeIndex
-    route = []
-    gold = 0
-    k = 9
-    for y in range(0, 10):
-        num = getNum(number, 2)
-        number = Math.floor(number/2)
-        if num==0 and k>1:#left
-            gold = gold + goldMap[y][k]
-            k = k - 1            
-        else:#right
-            k = k + 1
-            gold = gold + goldMap[y][k]
-    #hero.say(gold)
-    if gold == needCollect:
-        number = routeIndex
-        break
-    #break
-# Find your path.
 k = 9
-for y in range(0, 11):
-    num = getNum(number, 2)
-    number = Math.floor(number/2)
-    if num==0:#left
+for y in range(0, 10):
+    getMax()
+    if goldMap[y][k-1]>goldMap[y][k+1]:#left
         k = k - 1            
     else:#right
         k = k + 1
-    moveTo = {'x':zeroPoint.x+k*distanceX, 'y':zeroPoint.y+y*distanceY-distanceY}
+    moveTo = {'x':zeroPoint.x+k*distanceX, 'y':zeroPoint.y+y*distanceY}
     hero.moveXY(moveTo.x, moveTo.y)
-    
+hero.moveXY(50, 80)
+
