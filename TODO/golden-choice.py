@@ -17,15 +17,25 @@ def makeGoldMap(coins):
         col = int((coin.pos.x - zeroPoint.x) / distanceX)
         template[row][col] = coin.value
     return template
-def getMax():
-    pass
-# Подготовьте карту золота. Она выглядит так:
-# [[1, 0, 9, 0, 4],
-#  [0, 1, 0, 9, 0],
-#  [8, 0, 2, 0, 9]]
-# Найдите ваш путь.
+
+def getAllRotes(y, x):
+    if y>9:
+        return [9, 9]
+    else:
+        tempLeft = getAllRotes(y +1, x - 1)
+        tempRight = getAllRotes(y + 1, x + 1)
+
 goldMap = makeGoldMap(hero.findItems())
-k = 9
+for k in range(1, 19, 2):
+    allRoutes = getAllRotes()
+
+
+
+
+
+
+
+
 for y in range(0, 10):
     getMax()
     if goldMap[y][k-1]>goldMap[y][k+1]:#left
