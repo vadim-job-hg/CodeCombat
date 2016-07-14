@@ -38,6 +38,8 @@ Here I need to return the route with summ also, but i will newer do that, beacus
 '''
 ###############################################
 kstart = []
+kmax = []
+summMax = 0
 for kstart[0] in range(0, 19, 2): #sorry for that
     for kstart[1] in range(1, 19, 2):#i am really sorry
         if Math.abs(kstart[0] - kstart[1]) == 1:
@@ -57,5 +59,11 @@ for kstart[0] in range(0, 19, 2): #sorry for that
                                                                 if Math.abs(kstart[7] - kstart[8]) == 1:
                                                                     for kstart[9] in range(1, 19, 2):#nex time i will use recursion
                                                                         if Math.abs(kstart[8] - kstart[9]) == 1:
+                                                                            tempSumm = 0
                                                                             for y in range(0, 9):
-                                                                                pass
+                                                                                tempSumm = tempSumm +  goldMap[y][kstart[y]]
+                                                                            if tempSumm>summMax:
+                                                                                summMax = tempSumm
+                                                                                kmax = kstart
+
+
