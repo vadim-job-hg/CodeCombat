@@ -1,69 +1,52 @@
 #https://codecombat.com/play/level/golden-choice
+# You must collect the required amount of gold.
+# The gate keeper will tell you how much you need.
+# Always move in the direction of the exit.
+# For each row you can take only one coin.
+# Choose only one from the nearest coins in the next row.
 
-################################################
-'''
-I Tried to finish this level  using recursion, but level to slow, when i Use it.
+# Distance between rows and coins.
+distanceX = 4
+distanceY = 6
+zeroPoint = {"x": 14, "y": 14}
+lines = 10
 
-So I will finish level with most stupid way.
+# Prepare the gold map.
+goldMap = [[0 for j in range(2 * lines - 1)] for i in range(lines)]
+for coin in hero.findItems():
+    row = int((coin.pos.y - zeroPoint.y) / distanceY)
+    col = int((coin.pos.x - zeroPoint.x) / distanceX)
+    goldMap[row][col] = coin.value
 
-This is the example of recursion function(unfinished)
+# Find your path.
+map = reversed(goldMap)
+rows = len(map)
+cols = len(map[0])
 
-def CikleInCicle(y, k, summ):
-    if y<9:
-        summ = summ + goldMap[y][k]
-        if k>0:
-            summ1 = CikleInCicle(y+1, k - 1, summ)
+for r in range(1, rows):
+    map[r - 1] += [0]
+    for c in range(cols):
+        if map[r][c] == 0:
+            continue
+        # map[r][c] += max(map[r-1][c-1], map[r-1][c+1])
+
+        if c == 0:
+            map[r][c] += map[r - 1][c + 1]
+        elif c == cols - 1:
+            map[r][c] += map[r - 1][c - 1]
         else:
-            summ1 = 0
-        if k<18:
-            summ2 = CikleInCicle(y+1, k+1, summ)
-        else:
-            summ2 = 0
-        #hero.say(y+'(y)'+k+'(k)'+summ1 +'x' +summ2)
-        if summ1>summ2:
-            return summ1 + summ
-        else:
-            return summ2 + summ
+            map[r][c] += max(map[r - 1][c - 1], map[r - 1][c + 1])
+
+map = reversed(map)
+
+for r in range(rows):
+    if r == 0:
+        c = map[r].index(max(map[r]))
+        hero.moveXY(c * distanceX + 14, 7)
     else:
-        #hero.say('top:' + goldMap[y][k])
-        return goldMap[y][k]
-goldMap = makeGoldMap(hero.findItems())
-for kstart in range(0, 19, 2):
-    summ = CikleInCicle(0, kstart, 0)
-    #hero.say(kstart +'x' +summ)
-
-Here I need to return the route with summ also, but i will newer do that, beacuse of message:
-
-"Code never finished. It's either really slow or has an infinite loop."
-'''
-###############################################
-kstart = []
-kmax = []
-summMax = 0
-for kstart[0] in range(0, 19, 2): #sorry for that
-    for kstart[1] in range(1, 19, 2):#i am really sorry
-        if Math.abs(kstart[0] - kstart[1]) == 1:
-            for kstart[2] in range(0, 19, 2):#but i want to pass this level
-                if Math.abs(kstart[1] - kstart[2]) == 1:
-                    for kstart[3] in range(1, 19, 2):#the best code to slow
-                        if Math.abs(kstart[2] - kstart[3]) == 1:
-                            for kstart[4] in range(0, 19, 2):#i never do this again
-                                if Math.abs(kstart[3] - kstart[4]) == 1:
-                                    for kstart[5] in range(1, 19, 2):#thats such a shame
-                                        if Math.abs(kstart[4] - kstart[5]) == 1:
-                                            for kstart[6] in range(0, 19, 2):#i was drunk when i tipe it
-                                                if Math.abs(kstart[5] - kstart[6]) == 1:
-                                                    for kstart[7] in range(1, 19, 2):#realy realy
-                                                        if Math.abs(kstart[6] - kstart[7]) == 1:
-                                                            for kstart[8] in range(0, 19, 2):#I swear!
-                                                                if Math.abs(kstart[7] - kstart[8]) == 1:
-                                                                    for kstart[9] in range(1, 19, 2):#nex time i will use recursion
-                                                                        if Math.abs(kstart[8] - kstart[9]) == 1:
-                                                                            tempSumm = 0
-                                                                            for y in range(0, 9):
-                                                                                tempSumm = tempSumm +  goldMap[y][kstart[y]]
-                                                                            if tempSumm>summMax:
-                                                                                summMax = tempSumm
-                                                                                kmax = kstart
-
-
+        if map[r][c + 1] > map[r][c - 1]:
+            c += 1
+        else:
+            c -= 1
+            #    hero.say("Next: " + str(c * distanceX + 14) + ", " + str(r * distanceY + 14))
+    hero.moveXY(c * distanceX + 14, r * distanceY + 14)
