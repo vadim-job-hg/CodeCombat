@@ -19,4 +19,9 @@ We can use our own session to see and pass the subscriber level if we type
 inprogress
 
 #### Secret2: How to see decisions of other players
+
+You can see the leaderboard if you already pass the level, and watch how other players pass it. But what if you don't? You want to pass level, but don't know how. 
+ 
+You can find out session of this level, if you send level code on one link. 
+
 #### Secret3: Best Knight Tactic
