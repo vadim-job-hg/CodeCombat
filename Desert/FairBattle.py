@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/fair-battle
+# http://codecombat.com/play/level/fair-battle
 # Today is the day for a fair battle!
 # Wait until the total health of your soldiers is greater than ogre's.
 # Don't attack while your soldiers don't have the advantage.
@@ -11,12 +11,13 @@ def Calc(friends, enemies):
         frh = frh + friend.health
     for enemy in enemies:
         enh = enh + enemy.health
-    return frh>enh
+    return frh > enh
+
+
 while True:
     friends = hero.findFriends()
     enemies = hero.findEnemies()
     # Calculate and compare the total health of your soldiers and the ogres.
     if Calc(friends, enemies):
         self.say("Attack")
-    # Say "Attack" when you are ready.
-
+        # Say "Attack" when you are ready.

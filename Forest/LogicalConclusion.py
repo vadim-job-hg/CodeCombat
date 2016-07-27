@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/logical-conclusion
+# http://codecombat.com/play/level/logical-conclusion
 # Move to Eszter and get three secret values from her.
 hero.moveXY(24, 16)
 secretA = hero.findNearestFriend().getSecretA()

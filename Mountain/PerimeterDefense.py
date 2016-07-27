@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/perimeter-defense
+# https://codecombat.com/play/level/perimeter-defense
 # We need to build guard towers around the village.
 # Each peasant can build one tower.
 # Show them the place to build.

@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/cubic-minefield
+# http://codecombat.com/play/level/cubic-minefield
 # Walk through the minefield
 # To find the path use a cubic equation
 # You can find coefficients for the equation on the tower
@@ -11,6 +11,7 @@ def mult(number, times):
         times -= 1
     return total
 
+
 # This function returns the number to the exponent power.
 def power(number, exponent):
     total = 1
@@ -19,6 +20,7 @@ def power(number, exponent):
         total = number * total
         exponent = exponent - 1
     return total
+
 
 # Don't change the follow code
 tower = self.findFriends()[0]

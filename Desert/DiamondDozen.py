@@ -1,6 +1,6 @@
-#http://codecombat.com/play/level/diamond-dozen
+# http://codecombat.com/play/level/diamond-dozen
 
-#ADVICE - use fast sword
+# ADVICE - use fast sword
 
 
 # Claim the coins while defeating the marauding ogres.
@@ -19,6 +19,7 @@ def findMostHealth(enemies):
         enemyIndex += 1
     return target
 
+
 # Make a function named findOptimalCoin which returns the coin with the best value.
 # Coins rapidly appear and disappear, so pick the best coin.
 # Optimize your path by going for the coin with the largest value over distance.
@@ -26,10 +27,11 @@ def findOptimalCoin(coins):
     optimal = -1000
     thione = None
     for coin in coins:
-        if coin.value/self.distanceTo(coin)>optimal:
-            optimal = coin.value/self.distanceTo(coin)
+        if coin.value / self.distanceTo(coin) > optimal:
+            optimal = coin.value / self.distanceTo(coin)
             thione = coin
     return thione
+
 
 while True:
     enemies = hero.findEnemies()
@@ -40,10 +42,9 @@ while True:
     else:
         coins = hero.findItems()
         coin = None
-        coin = findOptimalCoin(coins) # ∆ Uncomment this once you've written the function.
+        coin = findOptimalCoin(coins)  # ∆ Uncomment this once you've written the function.
         if coin:
-            if hero.isReady('jump'): #jump if you hero to slow
-                hero.jumpTo(coin)# also your hero can be too fast and grub too much coins
-            else:# use week but fast sword. Use best boots with jumps or ring of speed, but not both of them
+            if hero.isReady('jump'):  # jump if you hero to slow
+                hero.jumpTo(coin)  # also your hero can be too fast and grub too much coins
+            else:  # use week but fast sword. Use best boots with jumps or ring of speed, but not both of them
                 hero.moveXY(coin.pos.x, coin.pos.y)
-

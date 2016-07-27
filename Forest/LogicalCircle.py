@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/logical-circle
+# http://codecombat.com/play/level/logical-circle
 # Move to the wizard and get their secret values.
 hero.moveXY(20, 24)
 secretA = hero.findNearestFriend().getSecretA()

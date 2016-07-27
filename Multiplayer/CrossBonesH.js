@@ -9,41 +9,41 @@
 // Watch for flags that may appear signaling certain events.
 var go = false;
 var attacked = false;
-while(true) {
+while (true) {
     var green = this.findFlag('green');
     var black = this.findFlag('black');
     var enemy = this.findNearestEnemy();
-    if(black)
+    if (black)
         attacked = true;
-    if(green){
+    if (green) {
         this.pickUpFlag(green);
     }
-    if(this.now()>75)
-     go=true;
-    if(((go)&& this.gold >= 20)|| this.gold >= 90 || attacked) {
+    if (this.now() > 75)
+        go = true;
+    if (((go) && this.gold >= 20) || this.gold >= 90 || attacked) {
         attacked = false;
-        while(this.gold >= 20){
+        while (this.gold >= 20) {
             this.moveXY(58, 20);
             this.moveXY(58, 16);
         }
-        if(green)
+        if (green)
             this.pickUpFlag(green);
-       if(go)
+        if (go)
             this.moveXY(43, 37);
 
-    } else if(go){
-        if(enemy && enemy.team=='ogres'){
-            if(this.isReady('power-up')){
+    } else if (go) {
+        if (enemy && enemy.team == 'ogres') {
+            if (this.isReady('power-up')) {
                 this.powerUp();
                 this.attack(enemy);
             } else
                 this.attack(enemy);
         } else {
-             this.moveXY(88, 74);
-        }        
+            this.moveXY(88, 74);
+        }
     } else {
         var item = this.findNearestItem();
-        if(item && item.type != "potion") {
+        if (item && item.type != "potion") {
             this.moveXY(item.pos.x, item.pos.y);
         }
     }

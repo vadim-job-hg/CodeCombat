@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/mad-maxer-strikes-back
+# http://codecombat.com/play/level/mad-maxer-strikes-back
 # Здесь самые мелкие огры представляют наибольшую опасность!
 # Сначала атакуй огров с наименьшим здоровьем.
 while True:
@@ -8,8 +8,8 @@ while True:
     enemies = self.findEnemies()
 
     # Просмотрите всех врагов.
-    while enemyIndex<len(enemies):
-        if(enemies[enemyIndex].health<leastHealth):
+    while enemyIndex < len(enemies):
+        if (enemies[enemyIndex].health < leastHealth):
             leastHealth = enemies[enemyIndex].health
             weakest = enemies[enemyIndex]
         enemyIndex = enemyIndex + 1
@@ -21,4 +21,3 @@ while True:
         # Атакуйте слабейшего огра.
         self.attack(weakest)
         pass
-

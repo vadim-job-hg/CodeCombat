@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/range-finder
+# http://codecombat.com/play/level/range-finder
 enemy1 = "Gort"
 enemy2 = "Smasher"
 enemy3 = "Charles"
@@ -13,4 +13,3 @@ self.say(distance2)
 # Дайте команду стрелять, указав расстояние.
 distance4 = self.distanceTo(enemy4)
 self.say(distance4)
-

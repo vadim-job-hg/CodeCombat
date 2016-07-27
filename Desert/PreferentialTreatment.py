@@ -1,17 +1,17 @@
-#http://codecombat.com/play/level/preferential-treatment?course=56462f935afde0c6fd30fc8c&course-instance=56fc25d7263b0220002aff0e
+# http://codecombat.com/play/level/preferential-treatment?course=56462f935afde0c6fd30fc8c&course-instance=56fc25d7263b0220002aff0e
 # Сначала цикл для всех врагов
 
 enemies = self.findEnemies()
 enemyIndex = 0
 # ...но атаковать только врагов с типом 'thrower'
-while enemyIndex<len(enemies):
+while enemyIndex < len(enemies):
     if enemies[enemyIndex].type == 'thrower':
         self.attack(enemies[enemyIndex])
     enemyIndex = enemyIndex + 1
 # Теперь снова цикл для всех врагов
 enemies = self.findEnemies()
 enemyIndex = 0
-while enemyIndex<len(enemies):
+while enemyIndex < len(enemies):
     if enemies[enemyIndex]:
         self.attack(enemies[enemyIndex])
     enemyIndex = enemyIndex + 1

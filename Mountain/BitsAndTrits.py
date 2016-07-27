@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/bits-and-trits
+# http://codecombat.com/play/level/bits-and-trits
 # Incoming Ogre Brawlers!
 # Make use of a commandeered Robot Walker to dispatch these foul enemies.
 # The Robot Walker requires commands in the form of a string:
@@ -19,10 +19,11 @@ def toTernary(number):
     # Finally, we want to return our constructed string.
     return string
 
+
 def toBinary(number):
     string = ""
     # Go through the steps again:
-        # Get the remainder, decrement the number, append the string.
+    # Get the remainder, decrement the number, append the string.
     # Remeber that binary is another way of saying '2'!
     while number != 0:
         # We grab the remainder of our number.
@@ -34,6 +35,7 @@ def toBinary(number):
     # Finally, we want to return our constructed string.
     return string
 
+
 while True:
     enemies = hero.findEnemies()
     dangerous = findMostDangerous(enemies)
@@ -41,6 +43,7 @@ while True:
         # The way the robot takes commands is in the form of:
         # ternary(enemyHealth) + " " + binary(enemyType)
         hero.say(toTernary(dangerous.health) + " " + toBinary(dangerous.type))
+
 
 # In this level the Ogre Brawlers are more powerful if they have more health.
 def findMostDangerous(enemies):

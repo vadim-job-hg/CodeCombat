@@ -1,5 +1,5 @@
 # Код в этом цикле будет повторять всегда.
-#http://codecombat.com/play/level/loop-da-loop
+# http://codecombat.com/play/level/loop-da-loop
 while True:
     # Двигаться вправо
     self.moveRight()

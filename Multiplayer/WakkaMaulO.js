@@ -50,6 +50,6 @@ this.say("scout");
 this.say("scout");
 this.say("scout");
 enemy = this.findNearestEnemy();
-while(enemy && enemy.health>0){
+while (enemy && enemy.health > 0) {
     this.attack(enemy);
 }

@@ -1,9 +1,8 @@
-#http://codecombat.com/play/level/haunted-kithmaze
+# http://codecombat.com/play/level/haunted-kithmaze
 # Циклы гораздо удобнее для повторяющихся участков кода.
 
-loop:
-    # Добавь сюда команду для её постоянного повторения.
-    self.moveRight()
-    self.moveRight()
-    self.moveUp()
-    self.moveUp()
+loop:  # Добавь сюда команду для её постоянного повторения.
+self.moveRight()
+self.moveRight()
+self.moveUp()
+self.moveUp()

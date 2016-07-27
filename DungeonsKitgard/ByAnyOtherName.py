@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/by-any-other-name
+# http://codecombat.com/play/level/by-any-other-name
 # Change the name of variable "enemy1" to "chunky".
 chunky = hero.findNearestEnemy()
 hero.attack(chunky)
@@ -13,4 +13,3 @@ hero.attack(monkey)
 hero.moveUp()
 hero.moveRight()
 hero.moveRight()
-

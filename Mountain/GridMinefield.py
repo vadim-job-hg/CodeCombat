@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/grid-minefield
+# https://codecombat.com/play/level/grid-minefield
 # The ogre formation is marching at the village.
 # We have 90 seconds to build a minefield.
 # We'll use their strict formation against them.
@@ -19,5 +19,5 @@ for x in range(12, 12 + 8 * 6, 8):
 # Just move at the nearest mine when it's the time.
 while True:
     enemy = hero.findNearest(hero.findEnemies())
-    if enemy and hero.distanceTo(enemy)<=20:
+    if enemy and hero.distanceTo(enemy) <= 20:
         hero.moveXY(x, y)

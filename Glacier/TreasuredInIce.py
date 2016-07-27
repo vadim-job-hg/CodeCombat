@@ -1,5 +1,5 @@
-#I stole this
-#https://codecombat.com/play/level/treasured-in-ice
+# I stole this
+# https://codecombat.com/play/level/treasured-in-ice
 # Find the treasure inside the maze.
 # When you get the treasure, move to the exit.
 # The exit is marked by the red cross. The level ends when you step on the mark.

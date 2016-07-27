@@ -1,10 +1,10 @@
 loop:
-    enemy = self.findNearestEnemy()
-    if enemy:
-       distance = self.distanceTo(enemy)
-       if distance and distance<5:
-            self.attack(enemy)
-        else:
-            self.shield()
+enemy = self.findNearestEnemy()
+if enemy:
+    distance = self.distanceTo(enemy)
+    if distance and distance < 5:
+        self.attack(enemy)
     else:
-        self.moveXY(40, 34)
+        self.shield()
+else:
+    self.moveXY(40, 34)

@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/burls-beets-booleans
+# http://codecombat.com/play/level/burls-beets-booleans
 # Булев тип принимает значения True или False
 # Символ == означает "это равно тому?"
 # Так, строка "А == B" задает вопрос "A равняется B?"

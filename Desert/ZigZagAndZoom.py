@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/zig-zag-and-zoom
+# http://codecombat.com/play/level/zig-zag-and-zoom
 # Escape from Death Valley!
 # The archers firing at you are not your allies! Dodge the arrows!
 # Move by with a zigzag pattern using real modulo functions.
@@ -9,12 +9,14 @@ def mod15(n):
         n -= 15
     return n
 
+
 # This function should return a value from 0 to 9:
 def mod9(n):
     # Use a while loop to modify the parameter before returning
     while n >= 9:
         n -= 9
     return n
+
 
 # Don't change the following code:
 while True:
@@ -28,4 +30,3 @@ while True:
         y = 34
         x = 71
     self.moveXY(x, y)
-

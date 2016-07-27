@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/brawlwood?team=ogres
+# http://codecombat.com/play/level/brawlwood?team=ogres
 # This is the code for your base. Decide which unit to build each frame.
 # Units you build will go into the self.built array.
 # If you don't have enough gold, self.build() won't build anything.
@@ -13,5 +13,5 @@ if self.built.length % 10 == 9:
 elif self.built.length % 5 == 4:
     type = 'thrower'
 
-#self.say('Unit #' + self.built.length + ' will be a ' + type)
+# self.say('Unit #' + self.built.length + ' will be a ' + type)
 self.build(type)

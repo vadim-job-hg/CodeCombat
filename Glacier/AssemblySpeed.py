@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/assembly-speed
+# http://codecombat.com/play/level/assembly-speed
 # Say the correct speed to insert our spybot into the line of robots.
 # We must find the exact speed in robot motor revolutions per month.
 # We've found the part of the robot code that controls the speed,

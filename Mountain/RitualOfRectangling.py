@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/ritual-of-rectangling
+# http://codecombat.com/play/level/ritual-of-rectangling
 # <%= we_need_summon %>
 # <%= paladin_rect %>
 # <%= rect_certain %>
@@ -11,18 +11,17 @@ def almostEqual(valueA, valueB):
     # <%= remove_it %>
     return valueA < valueB * 1.03 and valueA > valueB * 0.97
 
+
 # <%= rect_perimeter_func %>
 def perimeter(side1, side2):
     return (side1 + side2) * 2
     # <%= perimeter_explain %>
 
 
-
 # <%= area_perimeter_func %>
 def area(side1, side2):
     return side1 * side2
     # <%= area_explain %>
-
 
 
 # <%= etalon_values %>

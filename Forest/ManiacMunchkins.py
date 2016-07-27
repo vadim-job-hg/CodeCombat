@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/maniac-munchkins
+# https://codecombat.com/play/level/maniac-munchkins
 # Another chest in the field for the hero to break open!
 # Attack the chest to break it open.
 # Some munchkins won't stand idly by while you attack it!
@@ -19,4 +19,3 @@ while True:
         # Otherwise, try to break open the chest:
         hero.attack('Chest')
         pass
-

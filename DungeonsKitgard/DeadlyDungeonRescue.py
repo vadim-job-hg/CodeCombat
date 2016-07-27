@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/deadly-dungeon-rescue
+# http://codecombat.com/play/level/deadly-dungeon-rescue
 # Сбегите из подземелья после спасения измученного крестьянина.
 # Вы можете спрятаться за горгульями.
 # Убийство охранников может привести к нежелательным последствиям.
@@ -33,16 +33,16 @@ self.moveDown(4)
 self.moveUp(4)
 self.moveDown(7)
 self.moveLeft(3)
-#self.moveRight(4)
-#self.moveLeft(2)
+# self.moveRight(4)
+# self.moveLeft(2)
 self.moveUp(9)
 self.moveRight(6)
 self.moveDown(2)
 self.attack('Exit Door')
 self.attack('Exit Door')
 self.moveRight(7)
-#self.moveDown(4)
-#self.attack('Torture Room Door')
-#self.attack('Torture Room Door')
-#self.moveLeft(2)
-#self.moveRight(2)
+# self.moveDown(4)
+# self.attack('Torture Room Door')
+# self.attack('Torture Room Door')
+# self.moveLeft(2)
+# self.moveRight(2)

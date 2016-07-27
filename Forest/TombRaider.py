@@ -7,11 +7,11 @@
 def checkToDefend(target):
     # Check if the target exists
     if target:
-    # If so, attack the target
+        # If so, attack the target
         hero.attack(target)
     # Use an else to do something if there is no target
     else:
-    # Otherwise attack the "Door"
+        # Otherwise attack the "Door"
         hero.attack("Door")
     pass
 

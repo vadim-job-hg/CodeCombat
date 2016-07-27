@@ -1,2 +1,1 @@
-#http://codecombat.com/play/level/course-winding-trail
-
+# http://codecombat.com/play/level/course-winding-trail

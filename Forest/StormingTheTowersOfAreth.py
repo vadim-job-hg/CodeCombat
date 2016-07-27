@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/storming-the-towers-of-areth
+# http://codecombat.com/play/level/storming-the-towers-of-areth
 # The ogres are holed up in their camp
 # Break through their defenses with a calculated strike!
 

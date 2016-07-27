@@ -4,20 +4,22 @@ def pickUpNearestCoin():
     if nearestCoin:
         self.move(nearestCoin.pos)
 
+
 def attack(target):
     if target:
-        if(self.isReady("jump") and self.distanceTo>10):
+        if (self.isReady("jump") and self.distanceTo > 10):
             self.jumpTo(enemy.pos)
-        elif(self.isReady("bash")):
+        elif (self.isReady("bash")):
             self.bash(enemy)
-        elif(self.isReady("power-up")):
+        elif (self.isReady("power-up")):
             self.powerUp()
             self.attack(enemy)
-        elif(self.isReady("cleave")):
+        elif (self.isReady("cleave")):
             self.cleave(enemy)
         else:
             self.attack(enemy)
-            
+
+
 def summonSoldier():
     # Заполни код здесь, что призвать солдата, если у тебя достаточно золота.
     if self.gold > self.costOf("soldier"):
@@ -27,20 +29,21 @@ def summonSoldier():
 # commands attack
 def commandSoldiers():
     for soldier in self.findByType("soldier"):
-        self.command(soldier, "move", {'x':50, 'y':41})
-            
+        self.command(soldier, "move", {'x': 50, 'y': 41})
+
+
 loop:
-    enemies = self.findEnemies()
-    index = 0
-    distanse = 99999
-    enemy = None
-    while index<len(enemies):
-        if enemies[index].type != "sand-yak" and distanse>self.distanceTo(enemies[index]):
-            distanse = self.distanceTo(enemies[index])
-            enemy = enemies[index]
-        index +=1
-    items  = self.findItems()
-    if len(items)>0:
-        pickUpNearestCoin()
-    summonSoldier()
-    commandSoldiers()
+enemies = self.findEnemies()
+index = 0
+distanse = 99999
+enemy = None
+while index < len(enemies):
+    if enemies[index].type != "sand-yak" and distanse > self.distanceTo(enemies[index]):
+        distanse = self.distanceTo(enemies[index])
+        enemy = enemies[index]
+    index += 1
+items = self.findItems()
+if len(items) > 0:
+    pickUpNearestCoin()
+summonSoldier()
+commandSoldiers()

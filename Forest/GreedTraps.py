@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/greed-traps
+# https://codecombat.com/play/level/greed-traps
 # We'll use gold coins to lure ogres.
 # Patrol around the clearing and place traps ONLY if you see a coin.
 # Move from one mark to another by clockwise and don't touch coins.
@@ -8,8 +8,9 @@ def maybeBuildTrap(x, y):
     # Write this function.
     hero.moveXY(x, y)
     item = hero.findNearest(hero.findItems())
-    if item and hero.distanceTo(item)<30:
-        hero.buildXY('fire-trap',x, y)
+    if item and hero.distanceTo(item) < 30:
+        hero.buildXY('fire-trap', x, y)
+
 
 while True:
     # Call 'maybeBuildTrap' function for the top left passage.

@@ -1,4 +1,4 @@
-#http://codecombat.com/play/ladder/sky-span
+# http://codecombat.com/play/ladder/sky-span
 # Tharin is a melee fighter with shield, warcry, and terrify skills.
 # self.shield() lets him take one-third damage while defending.
 # self.warcry() gives allies within 15m 40% haste for 5s, every 10s.
@@ -13,11 +13,11 @@ enemy = self.getNearest(enemies)
 friend = self.getNearest(friends)
 
 # Which one do you do at any given time? Only the last called action happens.
-#if not self.getCooldown("warcry"): self.warcry()
-#if not self.getCooldown("terrify"): self.terrify()
-#if not self.getCooldown("power-up") and not self.hasEffect('power-up'): self.powerUp()
-#self.shield()
-#self.attack(enemy)
+# if not self.getCooldown("warcry"): self.warcry()
+# if not self.getCooldown("terrify"): self.terrify()
+# if not self.getCooldown("power-up") and not self.hasEffect('power-up'): self.powerUp()
+# self.shield()
+# self.attack(enemy)
 
 # You can store state on self across frames:
-#self.lastHealth = self.health
+# self.lastHealth = self.health

@@ -1,11 +1,12 @@
-#http://codecombat.com/play/level/brewball?session=56c5ebfded946a44004fb659&observing=true
-#todo:
+# http://codecombat.com/play/level/brewball?session=56c5ebfded946a44004fb659&observing=true
+# todo:
 # Скажи кое-что в расстоянии 10м от Омарна чтобы он кинул зелье.
 # Поймай зелье стоя рядом с ним прежде чем он упадет.
 # НЕ ДАЙ ЗЕЛЬЮ УПАСТЬ НА ЗЕМЛЮ!
 def mineGo(trap, go):
-
     pass
+
+
 while True:
     potion = hero.findFriendlyMissiles()[0]
     firetraps = hero.findHazards()
@@ -20,7 +21,7 @@ while True:
         add = Vector.multiply(add, 1)
         go = Vector.add(add, go)
         trap = self.findNearest(firetraps)
-        if trap and self.distanceTo(trap)<6:
+        if trap and self.distanceTo(trap) < 6:
             go = mineGo(trap, go)
         self.move(go)
     else:
@@ -33,7 +34,7 @@ while True:
             add = Vector.multiply(add, 1)
             go = Vector.add(add, go)
             trap = self.findNearest(firetraps)
-            if trap and self.distanceTo(trap)<4:
+            if trap and self.distanceTo(trap) < 4:
                 vector = Vector.subtract(self.pos, trap.pos)
                 vector = Vector.normalize(vector)
                 vector = Vector.multiply(vector, 5)

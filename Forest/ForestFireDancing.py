@@ -1,7 +1,7 @@
-#http://codecombat.com/play/level/forest-fire-dancing
-#In this level the evilstone is bad! Avoid them walking the other direction.
+# http://codecombat.com/play/level/forest-fire-dancing
+# In this level the evilstone is bad! Avoid them walking the other direction.
 while True:
-    #evilstone = self.findNearestItem()
+    # evilstone = self.findNearestItem()
     evilstone = self.findNearest(self.findItems())
     if evilstone:
         pos = evilstone.pos

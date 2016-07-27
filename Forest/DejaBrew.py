@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/deja-brew
+# http://codecombat.com/play/level/deja-brew
 # You can add strings together, and add numbers into strings.
 # Sing along, using string concatenation:
 # X potions of health on the wall!

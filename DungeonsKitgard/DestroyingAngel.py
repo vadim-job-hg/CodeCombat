@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/destroying-angel
+# http://codecombat.com/play/level/destroying-angel
 hero.moveDown()
 hero.moveRight()
 hero.moveDown()
@@ -21,4 +21,3 @@ while True:
     enemy = hero.findNearestEnemy()
     if enemy:
         hero.attack(enemy)
-

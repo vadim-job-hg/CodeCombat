@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/lost-viking
+# http://codecombat.com/play/level/lost-viking
 # Вам НЕОБХОДИМО нажать на кнопку ПОМОЩЬ чтобы увидеть детальное описание уровня!
 
 # Ворон подскажет вам какие параметры лабиринта вам нажны!
@@ -14,7 +14,7 @@ X_PACE_LENGTH = 4
 
 # Перемножьте это с количеством шагов к северу(sideSteps), чтобы определить свою Y координату. НЕ ИЗМЕНЯЙТЕ ЭТО!
 Y_PACE_LENGTH = 6
-SWITCH =6
+SWITCH = 6
 SLIDE = 8
 SKIP = 11
 sidemove = 1
@@ -22,15 +22,14 @@ sidemove = 1
 while steps <= 35:
     # Сделайте следующий шаг:
     self.moveXY(steps * X_PACE_LENGTH, sideSteps * Y_PACE_LENGTH)
-    if(steps % SWITCH == 0):
+    if (steps % SWITCH == 0):
         sidemove *= -1
     sideSteps += sidemove
-    if(steps % SKIP== 0):
+    if (steps % SKIP == 0):
         sideSteps += sidemove
-    if(sideSteps>SLIDE):
+    if (sideSteps > SLIDE):
         sideSteps -= SLIDE;;
-    if(sideSteps<1):        
-        sideSteps += SLIDE;       
-    # Увеличивайте steps(шаги) и sideSteps(шаги в сторону) по необходимости, принимая во внимание специальные правила.
-    steps += 1 
-    
+        if (sideSteps < 1):
+            sideSteps += SLIDE;
+            # Увеличивайте steps(шаги) и sideSteps(шаги в сторону) по необходимости, принимая во внимание специальные правила.
+        steps += 1

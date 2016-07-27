@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/fire-dancing
+# http://codecombat.com/play/level/fire-dancing
 loop:
-    self.moveRight()
-    self.moveLeft()
+self.moveRight()
+self.moveLeft()

@@ -24,20 +24,19 @@ for (var peasantIndex = 0; peasantIndex < peasants.length; peasantIndex++) {
 // Peasants can gather gold; other units auto-attack the enemy base.
 // You can only build one unit per frame, if you have enough gold.
 var type;
-if (base.built.length === 0){
+if (base.built.length === 0) {
     type = 'peasant';
     if (base.gold >= base.buildables[type].goldCost)
         base.build(type);
 }
-else{
-    type = ['peasant', 'knight','griffin-rider','griffin-rider', 'knight','knight','soldier', 'librarian', 'griffin-rider', 'captain'];
+else {
+    type = ['peasant', 'knight', 'griffin-rider', 'griffin-rider', 'knight', 'knight', 'soldier', 'librarian', 'griffin-rider', 'captain'];
     /*if(typeof(index) != 'numeric')
-        index =0;
-    else index++;*/
+     index =0;
+     else index++;*/
     if (base.gold >= base.buildables[type[base.built.length % type.length]].goldCost)
         base.build(type[base.built.length % type.length]);
 }
-
 
 
 // 'peasant': Peasants gather gold and do not fight.

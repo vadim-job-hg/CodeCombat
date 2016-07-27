@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/square-shield
+# http://codecombat.com/play/level/square-shield
 # Incoming yeti attack!
 # Use your paladins to form a square!
 # Command Illumina and Vaelia to move to the corners of the square.
@@ -9,6 +9,7 @@ def findByName(name, thangs):
         if thang.id == name:
             return thang
     return None
+
 
 friends = hero.findFriends()
 celadia = findByName("Celadia", friends)
@@ -21,5 +22,5 @@ illumina = findByName("Illumina", friends)
 vaelia = findByName("Vaelia", friends)
 # Command both to move to the corners of the square.
 # Remember squares have equal-length sides!
-self.command(illumina, 'move',{'x':celadia.pos.x,'y':celadia.pos.y-sideLength})
-self.command(vaelia, 'move',{'x':dedalia.pos.x,'y':dedalia.pos.y-sideLength})
+self.command(illumina, 'move', {'x': celadia.pos.x, 'y': celadia.pos.y - sideLength})
+self.command(vaelia, 'move', {'x': dedalia.pos.x, 'y': dedalia.pos.y - sideLength})

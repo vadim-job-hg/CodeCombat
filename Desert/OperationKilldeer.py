@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/operation-killdeer
+# http://codecombat.com/play/level/operation-killdeer
 # Lure the ogres into a trap.
 # But, they are careful.
 # These ogres will only follow the hero if the hero is injured.
@@ -10,9 +10,9 @@ def shouldRun():
     else:
         return False
 
+
 while True:
     # Run to the X only if the hero shouldRun().
-    if(shouldRun()):
+    if (shouldRun()):
         self.moveXY(75, 37)
-    # Otherwise, fight!
-
+        # Otherwise, fight!

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/enemy-mine
+# https://codecombat.com/play/level/enemy-mine
 # Используйте параметры вместе с оператором движения, чтобы пройти дальше.
 self.moveRight(3)
 self.moveUp(1)

@@ -1,9 +1,9 @@
-#http://codecombat.com/play/level/reindeer-spotter
+# http://codecombat.com/play/level/reindeer-spotter
 # This array contains the positions of the pens that we want to put the reindeer in.
-penPositions = [ {'x':20,'y':24}, {'x':28,'y':24}, {'x':36,'y':24}, {'x':44,'y':24}, {'x':52,'y':24} ]
+penPositions = [{'x': 20, 'y': 24}, {'x': 28, 'y': 24}, {'x': 36, 'y': 24}, {'x': 44, 'y': 24}, {'x': 52, 'y': 24}]
 
 # This array is used to track which reindeer (if any) is in each pen.
-penOccupants = [ 'empty', 'empty', 'empty', 'empty', 'empty' ]
+penOccupants = ['empty', 'empty', 'empty', 'empty', 'empty']
 
 # And this array contains our reindeer.
 friends = hero.findFriends()
@@ -27,5 +27,5 @@ for deerIndex in range(len(friends)):
 for occIndex in range(len(penOccupants)):
     # Tell Merek the pen index and the occupant.
     # Say something like "Pen 2 is empty" or "Pen 3 is Dasher"
-    self.say("Pen "+occIndex+" is " + penOccupants[occIndex])
+    self.say("Pen " + occIndex + " is " + penOccupants[occIndex])
     pass

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/cannon-landing-force
+# https://codecombat.com/play/level/cannon-landing-force
 # We should send some soldiers to defend the mountain village.
 # Also we need clear out old fire traps.
 # For both of those goals we'll use the artillery!

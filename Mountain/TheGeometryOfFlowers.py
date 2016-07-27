@@ -15,6 +15,7 @@ def drawCircle(x, y, size):
         self.toggleFlowers(True)
         angle += 0.2
 
+
 def drawSquare(x, y, size):
     self.toggleFlowers(False)
     cornerOffset = size / 2
@@ -30,16 +31,16 @@ redX = {"x": 28, "y": 36}
 whiteX = {"x": 44, "y": 36}
 
 # Выбери цвет.
-self.setFlowerColor("red") 
+self.setFlowerColor("red")
 # Нарисуй круг размером 10 на красной метке.
 drawCircle(redX.x, redX.y, 10)
 # Измени цвет!
-self.setFlowerColor("white") 
+self.setFlowerColor("white")
 # Нарисуй квадрат размером 10 на белой метке.
 drawSquare(whiteX.x, whiteX.y, 10)
 # Теперь экспериментируй, рисуя все что угодно!
 size = 10
-self.setFlowerColor("random") 
+self.setFlowerColor("random")
 self.toggleFlowers(False)
 cornerOffset = size / 2
 self.moveXY(59, 37)

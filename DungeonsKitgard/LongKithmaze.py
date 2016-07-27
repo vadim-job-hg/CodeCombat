@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/long-kithmaze
+# http://codecombat.com/play/level/long-kithmaze
 # Это длинный лабиринт...
 self.moveRight()
 self.moveRight()

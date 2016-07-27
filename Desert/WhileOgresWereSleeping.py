@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/while-ogres-were-sleeping
+# http://codecombat.com/play/level/while-ogres-were-sleeping
 # Enemies are sleeping. It's the perfect time for sabotage!
 # Be careful and stay on the route.
 # Kill the weak ogres with a deadly strike!

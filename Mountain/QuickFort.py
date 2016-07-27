@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/quick-fort
+# https://codecombat.com/play/level/quick-fort
 # We should quickly build a fort!
 # Each peasant has one speciality and can build only one type of constructions.
 # Carpenter - fences; Mason - towers; builder - tents.
@@ -9,7 +9,6 @@
 # The foreman stored the list of workers' names as a property.
 foreman = hero.findNearest(hero.findFriends())
 workerNameList = foreman.workerList
-
 
 # Use loops with steps to choose each third element.
 # First, you need assign workers for the towers.

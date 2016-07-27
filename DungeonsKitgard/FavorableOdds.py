@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/favorable-odds
+# http://codecombat.com/play/level/favorable-odds
 # Атакуй обоих огров и хватай самоцветы.
 hero.moveRight()
 hero.attack('Krug')

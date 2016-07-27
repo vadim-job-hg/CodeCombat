@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/criss-cross?team=humans
+# http://codecombat.com/play/level/criss-cross?team=humans
 # SUMMARY
 #   * Your goal is to 'buy' a path of tiles from left to right.
 #   * One group of tiles is available for bidding each turn.
@@ -15,14 +15,14 @@ coordinatesToBuy = [[0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3]]
 tiles = self.tileGroups[tileGroupLetter]  # tiles available this turn
 tileIWant = None
 for tile in tiles:
-  if tile.owner: continue  # can't buy a tile that's been bought
-  for coordinates in coordinatesToBuy:
-    if coordinates[0] is not tile.x: continue
-    if coordinates[1] is not tile.y: continue
-    # We have a match!
-    tileIWant = tile
-    break
-  if tileIWant: break
+    if tile.owner: continue  # can't buy a tile that's been bought
+    for coordinates in coordinatesToBuy:
+        if coordinates[0] is not tile.x: continue
+        if coordinates[1] is not tile.y: continue
+        # We have a match!
+        tileIWant = tile
+        break
+    if tileIWant: break
 
 # If none of the tiles you want are available, skip this round
 if not tileIWant: return None

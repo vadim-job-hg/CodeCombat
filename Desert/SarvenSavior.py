@@ -16,7 +16,7 @@ while friendIndex < len(friendNames):
     self.say(friendName + ', go home!')
 
     # Увеличивай индекс, чтобы получить следующее имя из массива.
-    friendIndex +=1
+    friendIndex += 1
 self.moveXY(25, 30)
 self.buildXY('fence', 29, 30)
 # Вернись и построй частокол, чтобы защититься от огров.

@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/grid-search
+# http://codecombat.com/play/level/grid-search
 # The treasure somewhere between trees.
 # The coordinates are 'x: ?0, y: ?0'. 
 # Move at all potential points and show to peasants where to dig.

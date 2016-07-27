@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/resource-valleys
+# http://codecombat.com/play/level/resource-valleys
 # Collect all the coins!
 # The peasants are unable to get the coins from other areas
 # However, each area only spawns a certain value of coin!
@@ -9,6 +9,7 @@ def commandPeasant(peasant, coins):
     item = peasant.findNearest(coins)
     if item:
         self.command(peasant, "move", item.pos)
+
 
 friends = hero.findFriends()
 peasants = {

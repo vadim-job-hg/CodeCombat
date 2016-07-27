@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/the-hunt-begins
+# http://codecombat.com/play/level/the-hunt-begins
 # Senick is trying to find the elusive Burleous Majoris!
 # But he doesn't know how big a Burleous Majoris would be...
 # Find the average size of this burl population to use as a baseline!
@@ -8,6 +8,7 @@ def averageSize(burls):
     sum = sumSize(burls)
     # Remember the average is the sum of the parts divided by the amount!
     return sum / burls.length
+
 
 # This function should return the sum of all the burls sizes.
 def sumSize(burls):
@@ -20,8 +21,6 @@ def sumSize(burls):
 
 while True:
     # Find the average size of the burls by calling the 'averageSize' function.
-    enemies =hero.findEnemies()
+    enemies = hero.findEnemies()
     # Say the average size of the seen burls!
     hero.say(averageSize(enemies))
-
-

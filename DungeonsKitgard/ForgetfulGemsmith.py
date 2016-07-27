@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/forgetful-gemsmith
+# http://codecombat.com/play/level/forgetful-gemsmith
 self.moveRight()
 self.moveUp()
 self.moveRight()

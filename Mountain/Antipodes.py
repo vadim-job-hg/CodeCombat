@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/antipodes
+# https://codecombat.com/play/level/antipodes
 # The warlock used the "clone" spell and created evil antipodes of our archers.
 # But even that evil spell has weakness.
 # If your archer touches his antipode, then it will disappear.
@@ -11,6 +11,7 @@ def areAntipodes(unit1, unit2):
     for i in range(len(unit1.id) - 1, -1, -1):
         reversed1 += unit1.id[i]
     return reversed1 == unit2.id
+
 
 friends = hero.findFriends()
 enemies = hero.findEnemies()
@@ -28,5 +29,5 @@ for friend in friends:
 # When all clones disappears, attack the warlock.
 hero.wait(20)
 enemies = hero.findEnemies()
-while len(enemies)==1:
+while len(enemies) == 1:
     hero.attack(hero.findNearest(hero.findEnemies()))

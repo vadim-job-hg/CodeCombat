@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/leave-it-to-cleaver
+# http://codecombat.com/play/level/leave-it-to-cleaver
 # This shows how to define a function called cleaveWhenClose
 # The function accepts defines a parameter called target
 def cleaveWhenClose(target):
@@ -6,11 +6,12 @@ def cleaveWhenClose(target):
         pass
         # Put your attack code here
         # If cleave is ready, then cleave target
-        if(self.isReady('cleave')):
+        if (self.isReady('cleave')):
             self.cleave(target);
         # else, just attack target!
         else:
             self.attack(target)
+
 
 # This code is not part of the function.
 while True:
@@ -18,5 +19,3 @@ while True:
     if enemy:
         # Note that inside cleaveWhenClose, we refer to the enemy as target.
         cleaveWhenClose(enemy)
-
-

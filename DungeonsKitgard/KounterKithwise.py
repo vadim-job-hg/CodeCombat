@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/kounter-kithwise
+# http://codecombat.com/play/level/kounter-kithwise
 # Атакуй обоих огров и хватай самоцветы.
 hero.moveDown()
 hero.moveDown()

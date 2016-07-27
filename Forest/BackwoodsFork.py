@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/backwoods-fork
+# https://codecombat.com/play/level/backwoods-fork
 # Incoming ogres!
 # Use the checkAndAttack function to make your code easy to read.
 
@@ -24,4 +24,3 @@ while True:
     # Create a variable named bottomEnemy and find the nearest enemy.
 
     # Use the checkAndAttack function, and include the bottomEnemy variable.
-

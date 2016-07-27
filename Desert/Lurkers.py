@@ -5,10 +5,10 @@ enemies = self.findEnemies()
 enemyIndex = 0
 
 # Заключите весь код в цикл 'While', чтобы код учитывал весь список врагов.
-while enemyIndex<len(enemies):    
+while enemyIndex < len(enemies):
     enemy = enemies[enemyIndex]
     if enemy.type == 'shaman':
         while enemy.health > 0:
             self.attack(enemy)
-    enemyIndex +=1
+    enemyIndex += 1
     self.say(enemy.type)

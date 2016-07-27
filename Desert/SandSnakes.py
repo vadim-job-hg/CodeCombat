@@ -4,21 +4,21 @@
 # You'll need to find the nearest coins on your own.
 
 loop:
-    coins = self.findItems()
-    coinIndex = 0
-    nearest = None
-    nearestDistance = 9999
-    
-    # Loop through all the coins to find the nearest one.
-    while coinIndex < len(coins):
-        coin = coins[coinIndex]
-        coinIndex += 1
-        distance = self.distanceTo(coin)
-        if(distance<nearestDistance):
-            nearest = coin
-            nearestDistance = distance
+coins = self.findItems()
+coinIndex = 0
+nearest = None
+nearestDistance = 9999
+
+# Loop through all the coins to find the nearest one.
+while coinIndex < len(coins):
+    coin = coins[coinIndex]
+    coinIndex += 1
+    distance = self.distanceTo(coin)
+    if (distance < nearestDistance):
+        nearest = coin
+        nearestDistance = distance
         # If this coin's distance is less than the nearestDistance
-            # Set nearest to coin
-            # Set nearestDistance to distance
-    self.moveXY(nearest.pos.x, nearest.pos.y)
-    # If there's a nearest coin, move to its position. You'll need moveXY so you don't cut corners and hit a trap.
+        # Set nearest to coin
+        # Set nearestDistance to distance
+self.moveXY(nearest.pos.x, nearest.pos.y)
+# If there's a nearest coin, move to its position. You'll need moveXY so you don't cut corners and hit a trap.

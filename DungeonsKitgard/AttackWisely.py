@@ -1,9 +1,9 @@
-#http://codecombat.com/play/level/attack-wisely
+# http://codecombat.com/play/level/attack-wisely
 # Избегите всех огненных ловушек
 # Если вы ступите на огненную ловушку, то Вы будете взорваны
 hero.moveUp();
 hero.moveRight();
-#hero.moveUp(); # Удалите эту линию
+# hero.moveUp(); # Удалите эту линию
 hero.moveRight();
 hero.moveUp();
 hero.moveRight(5);

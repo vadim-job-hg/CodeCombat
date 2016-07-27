@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/brittle-morale
+# http://codecombat.com/play/level/brittle-morale
 # Ogres are strong, but cowardly.
 # Find and kill leader and they will retreat.
 # You have only have one shot, but a deadly shot it will be.
@@ -11,10 +11,11 @@ def findStrongestEnemy(enemies):
     # Iterate over all the ogres to find the one with the most health.
     enemies = hero.findEnemies()
     for enemy in enemies:
-        if enemy.health>strongestHealth:
+        if enemy.health > strongestHealth:
             strongestHealth = enemy.health
             strongest = enemy
     return strongest
+
 
 enemies = self.findEnemies()
 if enemies:

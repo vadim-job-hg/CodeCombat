@@ -11,12 +11,11 @@ center = Vector(40, 34)
 # Положение персонажа на самом деле - вектор!
 partner = self.findByType("peasant")[0]
 
-loop:
-    # Во-первых, тебе нужно найти вектор (расстояние и направление) позиции партнера относительно красной метки.
-    vector = Vector.subtract(partner.pos, center)     
-    # Во-вторых, находить положение своего героя нужно начиная от центра, и следовать вектору.
-    moveToPos = Vector.subtract(center, vector)
+loop:  # Во-первых, тебе нужно найти вектор (расстояние и направление) позиции партнера относительно красной метки.
+vector = Vector.subtract(partner.pos, center)
+# Во-вторых, находить положение своего героя нужно начиная от центра, и следовать вектору.
+moveToPos = Vector.subtract(center, vector)
 
-    # В-третьих, двигайся к moveToPos.
-    self.move(moveToPos)
-    pass
+# В-третьих, двигайся к moveToPos.
+self.move(moveToPos)
+pass

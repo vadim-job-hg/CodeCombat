@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/desert-combat
+# http://codecombat.com/play/level/desert-combat
 ordersGiven = 0
 while ordersGiven < 5:
     x = self.pos.x
@@ -6,13 +6,10 @@ while ordersGiven < 5:
     self.moveXY(x, y)
     # Перемещайся и отдавай приказы каждому из союзников. (Они тебя слышат только если ты стоишь напротив них.)
     self.say("Attack!")
-    ordersGiven +=1;
-    if(ordersGiven>=5):
+    ordersGiven += 1;
+    if (ordersGiven >= 5):
         break;
 self.moveXY(48, 31)
 while True:
     enemy = self.findNearestEnemy()
     self.attack(enemy)
-
-
-

@@ -1,6 +1,6 @@
-#http://codecombat.com/play/level/the-skeleton
+# http://codecombat.com/play/level/the-skeleton
 # Используйте loop для атаки скелета
 # Тупой меч наносит мало урона, но далеко отбрасывает.
 loop:
-    enemy = hero.findNearestEnemy()
-    hero.attack(enemy)
+enemy = hero.findNearestEnemy()
+hero.attack(enemy)

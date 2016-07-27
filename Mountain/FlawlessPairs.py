@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/flawless-pairs
+# https://codecombat.com/play/level/flawless-pairs
 # Collect 4 pairs of gems.
 # Each pair must contain equal valued gems.
 # Return to the start point to get hasted.
@@ -16,6 +16,7 @@ def findValuePair(items):
     # Return an empty array if no pair exists.
     return None
 
+
 while True:
     gems = hero.findItems()
     gemPair = findValuePair(gems)
@@ -29,4 +30,3 @@ while True:
         hero.moveXY(gemPair[1].pos.x, gemPair[1].pos.y)
         # Return to get the haste from the wizard.
         hero.moveXY(40, 44)
-

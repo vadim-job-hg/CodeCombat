@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/the-prisoner
+# http://codecombat.com/play/level/the-prisoner
 # Освободите Патрика из-за "Weak Door".
 self.moveRight()
 self.attack('Weak Door')

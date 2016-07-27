@@ -1,6 +1,6 @@
-#http://codecombat.com/play/level/reindeer-wakeup
+# http://codecombat.com/play/level/reindeer-wakeup
 # This array contains the 'asleep' or 'awake' status for each reindeer.
-deerStatus = [ 'asleep', 'asleep', 'asleep', 'asleep', 'asleep' ]
+deerStatus = ['asleep', 'asleep', 'asleep', 'asleep', 'asleep']
 
 # And this array contains our reindeer.
 friends = hero.findFriends()
@@ -11,7 +11,7 @@ for deerIndex in range(len(friends)):
 
     # If the reindeer's Y position is greater than 30, it's out of its pen.
     # If this is the case, set the reindeer's entry in the deerStatus array to 'awake'.
-    if reindeer.pos.y>30:
+    if reindeer.pos.y > 30:
         deerStatus[deerIndex] = 'awake'
     pass
 

@@ -1,5 +1,5 @@
-#http://codecombat.com/play/level/gridmancer-eppstein-polygon
-#!/usr/bin/env python
+# http://codecombat.com/play/level/gridmancer-eppstein-polygon
+# !/usr/bin/env python
 #
 # Copyright 2014 Arn-O. See the LICENSE file at the top-level directory of this
 # distribution and at
@@ -16,113 +16,115 @@ import argparse
 # grid[i][j] ... i = height, j = length
 
 GRID_SIMPLE = [
-        [-1, -1,  0, -1],
-        [0,  -1, -1, -1],
-        [0,  -1, -1,  0],
-        [-1, -1,  0,  0]
-            ]
+    [-1, -1, 0, -1],
+    [0, -1, -1, -1],
+    [0, -1, -1, 0],
+    [-1, -1, 0, 0]
+]
 
 GRID_SIMPLE2 = [
-        [-1, -1, -1, -1, -1, -1, -1],
-        [ 0,  0,  0, -1,  0, -1,  0],
-        [ 0,  0,  0,  0,  0,  0,  0]
-            ]
+    [-1, -1, -1, -1, -1, -1, -1],
+    [0, 0, 0, -1, 0, -1, 0],
+    [0, 0, 0, 0, 0, 0, 0]
+]
 
 GRID_SIMPLE3 = [
-        [-1, -1, -1, -1],
-        [-1, -1, -1,  0],
-        [-1, -1, -1, -1],
-        [-1, -1,  0, -1]
-            ]
+    [-1, -1, -1, -1],
+    [-1, -1, -1, 0],
+    [-1, -1, -1, -1],
+    [-1, -1, 0, -1]
+]
 
 GRID_4T1 = [
-        [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0, -1, -1, -1,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],
-        [0, -1,  0,  0,  0,  0,  0,  0,  0, -1,  0],
-        [0, -1, -1, -1, -1,  0, -1, -1, -1, -1,  0],
-        [0, -1,  0,  0,  0,  0,  0,  0,  0, -1,  0],
-        [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0, -1, -1, -1,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0]
-            ]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, -1, -1, -1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+    [0, -1, -1, -1, -1, 0, -1, -1, -1, -1, 0],
+    [0, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, -1, -1, -1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+]
 
 GRID_4T2 = [
-        [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0, -1, -1, -1,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],
-        [0, -1,  0,  0,  0,  0,  0,  0,  0, -1,  0],
-        [0, -1, -1, -1, -1,  0, -1, -1, -1, -1,  0],
-        [0, -1,  0,  0,  0,  0,  0,  0,  0, -1,  0],
-        [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0],
-        [0,  0,  0,  0, -1, -1, -1,  0,  0,  0,  0],
-        [0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0]
-            ]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, -1, -1, -1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+    [0, -1, -1, -1, -1, 0, -1, -1, -1, -1, 0],
+    [0, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, -1, -1, -1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+]
 GRID_CODECOMBAT = [
     [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
-    [-1, -1, -1, -1,  0,  0,  0,  0,  0, -1,  0,  0,  0, -1,  0,  0, -1, -1, -1,  0],
-    [ 0,  0,  0,  0,  0,  0,  0,  0,  0, -1,  0,  0,  0, -1,  0,  0,  0, -1, -1,  0],
-    [ 0,  0,  0,  0,  0,  0,  0,  0,  0, -1,  0,  0,  0, -1,  0,  0,  0, -1, -1,  0],
-    [ 0,  0,  0,  0,  0,  0, -1, -1, -1, -1, -1, -1, -1, -1,  0,  0,  0, -1, -1,  0],
-    [ 0,  0, -1,  0,  0,  0,  0, -1, -1, -1,  0,  0, -1, -1, -1,  0,  0, -1, -1,  0],
-    [ 0,  0, -1,  0,  0,  0,  0, -1, -1, -1,  0,  0, -1, -1, -1,  0,  0, -1, -1,  0],
-    [ 0, -1, -1,  0,  0,  0,  0, -1, -1, -1,  0,  0, -1, -1, -1,  0,  0, -1, -1,  0],
-    [ 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,  0],
-    [-1, -1,  0,  0,  0,  0,  0, -1, -1,  0,  0,  0,  0,  0,  0, -1, -1, -1, -1,  0],
-    [-1, -1,  0,  0,  0,  0,  0, -1,  0,  0,  0,  0,  0,  0,  0, -1, -1, -1, -1,  0],
-    [-1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -1, -1, -1, -1,  0],
-    [ 0,  0,  0,  0, -1,  0,  0,  0,  0,  0,  0, -1, -1,  0,  0, -1, -1, -1, -1,  0],
-    [ 0,  0,  0,  0, -1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -1, -1, -1, -1,  0],
-    [ 0,  0,  0, -1, -1, -1, -1, -1,  0,  0,  0,  0,  0,  0,  0, -1, -1, -1, -1,  0],
-    [ 0,  0,  0, -1,  0,  0,  0, -1,  0,  0,  0,  0,  0,  0,  0, -1, -1, -1,  0,  0],
-    [ 0,  0,  0, -1,  0,  0,  0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,  0,  0],
-    [-1, -1, -1, -1,  0,  0,  0, -1, -1, -1, -1,  0,  0, -1, -1, -1, -1,  0,  0,  0],
-    [-1, -1, -1, -1,  0,  0, -1, -1, -1,  0,  0,  0,  0,  0,  0,  0, -1,  0,  0,  0],
-    [-1, -1, -1, -1,  0,  0,  0, -1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0]
-        ]
+    [-1, -1, -1, -1, 0, 0, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, -1, -1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, 0, -1, -1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, 0, -1, -1, 0],
+    [0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, 0, 0, 0, -1, -1, 0],
+    [0, 0, -1, 0, 0, 0, 0, -1, -1, -1, 0, 0, -1, -1, -1, 0, 0, -1, -1, 0],
+    [0, 0, -1, 0, 0, 0, 0, -1, -1, -1, 0, 0, -1, -1, -1, 0, 0, -1, -1, 0],
+    [0, -1, -1, 0, 0, 0, 0, -1, -1, -1, 0, 0, -1, -1, -1, 0, 0, -1, -1, 0],
+    [0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0],
+    [-1, -1, 0, 0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 0],
+    [-1, -1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 0],
+    [-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 0],
+    [0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1, 0, 0, -1, -1, -1, -1, 0],
+    [0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 0],
+    [0, 0, 0, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1, 0],
+    [0, 0, 0, -1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, 0, 0],
+    [0, 0, 0, -1, 0, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 0],
+    [-1, -1, -1, -1, 0, 0, 0, -1, -1, -1, -1, 0, 0, -1, -1, -1, -1, 0, 0, 0],
+    [-1, -1, -1, -1, 0, 0, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0],
+    [-1, -1, -1, -1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+]
 
 interactif = False
+
 
 def get_args():
     '''Hangle program parameters'''
     grids = {
-            's1': GRID_SIMPLE,
-            's2': GRID_SIMPLE2,
-            's3': GRID_SIMPLE3,
-            '4t1': GRID_4T1,
-            '4t2': GRID_4T2,
-            'cc': GRID_CODECOMBAT
-        }
+        's1': GRID_SIMPLE,
+        's2': GRID_SIMPLE2,
+        's3': GRID_SIMPLE3,
+        '4t1': GRID_4T1,
+        '4t2': GRID_4T2,
+        'cc': GRID_CODECOMBAT
+    }
     parser = argparse.ArgumentParser()
     parser.add_argument(
-            "-g",
-            "--grid",
-            default='s1',
-            choices=grids.keys(),
-            help='test grid name'
-        )
+        "-g",
+        "--grid",
+        default='s1',
+        choices=grids.keys(),
+        help='test grid name'
+    )
     parser.add_argument(
-            "-i",
-            "--interactif",
-            action="store_true",
-            help='trigger interactive mode'
-        )
+        "-i",
+        "--interactif",
+        action="store_true",
+        help='trigger interactive mode'
+    )
     args = parser.parse_args()
     global interactif
     interactif = args.interactif
     return grids[args.grid]
+
 
 def pretty_print(grid, pos):
     '''Nice display of a grid'''
@@ -140,9 +142,11 @@ def pretty_print(grid, pos):
         print
     print
 
+
 def copy_grid(grid):
     '''Copy a grid to a new grid (for code readability)'''
-    return  [list(row) for row in grid]
+    return [list(row) for row in grid]
+
 
 def is_grid_full(grid):
     '''Check if the free space is a rectangle'''
@@ -151,11 +155,13 @@ def is_grid_full(grid):
             return False
     return True
 
+
 def get_start_pos(grid):
     '''Find the upper free cell'''
     for i, row in enumerate(grid):
         if -1 in row:
             return i, row.index(-1)
+
 
 def get_free_right(grid, pos):
     '''Return the number of free cells on the right'''
@@ -168,6 +174,7 @@ def get_free_right(grid, pos):
             break
     return ret
 
+
 def get_free_bellow(grid, pos):
     '''Return the number of free cells bellow'''
     (i, j) = pos
@@ -178,6 +185,7 @@ def get_free_bellow(grid, pos):
         else:
             break
     return ret
+
 
 def add_rec(grid, pos, rec, number_tag):
     '''Add a new rectangle on the grid and return a new one'''
@@ -192,6 +200,7 @@ def add_rec(grid, pos, rec, number_tag):
                 row[pos] = number_tag
     return grid_ret
 
+
 def get_all_recs(grid, pos):
     '''Return all possible rectangle for a given position'''
     cell_free_bellow = get_free_bellow(grid, pos)
@@ -199,11 +208,12 @@ def get_all_recs(grid, pos):
     recs = []
     for i in reversed(range(cell_free_right + 1)):
         for j in reversed(range(cell_free_bellow + 1)):
-            rec = (i+1 , j+1)
+            rec = (i + 1, j + 1)
             grid_next = add_rec(grid, pos, rec, 99)
             if grid_next:
                 recs.append(rec)
     return recs
+
 
 def sieve_recs(recs):
     '''Remove suboptimal rectangles'''
@@ -220,11 +230,13 @@ def sieve_recs(recs):
         recs_ret.append(rec)
     return recs_ret
 
+
 def get_rectangles(grid, pos):
     '''Return only relevant rectangles for a give position'''
     all_recs = get_all_recs(grid, pos)
     recs = sieve_recs(all_recs)
     return recs
+
 
 def rec_gridmancer(grid, rec_nb, rec_nb_min):
     '''New recursive tree explorer'''
@@ -246,11 +258,13 @@ def rec_gridmancer(grid, rec_nb, rec_nb_min):
         rec_nb_min = rec_gridmancer(grid_next, rec_nb, rec_nb_min)
     return rec_nb_min
 
+
 def main():
     '''Where everything starts'''
     grid_start = get_args()
     big_max = len(grid_start) * len(grid_start[0])
     rec_gridmancer(grid_start, 0, big_max)
+
 
 if __name__ == '__main__':
     main()

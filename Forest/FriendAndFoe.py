@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/friend-and-foe
+# http://codecombat.com/play/level/friend-and-foe
 # Peasants and peons are gathering in the forest.
 # Command the peasants to battle and the peons to go away!
 

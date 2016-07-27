@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/closed-crossroad
+# https://codecombat.com/play/level/closed-crossroad
 # That crossroad is busy and we should protect it.
 # Use fire traps for the top and the bottom passages.
 # Use fences for the left and the right passages.
@@ -24,4 +24,3 @@ while True:
     maybeBuildSomething("fire-trap", 40, 50)
     # Now use maybeBuildSomething with "fence" at the right entry!
     maybeBuildSomething("fence", 54, 34)
-

@@ -16,7 +16,7 @@ this.attacksomeone = function (e, type) {
 };
 var nows = this.now();
 var enemies = this.getEnemies();
-if(enemies[1]){
+if (enemies[1]) {
     this.attacksomeone(enemies[0], ['terrify', 'warcry']);
 }
 

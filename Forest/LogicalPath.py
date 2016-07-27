@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/logical-path
+# http://codecombat.com/play/level/logical-path
 # Get two secret true/false values from the wizard.
 hero.moveXY(14, 24)
 secretA = hero.findNearestFriend().getSecretA()

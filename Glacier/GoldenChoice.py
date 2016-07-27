@@ -1,5 +1,5 @@
-#I stole this!!!!!!!!!!
-#https://codecombat.com/play/level/golden-choice
+# I stole this!!!!!!!!!!
+# https://codecombat.com/play/level/golden-choice
 # You must collect the required amount of gold.
 # The gate keeper will tell you how much you need.
 # Always move in the direction of the exit.

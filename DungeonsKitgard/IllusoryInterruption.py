@@ -1,4 +1,4 @@
-#http://codecombat.com/play/level/illusory-interruption
+# http://codecombat.com/play/level/illusory-interruption
 # Используй приманку чтобы отвлечь стражу наступая на Х.
 hero.moveRight()
 hero.moveDown(2)

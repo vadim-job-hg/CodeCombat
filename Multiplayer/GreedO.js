@@ -23,16 +23,16 @@ for (var peonIndex = 0; peonIndex < peons.length; peonIndex++) {
 // Peons can gather gold; other units auto-attack the enemy base.
 // You can only build one unit per frame, if you have enough gold.
 var type;
-if (base.built.length === 0){
+if (base.built.length === 0) {
     type = 'peon';
     if (base.gold >= base.buildables[type].goldCost)
         base.build(type);
 }
-else{
-    type = ['peon', 'ogre','munchkin','brawler','ogre','ogre','fangrider','fangrider', 'brawler','shaman','munchkin', 'munchkin', 'munchkin', 'munchkin'];
+else {
+    type = ['peon', 'ogre', 'munchkin', 'brawler', 'ogre', 'ogre', 'fangrider', 'fangrider', 'brawler', 'shaman', 'munchkin', 'munchkin', 'munchkin', 'munchkin'];
     /*if(typeof(index) != 'numeric')
-        index =0;
-    else index++;*/
+     index =0;
+     else index++;*/
     if (base.gold >= base.buildables[type[base.built.length % type.length]].goldCost)
         base.build(type[base.built.length % type.length]);
 }

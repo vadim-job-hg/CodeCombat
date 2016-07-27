@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/forest-evasion
+# https://codecombat.com/play/level/forest-evasion
 # Охотник за головами поблизости
 # Перемещайтесь по лесу, чтобы не попасть в его поле зрения.
 
@@ -10,4 +10,3 @@ while True:
     hero.moveXY(40, 12)
     hero.moveXY(56, 24)
     # Продолжайте использовать 'moveXY', чтобы перемещаться по лесу и выжить.
-
