@@ -1,3 +1,5 @@
+#todo: also stole
+
 #http://codecombat.com/play/level/match-cord
 
 fieldMap = self.findFriends()[0].getMap()
