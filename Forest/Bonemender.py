@@ -12,8 +12,9 @@ while True:
             hero.cast("regen", "Chandra")
             # Используйте "if" и "distanceTo" для регенерации "Chandra"
             # Если она ближе 10 метров.
-
-
     else:
+        enemy = hero.findNearest(hero.findEnemies())
+        if(enemy and hero.distanceTo(enemy)<20):
+            hero.attack(enemy)
 # Если вы не колдуете "regen", используйте "if" и "distanceTo"
 # чтобы атаковать врагов, которые ближе, чем hero.attackRange.

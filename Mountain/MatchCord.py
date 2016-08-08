@@ -1,4 +1,3 @@
-#todo:
 # http://codecombat.com/play/level/match-cord
 
 '''
