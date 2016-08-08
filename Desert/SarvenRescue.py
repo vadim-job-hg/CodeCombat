@@ -8,7 +8,7 @@ arrayIndex = 0;
 while arrayIndex < len(array):
     enemy = self.findNearest(self.findEnemies())
     item = self.findNearest(self.findItems())
-    if (enemy and self.distanceTo(enemy) < 50 and enemy.type!='sand-yak'):
+    if (enemy and self.distanceTo(enemy) < 50):
         if (self.isReady('jump') and self.distanceTo(enemy) > 10):
             self.jumpTo(enemy.pos)
         elif (self.isReady("cleave")):
