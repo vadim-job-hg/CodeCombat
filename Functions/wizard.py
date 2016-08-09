@@ -92,16 +92,14 @@ def attack():
             hero.cast('summon-undead')
         elif (self.canCast('invisibility', self)):
             self.cast('invisibility', self)
-        elif (hero.canCast('poison-cloud', target)):
-            hero.cast('poison-cloud', target)
         elif (hero.canCast('raise-dead')):
             hero.cast('raise-dead')
         elif (hero.canCast('drain-life', target)):
             hero.cast('drain-life', target)
+        elif (hero.canCast('poison-cloud', target)):
+            hero.cast('poison-cloud', target)
         elif (hero.canCast('fear', target)):
             hero.cast('fear', target)
-        elif hero.now() - invis < 4:
-            pickUpNearestItem(items)
         else:
             if (self.canCast('earthskin', self)):
                 self.cast('earthskin', self)
