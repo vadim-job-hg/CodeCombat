@@ -13,8 +13,6 @@ enemy_types['skeleton'] = {'danger': 5, 'focus': 22}
 enemy_types['scout'] = {'danger': 4, 'focus': 22}
 enemy_types['thrower'] = {'danger': 3, 'focus': 22}
 enemy_types['munchkin'] = {'danger': 2, 'focus': 15}
-enemy_types['yak'] = {'danger': -1, 'focus': 0}
-enemy_types['ice-yak'] = {'danger': -1, 'focus': 0}
 if self.team == 'humans':
     team = 'humans'
 else:
@@ -56,16 +54,14 @@ def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'paladin':
             CommandPaladin(friend)
-        elif friend.type == 'soldier':
+        elif friend.type == 'soldier' or friend.type == 'archer' or friend.type == 'griffin-rider':
             CommandSoldier(friend)
         elif friend.type == 'peasant':
             CommandPeasant(friend)
 
 
 def CommandSoldier(soldier):
-    target = self.findNearest(self.findEnemies())
-    if target:
-        self.command(soldier, "attack", target)
+    self.command(soldier, "defend", hero)
 
 
 def CommandPeasant(soldier):
@@ -75,10 +71,10 @@ def CommandPeasant(soldier):
 
 
 def CommandPaladin(paladin):
-    if (paladin.canCast("heal")):
+    if (paladin.canCast("heal") and hero.health<hero.maxHealth):
         self.command(paladin, "cast", "heal", self)
     else:
-        self.command(paladin, "shield")
+        self.command(soldier, "defend", hero)
 
 
 def pickUpNearestItem(items):
@@ -94,6 +90,8 @@ def attack():
             hero.cast('summon-burl')
         elif (hero.canCast('summon-undead')):
             hero.cast('summon-undead')
+        elif (self.canCast('invisibility', self)):
+            self.cast('invisibility', self)
         elif (hero.canCast('poison-cloud', target)):
             hero.cast('poison-cloud', target)
         elif (hero.canCast('raise-dead')):
@@ -102,8 +100,6 @@ def attack():
             hero.cast('drain-life', target)
         elif (hero.canCast('fear', target)):
             hero.cast('fear', target)
-        elif (self.canCast('invisibility', self)):
-            self.cast('invisibility', self)
         elif hero.now() - invis < 4:
             pickUpNearestItem(items)
         else:
@@ -120,10 +116,7 @@ def attack():
 invis = -5
 loop:
     commandTroops()
-    if (self.canCast('invisibility', self)):
-        self.cast('invisibility', self)
-        invis = hero.now()
-    elif hero.now() - invis < 4:
+    if hero.now() - invis < 4:
         items = self.findItems()
         pickUpNearestItem(items)
     else:
