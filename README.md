@@ -1,5 +1,3 @@
-todo: добавить всех героев на картинку
-
 # CodeCombat
 Passage levels. Functions . Strategy . Python for the game:
 http://codecombat.com/
