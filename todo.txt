@@ -1,7 +1,7 @@
 https://codecombat.com/play/game-dev-1
 
-https://codecombat.com/play/level/over-the-garden-wall
-https://codecombat.com/play/level/click-gait
+
+
 https://codecombat.com/play/level/heros-journey
 https://codecombat.com/play/level/a-maze-ing
 https://codecombat.com/play/level/gemtacular
