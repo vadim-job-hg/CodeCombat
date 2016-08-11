@@ -11,3 +11,14 @@ https://codecombat.com/play/level/vorpal-mouse
 https://codecombat.com/play/level/crushing-it
 https://codecombat.com/play/level/give-and-take
 https://codecombat.com/play/level/tabula-rasa
+https://codecombat.com/play/level/spring-thunder
+https://codecombat.com/play/level/teleport-lasso
+https://codecombat.com/play/level/brawler-hunt
+https://codecombat.com/play/level/brawler-hunt
+https://codecombat.com/play/level/backwoods-standoff-a
+https://codecombat.com/play/level/backwoods-standoff-b
+https://codecombat.com/play/level/usual-day
+https://codecombat.com/play/level/broken-circles
+https://codecombat.com/play/level/cell-commentary
+CodeCombat\Glacier\BrokenCircles.js
+loop: to while True:
