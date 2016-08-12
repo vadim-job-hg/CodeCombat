@@ -112,7 +112,7 @@ def attack():
 
 
 invis = -5
-loop:
+while True:
     commandTroops()
     if hero.now() - invis < 4:
         items = self.findItems()

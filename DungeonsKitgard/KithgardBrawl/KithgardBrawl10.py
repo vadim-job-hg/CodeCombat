@@ -64,7 +64,7 @@ def summonTroops():
         self.summon(type)
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
@@ -117,15 +117,15 @@ def lowestHealthFriend():
     return lowestFriend
 
 
-loop:
-summonTroops()
-сommandTroops()
-items = self.findItems()
-if (len(items) > 0 and self.health < self.maxHealth * 0.5):
-    pickUpNearestItem(items)
-else:
-    enemyattack = findTarget()
-    if (enemyattack):
-        attack(enemyattack)
+while True:
+    summonTroops()
+    commandTroops()
+    items = self.findItems()
+    if (len(items) > 0 and self.health < self.maxHealth * 0.5):
+        pickUpNearestItem(items)
     else:
-        self.shield()
+        enemyattack = findTarget()
+        if (enemyattack):
+            attack(enemyattack)
+        else:
+            self.shield()

@@ -44,10 +44,10 @@ def buildTroops():
             self.buildXY(type, enemy.pos.x, enemy.pos.y)
 
 
-loop:
-items = self.findItems()
-if len(items) > 0 and self.health < self.maxHealth * 0.4:
-    pickUpNearestItem(items)
-else:
-    attack(self.findNearest(self.findEnemies()))
-buildTroops()
+while True:
+    items = self.findItems()
+    if len(items) > 0 and self.health < self.maxHealth * 0.4:
+        pickUpNearestItem(items)
+    else:
+        attack(self.findNearest(self.findEnemies()))
+    buildTroops()

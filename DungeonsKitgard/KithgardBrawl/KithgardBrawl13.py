@@ -84,7 +84,7 @@ def buildTroops():
         pickUpNearestItem(items)
 
 
-loop:
+while True:
     commandTroops()
     if (self.canCast('invisibility', self)):
         self.cast('invisibility', self)
