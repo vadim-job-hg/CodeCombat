@@ -19,13 +19,13 @@ def attack(target):
         else:
 
 
-loop:
-flag = self.findFlag()
-if flag:
-    self.pickUpFlag(flag)
-else:
-    enemy = self.findNearest(self.findEnemies())
-    if enemy:
-        attack(enemy)
-        # find some enemy to attack
-        # use cleave when ready
+while True:
+    flag = self.findFlag()
+    if flag:
+        self.pickUpFlag(flag)
+    else:
+        enemy = self.findNearest(self.findEnemies())
+        if enemy:
+            attack(enemy)
+            # find some enemy to attack
+            # use cleave when ready
