@@ -1,9 +1,5 @@
-https://codecombat.com/play/level/a-maze-ing
-https://codecombat.com/play/level/gemtacular
-https://codecombat.com/play/level/vorpal-mouse
-https://codecombat.com/play/level/crushing-it
-https://codecombat.com/play/level/give-and-take
-https://codecombat.com/play/level/tabula-rasa
+
+
 https://codecombat.com/play/level/spring-thunder
 https://codecombat.com/play/level/teleport-lasso
 https://codecombat.com/play/level/brawler-hunt
