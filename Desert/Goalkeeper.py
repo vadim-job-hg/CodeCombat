@@ -26,24 +26,24 @@ def findTheY(x1, x2, y1, y2, x):
 
 pos1 = []
 pos2 = []
-loop:
-base = False
-item = self.findNearest(self.findByType('ball'))
-if pos2[1] != item.pos.y or pos2[0] != item.pos.x:
-    pos1[0] = pos2[0]
-    pos1[1] = pos2[1]
-    pos2[0] = item.pos.x
-    pos2[1] = item.pos.y
-if len(pos1) > 0 and len(pos2) > 0:
-    yCatch = findTheY(pos1[0], pos2[0], pos1[1], pos2[1], 18)
-    if yCatch > 50:
-        yCatch = 50 - (yCatch - 50)
-    elif yCatch < 20:
-        yCatch = 20 - (20 - yCatch)
-    if (yCatch > 44 or yCatch < 28):
-        yCatch = 39
-    # self.say(yCatch)
-    if (item and yCatch):
-        if pos2[1] > pos1[1] and yCatch > 5 and yCatch < 20:
-            base = True
-        commandSoldiers(18, yCatch, base)
+while True:
+    base = False
+    item = self.findNearest(self.findByType('ball'))
+    if pos2[1] != item.pos.y or pos2[0] != item.pos.x:
+        pos1[0] = pos2[0]
+        pos1[1] = pos2[1]
+        pos2[0] = item.pos.x
+        pos2[1] = item.pos.y
+    if len(pos1) > 0 and len(pos2) > 0:
+        yCatch = findTheY(pos1[0], pos2[0], pos1[1], pos2[1], 18)
+        if yCatch > 50:
+            yCatch = 50 - (yCatch - 50)
+        elif yCatch < 20:
+            yCatch = 20 - (20 - yCatch)
+        if (yCatch > 44 or yCatch < 28):
+            yCatch = 39
+        # self.say(yCatch)
+        if (item and yCatch):
+            if pos2[1] > pos1[1] and yCatch > 5 and yCatch < 20:
+                base = True
+            commandSoldiers(18, yCatch, base)

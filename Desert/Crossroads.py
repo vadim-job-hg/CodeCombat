@@ -1,7 +1,7 @@
 # http://codecombat.com/play/level/crossroads
 # Use fire-traps to defeat the ogres attacking the trading post.
 
-loop:
+while True:
     enemy = self.findNearestEnemy()
     if enemy:
         if enemy.pos.x < 25:

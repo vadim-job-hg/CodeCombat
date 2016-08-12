@@ -4,20 +4,20 @@
 # Пока у Вашего героя полный уровень здоровья, выкрикивайте оскорбления ограм поменьше, чтобы спровоцировать их.
 # Теперь отступайте на свою базу, чтобы устроить им засаду.
 def pickUpNearestItem():
-    loop:
-    items = self.findItems()
-    if (self.gold < 25):
-        nearestItem = self.findNearest(items)
-        if nearestItem:
-            self.moveXY(nearestItem.pos.x, nearestItem.pos.y)
-    else:
-        break;
+    while True:
+        items = self.findItems()
+        if (self.gold < 25):
+            nearestItem = self.findNearest(items)
+            if nearestItem:
+                self.moveXY(nearestItem.pos.x, nearestItem.pos.y)
+        else:
+            break
 
 
 pickUpNearestItem()
 self.buildXY('decoy', 72, 68)
-loop:
-if (self.health == self.maxHealth):
-    self.say('waka')
-else:
-    self.moveXY(21, 16)
+while True:
+    if (self.health == self.maxHealth):
+        self.say('waka')
+    else:
+        self.moveXY(21, 16)
