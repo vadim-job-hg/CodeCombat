@@ -64,7 +64,7 @@ def summonTroops():
         self.summon(type)
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
@@ -104,14 +104,14 @@ def lowestHealthFriend():
     return lowestFriend
 
 
-loop:
-if (self.canCast('invisibility', self)):
-    self.cast('invisibility', self)
-summonTroops()
-сommandTroops()
-items = self.findItems()
-enimies = self.findEnemies()
-enemy = self.findNearest(enimies)
-enemyattack = findTarget()
-if (len(items) > 0):
-    pickUpNearestItem(items)
+while True:
+    if (self.canCast('invisibility', self)):
+        self.cast('invisibility', self)
+    summonTroops()
+    commandTroops()
+    items = self.findItems()
+    enimies = self.findEnemies()
+    enemy = self.findNearest(enimies)
+    enemyattack = findTarget()
+    if (len(items) > 0):
+        pickUpNearestItem(items)

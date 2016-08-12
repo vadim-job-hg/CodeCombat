@@ -38,11 +38,11 @@ def chooseTarget(friend):
 # Soldiers should attack the witches, archers should attack nearest enemy.
 
 
-loop:
-friends = self.findFriends()
-for friend in friends:
-    # Use your chooseTarget function to decide what to attack.
-    enemy = chooseTarget(friend)
-    if (enemy):
-        self.command(friend, 'attack', enemy)
-attack(self.findNearest(self.findEnemies()))
+while True:
+    friends = self.findFriends()
+    for friend in friends:
+        # Use your chooseTarget function to decide what to attack.
+        enemy = chooseTarget(friend)
+        if (enemy):
+            self.command(friend, 'attack', enemy)
+    attack(self.findNearest(self.findEnemies()))

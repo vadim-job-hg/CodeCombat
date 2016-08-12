@@ -33,7 +33,7 @@ def CommandPaladin(paladin):
         self.command(paladin, "attack", target)
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
@@ -69,8 +69,8 @@ def attack(target):
             self.attack(enemy)
 
 
-loop:
-summonTroops()
-сommandTroops()
-enemy = self.findNearest(self.findEnemies())
-attack(enemy)
+while True:
+    summonTroops()
+    commandTroops()
+    enemy = self.findNearest(self.findEnemies())
+    attack(enemy)

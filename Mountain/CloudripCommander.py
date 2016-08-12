@@ -32,18 +32,18 @@ def commandSoldiers():
         self.command(soldier, "move", {'x': 50, 'y': 41})
 
 
-loop:
-enemies = self.findEnemies()
-index = 0
-distanse = 99999
-enemy = None
-while index < len(enemies):
-    if enemies[index].type != "sand-yak" and distanse > self.distanceTo(enemies[index]):
-        distanse = self.distanceTo(enemies[index])
-        enemy = enemies[index]
-    index += 1
-items = self.findItems()
-if len(items) > 0:
-    pickUpNearestCoin()
-summonSoldier()
-commandSoldiers()
+while True:
+    enemies = self.findEnemies()
+    index = 0
+    distanse = 99999
+    enemy = None
+    while index < len(enemies):
+        if enemies[index].type != "sand-yak" and distanse > self.distanceTo(enemies[index]):
+            distanse = self.distanceTo(enemies[index])
+            enemy = enemies[index]
+        index += 1
+    items = self.findItems()
+    if len(items) > 0:
+        pickUpNearestCoin()
+    summonSoldier()
+    commandSoldiers()

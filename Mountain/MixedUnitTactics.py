@@ -44,11 +44,11 @@ def attack(target):
             self.shield()
 
 
-loop:
-summonTroops()
-commandSoldiers()
-enemy = self.findNearest(self.findEnemies())
-if (enemy and self.distanceTo(enemy) < 10):
-    attack(enemy)
-else:
-    pickUpNearestItem()
+while True:
+    summonTroops()
+    commandSoldiers()
+    enemy = self.findNearest(self.findEnemies())
+    if (enemy and self.distanceTo(enemy) < 10):
+        attack(enemy)
+    else:
+        pickUpNearestItem()

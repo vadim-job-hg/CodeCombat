@@ -8,7 +8,7 @@ def commandSoldier(soldier, index):
         self.command(soldier, "move", {'x': 15, 'y': 30})
 
 
-loop:
-friends = self.findFriends()
-for index, friend in enumerate(friends):
-    commandSoldier(friend, index)
+while True:
+    friends = self.findFriends()
+    for index, friend in enumerate(friends):
+        commandSoldier(friend, index)

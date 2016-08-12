@@ -1,7 +1,7 @@
 # http://codecombat.com/play/level/borrowed-sword
 # На этом уровне ваш герой не должен сражаться.
 # Прикажите вашим лучникам стрелять во врагов с наибольшим уровнем здоровья!
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
@@ -22,5 +22,5 @@ def CommandArcher(soldier):
         self.command(soldier, "attack", target)
 
 
-loop:
-сommandTroops()
+while True:
+    commandTroops()

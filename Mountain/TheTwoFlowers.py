@@ -23,7 +23,7 @@ def pickUpNearestCoin():
 
 peasant = self.findByType("peasant")[0]
 
-loop:
-summonSoldiers()
-commandSoldiers()
-pickUpNearestCoin()
+while True:
+    summonSoldiers()
+    commandSoldiers()
+    pickUpNearestCoin()

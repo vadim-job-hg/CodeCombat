@@ -62,6 +62,6 @@ def commandFriends():
             commandPaladin(friend)
 
 
-loop:
-commandFriends()
-summonTroops()
+while True:
+    commandFriends()
+    summonTroops()
