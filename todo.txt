@@ -3,3 +3,4 @@ http://codecombat.com/play/level/serpent-savings
 CodeCombat\Glacier\BrokenCircles.js
 while True: to while True:
 multiplayer levels
+https://direct.codecombat.com/play/level/power-peak?course=56462f935afde0c6fd30fc8c&codeLanguage=python
