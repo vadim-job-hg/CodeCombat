@@ -6,6 +6,6 @@ hero.moveDown()
 hero.moveUp()
 hero.moveDown()
 hero.moveRight()
-loop:
-hero.moveUp()
-hero.moveDown()
+while True:
+    hero.moveUp()
+    hero.moveDown()
