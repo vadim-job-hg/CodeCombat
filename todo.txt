@@ -1,5 +1,4 @@
-https://codecombat.com/play/level/usual-day
 https://codecombat.com/play/level/broken-circles
-https://codecombat.com/play/level/cell-commentary
+
 CodeCombat\Glacier\BrokenCircles.js
 loop: to while True:
