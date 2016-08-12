@@ -32,16 +32,16 @@ def moveHero():
         return False
 
 
-loop:
-enemies = self.findEnemies()
-enemy = self.findNearest(enemies)
-items = self.findItems()
-item = self.findNearest(items)
-if enemy and self.distanceTo(enemy) > 10 and items and (item.pos.x < 30 or item.pos.x > 60):
-    pickUpNearestItem(items)
-# elif(enemy and self.isReady("bash")):
-#    self.bash(enemy)
-# elif(enemy and self.canCast('chain-lightning', enemy)):
-#    self.cast('chain-lightning', enemy)
-elif (moveHero()):
-    index = index + 1
+while True:
+    enemies = self.findEnemies()
+    enemy = self.findNearest(enemies)
+    items = self.findItems()
+    item = self.findNearest(items)
+    if enemy and self.distanceTo(enemy) > 10 and items and (item.pos.x < 30 or item.pos.x > 60):
+        pickUpNearestItem(items)
+    # elif(enemy and self.isReady("bash")):
+    #    self.bash(enemy)
+    # elif(enemy and self.canCast('chain-lightning', enemy)):
+    #    self.cast('chain-lightning', enemy)
+    elif (moveHero()):
+        index = index + 1
