@@ -43,18 +43,18 @@ def checktrap():
     return False
 
 
-loop:
-checktrap()
-if routeIndex < len(route):
-    if route[routeIndex][2] == 1:
-        self.moveXY(route[routeIndex][0], route[routeIndex][1])
-        SafeWay.push(route[routeIndex])
-        routeIndex = routeIndex + 1
-    else:
-        self.move({'x': route[routeIndex][0], 'y': route[routeIndex][1]})
-        if self.pos.x == route[routeIndex][0] and self.pos.y == route[routeIndex][1]:
+while True:
+    checktrap()
+    if routeIndex < len(route):
+        if route[routeIndex][2] == 1:
+            self.moveXY(route[routeIndex][0], route[routeIndex][1])
             SafeWay.push(route[routeIndex])
             routeIndex = routeIndex + 1
+        else:
+            self.move({'x': route[routeIndex][0], 'y': route[routeIndex][1]})
+            if self.pos.x == route[routeIndex][0] and self.pos.y == route[routeIndex][1]:
+                SafeWay.push(route[routeIndex])
+                routeIndex = routeIndex + 1
 
-if moveTroop():
-    SafeWayIndex = SafeWayIndex + 1
+    if moveTroop():
+        SafeWayIndex = SafeWayIndex + 1

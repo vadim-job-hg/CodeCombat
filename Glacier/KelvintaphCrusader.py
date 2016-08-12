@@ -95,19 +95,19 @@ def attack(target):
             self.attack(target)
 
 
-loop:
-commandTroops()
-brawler = self.findNearest(self.findByType('brawler'))
-catapult = self.findNearest(self.findByType('catapult'))
-if brawler and self.distanceTo(brawler) > 15:
-    moveTo(brawler.pos, False)
-elif brawler:
-    runaway = Vector.subtract(self.pos, brawler.pos)
-    runaway = Vector.normalize(runaway)
-    runaway = Vector.multiply(runaway, 15)
-    direction = Vector.add(runaway, self.pos)
-    moveTo(direction, False)
-elif catapult:
-    attack(catapult)
-else:
-    self.move({'x': 78, 'y': 15})
+while True:
+    commandTroops()
+    brawler = self.findNearest(self.findByType('brawler'))
+    catapult = self.findNearest(self.findByType('catapult'))
+    if brawler and self.distanceTo(brawler) > 15:
+        moveTo(brawler.pos, False)
+    elif brawler:
+        runaway = Vector.subtract(self.pos, brawler.pos)
+        runaway = Vector.normalize(runaway)
+        runaway = Vector.multiply(runaway, 15)
+        direction = Vector.add(runaway, self.pos)
+        moveTo(direction, False)
+    elif catapult:
+        attack(catapult)
+    else:
+        self.move({'x': 78, 'y': 15})

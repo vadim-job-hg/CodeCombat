@@ -49,7 +49,7 @@ def controlHero():
         attack(nearestEnemy)
 
 
-loop:
-buildArmy()
-commandArmy()
-controlHero()
+while True:
+    buildArmy()
+    commandArmy()
+    controlHero()
