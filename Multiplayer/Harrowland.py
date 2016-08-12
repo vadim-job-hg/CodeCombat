@@ -1,16 +1,7 @@
 enemy_types = {}
 # enemy_types['door'] = {'danger':1000, 'focus':200}
-enemy_types['knight'] = {'danger': 100, 'focus': 50}
-enemy_types['ranger'] = {'danger': 100, 'focus': 50}
-enemy_types['trapper'] = {'danger': 100, 'focus': 50}
-enemy_types['samurai'] = {'danger': 100, 'focus': 50}
-enemy_types['sorcerer'] = {'danger': 100, 'focus': 50}
-enemy_types['necromancer'] = {'danger': 100, 'focus': 50}
-enemy_types['captain'] = {'danger': 100, 'focus': 50}
-enemy_types['forest-archer'] = {'danger': 100, 'focus': 50}
-enemy_types['sorcerer'] = {'danger': 100, 'focus': 50}
-enemy_types['archer'] = {'danger': 101, 'focus': 30}
-enemy_types['soldier'] = {'danger': 1001, 'focus': 20}
+enemy_types['hero-placeholder-1'] = {'danger': 99, 'focus': 100}
+enemy_types['hero-placeholder-2'] = {'danger': 99, 'focus': 100}
 if self.team == 'humans':
     team = 'humans'
 else:
@@ -132,8 +123,6 @@ while True:
         pickUpNearestItem(items)
     else:
         enemyattack = findTarget()
-        if not enemyattack:
-            enemyattack = self.findNearest(self.findEnemies())
         if (enemyattack):
             attack(enemyattack)
         else:
