@@ -43,13 +43,13 @@ def commandSoldiers():
 
 list = ['soldier', 'archer']
 indexSoldier = len(list)
-loop:
-if self.now() > 10:
-    summonSoldier(len(list))
-commandSoldiers()
-items = self.findItems()
-if (len(items) > 0):
-    pickUpNearestItem(items)
-else:
-    enemy = self.findNearest(self.findEnemies())
-    attack(enemy)
+while True:
+    if self.now() > 10:
+        summonSoldier(len(list))
+    commandSoldiers()
+    items = self.findItems()
+    if (len(items) > 0):
+        pickUpNearestItem(items)
+    else:
+        enemy = self.findNearest(self.findEnemies())
+        attack(enemy)
