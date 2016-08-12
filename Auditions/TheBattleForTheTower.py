@@ -47,7 +47,7 @@ def attack(target):
             self.attack(target)
         else:
 
-
+            pass
 while True:
     flag = self.findFlag()
     summonTroops()

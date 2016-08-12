@@ -48,7 +48,7 @@ def attack(target):
         elif (self.isReady("attack")):
             self.attack(target)
         else:
-
+            pass
 
 while True:
     flag = self.findFlag()
