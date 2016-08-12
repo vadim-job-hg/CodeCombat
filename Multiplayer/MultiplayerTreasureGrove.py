@@ -26,14 +26,14 @@ def attack(target):
             self.shield()
 
 
-loop:
-items = self.findItems()
-enemyattack = self.findNearest(self.findEnemies())
-if enemyattack and self.distanceTo(enemyattack) < 2:
-    if (enemyattack):
-        attack(enemyattack)
+while True:
+    items = self.findItems()
+    enemyattack = self.findNearest(self.findEnemies())
+    if enemyattack and self.distanceTo(enemyattack) < 2:
+        if (enemyattack):
+            attack(enemyattack)
+        else:
+            self.shield()
     else:
-        self.shield()
-else:
-    if len(items) > 0:
-        pickUpNearestItem(items)
+        if len(items) > 0:
+            pickUpNearestItem(items)
