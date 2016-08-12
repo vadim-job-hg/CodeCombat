@@ -95,7 +95,7 @@ def attack():
 
 
 invis = -5
-loop:
+while True:
     target = findTarget()
     commandTroops()
     if (self.canCast('invisibility', self)):
