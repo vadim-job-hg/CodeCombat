@@ -54,14 +54,14 @@ def summonTroops():
         self.summon(type)
 
 
-loop:
-friends = self.findFriends()
-summonTroops()
-tails = self.findEnemies()
-coins = self.findItems()
-# pickUpNearestItem(coins)
-for friend in friends:
-    if friend.type == 'archer':
-        CommandArcher(friend)
-    elif friend.type == 'peasant':
-        commandPeasant(friend)
+while True:
+    friends = self.findFriends()
+    summonTroops()
+    tails = self.findEnemies()
+    coins = self.findItems()
+    # pickUpNearestItem(coins)
+    for friend in friends:
+        if friend.type == 'archer':
+            CommandArcher(friend)
+        elif friend.type == 'peasant':
+            commandPeasant(friend)

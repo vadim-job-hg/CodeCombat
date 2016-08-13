@@ -7,7 +7,7 @@ def summonTroops():
         self.summon(type)
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)

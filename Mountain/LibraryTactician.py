@@ -45,17 +45,17 @@ def commandArcher(archer):
 
 archerTarget = None
 
-loop:  # Если враг, определенный как archerTarget мертв или не существует, найдите нового.
-if not archerTarget or archerTarget.health <= 0:
-    # Установите целью (или "аргументом") функции archerTarget, значение, возвращенное функцией findStrongestTarget().
-    archerTarget = findStrongestTarget()
+while True:  # Если враг, определенный как archerTarget мертв или не существует, найдите нового.
+    if not archerTarget or archerTarget.health <= 0:
+        # Установите целью (или "аргументом") функции archerTarget, значение, возвращенное функцией findStrongestTarget().
+        archerTarget = findStrongestTarget()
 
-friends = self.findFriends()
-soldiers = self.findByType("soldier")
-archers = self.findByType("archer")
-for i, soldier in enumerate(soldiers):
-    commandSoldier(soldier, i, len(soldiers));
-summonSoldier()
-# Используйте функцию commandArcher() для управления своими лучниками.
-for i, archer in enumerate(archers):
-    commandArcher(archer);
+    friends = self.findFriends()
+    soldiers = self.findByType("soldier")
+    archers = self.findByType("archer")
+    for i, soldier in enumerate(soldiers):
+        commandSoldier(soldier, i, len(soldiers));
+    summonSoldier()
+    # Используйте функцию commandArcher() для управления своими лучниками.
+    for i, archer in enumerate(archers):
+        commandArcher(archer);

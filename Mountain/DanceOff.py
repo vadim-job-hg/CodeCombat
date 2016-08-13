@@ -3,6 +3,6 @@
 friend = hero.findNearest(hero.findFriends())
 diffx = friend.pos.x - hero.pos.x
 diffy = friend.pos.y - hero.pos.y
-loop:
-target = {'x': friend.pos.x - diffx, 'y': friend.pos.y - diffy}
-hero.move(target)
+while True:
+    target = {'x': friend.pos.x - diffx, 'y': friend.pos.y - diffy}
+    hero.move(target)

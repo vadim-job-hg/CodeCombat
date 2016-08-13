@@ -27,6 +27,6 @@ def commandTroops():
         # Command your minion to defend the defendPoint
 
 
-loop:
-summonTroops()
-commandTroops()
+while True:
+    summonTroops()
+    commandTroops()

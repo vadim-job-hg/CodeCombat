@@ -17,6 +17,6 @@ def attack(target):
             self.shield()
 
 
-loop:
-enemy = hero.findNearest(hero.findEnemies())
-attack(enemy)
+while True:
+    enemy = hero.findNearest(hero.findEnemies())
+    attack(enemy)

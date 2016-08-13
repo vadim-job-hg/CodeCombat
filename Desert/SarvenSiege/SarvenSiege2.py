@@ -44,12 +44,12 @@ def commandSoldiers():
             self.command(soldier, "attack", enemy)
 
 
-loop:
-summonTroops()
-commandSoldiers()
-items = self.findItems()
-enemy = self.findNearest(self.findEnemies())
-if (enemy and (self.now() > 45 or self.distanceTo(enemy) < 20)):
-    attack(enemy)
-else:
-    pickUpNearestItem(items)
+while True:
+    summonTroops()
+    commandSoldiers()
+    items = self.findItems()
+    enemy = self.findNearest(self.findEnemies())
+    if (enemy and (self.now() > 45 or self.distanceTo(enemy) < 20)):
+        attack(enemy)
+    else:
+        pickUpNearestItem(items)

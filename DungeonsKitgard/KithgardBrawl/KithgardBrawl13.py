@@ -84,18 +84,18 @@ def buildTroops():
         pickUpNearestItem(items)
 
 
-loop:
-commandTroops()
-if (self.canCast('invisibility', self)):
-    self.cast('invisibility', self)
-elif self.hasEffect('invisibility'):
-    self.shield()
-else:
-    if (self.canCast('earthskin', self)):
-        self.cast('earthskin', self)
-    buildTroops()
-    if self.health < self.maxHealth * 0.6:
-        paladins = self.findByType('paladin')
-        if len(paladins) == 0:
-            summonTroops()
-            summonTroops()
+while True:
+    commandTroops()
+    if (self.canCast('invisibility', self)):
+        self.cast('invisibility', self)
+    elif self.hasEffect('invisibility'):
+        self.shield()
+    else:
+        if (self.canCast('earthskin', self)):
+            self.cast('earthskin', self)
+        buildTroops()
+        if self.health < self.maxHealth * 0.6:
+            paladins = self.findByType('paladin')
+            if len(paladins) == 0:
+                summonTroops()
+                summonTroops()

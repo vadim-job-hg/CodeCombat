@@ -8,7 +8,7 @@ def summonTroops():
         self.summon(type)
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'paladin':
             CommandPaladin(friend)
@@ -45,17 +45,17 @@ def attack(target):
         elif (self.isReady("attack")):
             self.attack(target)
         else:
+            pass
 
-
-loop:
-flag = self.findFlag()
-summonTroops()
-сommandTroops()
-if flag:
-    self.pickUpFlag(flag)
-else:
-    enemy = self.findNearest(self.findEnemies())
-    if enemy:
-        attack(enemy)
-        # find some enemy to attack
-        # use cleave when ready
+while True:
+    flag = self.findFlag()
+    summonTroops()
+    commandTroops()
+    if flag:
+        self.pickUpFlag(flag)
+    else:
+        enemy = self.findNearest(self.findEnemies())
+        if enemy:
+            attack(enemy)
+            # find some enemy to attack
+            # use cleave when ready

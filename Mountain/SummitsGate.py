@@ -86,50 +86,50 @@ def pickUpNearestItem():
 
 commandFriends()
 self.moveXY(31, 56)
-loop:
-catapult = self.findNearest(self.findByType('catapult'))
-warlock = self.findNearest(self.findByType('warlock'))
-target = self.findNearest(self.findEnemies())
-nearestItem = self.findNearest(self.findItems())
-now = self.now()
-if catapult:
-    stage = 1
-    attack(catapult)
-elif now < 20:
-    tactick = 'defend'
-    stage = 2
-    moveTo({"x": 50, "y": 33})
-elif stage < 4:
-    if target:
-        stage = 3
-        attack(target)
-    else:
-        moveTo({"x": 172, "y": 46})
-    if self.pos.x > 170:
-        stage = 4
-elif stage < 5:
-    if self.pos.x < 240:
-        moveTo({"x": 274, "y": 35})
+while True:
+    catapult = self.findNearest(self.findByType('catapult'))
+    warlock = self.findNearest(self.findByType('warlock'))
+    target = self.findNearest(self.findEnemies())
+    nearestItem = self.findNearest(self.findItems())
+    now = self.now()
+    if catapult:
+        stage = 1
+        attack(catapult)
+    elif now < 20:
         tactick = 'defend'
-    elif nearestItem and self.distanceTo(nearestItem) < 10:
-        pickUpNearestItem()
+        stage = 2
+        moveTo({"x": 50, "y": 33})
+    elif stage < 4:
+        if target:
+            stage = 3
+            attack(target)
+        else:
+            moveTo({"x": 172, "y": 46})
+        if self.pos.x > 170:
+            stage = 4
+    elif stage < 5:
+        if self.pos.x < 240:
+            moveTo({"x": 274, "y": 35})
+            tactick = 'defend'
+        elif nearestItem and self.distanceTo(nearestItem) < 10:
+            pickUpNearestItem()
+            tactick = 'attack'
+        elif (warlock):
+            target = warlock
+            summonTroops()
+            attack(target)
+        elif target and target.type != 'gates':
+            attack(target)
+        elif nearestItem and self.distanceTo(nearestItem) < 45:
+            pickUpNearestItem()
+            tactick = 'defend'
+            summonTroops()
+        else:
+            attack(target)
+        if self.pos.x > 290:
+            stage = 5
         tactick = 'attack'
-    elif (warlock):
-        target = warlock
-        summonTroops()
-        attack(target)
-    elif target and target.type != 'gates':
-        attack(target)
-    elif nearestItem and self.distanceTo(nearestItem) < 45:
-        pickUpNearestItem()
-        tactick = 'defend'
-        summonTroops()
     else:
+        summonTroops()
         attack(target)
-    if self.pos.x > 290:
-        stage = 5
-    tactick = 'attack'
-else:
-    summonTroops()
-    attack(target)
-commandFriends()
+    commandFriends()

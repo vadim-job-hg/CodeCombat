@@ -1,4 +1,4 @@
-loop:
-enemy = self.findNearestEnemy()
-if (enemy):
-    self.attack(enemy)
+while True:
+    enemy = self.findNearestEnemy()
+    if (enemy):
+        self.attack(enemy)

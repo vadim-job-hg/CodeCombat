@@ -30,15 +30,15 @@ def commandArcher(soldier):
         self.command(soldier, "attack", enemy)
 
 
-loop:
-pickUpCoin()
-summonTroops()
-friends = self.findFriends()
-for friend in friends:
-    if friend.health < 100 and (friend.type == "soldier"):
-        self.command(friend, "defend", self.pos)
-    elif friend.type == "soldier":
-        # This friend will be assigned to the variable soldier in commandSoldier
-        commandSoldier(friend)
-    elif friend.type == "archer":
-        commandArcher(friend)
+while True:
+    pickUpCoin()
+    summonTroops()
+    friends = self.findFriends()
+    for friend in friends:
+        if friend.health < 100 and (friend.type == "soldier"):
+            self.command(friend, "defend", self.pos)
+        elif friend.type == "soldier":
+            # This friend will be assigned to the variable soldier in commandSoldier
+            commandSoldier(friend)
+        elif friend.type == "archer":
+            commandArcher(friend)

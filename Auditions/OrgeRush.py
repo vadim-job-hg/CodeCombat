@@ -21,7 +21,7 @@ def attack(target):
             self.shield()
 
 
-loop:
-enemy = self.findNearest(self.findEnemies())
-if enemy:
-    attack(enemy)
+while True:
+    enemy = self.findNearest(self.findEnemies())
+    if enemy:
+        attack(enemy)

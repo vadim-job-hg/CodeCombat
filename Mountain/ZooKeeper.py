@@ -18,14 +18,14 @@ for i in range(4):
     self.summon("soldier")
 
 # Отправь своих солдат на позиции.
-loop:
-friends = self.findFriends()
-for j in range(len(friends)):
-    point = points[j]
-    friend = friends[j]
-    enemy = friend.findNearestEnemy()
-    if enemy and enemy.team == "ogres" and friend.distanceTo(enemy) < 5:
-        # Прикажи войскам атаковать.
-        self.command(friend, 'attack', enemy)
-    else:
-        self.command(friend, 'move', point)
+while True:
+    friends = self.findFriends()
+    for j in range(len(friends)):
+        point = points[j]
+        friend = friends[j]
+        enemy = friend.findNearestEnemy()
+        if enemy and enemy.team == "ogres" and friend.distanceTo(enemy) < 5:
+            # Прикажи войскам атаковать.
+            self.command(friend, 'attack', enemy)
+        else:
+            self.command(friend, 'move', point)

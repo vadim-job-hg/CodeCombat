@@ -1,6 +1,6 @@
-loop:
-enemy = self.findNearestEnemy()
-if (self.isReady("cleave")):
-    self.cleave(enemy)
-else:
-    self.shield()
+while True:
+    enemy = self.findNearestEnemy()
+    if (self.isReady("cleave")):
+        self.cleave(enemy)
+    else:
+        self.shield()

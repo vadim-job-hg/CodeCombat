@@ -106,15 +106,15 @@ def moveHero():
         return False
 
 
-loop:
-yak_alert = False
-enemyattack = findTarget()
-yak = self.findNearest(self.findByType('sand-yak'))
-if yak and self.distanceTo(yak) < 40:
-    yak_alert = True
-commandTroops()
-summonTroops()
-if enemyattack:
-    attack(enemyattack)
-elif (moveHero()):
-    index = index + 1
+while True:
+    yak_alert = False
+    enemyattack = findTarget()
+    yak = self.findNearest(self.findByType('sand-yak'))
+    if yak and self.distanceTo(yak) < 40:
+        yak_alert = True
+    commandTroops()
+    summonTroops()
+    if enemyattack:
+        attack(enemyattack)
+    elif (moveHero()):
+        index = index + 1

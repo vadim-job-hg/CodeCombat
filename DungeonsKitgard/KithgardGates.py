@@ -1,6 +1,6 @@
 self.moveDown()
 i = 0
-loop:
+while True:
 self.buildXY("fence", 40 + i, 31)
 self.moveRight()
 i += 12

@@ -11,7 +11,7 @@ def choiseTarget(enemies):
     return None
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if (step == 0 and friend.pos.y > 60 and (friend.type != 'archer' or self.now() > 3.7)):
             enemy = friend.findNearestEnemy()
@@ -100,22 +100,22 @@ def attack(target):
             self.attack(target)
 
 
-loop:
-if (self.now() > 6 and self.now() < 12):
-    step = 1
-elif (self.now() > 10 and self.now() < 17):
-    step = 2
-elif (self.now() > 15 and self.now() < 30):
-    step = 3
-elif (self.now() > 28 and self.now() < 600):
-    step = 4
-сommandTroops()
-if step < 4:
-    if moveHero():
-        index = index + 1
-else:
-    enemy = self.findNearest(self.findEnemies())
-    if enemy:
-        attack(enemy)
+while True:
+    if (self.now() > 6 and self.now() < 12):
+        step = 1
+    elif (self.now() > 10 and self.now() < 17):
+        step = 2
+    elif (self.now() > 15 and self.now() < 30):
+        step = 3
+    elif (self.now() > 28 and self.now() < 600):
+        step = 4
+    commandTroops()
+    if step < 4:
+        if moveHero():
+            index = index + 1
     else:
-        moveTo({'x': 74, 'y': 44})
+        enemy = self.findNearest(self.findEnemies())
+        if enemy:
+            attack(enemy)
+        else:
+            moveTo({'x': 74, 'y': 44})

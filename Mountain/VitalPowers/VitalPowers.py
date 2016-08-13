@@ -51,8 +51,8 @@ def tacktick():
         pickUpNearestCoin()
 
 
-loop:  # В своем цикле ты можешь "вызывать" функции, определенные выше.
-# Эта строка вызывает выполнение кода внутри функции "pickUpNearestCoin" .
-tacktick()
-summonSoldier()
-commandSoldiers()
+while True:  # В своем цикле ты можешь "вызывать" функции, определенные выше.
+    # Эта строка вызывает выполнение кода внутри функции "pickUpNearestCoin" .
+    tacktick()
+    summonSoldier()
+    commandSoldiers()

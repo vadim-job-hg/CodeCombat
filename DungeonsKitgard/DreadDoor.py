@@ -1,2 +1,2 @@
-loop:
-self.attack("Door")
+while True:
+    self.attack("Door")

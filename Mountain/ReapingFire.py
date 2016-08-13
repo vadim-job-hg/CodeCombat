@@ -54,11 +54,11 @@ def commandTroops():
             self.command(soldier, "attack", enemy)
 
 
-loop:
-commandAttack()
-commandTroops()
-strategy = chooseStrategy()
-if (strategy == "fight-back"):
-    heroAttack()
-else:
-    pickUpCoin()
+while True:
+    commandAttack()
+    commandTroops()
+    strategy = chooseStrategy()
+    if (strategy == "fight-back"):
+        heroAttack()
+    else:
+        pickUpCoin()

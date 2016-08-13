@@ -67,7 +67,7 @@ def summonTroops():
         self.summon(type)
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
@@ -135,21 +135,21 @@ def drawCircle(x, y, size):
         return False
 
 
-loop:
-if (self.health < self.maxHealth * 0.4):
-    summonTroops()
-сommandTroops()
-items = self.findItems()
-enemy = self.findNearest(self.findEnemies())
-enemyattack = findTarget()
-if (len(items) > 0 and self.health < self.maxHealth * 0.5):
-    pickUpNearestItem(items)
-else:
-    if drawCircle(60, 45, 35):
-        angle += 0.2
-        # if not enemyattack:
-        #    enemyattack = self.findNearest(self.findEnemies())
-        # if(enemyattack):
-        #    attack(enemyattack)
-        # else:
-        #    self.shield()
+while True:
+    if (self.health < self.maxHealth * 0.4):
+        summonTroops()
+    commandTroops()
+    items = self.findItems()
+    enemy = self.findNearest(self.findEnemies())
+    enemyattack = findTarget()
+    if (len(items) > 0 and self.health < self.maxHealth * 0.5):
+        pickUpNearestItem(items)
+    else:
+        if drawCircle(60, 45, 35):
+            angle += 0.2
+            # if not enemyattack:
+            #    enemyattack = self.findNearest(self.findEnemies())
+            # if(enemyattack):
+            #    attack(enemyattack)
+            # else:
+            #    self.shield()

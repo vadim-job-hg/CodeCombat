@@ -83,5 +83,5 @@ def buildTroops():
         pickUpNearestItem(items)
 
 
-loop:
-buildTroops()
+while True:
+    buildTroops()

@@ -1,16 +1,7 @@
 enemy_types = {}
 # enemy_types['door'] = {'danger':1000, 'focus':200}
-enemy_types['knight'] = {'danger': 100, 'focus': 50}
-enemy_types['ranger'] = {'danger': 100, 'focus': 50}
-enemy_types['trapper'] = {'danger': 100, 'focus': 50}
-enemy_types['samurai'] = {'danger': 100, 'focus': 50}
-enemy_types['sorcerer'] = {'danger': 100, 'focus': 50}
-enemy_types['necromancer'] = {'danger': 100, 'focus': 50}
-enemy_types['captain'] = {'danger': 100, 'focus': 50}
-enemy_types['forest-archer'] = {'danger': 100, 'focus': 50}
-enemy_types['sorcerer'] = {'danger': 100, 'focus': 50}
-enemy_types['archer'] = {'danger': 101, 'focus': 30}
-enemy_types['soldier'] = {'danger': 1001, 'focus': 20}
+enemy_types['hero-placeholder-1'] = {'danger': 99, 'focus': 100}
+enemy_types['hero-placeholder-2'] = {'danger': 99, 'focus': 100}
 if self.team == 'humans':
     team = 'humans'
 else:
@@ -68,7 +59,7 @@ def summonTroops():
         self.summon(type)
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
@@ -121,20 +112,18 @@ def lowestHealthFriend():
     return lowestFriend
 
 
-loop:
-summonTroops()
-сommandTroops()
-items = self.findItems()
-enimies = self.findEnemies()
-# for enemy in enimies:
-#    self.say(enemy.type)
-if (len(items) > 0 and self.health < self.maxHealth * 0.5):
-    pickUpNearestItem(items)
-else:
-    enemyattack = findTarget()
-    if not enemyattack:
-        enemyattack = self.findNearest(self.findEnemies())
-    if (enemyattack):
-        attack(enemyattack)
+while True:
+    summonTroops()
+    commandTroops()
+    items = self.findItems()
+    enimies = self.findEnemies()
+    # for enemy in enimies:
+    #    self.say(enemy.type)
+    if (len(items) > 0 and self.health < self.maxHealth * 0.5):
+        pickUpNearestItem(items)
     else:
-        self.shield()
+        enemyattack = findTarget()
+        if (enemyattack):
+            attack(enemyattack)
+        else:
+            self.shield()

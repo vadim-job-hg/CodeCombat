@@ -35,28 +35,28 @@ def commandSoldiers():
         self.command(soldier, "defend", self)
 
 
-loop:
-enemies = self.findEnemies()
-index = 0
-distanse = 99999
-enemy = None
-while index < len(enemies):
-    if enemies[index].type != "sand-yak" and distanse > self.distanceTo(enemies[index]):
-        distanse = self.distanceTo(enemies[index])
-        enemy = enemies[index]
-    index += 1
-items = self.findItems()
-if len(items) > 0:
-    pickUpNearestCoin()
-if enemy is not None and enemy.type != "sand-yak":
-    if (self.distanceTo(enemy) < 7):
-        attack(enemy)
-    elif (self.distanceTo(enemy) < 20):
-        if (self.isReady("jump") and self.distanceTo > 10):
-            self.jumpTo(enemy.pos)
+while True:
+    enemies = self.findEnemies()
+    index = 0
+    distanse = 99999
+    enemy = None
+    while index < len(enemies):
+        if enemies[index].type != "sand-yak" and distanse > self.distanceTo(enemies[index]):
+            distanse = self.distanceTo(enemies[index])
+            enemy = enemies[index]
+        index += 1
+    items = self.findItems()
+    if len(items) > 0:
+        pickUpNearestCoin()
+    if enemy is not None and enemy.type != "sand-yak":
+        if (self.distanceTo(enemy) < 7):
+            attack(enemy)
+        elif (self.distanceTo(enemy) < 20):
+            if (self.isReady("jump") and self.distanceTo > 10):
+                self.jumpTo(enemy.pos)
+            else:
+                self.move(enemy.pos)
         else:
-            self.move(enemy.pos)
-    else:
-        self.move({'x': 89, 'y': 72})
-summonTroops()
-commandSoldiers()
+            self.move({'x': 89, 'y': 72})
+    summonTroops()
+    commandSoldiers()

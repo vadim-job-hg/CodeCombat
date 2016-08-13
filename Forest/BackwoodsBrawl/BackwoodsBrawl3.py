@@ -27,9 +27,9 @@ def attack(target):
         self.attack(target)
 
 
-loop:
-summonTroops()
-commandTroops()
-enemy = self.findNearest(self.findEnemies())
-if (enemy):
-    attack(enemy)
+while True:
+    summonTroops()
+    commandTroops()
+    enemy = self.findNearest(self.findEnemies())
+    if (enemy):
+        attack(enemy)

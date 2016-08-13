@@ -25,6 +25,6 @@ def buildTroops():
         self.buildXY(type, coor[0], coor[1])
 
 
-loop:
-pickUpNearestItem()
-buildTroops()
+while True:
+    pickUpNearestItem()
+    buildTroops()

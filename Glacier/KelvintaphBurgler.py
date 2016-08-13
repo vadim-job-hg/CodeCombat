@@ -21,7 +21,7 @@ def summonTroops():
         self.summon(type)
 
 
-def сommandTroops():
+def commandTroops():
     for index, friend in enumerate(self.findFriends()):
         if chieftain and friend.type != 'paladin':
             continue
@@ -144,11 +144,11 @@ def findTheMiddle(pos1, pos2):
     return {'x': (pos1.x + pos2.x) / 2, 'y': (pos1.y + pos2.y) / 2}
 
 
-loop:  # self.say(self.findEnemies()[0].type)
-witch = self.findNearest(self.findByType('witch'))
-chieftain = self.findNearest(self.findByType('chieftain'))
-if witch or chieftain:
-    RunFrom()
-else:
-    RunTrought()
-сommandTroops()
+while True:  # self.say(self.findEnemies()[0].type)
+    witch = self.findNearest(self.findByType('witch'))
+    chieftain = self.findNearest(self.findByType('chieftain'))
+    if witch or chieftain:
+        RunFrom()
+    else:
+        RunTrought()
+    commandTroops()
