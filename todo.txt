@@ -3,3 +3,4 @@ https://direct.codecombat.com/play/level/power-peak?course=56462f935afde0c6fd30f
 https://codecombat.com/play/level/power-peak?team=ogres&opponent=57acf77b034d0a20008e202a
 https://codecombat.com/play/level/power-peak?team=humans&opponent=57aceca10a39c125009d9f7b
 https://codecombat.com/play/spectate/power-peak
+https://codecombat.com/db/level/56452eca4e6f678605e74810/top_scores/gold-collected/all?_=1471195094867

@@ -1,10 +1,11 @@
+# http://codecombat.com/play/level/brewball
 # Скажи кое-что в расстоянии 10м от Омарна чтобы он кинул зелье.
 # Поймай зелье стоя рядом с ним прежде чем он упадет.
 # НЕ ДАЙ ЗЕЛЬЮ УПАСТЬ НА ЗЕМЛЮ!
 def arowndMine(move, trap, radius = 3):
     way = Vector.subtract(hero.pos, trap.pos)
     normal = Vector.normalize(way)
-    direction = Vector.multiply(normal, radius+1)
+    direction = Vector.multiply(normal, radius+3)
     wayCorr =  Vector.add(trap.pos, direction)
     dot = Vector.normalize(move)
     dot = Vector.add(wayCorr, dot)
