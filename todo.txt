@@ -1,8 +1,4 @@
-https://codecombat.com/play/level/broken-circles
 http://codecombat.com/play/level/serpent-savings
-CodeCombat\Glacier\BrokenCircles.js
-while True: to while True:
-multiplayer levels
 https://direct.codecombat.com/play/level/power-peak?course=56462f935afde0c6fd30fc8c&codeLanguage=python
 https://codecombat.com/play/level/power-peak?team=ogres&opponent=57acf77b034d0a20008e202a
 https://codecombat.com/play/level/power-peak?team=humans&opponent=57aceca10a39c125009d9f7b
