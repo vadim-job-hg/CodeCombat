@@ -67,3 +67,16 @@ def findTheY(x1, x2, y1, y2, x):
 
 def findTheMiddle(pos1, pos2):
     return {'x': (pos1.x + pos2.x) / 2, 'y': (pos1.y + pos2.y) / 2}
+
+def aroundMine1(move, trap, radius = 3):
+    way = Vector.subtract(hero.pos, trap.pos)
+    normal = Vector.normalize(way)
+    direction = Vector.multiply(normal, radius+1)
+    wayCorr =  Vector.add(trap.pos, direction)
+    dot = Vector.normalize(move)
+    dot = Vector.add(wayCorr, dot)
+    way = Vector.subtract(dot, trap.pos)
+    normal = Vector.normalize(way)
+    direction = Vector.multiply(normal, radius+1)
+    wayCorr =  Vector.add(trap.pos, direction)
+    return wayCorr
