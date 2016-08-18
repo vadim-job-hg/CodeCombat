@@ -1,5 +1,3 @@
-https://codecombat.com/play/level/short-sighted-burl
-https://codecombat.com/play/level/tomb-ghost
 
 http://codecombat.com/play/level/serpent-savings
 https://direct.codecombat.com/play/level/power-peak?course=56462f935afde0c6fd30fc8c&codeLanguage=python
