@@ -25,8 +25,6 @@ enemy_types['thrower'] = {'danger': 3, 'focus': 22}
 enemy_types['fangrider'] = {'danger': 4, 'focus': 22}
 enemy_types['munchkin'] = {'danger': 2, 'focus': 15}
 enemy_types['yak'] = {'danger': -1, 'focus': 0}
-enemy_types['ice-yak'] = {'danger': -1, 'focus': 0}
-
 
 def findTarget():
     danger = 0
@@ -62,9 +60,7 @@ def attack(target):
         elif self.hasEffect('invisibility'):
             moveTo(target.pos)
         else:
-            if (self.canCast('earthskin', self)):
-                self.cast('earthskin', self)
-            elif (self.distanceTo(target) > 10):
+            if (self.distanceTo(target) > 10):
                 moveTo(target.pos)
             elif (self.isReady("bash")):
                 self.bash(target)
@@ -76,7 +72,7 @@ def attack(target):
                 self.shield()
 
 
-summonTypes = ['paladin', 'paladin', 'paladin', 'paladin']
+summonTypes = ['soldier', 'soldier', 'soldier', 'paladin']
 
 
 def summonTroops():
@@ -109,7 +105,7 @@ def CommandPaladin(paladin):
 
 
 def CommandSoldier(soldier):
-    pass
+    self.command(soldier, "defend", self)
 
 
 def CommandArcher(soldier):
@@ -137,6 +133,8 @@ def lowestHealthFriend():
 while True:
     items = self.findItems()
     enimies = self.findEnemies()
+    if (hero.canCast('earthskin')):
+        hero.cast('earthskin', hero)
     # for enemy in enimies:
     #   self.say(enemy.type)
     if (len(items) > 0 and self.health < self.maxHealth * 0.5):
@@ -149,7 +147,6 @@ while True:
             attack(enemyattack)
         else:
             self.shield()
-    if self.health < self.maxHealth * 0.6:
-        summonTroops()
+    summonTroops()
 
     commandTroops()
