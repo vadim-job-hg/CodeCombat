@@ -1,7 +1,7 @@
 //https://codecombat.com/play/level/javascript-maniac-muchkins
 while(true) {
-    enemy = hero.findNearestEnemy();
-    distance = hero.distanceTo(enemy);
+    var enemy = hero.findNearestEnemy();
+    var distance = hero.distanceTo(enemy);
     if (hero.isReady("cleave")) {
         hero.cleave(enemy);
     }
