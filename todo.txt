@@ -1,5 +1,5 @@
-https://codecombat.com/play/campaign-web-dev-2
-https://codecombat.com/play/campaign-game-dev-2
+
+
 http://codecombat.com/play/level/serpent-savings
 https://direct.codecombat.com/play/level/power-peak?course=56462f935afde0c6fd30fc8c&codeLanguage=python
 https://codecombat.com/play/level/power-peak?team=ogres&opponent=57acf77b034d0a20008e202a
