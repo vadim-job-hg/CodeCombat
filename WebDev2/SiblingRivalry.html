@@ -1,0 +1,63 @@
+<!--https://codecombat.com/play/level/sibling-rivalry ->
+<!-- To select neighboring elements, use "siblings()" -->
+<!-- Use this to unfocus elements next to a target. -->
+<!-- Elements are neighbors when at similar identation. -->
+
+<script>
+    var selectable = $(".selectable");
+    function focusSelected() {
+        var targetElement = $(this);
+        var siblings = targetElement.siblings();
+        siblings.addClass("mute");
+        // Use removeClass() to remove "sel" from siblings.
+        siblings.removeClass("sel")
+        targetElement.removeClass("mute");
+        // Use addClass() to add "sel" to targetElement.
+        targetElement.addClass("sel")
+    }
+    selectable.on("click", focusSelected);
+</script>
+<style>
+    .selectable {
+        /* This makes the cursor a finger pointer. */
+        cursor: pointer;
+        background-color:gray;
+    }
+    .sel {
+        background-color:green;
+    }
+    .mute {
+        /* This makes the element transparent. */
+        opacity:0.1;
+    }
+    body {
+        text-align:center;
+    }
+</style>
+<div>
+    <!-- Note: These imgs don't interact with the divs. -->
+    <img class="selectable" src="http://direct.codecombat.com/file/db/thang.type/54eb540b49fa2d5c905ddf1a/portrait.png"/>
+    <img class="selectable" src="http://direct.codecombat.com/file/db/thang.type/54eb4d5949fa2d5c905ddf06/portrait.png"/>
+    <img class="selectable" src="http://direct.codecombat.com/file/db/thang.type/52e989a4427172ae56001f04/portrait.png"/>
+</div>
+<div>
+    <!-- These divs don't interact with the imgs above. -->
+    <div class="selectable">
+        <h3>Option A</h3>
+        <p>
+            This option is Awesome!
+        </p>
+    </div>
+    <div class="selectable">
+        <h3>Option B</h3>
+        <p>
+            This option is Bodacious!
+        </p>
+    </div>
+    <div class="selectable">
+        <h3>Option C</h3>
+        <p>
+            This option is Cool.
+        </p>
+    </div>
+</div>

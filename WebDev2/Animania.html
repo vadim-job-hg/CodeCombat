@@ -1,0 +1,44 @@
+<!-- https://codecombat.com/play/level/animania -->
+<!-- @keyframes is for defining animation behavior. -->
+<!-- Think of it like writing a function... -->
+<!-- ... it requires a name and behavior. -->
+<!-- Keyframes are used with the "animation" property. -->
+
+<style>
+    #imageA {
+        /* The animation property takes 3 arguments! */
+        /* The first is the name of a keyframe. */
+        /* The second is how long it should play. */
+        /* The last is the number of times it repeats. */
+        animation:slide 5s 99;
+    }
+    #imageB {
+        animation:myAnim 0.1s 10;
+    }
+    /* keyframes is a special CSS "at-rule"! */
+    /* It tells the browser this is not just CSS */
+    @keyframes slide {
+        from {
+            transform: translateX(300%);
+            background-color:rgb(0, 255, 0);
+        }
+        to {
+            transform: translateX(-300%);
+            background-color:rgb(255, 0, 0);
+        }
+    }
+    @keyframes myAnim {
+        from {
+            /* Add properties for the start. */
+            transform: translateX(100%);
+            background-color:rgb(0, 255, 0);
+        }
+        to {
+            /* Add properties for the end result. */
+            transform: translateX(-100%);
+            background-color:rgb(255, 0, 255);
+        }
+    }
+</style>
+<img id="imageA" src="/file/db/thang.type/529ab1a24b67a988ad000002/portrait.png">
+<img id="imageB" src="/file/db/thang.type/52cee45a76ebd5196b00003a/portrait.png">

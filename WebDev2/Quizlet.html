@@ -1,0 +1,225 @@
+<!-- https://codecombat.com/play/level/quizlet -->
+<!-- Create a quiz to help your friends find out... -->
+<!-- ... what kind of person they *really* are. -->
+
+<div id="content">
+    <!-- Title your quiz anything you like! -->
+    <!-- What kind of dog are you? -->
+    <!-- What shade of fuschia speaks to your soul? -->
+    <!-- What clique do you belong in? -->
+    <h1>What [thing] are you?</h1>
+    <div class="quizQuestion">
+        <h2>1. Which [word] do you [like]?</h2>
+        <div class="answers">
+            <div data-value="A" class="answer">
+                <div class="answerText">A: Sunshine</div>
+            </div>
+            <div data-value="B" class="answer">
+                <div class="answerText">B: Gold Mining</div>
+            </div>
+            <div data-value="C" class="answer">
+                <div class="answerText">C: Unicorn Dust</div>
+            </div>
+            <div data-value="D" class="answer">
+                <div class="answerText">
+                    <img src="/file/db/thang.type/5432f9d18364d30000d1f943/portrait.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quizQuestion">
+        <h2>2. Which [place] smells the best?</h2>
+        <div class="answers">
+            <div data-value="A" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="B" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="C" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="D" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+        </div>
+    </div>
+    <div class="quizQuestion">
+       <h2>3. Which [place] smells the best1?</h2>
+        <div class="answers">
+            <div data-value="A" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="B" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="C" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="D" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Add a fourth, final question below: -->
+    <div class="quizQuestion">
+       <h2>3. Which [place] smells the best1?</h2>
+        <div class="answers">
+            <div data-value="A" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="B" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="C" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+            <div data-value="D" class="answer">
+                <div class="answerText">A: Lorganic</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="result" id="a-personality">
+        <h2>A</h2>
+        <img src="/file/db/thang.type/5744e3683af6bf590cd27371/portrait.png" width="200px">
+        <p>
+            test
+        </p>
+    </div>
+    <div class="result" id="b-personality">
+         <h2>A</h2>
+        <img src="/file/db/thang.type/5744e3683af6bf590cd27371/portrait.png" width="200px">
+        <p>
+            test
+        </p>
+    </div>
+   <div class="result" id="c-personality">
+         <h2>A</h2>
+        <img src="/file/db/thang.type/5744e3683af6bf590cd27371/portrait.png" width="200px">
+        <p>
+            test
+        </p>
+    </div>
+    <div class="result" id="d-personality">
+         <h2>A</h2>
+        <img src="/file/db/thang.type/5744e3683af6bf590cd27371/portrait.png" width="200px">
+        <p>
+            test
+        </p>
+    </div>
+    <div class="result" id="no-personality">
+        <h2>yes</h2>
+        <img src="/file/db/thang.type/52e95a5022efc8e709001743/portrait.png" width="200px">
+        <p>
+            You have no personality! Womp, womp.
+        </p>
+    </div>
+    <div id="footer">
+        <button class="btn btn-primary btn-block btn-lg" id="submitButton">Submit</button>
+        <button class="btn btn-primary btn-block btn-lg" id="retryButton">Retry</button>
+    </div>
+</div>
+<style>
+    body {
+        background-color:rgb(63,63,63);
+    }
+    .answer {
+        cursor:pointer;
+        text-align:center;
+        width:250px;
+        height:250px;
+        margin:8px;
+        color:white;
+        background-color:rgb(0,174,174);
+        padding:16px;
+        border: 1px solid black;
+    }
+    .selected {
+        background-color:rgb(100, 146, 255);
+    }
+    #header {
+        text-align:center;
+        background-color:white;
+    }
+    #footer {
+        text-align:center;
+    }
+    .answerText {
+        font-size:2em;
+    }
+    h2 {
+        padding-top:1em;
+    }
+    h1 {
+        font-size:4em;
+    }
+    #content {
+        background-color:white;
+        width:566px;
+        padding:16px;
+        text-align:center;
+        font-family:sans-serif;
+        font-weight:bold;
+        text-transform:uppercase;
+        border: 1px solid black;
+    }
+    .muted {
+        opacity:0.25;
+    }
+    .result {
+        display:none;
+    }
+    #retryButton {
+        display: none;
+    }
+</style>
+<script>
+    var answers = $(".answer");
+    var submitButton = $("#submitButton");
+    var retryButton = $("#retryButton");
+    var quizQuestions = $(".quizQuestion");
+    var results = $(".result");
+    function highlightSelected() {
+        var answerDiv = $(this);
+        answerDiv.siblings().addClass("muted");
+        answerDiv.siblings().removeClass("selected");
+        // Add the "selected" class to answerDiv:
+
+        // Remove the "muted" class from answerDiv:
+
+    }
+    answers.on("click", highlightSelected);
+    function submitAnswers() {
+        var aCount = $(".selected[data-value='A']").length;
+        var bCount = $(".selected[data-value='B']").length;
+        // Create 2 more variables for C/D counts:
+
+        if (aCount > 1) {
+            $("#a-personality").show();
+        }
+        else if (bCount > 1) {
+            // Show the element with id b-personality:
+
+        }
+        // Add more if-statements to cover C/D answers:
+
+        else {
+            $("#no-personality").show();
+        }
+        quizQuestions.hide();
+        retryButton.show();
+        submitButton.hide();
+    }
+    submitButton.on("click", submitAnswers);
+    function resetPage() {
+        quizQuestions.show();
+        answers.removeClass("muted");
+        answers.removeClass("selected");
+        submitButton.show();
+        retryButton.hide();
+        results.hide();
+    }
+    retryButton.on("click", resetPage);
+</script>
