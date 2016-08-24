@@ -1,0 +1,54 @@
+<!-- https://codecombat.com/play/level/eventful-selectors -->
+<!-- It is possible to find which element was selected. -->
+<!-- Using $(this) in an event function does just that. -->
+<!-- var elm = $(this) sets elm to the clicked element. -->
+
+<script>
+    li = $("li");
+    function toggleStriked() {
+        $(this).toggleClass("striked");
+    }
+    li.on("click", toggleStriked);
+
+    h2 = $("h2"); // This sets h2 to all h2 elements.
+    function toggleBold() {
+        // $() also accepts 'this' as an argument.
+        // 'this', when inside of an event function is...
+        // ... the specific target for the event!
+        // Look at "toggleStriked" for an example.
+        // Toggle the class "bold" on the clicked h2:
+
+    }
+    // When any h2 is clicked, perform "toggleBold".
+    h2.on("click", toggleBold);
+</script>
+<style>
+    .bold {
+        font-weight:bold;
+        font-size:xx-large;
+    }
+    .striked {
+        text-decoration:line-through;
+    }
+    li {
+        cursor: pointer;
+        font-size:large;
+    }
+</style>
+<h1>Agatha's Lists</h1>
+<h2>Witch's Grocery List</h2>
+<ul>
+    <li>Newt's Eye</li>
+    <li>Milk of the Dandelion</li>
+    <li>Tusked Trout</li>
+    <li>Oats</li>
+    <li>Unicorn Dust</li>
+</ul>
+<h2>Toadstool Stew Recipe</h2>
+<ol>
+    <li>Bring cauldron to boil.</li>
+    <li>Add eye of newt.</li>
+    <li>Stir with wooden spoon.</li>
+    <li>Add sprinkle of dehydrated toadstool.</li>
+    <li>Enjoy!</li>
+</ol>
