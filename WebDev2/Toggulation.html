@@ -1,0 +1,31 @@
+<!-- https://codecombat.com/play/level/toggulation -->
+<!-- The 'toggleClass' jQuery function turns on/off... -->
+<!-- ... classes whether or not the class is off/on. -->
+
+<script>
+    var image = $("img");
+    var header = $("h1");
+    function toggleExpand() {
+        image.toggleClass("expand");
+        // Toggle class "expand" on 'h1':
+        header.toggleClass("expand");
+    }
+    image.on("click", toggleExpand);
+    // Use '.on("click")' on 'header' to call toggleExpand:
+     header.on("click", toggleExpand);
+</script>
+<style>
+    body {
+        text-align:center;
+    }
+    .expand {
+        width:100%;
+        font-size:4em;
+    }
+</style>
+<h1>Notorious P.U.G.</h1>
+<br>
+<img src="/file/db/thang.type/577d5d4dab818b210046b3bf/portrait.png"/>
+<br>
+Click the Pugicorn
+
