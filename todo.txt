@@ -1,3 +1,18 @@
+https://codecombat.com/play/level/query-confirmed
+https://codecombat.com/play/level/javascript-true-names
+https://codecombat.com/play/level/javascript-true-names
+https://codecombat.com/play/level/javascript-lost-in-the-stacks
+https://codecombat.com/play/level/javascript-fire-dancing
+https://codecombat.com/play/level/javascript-master-of-names
+https://codecombat.com/play/level/javascript-patrol-buster
+https://codecombat.com/play/level/javascript-back-to-back
+https://codecombat.com/play/level/javascript-maniac-munchkins
+https://codecombat.com/play/level/javascript-maniac-munchkins
+https://codecombat.com/play/level/javascript-stillness-in-motion
+https://codecombat.com/play/level/javascript-a-fine-mint
+https://codecombat.com/play/level/javascript-return-to-thornbush-farm
+https://codecombat.com/play/campaign-web-dev-2
+https://codecombat.com/play/campaign-game-dev-2
 http://codecombat.com/play/level/serpent-savings
 https://direct.codecombat.com/play/level/power-peak?course=56462f935afde0c6fd30fc8c&codeLanguage=python
 https://codecombat.com/play/level/power-peak?team=ogres&opponent=57acf77b034d0a20008e202a
@@ -5,3 +20,4 @@ https://codecombat.com/play/level/power-peak?team=humans&opponent=57aceca10a39c1
 https://codecombat.com/play/spectate/power-peak
 https://codecombat.com/db/level/56452eca4e6f678605e74810/top_scores/gold-collected/all?_=1471195094867
 https://codecombat.com/editor/campaign/forest
+https://codecombat.com/play/level/forest-incursion
