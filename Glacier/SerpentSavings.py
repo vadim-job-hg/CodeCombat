@@ -1,67 +1,40 @@
-# http://codecombat.com/play/level/serpent-savings
-# todo this logic need to be improved
 # You cannot collect coins.
 # Summon peasants to collect coins for you.
 # Collecting coins spawns a growing 'tail' behind the peasants.
 # When a peasant touches a tail, they die.
-# Collect 500 coins to pass the level.
+# Collect 200 gold to pass the level.
 # The following APIs are available on your team's peasants: "snakeBackward"
 # The following APIs are available on neutral peasants: "snakeBackward", "snakeHead", "snakeForward"
-def moveTo(position, fast=True):
-    if (self.isReady("jump") and fast):
-        self.jumpTo(position)
-    else:
-        self.move(position)
-
-
-# pickup coin
-def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
-    if nearestItem:
-        moveTo(nearestItem.pos)
-
-
-def commandPeasant(peasant):
-    item = peasant.findNearestItem()
-    goalf = peasant.pos
-    if item:
-        vectorToH = Vector.subtract(item.pos, goalf)
-        vectorToH = Vector.normalize(vectorToH)
-        vectorToH = Vector.multiply(vectorToH, 10)
-        goalf = Vector.add(goalf, vectorToH)
-    enemies = peasant.findEnemies()
-    for enemy in enemies:
-        if peasant.distanceTo(enemy) < 5:
-            vectorToH = Vector.subtract(friend.pos, enemy.pos)
-            vectorToH = Vector.normalize(vectorToH)
-            vectorToH = Vector.multiply(vectorToH, 5)
-            goalf = Vector.add(vectorToH, goalf)
-    self.command(peasant, 'move', goalf)
-
-
-def CommandArcher(soldier):
-    target = self.findNearest(self.findEnemies())
-    if target:
-        self.command(soldier, "attack", target)
-
-
-summonTypes = ['peasant']
-
-
-def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
-
-
+x = 10
+direct = []
+direct[0] = Vector(10, 0)
 while True:
-    friends = self.findFriends()
-    summonTroops()
-    tails = self.findEnemies()
-    coins = self.findItems()
-    # pickUpNearestItem(coins)
+    friends = hero.findFriends()
+    tails = hero.findEnemies()
+    coins = hero.findItems()
     for friend in friends:
-        if friend.type == 'archer':
-            CommandArcher(friend)
-        elif friend.type == 'peasant':
-            commandPeasant(friend)
+        if Math.floor(friend.pos.x > 10) and Math.floor(friend.pos.x) < 70:
+            if Math.floor(friend.pos.y > 10) and Math.floor(friend.pos.y) < 55:
+                if Math.floor(friend.pos.x) % 7 == 0:
+                    if Math.floor(friend.pos.x) % 2 == 0:
+                        direct[0] = Vector(0, 10)
+                    else:
+                        direct[0] = Vector(0, -10)
+                else:
+                    direct[0] = Vector(10, 0)
+            else:
+                if (friend.pos.y <= 10):
+                    direct[0] = Vector(10, 2)
+                else:
+                    direct[0] = Vector(10, -2)
+            direct[0] = Vector(0, 0)
+            move = Vector.add(friend.pos, direct[0])
+        else:
+            if Math.floor(friend.pos.x < 60):
+                move = {'x': 75, 'y': 60}
+            elif(Math.floor(friend.pos.y > 10)):
+                move = {'x': 75, 'y': 10}
+            else:
+                move = {'x': 10, 'y': 10}
+        hero.command(friend, 'move', move)
+
