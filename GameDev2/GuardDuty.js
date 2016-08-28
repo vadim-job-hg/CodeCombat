@@ -8,9 +8,11 @@ function soldierLogic() {
     while(true) {
         var enemy = soldier.findNearestEnemy();
         // Attack the enemy, if the enemy exists.
-        soldier.attack(enemy);
+        if(enemy)
+            soldier.attack(enemy);
         // Else, move back to the starting position.
-        soldier.moveXY(42, 48);
+        else
+            soldier.moveXY(42, 48);
     }
 
 }
