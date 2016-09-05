@@ -103,8 +103,6 @@ def attack():
         else:
             if (self.canCast('chain-lightning', target)):
                 self.cast('chain-lightning', target)
-            elif (self.distanceTo(target) > 10):
-                moveTo(target.pos)
             elif (self.isReady("attack")):
                 self.attack(target)
 
