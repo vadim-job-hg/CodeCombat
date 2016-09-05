@@ -101,9 +101,7 @@ def attack():
         elif (hero.canCast('fear', target)):
             hero.cast('fear', target)
         else:
-            if (self.canCast('earthskin', self)):
-                self.cast('earthskin', self)
-            elif (self.canCast('chain-lightning', target)):
+            if (self.canCast('chain-lightning', target)):
                 self.cast('chain-lightning', target)
             elif (self.distanceTo(target) > 10):
                 moveTo(target.pos)
