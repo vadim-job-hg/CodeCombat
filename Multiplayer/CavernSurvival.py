@@ -88,9 +88,9 @@ def CommandPaladin(paladin):
     else:
         enemyattack = findTarget()
         if enemyattack:
-            self.command(paladin, "attack", enemyattack)
+            self.command(paladin, "shield")
         else:
-            self.command(paladin, "defend", self)
+            self.command(paladin, "shield")
 
 
 def CommandSoldier(soldier):
@@ -117,23 +117,21 @@ def lowestHealthFriend():
             lowestFriend = friend
 
     return lowestFriend
-
-
+if (self.canCast('invisibility', self)):
+    self.cast('invisibility', self)
 while True:
     items = self.findItems()
     enimies = self.findEnemies()
-    if (hero.canCast('earthskin')):
-        hero.cast('earthskin', hero)
     if (len(items) > 0 and self.health < self.maxHealth * 0.5):
         pickUpNearestItem(items)
     else:
         enemyattack = findTarget()
-        if (enemyattack):
+        if (enemyattack and hero.now()<30):
             attack(enemyattack)
         else:
             if (self.canCast('invisibility', self)):
                 self.cast('invisibility', self)
             self.shield()
-    if hero.health<500:
+    if hero.health<1000:
         summonTroops()
     commandTroops()
