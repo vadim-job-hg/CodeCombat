@@ -8,7 +8,7 @@ https://codecombat.com/editor/campaign/forest
 https://codecombat.com/play/level/forest-incursion
 https://codecombat.com/play/level/wakka-maul?team=humans&opponent=564bacbfa33967be1312ae72&league=56a5e4a5506a6936008b45f2
 
-https://codecombat.com/db/level/56452eca4e6f678605e74810/top_scores
+#todo: https://codecombat.com/db/level/56452eca4e6f678605e74810/top_scores
 
 
 
