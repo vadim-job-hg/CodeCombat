@@ -1,5 +1,4 @@
 # https://codecombat.com/play/ladder/wakka-maul
-# https://codecombat.com/play/ladder/wakka-maul
 # Welcome to Wakka Maul! Prepare for combat!
 # Venture through the maze and pick up gems to fund your warchest.
 # Break down doors to unleash allies (or enemies).
