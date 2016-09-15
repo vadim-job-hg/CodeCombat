@@ -13,3 +13,6 @@ my id 56c519952b138e2400496482
 
 https://codecombat.com/play/level/gemtacular
 
+https://codecombat.com/play/level/the-long-march?dev=true
+Chieftain
+https://codecombat.com/play/level/cavern-survival?team=ogres&opponent=56992a31d32e4c1f00751c1e
