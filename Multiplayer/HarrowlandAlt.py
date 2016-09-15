@@ -1,22 +1,36 @@
 enemy_types = {}
-# ogres types
-enemy_types['shaman'] = {'danger': 10, 'focus': 10}
-enemy_types['warlock'] = {'danger': 10, 'focus': 10}
-enemy_types['arrow-tower'] = {'danger': 10, 'focus': 10}
-enemy_types['burl'] = {'danger': 10, 'focus': 5}
-enemy_types['witch'] = {'danger': 8, 'focus': 10}
-enemy_types['brawler'] = {'danger': 7, 'focus': 10}
-enemy_types['ogre'] = {'danger': 5, 'focus': 10}
-enemy_types['chieftain'] = {'danger': 6, 'focus': 10}
-enemy_types['fangrider'] = {'danger': 4, 'focus': 22}
-enemy_types['skeleton'] = {'danger': 5, 'focus': 22}
-enemy_types['scout'] = {'danger': 4, 'focus': 22}
-enemy_types['thrower'] = {'danger': 3, 'focus': 22}
-enemy_types['munchkin'] = {'danger': 2, 'focus': 15}
-if self.team == 'humans':
-    team = 'humans'
-else:
-    team = 'ogres'
+enemy_types['knight'] = {'danger': 100, 'focus': 100}
+enemy_types['potion-master'] = {'danger': 100, 'focus': 100}
+enemy_types['ranger'] = {'danger': 100, 'focus': 100}
+enemy_types['trapper'] = {'danger': 100, 'focus': 100}
+enemy_types['samurai'] = {'danger': 100, 'focus': 100}
+enemy_types['librarian'] = {'danger': 100, 'focus': 100}
+enemy_types['sorcerer'] = {'danger': 100, 'focus': 100}
+enemy_types['hero-placeholder'] = {'danger': 99, 'focus': 100}
+enemy_types['hero-placeholder-1'] = {'danger': 99, 'focus': 100}
+enemy_types['hero-placeholder-2'] = {'danger': 99, 'focus': 100}
+enemy_types['necromancer'] = {'danger': 100, 'focus': 100}
+enemy_types['captain'] = {'danger': 100, 'focus': 100}
+enemy_types['goliath'] = {'danger': 100, 'focus': 50}
+enemy_types['captain'] = {'danger': 100, 'focus': 100}
+enemy_types['forest-archer'] = {'danger': 100, 'focus': 50}
+enemy_types['ninja'] = {'danger': 100, 'focus': 50}
+enemy_types['soldier'] = {'danger': 90, 'focus': 50}
+enemy_types['skeleton'] = {'danger': 90, 'focus': 50}
+enemy_types['griffin-rider'] = {'danger': 99, 'focus': 50}
+enemy_types['paladin'] = {'danger': 99, 'focus': 50}
+enemy_types['burl'] = {'danger': 99, 'focus': 50}
+enemy_types['archer'] = {'danger': 50, 'focus': 50}
+def findTarget():
+    danger = 0
+    enemy_return = None
+    for type in enemy_types.keys():
+        if enemy_types[type] and enemy_types[type].danger > danger:
+            enemy = self.findNearest(self.findByType(type))
+            if enemy and self.distanceTo(enemy) < enemy_types[type].focus:
+                enemy_return = enemy
+                danger = enemy_types[type].danger
+    return enemy_return
 
 
 def findTarget():
@@ -25,7 +39,7 @@ def findTarget():
     for type in enemy_types.keys():
         if enemy_types[type] and enemy_types[type].danger > danger:
             enemy = self.findNearest(self.findByType(type))
-            if enemy and enemy.team != team and self.distanceTo(enemy) < enemy_types[type].focus:
+            if enemy and enemy.team != hero.team and self.distanceTo(enemy) < enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if enemy_return is None:
@@ -88,14 +102,14 @@ def attack():
     if target:
         if (hero.canCast('summon-burl', hero)):
             hero.cast('summon-burl')
-        elif (hero.canCast('summon-undead')):
+        if (hero.canCast('summon-undead')):
             hero.cast('summon-undead')
-        elif (self.canCast('invisibility', self)):
+        if (self.canCast('invisibility', self)):
             self.cast('invisibility', self)
-        elif (hero.canCast('raise-dead')):
+        if (hero.canCast('raise-dead')):
             hero.cast('raise-dead')
-        elif (hero.canCast('drain-life', target)):
-            hero.cast('drain-life', target)
+        if(self.isReady("throw") and self.distanceTo(target)<hero.trowRange):
+            self.trow(target)
         elif (hero.canCast('poison-cloud', target)):
             hero.cast('poison-cloud', target)
         elif (hero.canCast('fear', target)):
@@ -107,6 +121,8 @@ def attack():
                 self.cast('chain-lightning', target)
             elif (self.distanceTo(target) > 100):
                 moveTo(target.pos)
+            #elif (hero.canCast('drain-life', target)):
+            #    hero.cast('drain-life', target)
             elif (self.isReady("attack")):
                 self.attack(target)
 
@@ -122,4 +138,3 @@ while True:
             self.cast('earthskin', self)
         attack()
         summonTroops()
-
