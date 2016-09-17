@@ -1,4 +1,4 @@
-# https://codecombat.com/play/level/bonemender?session=56c5ebfded946a44004fb659&observing=true
+# https://codecombat.com/play/level/bonemender
 # Лечите дружественных солдат, чтобы победить в осаде.
 while True:
     if hero.canCast("regen"):
