@@ -23,3 +23,4 @@ https://codecombat.com/play/ladder/multiplayer-treasure-grove/clan/56291b22cd334
 Попробовать так пройти уровни
 ?team=ogres&opponent=56992a31d32e4c1f00751c1e
 https://codecombat.com/play/level/multiplayer-treasure-grove?team=ogres&opponent=56622fb8767fe61900b336d4&league=56291b22cd3347850584acb6
+https://codecombat.com/play/level/ace-of-coders?team=humans&opponent=566220d9edf65c1a0089453d
