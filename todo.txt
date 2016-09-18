@@ -4,15 +4,10 @@ https://codecombat.com/play/level/power-peak?team=ogres&opponent=57acf77b034d0a2
 https://codecombat.com/play/level/power-peak?team=humans&opponent=57aceca10a39c125009d9f7b
 https://codecombat.com/play/spectate/power-peak
 
-https://codecombat.com/editor/campaign/forest
-https://codecombat.com/play/level/forest-incursion
-https://codecombat.com/play/level/wakka-maul?team=humans&opponent=564bacbfa33967be1312ae72&league=56a5e4a5506a6936008b45f2
+
 ?session=56c5ebfded946a44004fb659&observing=true
 https://codecombat.com/play/level/the-long-march?dev=true
-Chieftain
-https://codecombat.com/play/level/cavern-survival?team=ogres&opponent=56992a31d32e4c1f00751c1e
-Trokar
-https://codecombat.com/play/level/cavern-survival?team=humans&opponent=5698157e7c18ef1f008e21c5
+
 https://codecombat.com/play/level/harrowland?team=humans&opponent=56983df69a0feb240030ce81
 https://codecombat.com/play/ladder/multiplayer-treasure-grove/clan/56291b22cd3347850584acb6
 Попробовать так пройти уровни
