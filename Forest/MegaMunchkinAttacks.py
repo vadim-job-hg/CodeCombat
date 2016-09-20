@@ -1,7 +1,7 @@
 path = [{'x':19,'y':33}, {'x':19,'y':14}, {'x':42,'y':14}, {'x':53,'y':37},{'x':52,'y':52}]
 index = len(path)
 max = len(path)
-loop:
+while True:
     # Найдите лучника.
     friend = self.findNearest(self.findFriends())
     enemy = self.findNearest(self.findEnemies())
