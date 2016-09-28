@@ -12,7 +12,7 @@ password = 'So Many Doors'
 hero.moveRight()
 hero.say(password)
 # Change the string in this line to the password variable.
-hero.say(password)  # ∆ Change this!
+hero.say(password)  # Change this!
 password = 'Let Me Out Of Here'
 # Move to the last door and say the password variable to open it.
 hero.moveRight()

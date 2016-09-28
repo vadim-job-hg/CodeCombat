@@ -48,7 +48,7 @@ this.placeFlag({'x':160, 'y':109});
 this.placeFlag({'x':160, 'y':9});
 var target;
 var captured = false;
-loop {
+while(true){
     var flags = '';
     flags = this.findByType('flag');
     for(var i in flags){
