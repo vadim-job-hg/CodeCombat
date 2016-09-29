@@ -23,13 +23,14 @@ while steps <= 35:
     # Сделайте следующий шаг:
     self.moveXY(steps * X_PACE_LENGTH, sideSteps * Y_PACE_LENGTH)
     if (steps % SWITCH == 0):
-        sidemove *= -1
+        sidemove = sidemove * -1
     sideSteps += sidemove
     if (steps % SKIP == 0):
-        sideSteps += sidemove
+        sideSteps = sideSteps + sidemove
     if (sideSteps > SLIDE):
-        sideSteps -= SLIDE;;
-        if (sideSteps < 1):
-            sideSteps += SLIDE;
-            # Увеличивайте steps(шаги) и sideSteps(шаги в сторону) по необходимости, принимая во внимание специальные правила.
-        steps += 1
+        sideSteps = sideSteps - SLIDE
+    if (sideSteps < 1):
+        sideSteps = sideSteps + SLIDE
+        # Увеличивайте steps(шаги) и sideSteps(шаги в сторону) по необходимости, принимая во внимание специальные правила.
+    steps += 1
+
