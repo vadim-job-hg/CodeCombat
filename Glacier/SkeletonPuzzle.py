@@ -42,16 +42,6 @@ def getLastCoors(yf, xf):
                 yg = y
     return {'x': xg, 'y': yg}
 
-
-def getNeededDirectionY():
-    pass
-
-
-def getSumm(x, y):
-    return y * 3 + x + 1
-    pass
-
-
 # The necromancer always knows the puzzle state.
 boneMaster = hero.findFriends()[0]
 puzzleState = boneMaster.getPuzzleState()
