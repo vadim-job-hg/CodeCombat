@@ -1,6 +1,6 @@
 ## Visualization
 
-[![ScreenShot](https://i.ytimg.com/vi/AWuY5wdSHyY/2.jpg?time=1476096728373)](https://www.youtube.com/watch?v=j3lLsxzAouM)
+[![ScreenShot](https://i9.ytimg.com/vi/j3lLsxzAouM/3.jpg?sqp=CIy2gsAF&rs=AOn4CLBsLj4ANIr4V_01K1ZepmnGHbLegg&time=1476434951364)](https://www.youtube.com/watch?v=j3lLsxzAouM)
 
 # CodeCombat
 Passage levels. Functions . Strategy . Python for the game:
