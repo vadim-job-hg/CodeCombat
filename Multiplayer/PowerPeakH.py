@@ -8,7 +8,7 @@ def petLogic():
     # Add code to use your pet!
     # Move them to the power discs at the top of the map for powerups.
     while True:
-        pet.moveXY(48, 69);
+        pet.moveXY(51, 74);
         item = pet.findNearestItem()
         if item:
             pet.fetch(item)
@@ -20,6 +20,13 @@ while True:
     # Move to the nearby power discs to spawn units to help or attack!
 
     enemy = hero.findNearestEnemy()
+    item = hero.findNearestItem()
     if enemy:
-        hero.attack(enemy)
+        if hero.isReady('cleave'):
+            hero.cleave(enemy)
+        else:
+            hero.attack(enemy)
+    elif item:
+        hero.moveXY(item.pos.x, item.pos.y)
+
 
