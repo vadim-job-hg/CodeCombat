@@ -5,3 +5,4 @@ https://codecombat.com/play/level/aggressive-mimicry
 https://codecombat.com/play/level/echo-of-war
 https://codecombat.com/play/level/ice-hunter
 https://codecombat.com/play/level/northwest
+https://codecombat.com/play/level/yeti-beater
