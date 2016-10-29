@@ -1,12 +1,32 @@
 # http://codecombat.com/play/level/assembly-speed
+
+speed = 76660813  # ∆ Put your answer here.
+self.say(speed)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#************************************************************************
 # Say the correct speed to insert our spybot into the line of robots.
 # We must find the exact speed in robot motor revolutions per month.
 # We've found the part of the robot code that controls the speed,
 # but we don't know how to interpret it to find the final speed.
 # What's the value of %eax when the last instruction (the NOP) runs?
 
-speed = 0  # ∆ Put your answer here.
-self.say(speed)
+#speed = 0  # ∆ Put your answer here.
+#self.say(speed)
 
 # Check the Help (File tab) to see the file. It's also included below.
 # ------------------------------------------
