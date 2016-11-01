@@ -1,4 +1,3 @@
-# todo: use peasant here
 def pickUpNearestItem(items):
     nearestItem = self.findNearest(items)
     if nearestItem:
