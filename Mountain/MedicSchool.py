@@ -29,5 +29,5 @@ pet.on("hear", onHear)
 while True:
     mushrooms = hero.findByType("mushroom")
     nearest = hero.findNearest(mushrooms)
-    if nearest:
+    if nearest and hero.health>700:
         hero.moveXY(nearest.pos.x, nearest.pos.y)
