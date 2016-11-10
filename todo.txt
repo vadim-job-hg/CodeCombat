@@ -11,3 +11,7 @@ https://codecombat.com/play/level/rational-defense
 https://codecombat.com/play/level/three-step-password
 https://codecombat.com/play/level/convenient-enemy
 https://codecombat.com/play/level/reading-rumble
+https://codecombat.com/play/level/rational-defense
+https://codecombat.com/play/level/count-emptiness
+https://codecombat.com/play/level/rational-defense
+https://codecombat.com/play/level/convenient-enemy
