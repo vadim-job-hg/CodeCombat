@@ -1,9 +1,7 @@
 https://codecombat.com/play/level/serpent-savings
 https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39a4&observing=true
 
-https://codecombat.com/play/level/library-rumble
-https://codecombat.com/play/level/elsewoods
-https://codecombat.com/play/level/elseweyr
+
 https://codecombat.com/play/level/cluttered-corridors
 https://codecombat.com/play/level/rational-defense
 https://codecombat.com/play/level/three-step-password
