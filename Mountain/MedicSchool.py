@@ -1,6 +1,4 @@
 #https://codecombat.com/play/level/medic-school
-# Collect 10 mushrooms.
-
 # This function checks if the phrase starts with the word.
 def startsWith(phrase, word):
     # If the word is longer than the text, return False.
@@ -22,8 +20,7 @@ def onHear(event):
         potion = pet.findNearestByType("potion")
         if potion:
             pet.fetch(potion)
-    else:
-        pet.moveXY(28, 34)
+            pet.moveXY(28, 34)
 
 pet.on("hear", onHear)
 while True:
