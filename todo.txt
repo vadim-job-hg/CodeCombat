@@ -5,6 +5,7 @@ https://codecombat.com/play/level/distracting-dungeon
 https://codecombat.com/play/level/desert-delta
 https://codecombat.com/play/level/double-agent
 https://codecombat.com/play/level/triage
+
 https://codecombat.com/play/level/power-peak?team=humans
 
 
