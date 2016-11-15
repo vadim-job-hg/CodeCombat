@@ -1,6 +1,3 @@
-# todo:
-# https://codecombat.com/play/level/power-peak?team=humans&course=56462f935afde0c6fd30fc8c&course-instance=56fc25d7263b0220002aff0e
-# https://codecombat.com/play/level/power-peak?course=5632661322961295f9428638&codeLanguage=python
 # Welcome to the Course 2 Arena. Defend against waves of ogres!
 # Survive longer than your enemy to win!
 
