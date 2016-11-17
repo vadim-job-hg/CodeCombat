@@ -1,10 +1,6 @@
 https://codecombat.com/play/level/serpent-savings
 https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39a4&observing=true
 
-
-https://codecombat.com/play/level/count-emptiness
-https://codecombat.com/play/level/trojan-yeti
-https://codecombat.com/play/level/dangerous-key
 https://codecombat.com/play/level/double-agent
 https://codecombat.com/play/level/anonymous-bank
 https://codecombat.com/play/level/vision-of-ogres
