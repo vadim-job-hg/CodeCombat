@@ -1,14 +1,8 @@
 https://codecombat.com/play/level/serpent-savings
 https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39a4&observing=true
 subscribers
+?session=5774c7fd4fe71e2700823ea7&observing=true
 forest
-/play/level/boom-and-bust
-backwoods-ambush
-/play/level/long-range-division
-arcane-ally
-munchkin-harvest
-/play/level/storming-the-towers-of-areth
-apocalypse
 backwoods-ambush-a
 touch-of-death
 bonemender
