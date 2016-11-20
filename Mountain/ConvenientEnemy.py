@@ -1,8 +1,8 @@
 #https://codecombat.com/play/level/convenient-enemy
 # Ogres are hiding in woods. Protect the peasants.
-# The last word in peasants' messages are a hint.
+# The last word in the peasants' messages are a hint.
 
-for x in range(7, 73, 16):
+for x in range(8, 73, 16):
     hero.moveXY(x, 22)
     # Peasants know whom to summon.
     peasant = hero.findNearest(hero.findFriends())
@@ -26,3 +26,4 @@ while True:
     enemy = hero.findNearest(hero.findEnemies())
     if enemy:
         hero.attack(enemy)
+
