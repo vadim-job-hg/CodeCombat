@@ -6,12 +6,8 @@ forest
 backwoods-ambush-a
 touch-of-death
 bonemender
-/play/level/reward-and-ruination
-/play/level/boulder-woods
-deadly-pursuit
 /play/level/tactical-timing
 /play/level/unfair-support
-/play/level/storming-the-farmhouse
 desert
 shrapnel
 swift-dagger
