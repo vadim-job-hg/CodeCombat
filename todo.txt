@@ -3,7 +3,6 @@ https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39
 subscribers
 ?session=5774c7fd4fe71e2700823ea7&observing=true
 desert
-
 /play/level/stranded-in-the-dunes
 /play/level/mad-maxer-sells-out
 /play/level/mad-maxer-gets-greedy
