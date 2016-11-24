@@ -10,7 +10,6 @@ https://codecombat.com/play/level/jailbreak
 subscribers
 ?session=5774c7fd4fe71e2700823ea7&observing=true
 forest
-backwoods-ambush-a
 touch-of-death
 bonemender
 /play/level/tactical-timing
