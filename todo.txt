@@ -5,6 +5,8 @@ https://codecombat.com/play/level/woodland-cubbies
 https://codecombat.com/play/level/stormcloud
 https://codecombat.com/play/level/explosive-works
 https://codecombat.com/play/level/the-gauntlet-kr
+https://codecombat.com/play/level/rectangle-formation
+https://codecombat.com/play/level/jailbreak
 subscribers
 ?session=5774c7fd4fe71e2700823ea7&observing=true
 forest
