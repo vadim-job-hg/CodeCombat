@@ -2,15 +2,8 @@ https://codecombat.com/play/level/serpent-savings
 https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39a4&observing=true
 subscribers
 ?session=5774c7fd4fe71e2700823ea7&observing=true
-forest
-
-/play/level/unfair-support
 desert
-shrapnel
-swift-dagger
-the-dunes
-doom-glade
-/play/level/the-great-yak-stampede
+
 /play/level/stranded-in-the-dunes
 /play/level/mad-maxer-sells-out
 /play/level/mad-maxer-gets-greedy
