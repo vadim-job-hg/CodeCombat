@@ -3,9 +3,7 @@ https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39
 subscribers
 ?session=5774c7fd4fe71e2700823ea7&observing=true
 forest
-touch-of-death
-bonemender
-/play/level/tactical-timing
+
 /play/level/unfair-support
 desert
 shrapnel
