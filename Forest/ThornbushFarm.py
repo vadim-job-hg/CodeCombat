@@ -1,15 +1,15 @@
 while True:
-    self.moveXY(43, 50)
-    topEnemy = self.findNearestEnemy()
+    hero.moveXY(43, 50)
+    topEnemy = hero.findNearestEnemy()
     if topEnemy:
-        self.buildXY("fire-trap", 43, 50)
+        hero.buildXY("fire-trap", 43, 50)
 
-    self.moveXY(25, 34)
-    leftEnemy = self.findNearestEnemy()
+    hero.moveXY(25, 34)
+    leftEnemy = hero.findNearestEnemy()
     if leftEnemy:
-        self.buildXY("fire-trap", 23, 34)
+        hero.buildXY("fire-trap", 23, 34)
 
-    self.moveXY(42, 22)
-    bottomEnemy = self.findNearestEnemy()
+    hero.moveXY(42, 22)
+    bottomEnemy = hero.findNearestEnemy()
     if bottomEnemy:
-        self.buildXY("fire-trap", 42, 22)
+        hero.buildXY("fire-trap", 42, 22)

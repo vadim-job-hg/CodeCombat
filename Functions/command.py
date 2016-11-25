@@ -2,13 +2,13 @@ summonTypes = ['griffin-rider', 'soldier', 'archer', 'paladin', 'peasant']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
         elif friend.type == 'paladin':
@@ -21,41 +21,41 @@ def commandTroops():
 
 def CommandPaladin(paladin):
     if (paladin.canCast("heal")):
-        if (self.health < self.maxHealth * 0.6):
+        if (hero.health < hero.maxHealth * 0.6):
             target = self
         else:
             target = lowestHealthPaladin()
         if target:
-            self.command(paladin, "cast", "heal", target)
+            hero.command(paladin, "cast", "heal", target)
     elif (paladin.health < 100):
-        self.command(paladin, "shield")
+        hero.command(paladin, "shield")
     else:
-        target = self.findNearest(self.findEnemies())
-        self.command(paladin, "attack", target)
+        target = hero.findNearest(hero.findEnemies())
+        hero.command(paladin, "attack", target)
 
 
 def CommandSoldier(soldier):
-    target = self.findNearest(self.findEnemies())
+    target = hero.findNearest(hero.findEnemies())
     if target:
-        self.command(soldier, "attack", target)
+        hero.command(soldier, "attack", target)
 
 
 def CommandArcher(soldier):
-    target = self.findNearest(self.findEnemies())
+    target = hero.findNearest(hero.findEnemies())
     if target:
-        self.command(soldier, "attack", target)
+        hero.command(soldier, "attack", target)
 
 
 def CommandPeasant(soldier):
     item = soldier.findNearestItem()
     if item:
-        self.command(soldier, "move", item.pos)
+        hero.command(soldier, "move", item.pos)
 
 
 def lowestHealthFriend():
     lowestHealth = 99999
     lowestFriend = None
-    friends = self.findFriends()
+    friends = hero.findFriends()
     for friend in friends:
         if friend.health < lowestHealth and friend.health < friend.maxHealth:
             lowestHealth = friend.health

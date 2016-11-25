@@ -13,10 +13,10 @@ while friendIndex < len(friendNames):
 
     # Прикажи другу идти домой.
     # Используй + для объединения двух строковых элементов.
-    self.say(friendName + ', go home!')
+    hero.say(friendName + ', go home!')
 
     # Увеличивай индекс, чтобы получить следующее имя из массива.
     friendIndex += 1
-self.moveXY(25, 30)
-self.buildXY('fence', 29, 30)
+hero.moveXY(25, 30)
+hero.buildXY('fence', 29, 30)
 # Вернись и построй частокол, чтобы защититься от огров.

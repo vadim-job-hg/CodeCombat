@@ -3,55 +3,55 @@ summonTypes = ['paladin']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'paladin':
             CommandPaladin(friend)
 
 
 def CommandPaladin(paladin):
     if (paladin.canCast("heal")):
-        if (self.health < self.maxHealth * 0.6):
+        if (hero.health < hero.maxHealth * 0.6):
             target = self
         if target:
-            self.command(paladin, "cast", "heal", target)
+            hero.command(paladin, "cast", "heal", target)
     else:
-        target = self.findNearest(self.findEnemies())
-        self.command(paladin, "attack", target)
+        target = hero.findNearest(hero.findEnemies())
+        hero.command(paladin, "attack", target)
 
 
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo(position) > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo(position) > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.canCast('chain-lightning', target)):
+            hero.cast('chain-lightning', target)
         else:
-            self.attack(target)
+            hero.attack(target)
 
 
 while True:
-    flag = self.findFlag()
+    flag = hero.findFlag()
     summonTroops()
     commandTroops()
     if flag:
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
     else:
-        enemy = self.findNearest(self.findEnemies())
+        enemy = hero.findNearest(hero.findEnemies())
         if enemy:
             attack(enemy)
             # find some enemy to attack

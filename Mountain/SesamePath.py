@@ -7,26 +7,26 @@ sesame = "Open Sesame"
 distance = 24
 previous = ""
 while True:
-    up = {'x': self.pos.x, 'y': self.pos.y + distance}
-    down = {'x': self.pos.x, 'y': self.pos.y - distance}
-    right = {'x': self.pos.x + distance, 'y': self.pos.y}
-    left = {'x': self.pos.x - distance, 'y': self.pos.y}
-    self.say(sesame)
+    up = {'x': hero.pos.x, 'y': hero.pos.y + distance}
+    down = {'x': hero.pos.x, 'y': hero.pos.y - distance}
+    right = {'x': hero.pos.x + distance, 'y': hero.pos.y}
+    left = {'x': hero.pos.x - distance, 'y': hero.pos.y}
+    hero.say(sesame)
     # Check each direction to see if the path is clear.
     # Be sure to check and record your previous direction!
     # Up
-    if (self.isPathClear(self.pos, up) and previous != 'd'):
-        self.moveXY(up.x, up.y)
+    if (hero.isPathClear(hero.pos, up) and previous != 'd'):
+        hero.moveXY(up.x, up.y)
         previous = 'u'
     # Right
-    elif (self.isPathClear(self.pos, right) and previous != 'l'):
-        self.moveXY(right.x, right.y)
+    elif (hero.isPathClear(hero.pos, right) and previous != 'l'):
+        hero.moveXY(right.x, right.y)
         previous = 'r'
     # Down
-    elif (self.isPathClear(self.pos, down) and previous != 'u'):
-        self.moveXY(down.x, down.y)
+    elif (hero.isPathClear(hero.pos, down) and previous != 'u'):
+        hero.moveXY(down.x, down.y)
         previous = 'd'
     # Left
-    elif (self.isPathClear(self.pos, left) and previous != 'r'):
-        self.moveXY(left.x, left.y)
+    elif (hero.isPathClear(hero.pos, left) and previous != 'r'):
+        hero.moveXY(left.x, left.y)
         previous = 'l'

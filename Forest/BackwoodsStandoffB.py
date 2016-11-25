@@ -1,8 +1,8 @@
 # https://codecombat.com/play/level/backwoods-standoff-b
 
 while True:  # Use isReady to check if the hero can cleave, otherwise say something!
-    enemy = self.findNearestEnemy();
-    if (enemy and self.isReady('cleave')):
-        self.cleave(enemy)
+    enemy = hero.findNearestEnemy();
+    if (enemy and hero.isReady('cleave')):
+        hero.cleave(enemy)
     else:
-        self.say('DGIGURDA')
+        hero.say('DGIGURDA')

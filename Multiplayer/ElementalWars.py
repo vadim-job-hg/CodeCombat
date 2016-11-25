@@ -10,15 +10,15 @@ def buildArmy():
                   "water-soldier", "wood-soldier", "fire-soldier", "wood-soldier", "wood-soldier", "archer", "soldier",
                   "wood-artillery"]
     # "arrow-tower" "artillery"
-    type = buildOrder[len(self.built) % len(buildOrder)]
-    if self.gold >= self.costOf(type):
-        self.summon(type)
+    type = buildOrder[len(hero.built) % len(buildOrder)]
+    if hero.gold >= hero.costOf(type):
+        hero.summon(type)
 
 
 def commandArmy():
-    friends = self.built
-    enemies = self.findEnemies()
-    points = self.getControlPoints()
+    friends = hero.built
+    enemies = hero.findEnemies()
+    points = hero.getControlPoints()
     for i, friend in enumerate(friends):
         if friend.health <= 0 or friend.type == "arrow-tower":
             continue
@@ -26,30 +26,30 @@ def commandArmy():
         # Убедитесь, что ключевые точки выбраны с умом!
 
         point = points[i % len(points)]
-        if self.now() < 30:
-            self.command(friend, "defend", point.pos)
+        if hero.now() < 30:
+            hero.command(friend, "defend", point.pos)
         else:
-            enemies = self.findEnemies()
-            nearestEnemy = self.findNearest(enemies)
-            self.command(friend, "attack", nearestEnemy)
+            enemies = hero.findEnemies()
+            nearestEnemy = hero.findNearest(enemies)
+            hero.command(friend, "attack", nearestEnemy)
 
 
 def attack(target):
     if target:
-        if self.isReady("throw") and self.distanceTo(target) < self.throwRange:
-            self.throw(target)
-        elif (self.distanceTo(target) > 10):
-            self.move(target.pos)
-        elif (self.isReady("stomp") and self.distanceTo(target) < 5):
-            self.stomp()
-        elif (self.isReady("attack")):
-            self.attack(target)
+        if hero.isReady("throw") and hero.distanceTo(target) < hero.throwRange:
+            hero.throw(target)
+        elif (hero.distanceTo(target) > 10):
+            hero.move(target.pos)
+        elif (hero.isReady("stomp") and hero.distanceTo(target) < 5):
+            hero.stomp()
+        elif (hero.isReady("attack")):
+            hero.attack(target)
 
 
 def controlHero():
-    enemies = self.findEnemies()
-    nearestEnemy = self.findNearest(enemies)
-    shouldAttack = self.now() > 30
+    enemies = hero.findEnemies()
+    nearestEnemy = hero.findNearest(enemies)
+    shouldAttack = hero.now() > 30
     # Используйте возможности героя, чтобы переломить ситуацию в свою пользу.
     if shouldAttack:
         attack(nearestEnemy)

@@ -22,12 +22,12 @@ def mod40(n):
 
 # You don't need to change the following code:
 while True:
-    time = self.now()
+    time = hero.now()
     x = mod30(time) + 25
     y = mod40(time) + 10
-    item = self.findNearest(self.findItems())
-    if (item and self.distanceTo(item) < 7):
-        self.moveXY(item.pos.x, item.pos.y)
-        self.moveXY(x, y)
+    item = hero.findNearest(hero.findItems())
+    if (item and hero.distanceTo(item) < 7):
+        hero.moveXY(item.pos.x, item.pos.y)
+        hero.moveXY(x, y)
     else:
-        self.moveXY(x, y)
+        hero.moveXY(x, y)

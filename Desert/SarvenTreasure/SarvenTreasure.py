@@ -1,13 +1,13 @@
 # http://codecombat.com/play/level/sarven-treasure
 while True:
-    enemys = self.findEnemies()
-    items = self.findItems()
-    item = self.findNearest(items)
-    enemy = self.findNearest(enemys)
-    if (enemy and self.distanceTo(enemy) < 15):
-        self.attack(enemy)
+    enemys = hero.findEnemies()
+    items = hero.findItems()
+    item = hero.findNearest(items)
+    enemy = hero.findNearest(enemys)
+    if (enemy and hero.distanceTo(enemy) < 15):
+        hero.attack(enemy)
     elif (item):
-        if (self.isReady('jump')):
-            self.jumpTo(item.pos)
+        if (hero.isReady('jump')):
+            hero.jumpTo(item.pos)
         else:
-            self.move(item.pos)
+            hero.move(item.pos)

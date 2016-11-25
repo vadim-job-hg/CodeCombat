@@ -16,7 +16,7 @@ def average(array):
 
 
 enemies = hero.findEnemies()
-self.say(average(enemies))
+hero.say(average(enemies))
 # <%= find_yetis %>
 
 # <%= impelemnt_average %>

@@ -10,7 +10,7 @@ while True:
     else:
         target = hero.findNearest(hero.findEnemies())
         if target:
-            if (self.isReady("cleave")):
-                self.cleave(target)
+            if (hero.isReady("cleave")):
+                hero.cleave(target)
             else:
-                self.shield()
+                hero.shield()

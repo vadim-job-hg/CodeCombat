@@ -1,6 +1,6 @@
 while True:
-    self.moveRight()
-    enemy = self.findNearestEnemy()
+    hero.moveRight()
+    enemy = hero.findNearestEnemy()
     if (enemy):
-        self.attack(enemy)
-        self.attack(enemy)
+        hero.attack(enemy)
+        hero.attack(enemy)

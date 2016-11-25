@@ -1,17 +1,17 @@
 # Иди к оазису. Опасайся новых врагов: огров-скаутов!
 # Иди по диагонали вправо-вверх, увеличивая текущие X и Y координаты.
 while True:  # Атакуй любого врага на пути или продолжай идти.
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if enemy:
-        if (self.isReady("cleave")):
-            self.cleave(enemy)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
+        if (hero.isReady("cleave")):
+            hero.cleave(enemy)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
     else:
-        x = self.pos.x + 10
-        y = self.pos.y + 10
-        self.moveXY(x, y)
+        x = hero.pos.x + 10
+        y = hero.pos.y + 10
+        hero.moveXY(x, y)

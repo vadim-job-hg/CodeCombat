@@ -1,46 +1,46 @@
 # http://codecombat.com/play/level/dueling-grounds
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 summonTypes = ['griffin-rider', 'soldier', 'archer']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for soldier in self.findFriends():
+    for soldier in hero.findFriends():
         if target:
-            self.command(soldier, "attack", target)
+            hero.command(soldier, "attack", target)
 
 
 def attack(target):
-    if (self.distanceTo(target) > 10):
+    if (hero.distanceTo(target) > 10):
         moveTo(target.pos)
-    elif (self.isReady("bash")):
-        self.bash(target)
+    elif (hero.isReady("bash")):
+        hero.bash(target)
     else:
-        self.attack(target)
+        hero.attack(target)
 
 
 while True:
     summonTroops()
     commandTroops()
-    target = self.findNearest(self.findEnemies())
-    knight = self.findNearest(self.findByType('knight'))
-    captain = self.findNearest(self.findByType('captain'))
-    # Enemies = self.findEnemies()
+    target = hero.findNearest(hero.findEnemies())
+    knight = hero.findNearest(hero.findByType('knight'))
+    captain = hero.findNearest(hero.findByType('captain'))
+    # Enemies = hero.findEnemies()
     # for en in Enemies:
-    # self.say(en.type)
-    if (knight and self.distanceTo(knight) < 20):
+    # hero.say(en.type)
+    if (knight and hero.distanceTo(knight) < 20):
         target = knight
-    if (captain and self.distanceTo(captain) < 20):
+    if (captain and hero.distanceTo(captain) < 20):
         target = captain
     attack(target)

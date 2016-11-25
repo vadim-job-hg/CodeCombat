@@ -2,8 +2,8 @@
 # Uh oh, a stampede! Use your cunning to make it to the oasis.
 
 while True:
-    enemy = self.findNearestEnemy()
-    xPos = self.pos.x + 10
+    enemy = hero.findNearestEnemy()
+    xPos = hero.pos.x + 10
     yPos = 17
     if enemy:
         # You only need to shift up/down 1m to dodge the yaks!
@@ -15,4 +15,4 @@ while True:
             # If the Yak is below you, adjust yPos upwards!
             yPos = 25
             pass
-    self.moveXY(xPos, yPos)
+    hero.moveXY(xPos, yPos)

@@ -2,10 +2,10 @@
 # Помогите на передней линии.
 # Возвращайтесь к флагу, если кто-нибудь пытается прокрасться.
 while True:
-    flag = self.findFlag()
-    enemy = self.findNearestEnemy()
+    flag = hero.findFlag()
+    enemy = hero.findNearestEnemy()
     if flag:
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
     elif enemy:
-        self.attack(enemy)
+        hero.attack(enemy)
 

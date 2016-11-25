@@ -27,8 +27,8 @@ def findOptimalCoin(coins):
     optimal = -1000
     thione = None
     for coin in coins:
-        if coin.value / self.distanceTo(coin) > optimal:
-            optimal = coin.value / self.distanceTo(coin)
+        if coin.value / hero.distanceTo(coin) > optimal:
+            optimal = coin.value / hero.distanceTo(coin)
             thione = coin
     return thione
 

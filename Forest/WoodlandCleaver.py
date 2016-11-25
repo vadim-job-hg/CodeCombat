@@ -1,7 +1,7 @@
-self.moveXY(23, 23);
+hero.moveXY(23, 23);
 while True:
-    enemy = self.findNearestEnemy()
-    if (self.isReady("cleave")):
-        self.cleave(enemy)
+    enemy = hero.findNearestEnemy()
+    if (hero.isReady("cleave")):
+        hero.cleave(enemy)
     else:
-        self.attack(enemy)
+        hero.attack(enemy)

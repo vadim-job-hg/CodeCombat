@@ -6,31 +6,31 @@ coors2 = [0, 0]
 
 
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 summonTypes = ['soldier']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if chieftain and friend.type != 'paladin':
             continue
         if witch and friend.type != 'paladin':
             continue
         if chieftain and chieftain.pos.x < 57 and chieftain.pos.x > 43:
-            self.command(friend, "move", {'x': 25, 'y': 48})
+            hero.command(friend, "move", {'x': 25, 'y': 48})
         elif not chieftain and friend.pos.x < 40:
-            self.command(friend, "move", {'x': 51, 'y': 51})
+            hero.command(friend, "move", {'x': 51, 'y': 51})
         elif friend.type == 'paladin':
             CommandPaladin(friend)
         elif friend.type == 'soldier':
@@ -46,42 +46,42 @@ def CommandPaladin(paladin):
     if (paladin.canCast("heal") and not chieftain):
         target = lowestHealthFriend()
         if target:
-            self.command(paladin, "cast", "heal", target)
+            hero.command(paladin, "cast", "heal", target)
     elif (paladin.health < 100):
-        self.command(paladin, "shield")
+        hero.command(paladin, "shield")
     else:
         if witch:
-            self.command(paladin, "attack", witch)
+            hero.command(paladin, "attack", witch)
         elif (chieftain):
-            self.command(paladin, "attack", chieftain)
+            hero.command(paladin, "attack", chieftain)
         else:
-            self.command(paladin, "move", {'x': 78, 'y': 40})
+            hero.command(paladin, "move", {'x': 78, 'y': 40})
 
 
 def CommandSoldier(soldier):
     if witch:
-        self.command(soldier, "attack", witch)
+        hero.command(soldier, "attack", witch)
     else:
-        self.command(soldier, "move", {'x': 78, 'y': 40})
+        hero.command(soldier, "move", {'x': 78, 'y': 40})
 
 
 def CommandArcher(soldier):
     if witch:
-        self.command(soldier, "attack", witch)
+        hero.command(soldier, "attack", witch)
     else:
-        self.command(soldier, "move", {'x': 78, 'y': 40})
+        hero.command(soldier, "move", {'x': 78, 'y': 40})
 
 
 def KillRobots(soldier):
-    robot = self.findNearest(self.findEnemies())
+    robot = hero.findNearest(hero.findEnemies())
     if robot:
-        self.command(soldier, "attack", robot)
+        hero.command(soldier, "attack", robot)
 
 
 def lowestHealthFriend():
     lowestHealth = 99999
     lowestFriend = None
-    friends = self.findFriends()
+    friends = hero.findFriends()
     for friend in friends:
         if friend.health < lowestHealth and friend.health < friend.maxHealth:
             lowestHealth = friend.health
@@ -91,22 +91,22 @@ def lowestHealthFriend():
 
 
 def RunFrom():
-    missiles = self.findEnemyMissiles()
-    missle = self.findNearest(missiles)
+    missiles = hero.findEnemyMissiles()
+    missle = hero.findNearest(missiles)
     if len(missiles) > 0:
         coors1[0] = missle.pos.x
         coors1[1] = missle.pos.y
-        y = findTheY(coors1[0], coors2[0], coors1[1], coors2[1], self.pos.x)
+        y = findTheY(coors1[0], coors2[0], coors1[1], coors2[1], hero.pos.x)
         if y > 15:
-            moveTo({'x': self.pos.x, 'y': 10}, False)
+            moveTo({'x': hero.pos.x, 'y': 10}, False)
         else:
-            moveTo({'x': self.pos.x, 'y': 20}, False)
+            moveTo({'x': hero.pos.x, 'y': 20}, False)
         coors2[0] = coors1[0]
         coors2[1] = coors1[1]
 
 
 def RunTrought():
-    robots = self.findByType('robot-walker')
+    robots = hero.findByType('robot-walker')
     summonTroops()
     up = True
     mid = True
@@ -124,9 +124,9 @@ def RunTrought():
         coorY = 6
     if (up):
         coorY = 22
-    if (self.pos.x < 16):
-        self.moveXY(16, coorY)
-    elif (self.pos < 59):
+    if (hero.pos.x < 16):
+        hero.moveXY(16, coorY)
+    elif (hero.pos < 59):
         moveTo({'x': 60, 'y': coorY}, False)
     else:
         moveTo({'x': 79, 'y': 14}, False)
@@ -144,9 +144,9 @@ def findTheMiddle(pos1, pos2):
     return {'x': (pos1.x + pos2.x) / 2, 'y': (pos1.y + pos2.y) / 2}
 
 
-while True:  # self.say(self.findEnemies()[0].type)
-    witch = self.findNearest(self.findByType('witch'))
-    chieftain = self.findNearest(self.findByType('chieftain'))
+while True:  # hero.say(hero.findEnemies()[0].type)
+    witch = hero.findNearest(hero.findByType('witch'))
+    chieftain = hero.findNearest(hero.findByType('chieftain'))
     if witch or chieftain:
         RunFrom()
     else:

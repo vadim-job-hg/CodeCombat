@@ -1,20 +1,20 @@
 # http://codecombat.com/play/level/the-agrippa-defense-b
 def enemyInRange(enemy):
     # Return true if the enemy is less than 5 units away.
-    if self.distanceTo(enemy) < 5:
+    if hero.distanceTo(enemy) < 5:
         return True
     return False
 
 
 def cleaveOrAttack(enemy):
-    if self.isReady('cleave'):
-        self.cleave(enemy)
+    if hero.isReady('cleave'):
+        hero.cleave(enemy)
     else:
-        self.attack(enemy)
+        hero.attack(enemy)
 
 
 while True:
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if enemy:
         # Check the distance of the enemy by calling enemyInRange.
         if enemyInRange(enemy):

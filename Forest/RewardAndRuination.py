@@ -3,15 +3,15 @@
 # Use the two artillery cannons to defeat your enemies and gather the gems.
 
 while True:
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if enemy:
         enemyPos = enemy.pos.x + " " + enemy.pos.y
-        self.say("Enemy at " + enemyPos)
+        hero.say("Enemy at " + enemyPos)
 
     # Now that you have sweet revenge, why not have your cake and eat it, too?
     # Find the item's position and say it for your artillery to target.
-    # item = self.findNearestItem()
-    item = self.findNearest(self.findItems())
+    # item = hero.findNearestItem()
+    item = hero.findNearest(hero.findItems())
     if item:
         itemPos = item.pos.x + " " + item.pos.y
-        self.say("Enemy at " + itemPos)
+        hero.say("Enemy at " + itemPos)

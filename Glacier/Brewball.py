@@ -24,8 +24,8 @@ while True:
         dest = potion.targetPos;
         direction = Vector.multiply(Vector.normalize(Vector.subtract(dest, hero.pos)), 3)
         move = Vector.add(hero.pos, direction)
-        trap = self.findNearest(firetraps)
-        if trap and self.distanceTo(trap) < 4:
+        trap = hero.findNearest(firetraps)
+        if trap and hero.distanceTo(trap) < 4:
             move = arowndMine(move, trap)
         hero.move(move)
     else:
@@ -34,8 +34,8 @@ while True:
             direction = Vector.multiply(Vector.normalize(Vector.subtract(home, hero.pos)), 10)
             move = Vector.add(hero.pos, direction)
             # Предупреждение: isPathClear не работает с Радиацией!
-            trap = self.findNearest(firetraps)
-            if trap and self.distanceTo(trap) < 4:
+            trap = hero.findNearest(firetraps)
+            if trap and hero.distanceTo(trap) < 4:
                 move = arowndMine(move, trap)
             hero.move(move)
         else:

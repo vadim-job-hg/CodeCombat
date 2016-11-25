@@ -1,55 +1,55 @@
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
 
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(enemy.pos)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
-        elif (self.isReady("cleave")):
-            self.cleave(enemy)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
+        elif (hero.isReady("cleave")):
+            hero.cleave(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
 
 
 def summonSoldier(lenlist):
     soldier = 'archer'
-    if self.gold > self.costOf(soldier):
-        self.summon(soldier)
+    if hero.gold > hero.costOf(soldier):
+        hero.summon(soldier)
         indexSoldier += 1
 
 
 # commands attack
 def commandSoldiers():
-    for soldier in self.findFriends():
-        enemy = self.findNearest(self.findEnemies())
+    for soldier in hero.findFriends():
+        enemy = hero.findNearest(hero.findEnemies())
         if enemy:
-            self.command(soldier, "attack", enemy)
+            hero.command(soldier, "attack", enemy)
 
 
 list = ['soldier', 'archer']
 indexSoldier = len(list)
 while True:
-    if self.now() > 10:
+    if hero.now() > 10:
         summonSoldier(len(list))
     commandSoldiers()
-    items = self.findItems()
+    items = hero.findItems()
     if (len(items) > 0):
         pickUpNearestItem(items)
     else:
-        enemy = self.findNearest(self.findEnemies())
+        enemy = hero.findNearest(hero.findEnemies())
         attack(enemy)

@@ -4,9 +4,9 @@
 # Whenever you can, cleave to clear the mass of enemies.
 
 while True:  # Use isReady to check if the hero can cleave, otherwise say something!
-    enemies = self.findEnemies();
-    enemy = self.findNearest(enemies);
-    if (enemy and self.isReady('cleave')):
-        self.cleave(enemy)
+    enemies = hero.findEnemies();
+    enemy = hero.findNearest(enemies);
+    if (enemy and hero.isReady('cleave')):
+        hero.cleave(enemy)
     else:
-        self.say('DGIGURDA')
+        hero.say('DGIGURDA')

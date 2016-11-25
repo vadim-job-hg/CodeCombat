@@ -1,9 +1,9 @@
 while True:
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if (enemy):
-        dist = self.distanceTo(enemy)
+        dist = hero.distanceTo(enemy)
         if (dist < 5):
-            if (self.isReady("cleave")):
-                self.cleave(enemy)
+            if (hero.isReady("cleave")):
+                hero.cleave(enemy)
             else:
-                self.attack(enemy)
+                hero.attack(enemy)

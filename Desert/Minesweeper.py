@@ -2,15 +2,15 @@
 # Проведи крестьян и лекаря через минное поле.
 
 while True:
-    coin = self.findNearestItem()
-    healingThreshold = self.maxHealth / 2
+    coin = hero.findNearestItem()
+    healingThreshold = hero.maxHealth / 2
     # Check to see if you are critically injured.
-    if self.health < healingThreshold:
+    if hero.health < healingThreshold:
         # Move left 10m.
-        self.moveXY(self.pos.x - 10, self.pos.y)
+        hero.moveXY(hero.pos.x - 10, hero.pos.y)
         # Ask for a heal.
-        self.say("Can I get a heal?")
+        hero.say("Can I get a heal?")
         pass
     # Else, move to the next coin.
     elif coin:
-        self.moveXY(coin.pos.x, coin.pos.y)
+        hero.moveXY(coin.pos.x, coin.pos.y)

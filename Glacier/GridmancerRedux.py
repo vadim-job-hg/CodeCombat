@@ -9,7 +9,7 @@
 # You must collect all coins under rectangles
 # Rectangles cannot collide with themselves or walls
 # You need to make at most 55 rectangles to beat this level!
-array_greed = self.navGrid
+array_greed = hero.navGrid
 
 
 def getRectngle(index1, index2):
@@ -27,7 +27,7 @@ def getRectngle(index1, index2):
             width_tmp = 0
             for x in range(indx, lenght_xy):
                 width_tmp = width_tmp + 1
-                # self.debug(x+'_'+y+'_'+array_greed[x][y])
+                # hero.debug(x+'_'+y+'_'+array_greed[x][y])
                 if array_greed[x][y] != 'Coin':
                     return_object = {'x': index1, 'y': index2, 'width': width, 'height': height}
                     return return_object
@@ -47,20 +47,20 @@ for x in range(lenght_xy):
     for y in range(lenght_xy):
         rectg = getRectngle(x, y)
         if rectg:
-            # self.say([rectg.x, rectg.y, rectg.width, rectg.height])
+            # hero.say([rectg.x, rectg.y, rectg.width, rectg.height])
             rect.push(rectg)
             for xi in range(rectg.x, rectg.x + rectg.width):
                 for yi in range(rectg.y, rectg.y + rectg.height):
                     array_greed[xi][yi] = 'Got'
-                    # self.say(xi+'_'+yi+'_'+array_greed[xi][yi])
-# self.say(array_greed[0])
-# self.say([rect[0].x, rect[0].y, rect[0].width, rect[0].height])
+                    # hero.say(xi+'_'+yi+'_'+array_greed[xi][yi])
+# hero.say(array_greed[0])
+# hero.say([rect[0].x, rect[0].y, rect[0].width, rect[0].height])
 index = 0
 break_i = 56
 for rec in rect:
-    self.addRect(rec.x, rec.y, rec.width, rec.height)
+    hero.addRect(rec.x, rec.y, rec.width, rec.height)
     if break_i == index:
-        self.say([rect[index].x, rect[index].y, rect[index].width, rect[index].height])
+        hero.say([rect[index].x, rect[index].y, rect[index].width, rect[index].height])
         break
     index = index + 1
-# self.addRect(0, 0, 4, 3)
+# hero.addRect(0, 0, 4, 3)

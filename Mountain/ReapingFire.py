@@ -1,19 +1,19 @@
 # http://codecombat.com/play/level/reaping-fire
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 def chooseStrategy():
-    enemies = self.findEnemies()
+    enemies = hero.findEnemies()
 
     # If you can summon a griffin-rider, return "griffin-rider"
-    if self.gold > self.costOf("griffin-rider"):
-        self.summon("griffin-rider")
+    if hero.gold > hero.costOf("griffin-rider"):
+        hero.summon("griffin-rider")
     # If there is a fangrider on your side of the mines, return "fight-back"
-    fangrider = self.findByType("fangrider")
+    fangrider = hero.findByType("fangrider")
     if (len(fangrider) > 0 and fangrider[0].pos.x < 38):
         return "fight-back"
     else:
@@ -26,32 +26,32 @@ def commandAttack():
 
 
 def pickUpCoin():
-    nearestItem = self.findNearest(self.findItems())
+    nearestItem = hero.findNearest(hero.findItems())
     if nearestItem:
         moveTo(nearestItem.pos)
 
 
 def heroAttack():
-    target = self.findNearest(self.findByType("fangrider"))
+    target = hero.findNearest(hero.findByType("fangrider"))
     if target:
-        if (self.distanceTo(target) < 20):
+        if (hero.distanceTo(target) < 20):
             moveTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(target)
-        elif (self.isReady("cleave")):
-            self.cleave(target)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(target)
+        elif (hero.isReady("cleave")):
+            hero.cleave(target)
         else:
-            self.attack(target)
+            hero.attack(target)
 
 
 def commandTroops():
-    for soldier in self.findFriends():
+    for soldier in hero.findFriends():
         enemy = soldier.findNearestEnemy()
         if enemy:
-            self.command(soldier, "attack", enemy)
+            hero.command(soldier, "attack", enemy)
 
 
 while True:

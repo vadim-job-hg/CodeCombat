@@ -2,11 +2,11 @@
 # <%= beware_outnumbered %>
 # <%= need_support_of_allies. %>
 while True:  # <%= how_to_place_flags %>
-    flag = self.findFlag()
-    enemy = self.findNearestEnemy()
+    flag = hero.findFlag()
+    enemy = hero.findNearestEnemy()
     if flag:
-        self.say("I see a flag")
+        hero.say("I see a flag")
     elif enemy:
-        self.attack(enemy)
+        hero.attack(enemy)
     else:
-        self.say("No enemies or flags in sight.")
+        hero.say("No enemies or flags in sight.")

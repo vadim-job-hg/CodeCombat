@@ -14,10 +14,10 @@ summonTypes = ['soldier', 'archer', 'griffin-rider']
 
 def summonTroops(num, coorX, coorY):
     type = summonTypes[num]
-    if self.gold > self.costOf(type):
-        self.summon(type)
-        friends = self.findByType(summonTypes[num], self.findFriends())
-        self.command(friends[len(friends) - 1], 'move', {'x': coorX, 'y': coorY})
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
+        friends = hero.findByType(summonTypes[num], hero.findFriends())
+        hero.command(friends[len(friends) - 1], 'move', {'x': coorX, 'y': coorY})
 
 
 array = []
@@ -28,10 +28,10 @@ minX = 22
 maxX = 63
 countX = 8
 iY = 0
-friends = self.findByType('paladin', self.findFriends())
+friends = hero.findByType('paladin', hero.findFriends())
 for index, friend in enumerate(friends):
     array.append([friend.deployment, 2, friend.pos.y])
-friends = self.findByType('warlock', self.findFriends())
+friends = hero.findByType('warlock', hero.findFriends())
 for index, friend in enumerate(friends):
     array.append([friend.deployment, 3, friend.pos.y])
 for y in range(maxY, minY - 1, (minY - maxY) / (countY - 1)):

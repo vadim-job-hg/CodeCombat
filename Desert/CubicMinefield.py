@@ -23,14 +23,14 @@ def power(number, exponent):
 
 
 # Don't change the follow code
-tower = self.findFriends()[0]
+tower = hero.findFriends()[0]
 a = tower.a
 b = tower.b
 c = tower.c
 d = tower.d
-x = self.pos.x
+x = hero.pos.x
 
 while True:
     y = a * power(x, 3) + b * power(x, 2) + c * power(x, 1) + d * power(x, 0)
-    self.moveXY(x, y)
+    hero.moveXY(x, y)
     x = x + 5

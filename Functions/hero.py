@@ -1,13 +1,13 @@
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 # pickup coin
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
@@ -16,10 +16,10 @@ buildTypes = ["fire-trap", "decoy", "arrow-tower"]
 
 
 def buildTroops():
-    coor = coors[len(self.built) % len(coors)]
-    type = buildTypes[len(self.built) % len(buildTypes)]
-    if self.gold > self.costOf(type):
-        self.buildXY(type, coor[0], coor[1])
+    coor = coors[len(hero.built) % len(coors)]
+    type = buildTypes[len(hero.built) % len(buildTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.buildXY(type, coor[0], coor[1])
 
 
 route = [[33, 14, True], [34, 7, False]]
@@ -29,7 +29,7 @@ index = 0
 def moveHero():
     if len(route) > index:
         moveTo({'x': route[index][0], 'y': route[index][1]}, route[index][2])
-        if (self.pos.x == route[index][0] and self.pos.y == route[index][1]):
+        if (hero.pos.x == route[index][0] and hero.pos.y == route[index][1]):
             return True
         else:
             return False
@@ -41,17 +41,17 @@ if (moveHero()):
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(target)
-        elif (self.isReady("cleave")):
-            self.cleave(target)
-        elif (self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(target)
+        elif (hero.isReady("cleave")):
+            hero.cleave(target)
+        elif (hero.canCast('chain-lightning', target)):
+            hero.cast('chain-lightning', target)
         else:
-            self.attack(target)
-            self.shield()
+            hero.attack(target)
+            hero.shield()

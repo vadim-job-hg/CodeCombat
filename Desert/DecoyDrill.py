@@ -3,20 +3,20 @@
 decoysBuilt = 0
 goldAmount = 0
 while True:
-    item = self.findNearestItem()
-    self.moveXY(item.pos.x, item.pos.y)
+    item = hero.findNearestItem()
+    hero.moveXY(item.pos.x, item.pos.y)
     # Loot the coin!
-    goldAmount = self.gold
+    goldAmount = hero.gold
     # Каждая приманка стоит 25 золотых. Используйте Quartz Sense Stone
-    # чтобы узнать когда наберёте больше 25 золотых self.gold.
+    # чтобы узнать когда наберёте больше 25 золотых hero.gold.
     if (goldAmount >= 25):
-        self.buildXY('decoy', item.pos.x, item.pos.y)
+        hero.buildXY('decoy', item.pos.x, item.pos.y)
         # Считайте количество уже построенных приманок.
         decoysBuilt += 1
     # Прерывайте цикл когда построите 4.
     if (decoysBuilt == 4):
         break
-    self.say("Приманки построены!")
+    hero.say("Приманки построены!")
     # Идите к Нарье и сообщите сколько приманок построено.
-    self.moveXY(14, 36)
-    self.say(decoysBuilt)
+    hero.moveXY(14, 36)
+    hero.say(decoysBuilt)

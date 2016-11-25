@@ -5,7 +5,7 @@ while True:
     weakest = None
     leastHealth = 99999
     enemyIndex = 0
-    enemies = self.findEnemies()
+    enemies = hero.findEnemies()
 
     # Просмотрите всех врагов.
     while enemyIndex < len(enemies):
@@ -19,5 +19,5 @@ while True:
 
     if weakest:
         # Атакуйте слабейшего огра.
-        self.attack(weakest)
+        hero.attack(weakest)
         pass

@@ -4,9 +4,9 @@ enemy1 = "Kratt"
 enemy2 = "Gert"
 enemy3 = "Ursa"
 
-self.attack(enemy1);
-self.attack(enemy1);
-self.attack(enemy2);
-self.attack(enemy2);
-self.attack(enemy3);
-self.attack(enemy3);
+hero.attack(enemy1);
+hero.attack(enemy1);
+hero.attack(enemy2);
+hero.attack(enemy2);
+hero.attack(enemy3);
+hero.attack(enemy3);

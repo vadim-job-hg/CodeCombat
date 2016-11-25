@@ -2,9 +2,9 @@
 # Увернись от 4 яков, чтобы завершить уровень.
 
 while True:
-    enemy = self.findNearestEnemy()
-    dist = self.distanceTo(enemy)
+    enemy = hero.findNearestEnemy()
+    dist = hero.distanceTo(enemy)
     if (dist < 10):
-        x = self.pos.x + 10
-        y = self.pos.y
-        self.moveXY(x, y)
+        x = hero.pos.x + 10
+        y = hero.pos.y
+        hero.moveXY(x, y)

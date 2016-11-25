@@ -1,7 +1,7 @@
 #https://codecombat.com/play/level/team-work
 # Should fill in some default source
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'peasant':
             CommandPeasant(friend)
 
@@ -9,7 +9,7 @@ def commandTroops():
 def CommandPeasant(soldier):
     item = soldier.findNearestItem()
     if item:
-        self.command(soldier, "move", item.pos)
+        hero.command(soldier, "move", item.pos)
 
 
 while True:

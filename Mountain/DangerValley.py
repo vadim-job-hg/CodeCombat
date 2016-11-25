@@ -7,16 +7,16 @@
 
 # First, remember the containing array is just an array!
 # Iterate over all the elements of this array.
-for i in range(len(self.grid)):
-    row = self.grid[i]
+for i in range(len(hero.grid)):
+    row = hero.grid[i]
     for j in range(len(row)):
         if (row[j] == 1):
-            self.buildXY('fire-trap', 36 + j * 5, 20 + i * 6)
+            hero.buildXY('fire-trap', 36 + j * 5, 20 + i * 6)
             # Now, row is just another array!
             # Iterate over all the tiles in this array:
 
             # Build a fire-trap if the tile is 1.
 
 # Finally, retreat back to cover.
-self.moveXY(20, 42)
-self.moveXY(29, 66)
+hero.moveXY(20, 42)
+hero.moveXY(29, 66)

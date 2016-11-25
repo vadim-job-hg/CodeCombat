@@ -1,17 +1,17 @@
 while True:
-    item = self.findNearest(self.findItems())
+    item = hero.findNearest(hero.findItems())
     if (item):
-        if (self.isReady("jump")):
-            self.jumpTo({'x': item.pos.x, 'y': item.pos.y})
+        if (hero.isReady("jump")):
+            hero.jumpTo({'x': item.pos.x, 'y': item.pos.y})
         else:
-            self.move(item.pos)
-    if self.gold > self.costOf("soldier"):
-        self.summon("soldier")
-    enemy = self.findNearest(self.findEnemies())
+            hero.move(item.pos)
+    if hero.gold > hero.costOf("soldier"):
+        hero.summon("soldier")
+    enemy = hero.findNearest(hero.findEnemies())
     if enemy:
-        soldiers = self.findFriends()
+        soldiers = hero.findFriends()
         soldierIndex = 0
         while (soldierIndex < len(soldiers)):
             soldier = soldiers[soldierIndex]
-            self.command(soldier, "attack", enemy)
+            hero.command(soldier, "attack", enemy)
             soldierIndex += 1

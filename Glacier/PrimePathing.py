@@ -10,12 +10,12 @@ SafeWayIndex = 1
 
 def moveTroop():
     moved = True
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         ind = SafeWayIndex - index
         if ind >= 0 and ind < len(SafeWay):
             if friend.pos.x != SafeWay[ind][0] or friend.pos.y != SafeWay[ind][1]:
                 moved = False
-                self.command(friend, 'move', {'x': SafeWay[ind][0], 'y': SafeWay[ind][1]})
+                hero.command(friend, 'move', {'x': SafeWay[ind][0], 'y': SafeWay[ind][1]})
     return moved
 
 
@@ -34,10 +34,10 @@ def checkifExist(object):
 
 
 def checktrap():
-    objects = self.findHazards()
+    objects = hero.findHazards()
     for object in objects:
-        if (self.distanceTo(object) < 20 and checkifExist(object) and checkprimary(object.value)):
-            self.moveXY(object.pos.x, object.pos.y)
+        if (hero.distanceTo(object) < 20 and checkifExist(object) and checkprimary(object.value)):
+            hero.moveXY(object.pos.x, object.pos.y)
             SafeWay.push([object.pos.x, object.pos.y])
             return True
     return False
@@ -47,12 +47,12 @@ while True:
     checktrap()
     if routeIndex < len(route):
         if route[routeIndex][2] == 1:
-            self.moveXY(route[routeIndex][0], route[routeIndex][1])
+            hero.moveXY(route[routeIndex][0], route[routeIndex][1])
             SafeWay.push(route[routeIndex])
             routeIndex = routeIndex + 1
         else:
-            self.move({'x': route[routeIndex][0], 'y': route[routeIndex][1]})
-            if self.pos.x == route[routeIndex][0] and self.pos.y == route[routeIndex][1]:
+            hero.move({'x': route[routeIndex][0], 'y': route[routeIndex][1]})
+            if hero.pos.x == route[routeIndex][0] and hero.pos.y == route[routeIndex][1]:
                 SafeWay.push(route[routeIndex])
                 routeIndex = routeIndex + 1
 

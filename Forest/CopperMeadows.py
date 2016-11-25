@@ -1,11 +1,11 @@
 while True:
-    flag = self.findFlag()
+    flag = hero.findFlag()
     if (flag):
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
     else:
-        item = self.findNearestItem()
+        item = hero.findNearestItem()
         if (item):
             position = item.pos
             x = position.x
             y = position.y
-            self.moveXY(x, y)
+            hero.moveXY(x, y)

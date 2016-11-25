@@ -1,8 +1,8 @@
 while True:
-    enemies = self.findEnemies()
+    enemies = hero.findEnemies()
     enemyIndex = 0
     while enemyIndex < len(enemies):
         enemy = enemies[enemyIndex]
         if enemy.type != "sand-yak" and enemy.health > 0:
-            self.attack(enemy)
+            hero.attack(enemy)
         enemyIndex += 1

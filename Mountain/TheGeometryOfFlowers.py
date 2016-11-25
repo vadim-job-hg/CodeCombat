@@ -7,52 +7,52 @@
 # size - размер фигуры (radius, side length)
 def drawCircle(x, y, size):
     angle = 0
-    self.toggleFlowers(False)
+    hero.toggleFlowers(False)
     while angle <= Math.PI * 2:
         newX = x + (size * Math.cos(angle))
         newY = y + (size * Math.sin(angle))
-        self.moveXY(newX, newY)
-        self.toggleFlowers(True)
+        hero.moveXY(newX, newY)
+        hero.toggleFlowers(True)
         angle += 0.2
 
 
 def drawSquare(x, y, size):
-    self.toggleFlowers(False)
+    hero.toggleFlowers(False)
     cornerOffset = size / 2
-    self.moveXY(x - cornerOffset, y - cornerOffset)
-    self.toggleFlowers(True)
-    self.moveXY(x + cornerOffset, y - cornerOffset)
-    self.moveXY(x + cornerOffset, y + cornerOffset)
-    self.moveXY(x - cornerOffset, y + cornerOffset)
-    self.moveXY(x - cornerOffset, y - cornerOffset)
+    hero.moveXY(x - cornerOffset, y - cornerOffset)
+    hero.toggleFlowers(True)
+    hero.moveXY(x + cornerOffset, y - cornerOffset)
+    hero.moveXY(x + cornerOffset, y + cornerOffset)
+    hero.moveXY(x - cornerOffset, y + cornerOffset)
+    hero.moveXY(x - cornerOffset, y - cornerOffset)
 
 
 redX = {"x": 28, "y": 36}
 whiteX = {"x": 44, "y": 36}
 
 # Выбери цвет.
-self.setFlowerColor("red")
+hero.setFlowerColor("red")
 # Нарисуй круг размером 10 на красной метке.
 drawCircle(redX.x, redX.y, 10)
 # Измени цвет!
-self.setFlowerColor("white")
+hero.setFlowerColor("white")
 # Нарисуй квадрат размером 10 на белой метке.
 drawSquare(whiteX.x, whiteX.y, 10)
 # Теперь экспериментируй, рисуя все что угодно!
 size = 10
-self.setFlowerColor("random")
-self.toggleFlowers(False)
+hero.setFlowerColor("random")
+hero.toggleFlowers(False)
 cornerOffset = size / 2
-self.moveXY(59, 37)
-self.toggleFlowers(True)
+hero.moveXY(59, 37)
+hero.toggleFlowers(True)
 x = 60
 y = 26
 angle = 0
 while angle <= Math.PI * 2:
     newX = x + (size * Math.cos(angle))
     newY = y + (size * Math.sin(angle))
-    self.moveXY(newX, newY)
-    self.toggleFlowers(True)
+    hero.moveXY(newX, newY)
+    hero.toggleFlowers(True)
     angle += 0.2
 x = 60
 y = 46
@@ -60,6 +60,6 @@ angle = 0
 while angle <= Math.PI * 2:
     newX = x + (size * Math.cos(angle))
     newY = y + (size * Math.sin(angle))
-    self.moveXY(newX, newY)
-    self.toggleFlowers(True)
+    hero.moveXY(newX, newY)
+    hero.toggleFlowers(True)
     angle += 0.2

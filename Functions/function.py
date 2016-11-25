@@ -1,7 +1,7 @@
 def lowestHealthFriend():
     lowestHealth = 99999
     lowestFriend = None
-    friends = self.findFriends()
+    friends = hero.findFriends()
     for friend in friends:
         if friend.health < lowestHealth and friend.health < friend.maxHealth:
             lowestHealth = friend.health
@@ -13,20 +13,20 @@ def lowestHealthFriend():
 def commandPeasant(peasant):
     item = peasant.findNearestItem()
     if item:
-        self.command(peasant, 'move', item.pos)
+        hero.command(peasant, 'move', item.pos)
 
 
 def commandPaladin(paladin):
     if (paladin.canCast("heal")):
         target = lowestHealthPaladin()
         if target:
-            self.command(paladin, "cast", "heal", target)
+            hero.command(paladin, "cast", "heal", target)
     elif (paladin.health < 100):
-        self.command(paladin, "shield")
+        hero.command(paladin, "shield")
     else:
         target = paladin.findNearestEnemy()
         if (target):
-            self.command(paladin, "attack", target)
+            hero.command(paladin, "attack", target)
 
 
 # Теперь у тебя есть Кольца Цветов! Ты можешь:
@@ -37,24 +37,24 @@ def commandPaladin(paladin):
 # size - размер фигуры (radius, side length)
 def drawCircle(x, y, size):
     angle = 0
-    self.toggleFlowers(False)
+    hero.toggleFlowers(False)
     while angle <= Math.PI * 2:
         newX = x + (size * Math.cos(angle))
         newY = y + (size * Math.sin(angle))
-        self.moveXY(newX, newY)
-        self.toggleFlowers(True)
+        hero.moveXY(newX, newY)
+        hero.toggleFlowers(True)
         angle += 0.2
 
 
 def drawSquare(x, y, size):
-    self.toggleFlowers(False)
+    hero.toggleFlowers(False)
     cornerOffset = size / 2
-    self.moveXY(x - cornerOffset, y - cornerOffset)
-    self.toggleFlowers(True)
-    self.moveXY(x + cornerOffset, y - cornerOffset)
-    self.moveXY(x + cornerOffset, y + cornerOffset)
-    self.moveXY(x - cornerOffset, y + cornerOffset)
-    self.moveXY(x - cornerOffset, y - cornerOffset)
+    hero.moveXY(x - cornerOffset, y - cornerOffset)
+    hero.toggleFlowers(True)
+    hero.moveXY(x + cornerOffset, y - cornerOffset)
+    hero.moveXY(x + cornerOffset, y + cornerOffset)
+    hero.moveXY(x - cornerOffset, y + cornerOffset)
+    hero.moveXY(x - cornerOffset, y - cornerOffset)
 
 
 def findTheY(x1, x2, y1, y2, x):

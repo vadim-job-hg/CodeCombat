@@ -1,15 +1,15 @@
 # http://codecombat.com/play/level/cloudrip-treasure
 # алгоритм выбора цели
 def moveTo(position, fast=True):
-    if (self.isReady("jump")):
-        self.jumpTo(position)
+    if (hero.isReady("jump")):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 # pickup coin
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
@@ -19,22 +19,22 @@ summonTypes = ['soldier', 'soldier', 'soldier', 'soldier', 'paladin']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 # commands attack
 def CommandPaladin(paladin):
-    if (paladin.canCast("heal") and self.health < self.maxHealth * 0.6):
-        self.command(paladin, "cast", "heal", self)
+    if (paladin.canCast("heal") and hero.health < hero.maxHealth * 0.6):
+        hero.command(paladin, "cast", "heal", self)
     else:
-        target = self.findNearest(self.findEnemies())
-        self.command(paladin, "attack", target)
+        target = hero.findNearest(hero.findEnemies())
+        hero.command(paladin, "attack", target)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
         elif friend.type == 'paladin':
@@ -46,31 +46,31 @@ def commandTroops():
 
 
 def CommandSoldier(paladin):
-    target = self.findNearest(self.findEnemies())
+    target = hero.findNearest(hero.findEnemies())
     if target:
-        self.command(paladin, "attack", target)
+        hero.command(paladin, "attack", target)
 
 
 def CommandPeasant(soldier):
     item = soldier.findNearestItem()
     if item:
-        self.command(soldier, "move", item.pos)
+        hero.command(soldier, "move", item.pos)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(enemy.pos)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.canCast('chain-lightning', target)):
+            hero.cast('chain-lightning', target)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
 
 
 while True:
     summonTroops()
     commandTroops()
-    enemy = self.findNearest(self.findEnemies())
+    enemy = hero.findNearest(hero.findEnemies())
     attack(enemy)

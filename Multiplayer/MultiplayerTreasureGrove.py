@@ -1,38 +1,38 @@
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
 
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo(position) > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo(position) > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
-        elif (self.isReady("attack")):
-            self.attack(target)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.canCast('chain-lightning', target)):
+            hero.cast('chain-lightning', target)
+        elif (hero.isReady("attack")):
+            hero.attack(target)
         else:
-            self.shield()
+            hero.shield()
 
 
 while True:
-    items = self.findItems()
-    enemyattack = self.findNearest(self.findEnemies())
-    if enemyattack and self.distanceTo(enemyattack) < 2:
+    items = hero.findItems()
+    enemyattack = hero.findNearest(hero.findEnemies())
+    if enemyattack and hero.distanceTo(enemyattack) < 2:
         if (enemyattack):
             attack(enemyattack)
         else:
-            self.shield()
+            hero.shield()
     else:
         if len(items) > 0:
             pickUpNearestItem(items)

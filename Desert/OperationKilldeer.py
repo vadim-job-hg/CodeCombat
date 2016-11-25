@@ -5,7 +5,7 @@
 
 # This function checks the hero's health and returns a Boolean value.
 def shouldRun():
-    if self.health < self.maxHealth / 2:
+    if hero.health < hero.maxHealth / 2:
         return True
     else:
         return False
@@ -14,5 +14,5 @@ def shouldRun():
 while True:
     # Run to the X only if the hero shouldRun().
     if (shouldRun()):
-        self.moveXY(75, 37)
+        hero.moveXY(75, 37)
         # Otherwise, fight!

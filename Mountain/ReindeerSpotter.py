@@ -27,5 +27,5 @@ for deerIndex in range(len(friends)):
 for occIndex in range(len(penOccupants)):
     # Tell Merek the pen index and the occupant.
     # Say something like "Pen 2 is empty" or "Pen 3 is Dasher"
-    self.say("Pen " + occIndex + " is " + penOccupants[occIndex])
+    hero.say("Pen " + occIndex + " is " + penOccupants[occIndex])
     pass

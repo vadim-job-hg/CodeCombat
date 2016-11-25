@@ -1,20 +1,20 @@
 # Используй флаги разных цветов, чтобы выполнять различные задачи.
 
 while True:
-    flagGreen = self.findFlag("green")
-    flagBlack = self.findFlag("black")
-    flagViolet = self.findFlag("violet")
+    flagGreen = hero.findFlag("green")
+    flagBlack = hero.findFlag("black")
+    flagViolet = hero.findFlag("violet")
     if (flagGreen):
-        self.buildXY('fence', flagGreen.pos.x, flagGreen.pos.y)
-        self.pickUpFlag(flagGreen)
+        hero.buildXY('fence', flagGreen.pos.x, flagGreen.pos.y)
+        hero.pickUpFlag(flagGreen)
     # Если появляется зеленый флаг, то строй заграждение ("fence").
     if (flagBlack):
-        self.buildXY('fire-trap', flagBlack.pos.x, flagBlack.pos.y)
-        self.pickUpFlag(flagBlack)
+        hero.buildXY('fire-trap', flagBlack.pos.x, flagBlack.pos.y)
+        hero.pickUpFlag(flagBlack)
     # Если появляется черный флаг, то строй ловушку ("fire-trap").
     if (flagViolet):
-        self.moveXY(flagViolet.pos.x, flagViolet.pos.y)
-        self.pickUpFlag(flagViolet)
+        hero.moveXY(flagViolet.pos.x, flagViolet.pos.y)
+        hero.pickUpFlag(flagViolet)
         # Если появляется фиолетовый флаг, то просто переместись к нему.
 
         # Не забывай подбирать флаги после их использования!

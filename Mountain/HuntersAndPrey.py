@@ -1,15 +1,15 @@
 # http://codecombat.com/play/level/hunters-and-prey
 
 def pickUpCoin():
-    items = self.findItems()
-    nearestCoin = self.findNearest(items)
+    items = hero.findItems()
+    nearestCoin = hero.findNearest(items)
     if nearestCoin:
-        self.move(nearestCoin.pos)
+        hero.move(nearestCoin.pos)
 
 
 def summonTroops():
-    if self.gold > self.costOf("soldier"):
-        self.summon("soldier")
+    if hero.gold > hero.costOf("soldier"):
+        hero.summon("soldier")
 
 
 # This function has an argument named soldier.
@@ -18,7 +18,7 @@ def summonTroops():
 def commandSoldier(soldier):
     enemy = soldier.findNearestEnemy()
     if enemy:
-        self.command(soldier, "attack", enemy)
+        hero.command(soldier, "attack", enemy)
 
 
 # Write a commandArcher function to tell your archers what to do!
@@ -27,16 +27,16 @@ def commandSoldier(soldier):
 def commandArcher(soldier):
     enemy = soldier.findNearestEnemy()
     if enemy and soldier.distanceTo(enemy) < 25:
-        self.command(soldier, "attack", enemy)
+        hero.command(soldier, "attack", enemy)
 
 
 while True:
     pickUpCoin()
     summonTroops()
-    friends = self.findFriends()
+    friends = hero.findFriends()
     for friend in friends:
         if friend.health < 100 and (friend.type == "soldier"):
-            self.command(friend, "defend", self.pos)
+            hero.command(friend, "defend", hero.pos)
         elif friend.type == "soldier":
             # This friend will be assigned to the variable soldier in commandSoldier
             commandSoldier(friend)

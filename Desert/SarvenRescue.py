@@ -6,29 +6,29 @@
 array = [[3, 35], [72, 36], [71, 52], [119,29],[130, 106],[27, 106]]
 arrayIndex = 0;
 while arrayIndex < len(array):
-    enemy = self.findNearest(self.findEnemies())
-    item = self.findNearest(self.findItems())
-    if (enemy and self.distanceTo(enemy) < 50):
-        if (self.isReady('jump') and self.distanceTo(enemy) > 10):
-            self.jumpTo(enemy.pos)
-        elif (self.isReady("cleave")):
-            self.cleave(enemy)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
+    enemy = hero.findNearest(hero.findEnemies())
+    item = hero.findNearest(hero.findItems())
+    if (enemy and hero.distanceTo(enemy) < 50):
+        if (hero.isReady('jump') and hero.distanceTo(enemy) > 10):
+            hero.jumpTo(enemy.pos)
+        elif (hero.isReady("cleave")):
+            hero.cleave(enemy)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
     elif (item and hero.distanceTo(item)<40):
-        if (self.isReady('jump')):
-            self.jumpTo(item.pos)
+        if (hero.isReady('jump')):
+            hero.jumpTo(item.pos)
         else:
-            self.move(item.pos)
+            hero.move(item.pos)
     else:
-        if (self.isReady('jump')):
-            self.jumpTo({'x': array[arrayIndex][0], 'y': array[arrayIndex][1]})
+        if (hero.isReady('jump')):
+            hero.jumpTo({'x': array[arrayIndex][0], 'y': array[arrayIndex][1]})
         else:
-            self.moveXY(array[arrayIndex][0], array[arrayIndex][1])
+            hero.moveXY(array[arrayIndex][0], array[arrayIndex][1])
         arrayIndex += 1
 

@@ -20,5 +20,5 @@ for statusIndex in range(len(deerStatus)):
     reindeer = friends[deerIndex]
     # Tell Merek the reindeer index and whether it's asleep or awake.
     # Say something like "Reindeer 2 is asleep" or "Reindeer 4 is awake"
-    self.say('Reindeer ' + statusIndex + ' is ' + deerStatus[statusIndex])
+    hero.say('Reindeer ' + statusIndex + ' is ' + deerStatus[statusIndex])
     pass

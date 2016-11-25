@@ -1,48 +1,48 @@
 def pickUpNearestCoin():
-    items = self.findItems()
-    nearestCoin = self.findNearest(items)
+    items = hero.findItems()
+    nearestCoin = hero.findNearest(items)
     if nearestCoin:
-        self.move(nearestCoin.pos)
+        hero.move(nearestCoin.pos)
 
 
 def attack(target):
     if target:
-        if (self.isReady("jump") and self.distanceTo > 10):
-            self.jumpTo(enemy.pos)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
-        elif (self.isReady("cleave")):
-            self.cleave(enemy)
+        if (hero.isReady("jump") and hero.distanceTo > 10):
+            hero.jumpTo(enemy.pos)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
+        elif (hero.isReady("cleave")):
+            hero.cleave(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
 
 
 def summonSoldier():
     # Заполни код здесь, что призвать солдата, если у тебя достаточно золота.
-    if self.gold > self.costOf("soldier"):
-        self.summon("soldier")
+    if hero.gold > hero.costOf("soldier"):
+        hero.summon("soldier")
 
 
 # commands attack
 def commandSoldiers():
-    for soldier in self.findByType("soldier"):
-        self.command(soldier, "move", {'x': 50, 'y': 41})
+    for soldier in hero.findByType("soldier"):
+        hero.command(soldier, "move", {'x': 50, 'y': 41})
 
 
 while True:
-    enemies = self.findEnemies()
+    enemies = hero.findEnemies()
     index = 0
     distanse = 99999
     enemy = None
     while index < len(enemies):
-        if enemies[index].type != "sand-yak" and distanse > self.distanceTo(enemies[index]):
-            distanse = self.distanceTo(enemies[index])
+        if enemies[index].type != "sand-yak" and distanse > hero.distanceTo(enemies[index]):
+            distanse = hero.distanceTo(enemies[index])
             enemy = enemies[index]
         index += 1
-    items = self.findItems()
+    items = hero.findItems()
     if len(items) > 0:
         pickUpNearestCoin()
     summonSoldier()

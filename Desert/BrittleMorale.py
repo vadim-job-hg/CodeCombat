@@ -17,6 +17,6 @@ def findStrongestEnemy(enemies):
     return strongest
 
 
-enemies = self.findEnemies()
+enemies = hero.findEnemies()
 if enemies:
-    self.say(findStrongestEnemy(enemies))
+    hero.say(findStrongestEnemy(enemies))

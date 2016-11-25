@@ -1,35 +1,35 @@
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 summonTypes = ['griffin-rider', 'soldier', 'archer']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for soldier in self.findFriends():
+    for soldier in hero.findFriends():
         if enemy:
-            self.command(soldier, "attack", enemy)
+            hero.command(soldier, "attack", enemy)
 
 
 def attack(target):
-    if (self.distanceTo(target) > 10):
+    if (hero.distanceTo(target) > 10):
         moveTo(target.pos)
     else:
-        self.attack(target)
+        hero.attack(target)
 
 
 while True:
     summonTroops()
     commandTroops()
-    enemy = self.findNearest(self.findEnemies())
+    enemy = hero.findNearest(hero.findEnemies())
     if (enemy):
         attack(enemy)

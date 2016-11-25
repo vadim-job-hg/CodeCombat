@@ -1,23 +1,23 @@
 # http://codecombat.com/play/level/the-agrippa-defense-a
 def cleaveOrAttack(enemy):
     # If "cleave" is ready, cleave; otherwise, attack.
-    # enemy = self.findNearestEnemy()
-    enemy = self.findNearest(self.findEnemies())
+    # enemy = hero.findNearestEnemy()
+    enemy = hero.findNearest(hero.findEnemies())
     if (enemy):
-        dist = self.distanceTo(enemy)
+        dist = hero.distanceTo(enemy)
         if (dist < 5):
-            if (self.isReady("cleave")):
-                self.cleave(enemy)
+            if (hero.isReady("cleave")):
+                hero.cleave(enemy)
             else:
-                self.attack(enemy)
+                hero.attack(enemy)
 
     pass
 
 
 while True:
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if enemy:
-        distance = self.distanceTo(enemy)
+        distance = hero.distanceTo(enemy)
         if distance < 5:
             # Call the "cleaveOrAttack" function, defined above.
             cleaveOrAttack(enemy)

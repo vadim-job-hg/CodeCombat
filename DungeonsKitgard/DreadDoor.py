@@ -1,2 +1,2 @@
 while True:
-    self.attack("Door")
+    hero.attack("Door")

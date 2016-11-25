@@ -1,8 +1,8 @@
 while True:
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if (enemy.type == "burl"):
-        self.say("I'm not attacking that Burl!")
+        hero.say("I'm not attacking that Burl!")
     if ((enemy.type == "munchkin") or (enemy.type == "thrower")):
-        self.attack(enemy)
+        hero.attack(enemy)
     if (enemy.type == "ogre"):
-        self.moveXY(43, 49)
+        hero.moveXY(43, 49)

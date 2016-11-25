@@ -1,6 +1,6 @@
-self.moveDown()
+hero.moveDown()
 i = 0
 while True:
-  self.buildXY("fence", 40 + i, 31)
-  self.moveRight()
+  hero.buildXY("fence", 40 + i, 31)
+  hero.moveRight()
   i += 12

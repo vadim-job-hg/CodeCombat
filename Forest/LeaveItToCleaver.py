@@ -6,11 +6,11 @@ def cleaveWhenClose(target):
         pass
         # Put your attack code here
         # If cleave is ready, then cleave target
-        if (self.isReady('cleave')):
-            self.cleave(target);
+        if (hero.isReady('cleave')):
+            hero.cleave(target);
         # else, just attack target!
         else:
-            self.attack(target)
+            hero.attack(target)
 
 
 # This code is not part of the function.

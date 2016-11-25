@@ -1,62 +1,62 @@
 def pickUpNearestCoin():
-    items = self.findItems()
-    nearestCoin = self.findNearest(items)
+    items = hero.findItems()
+    nearestCoin = hero.findNearest(items)
     if nearestCoin:
-        self.move(nearestCoin.pos)
+        hero.move(nearestCoin.pos)
 
 
 def attack(target):
     if target:
-        if (self.isReady("jump") and self.distanceTo > 10):
-            self.jumpTo(enemy.pos)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
-        elif (self.isReady("cleave")):
-            self.cleave(enemy)
+        if (hero.isReady("jump") and hero.distanceTo > 10):
+            hero.jumpTo(enemy.pos)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
+        elif (hero.isReady("cleave")):
+            hero.cleave(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
 
 
 summonTypes = ['griffin-rider', 'soldier', 'archer']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 # commands attack
 def commandSoldiers():
-    for soldier in self.findByType("soldier"):
-        self.command(soldier, "defend", self)
+    for soldier in hero.findByType("soldier"):
+        hero.command(soldier, "defend", self)
 
 
 while True:
-    enemies = self.findEnemies()
+    enemies = hero.findEnemies()
     index = 0
     distanse = 99999
     enemy = None
     while index < len(enemies):
-        if enemies[index].type != "sand-yak" and distanse > self.distanceTo(enemies[index]):
-            distanse = self.distanceTo(enemies[index])
+        if enemies[index].type != "sand-yak" and distanse > hero.distanceTo(enemies[index]):
+            distanse = hero.distanceTo(enemies[index])
             enemy = enemies[index]
         index += 1
-    items = self.findItems()
+    items = hero.findItems()
     if len(items) > 0:
         pickUpNearestCoin()
     if enemy is not None and enemy.type != "sand-yak":
-        if (self.distanceTo(enemy) < 7):
+        if (hero.distanceTo(enemy) < 7):
             attack(enemy)
-        elif (self.distanceTo(enemy) < 20):
-            if (self.isReady("jump") and self.distanceTo > 10):
-                self.jumpTo(enemy.pos)
+        elif (hero.distanceTo(enemy) < 20):
+            if (hero.isReady("jump") and hero.distanceTo > 10):
+                hero.jumpTo(enemy.pos)
             else:
-                self.move(enemy.pos)
+                hero.move(enemy.pos)
         else:
-            self.move({'x': 89, 'y': 72})
+            hero.move({'x': 89, 'y': 72})
     summonTroops()
     commandSoldiers()

@@ -8,9 +8,9 @@ while True:
     enemy = hero.findNearestEnemy()
     if flag:
         # Подберите флаг.
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
         pass
     elif enemy:
         # Атакуйте врагов на месте.
-        self.attack(enemy)
+        hero.attack(enemy)
         pass

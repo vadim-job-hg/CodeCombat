@@ -4,7 +4,7 @@
 # She moves to x<39.5 if lower and x>40.5 if higher 
 # and x==40 if correct.
 # The paladin's maxNum property is the upper bound of the number.
-paladin = self.findByType("paladin")[0]
+paladin = hero.findByType("paladin")[0]
 minNum = 0
 maxNum = paladin.maxNum
 myBid = Math.floor((maxNum - minNum) / 2 + minNum)
@@ -18,4 +18,4 @@ while True:
     else:
         minNum = myBid + 1
     myBid = Math.round(Math.random() * (maxNum - minNum) + minNum)
-    self.say(myBid)
+    hero.say(myBid)

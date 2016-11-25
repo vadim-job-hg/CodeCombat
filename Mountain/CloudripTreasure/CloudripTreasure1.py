@@ -1,13 +1,13 @@
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 # pickup coin
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
@@ -17,9 +17,9 @@ summonTypes = ['griffin-rider', 'soldier', 'archer']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def findNearest(index):
@@ -32,7 +32,7 @@ def findNearest(index):
         top = True
     elif (index == 3):
         left = True
-    items = self.findItems()
+    items = hero.findItems()
     for item in items:
         if (item.pos.y > 66 and top and left and item.pos.x < 76):
             return item
@@ -48,35 +48,35 @@ def findNearest(index):
 # commands attack
 def commandTroops():
     index = 0
-    for friend in self.findFriends():
+    for friend in hero.findFriends():
         if friend.type == 'peasant':
             item = findNearest(index)
             index += 1
             if item:
-                self.command(friend, 'move', item.pos)
+                hero.command(friend, 'move', item.pos)
         else:
-            enemy = self.findNearest(self.findEnemies())
+            enemy = hero.findNearest(hero.findEnemies())
             if enemy:
-                self.command(friend, "attack", enemy)
+                hero.command(friend, "attack", enemy)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(enemy.pos)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
-        elif (self.isReady("cleave")):
-            self.cleave(enemy)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
+        elif (hero.isReady("cleave")):
+            hero.cleave(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
 
 
 while True:
     summonTroops()
     commandTroops()
-    enemy = self.findNearest(self.findEnemies())
+    enemy = hero.findNearest(hero.findEnemies())
     attack(enemy)

@@ -6,13 +6,13 @@ summonTypes = {"a": "archer", "s": "soldier", "p": "peasant", "g": "griffin-ride
 
 def summonTroops(num, coorX, coorY):
     type = summonTypes[num]
-    if type != 'artillery' and self.gold > self.costOf(type):
-        self.summon(type)
-    friends = self.findByType(summonTypes[num], self.findFriends())
-    self.command(friends[len(friends) - 1], 'move', {'x': int(coorX), 'y': int(coorY)})
+    if type != 'artillery' and hero.gold > hero.costOf(type):
+        hero.summon(type)
+    friends = hero.findByType(summonTypes[num], hero.findFriends())
+    hero.command(friends[len(friends) - 1], 'move', {'x': int(coorX), 'y': int(coorY)})
 
 
-sign = self.findByType("sign")[0]
+sign = hero.findByType("sign")[0]
 message = sign.message
 # Подсказка: проведите грамматический анализ знака, призовите боевые единицы и пошлите каждую единицу на нужное место.
 for index in range(0, len(message), 5):

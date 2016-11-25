@@ -9,7 +9,7 @@ while True:
     hero.moveXY(xPos, yPos)
     # Check for ogres and defeat them!
     # Make sure to attack the ogres while their health is above 0.
-    enemy = self.findNearest(self.findEnemies())
+    enemy = hero.findNearest(hero.findEnemies())
     while enemy:
-        self.attack(enemy)
-        enemy = self.findNearest(self.findEnemies())
+        hero.attack(enemy)
+        enemy = hero.findNearest(hero.findEnemies())

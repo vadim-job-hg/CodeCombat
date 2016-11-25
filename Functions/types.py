@@ -30,7 +30,7 @@ enemy_types['thrower'] = {'danger': 3, 'focus': 22}
 enemy_types['munchkin'] = {'danger': 2, 'focus': 15}
 enemy_types['yak'] = {'danger': -1, 'focus': 0}
 enemy_types['ice-yak'] = {'danger': -1, 'focus': 0}
-if self.team == 'humans':
+if hero.team == 'humans':
     team = 'humans'
 else:
     team = 'ogres'
@@ -41,10 +41,10 @@ def findTarget():
     enemy_return = None
     for type in enemy_types.keys():
         if enemy_types[type].danger > danger:
-            enemy = self.findNearest(self.findByType(type))
-            if enemy and enemy.team != team and self.distanceTo(enemy) < enemy_types[type].focus:
+            enemy = hero.findNearest(hero.findByType(type))
+            if enemy and enemy.team != team and hero.distanceTo(enemy) < enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if enemy_return is None:
-        enemy_return = self.findNearest(self.findEnemies())
+        enemy_return = hero.findNearest(hero.findEnemies())
     return enemy_return

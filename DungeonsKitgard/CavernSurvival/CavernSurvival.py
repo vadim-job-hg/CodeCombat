@@ -1,37 +1,37 @@
 # http://codecombat.com/play/level/cavern-survival
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 summonTypes = ['griffin-rider', 'soldier', 'archer']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for soldier in self.findFriends():
-        enemy = self.findNearest(self.findEnemies())
+    for soldier in hero.findFriends():
+        enemy = hero.findNearest(hero.findEnemies())
         if enemy:
-            self.command(soldier, "attack", enemy)
+            hero.command(soldier, "attack", enemy)
 
 
 def attack(target):
-    if (not target or self.distanceTo(target) > 20):
-        self.buildXY('caltrops', self.pos.x, self.pos.y)
-    elif (self.distanceTo(target) > 10):
+    if (not target or hero.distanceTo(target) > 20):
+        hero.buildXY('caltrops', hero.pos.x, hero.pos.y)
+    elif (hero.distanceTo(target) > 10):
         moveTo(target.pos)
     else:
-        self.attack(target)
+        hero.attack(target)
 
 
 while True:
     summonTroops()
     commandTroops()
-    attack(self.findNearest(self.findEnemies()))
+    attack(hero.findNearest(hero.findEnemies()))

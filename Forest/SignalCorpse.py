@@ -4,21 +4,21 @@
 # The doctor will heal you at the Red X
 
 while True:
-    green = self.findFlag("green")
-    black = self.findFlag("black")
-    nearest = self.findNearestEnemy()
-    enemy = self.findNearestEnemy()
+    green = hero.findFlag("green")
+    black = hero.findFlag("black")
+    nearest = hero.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if enemy:
-        dist = self.distanceTo(enemy);
+        dist = hero.distanceTo(enemy);
     if green:
-        self.pickUpFlag(green)
-    elif black and self.isReady("cleave"):
-        self.pickUpFlag(black)
-        enemy = self.findNearestEnemy()
+        hero.pickUpFlag(green)
+    elif black and hero.isReady("cleave"):
+        hero.pickUpFlag(black)
+        enemy = hero.findNearestEnemy()
         if enemy:
-            self.cleave(enemy);
+            hero.cleave(enemy);
 
-    elif nearest and self.distanceTo(nearest) < 10:
-        self.attack(nearest)
+    elif nearest and hero.distanceTo(nearest) < 10:
+        hero.attack(nearest)
 
         pass

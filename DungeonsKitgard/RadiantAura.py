@@ -1,6 +1,6 @@
 # http://codecombat.com/play/level/radiant-aura
 # Подбирайте светящиеся камни, чтобы заставить скелетов на короткое время убегать от вас.
 while True:
-    self.moveUp()
-    self.moveDown()
-    self.moveRight(2)
+    hero.moveUp()
+    hero.moveDown()
+    hero.moveRight(2)

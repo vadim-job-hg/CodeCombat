@@ -1,7 +1,7 @@
-self.moveXY(68, 78)
+hero.moveXY(68, 78)
 back = 0
 while True:
-    enemys = self.findEnemies()
+    enemys = hero.findEnemies()
     index = 0
     closest_soldier = None
     soldier_dist = 999
@@ -10,7 +10,7 @@ while True:
     closest = None
     dist = 999
     while (index < len(enemys)):
-        distance = self.distanceTo(enemys[index])
+        distance = hero.distanceTo(enemys[index])
         if (enemys[index].health > 0 and enemys[index].type != "sand-yak"):
             if (enemys[index].type == 'archer' and distance < archer_dist):
                 archer_dist = distance
@@ -29,20 +29,20 @@ while True:
     else:
         enemy = closest
     if (enemy):
-        if (self.health < self.maxHealth / 2.5 and back == 0):
-            self.moveXY(40, 85)
+        if (hero.health < hero.maxHealth / 2.5 and back == 0):
+            hero.moveXY(40, 85)
             back = 1
-        elif (self.health < self.maxHealth / 5 and back == 1):
-            self.moveXY(40, 85)
+        elif (hero.health < hero.maxHealth / 5 and back == 1):
+            hero.moveXY(40, 85)
             back = 2
-        elif (self.isReady("jump") and self.distanceTo > 15):
-            self.jumpTo(enemy.pos)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
-        elif (self.isReady("cleave")):
-            self.cleave(enemy)
+        elif (hero.isReady("jump") and hero.distanceTo > 15):
+            hero.jumpTo(enemy.pos)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
+        elif (hero.isReady("cleave")):
+            hero.cleave(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)

@@ -1,7 +1,7 @@
 while True:
-    enemy = self.findNearestEnemy();
-    distance = self.distanceTo(enemy);
+    enemy = hero.findNearestEnemy();
+    distance = hero.distanceTo(enemy);
     if (distance < 10):
-        self.attack(enemy)
+        hero.attack(enemy)
     else:
-        self.moveXY(39, 37)
+        hero.moveXY(39, 37)

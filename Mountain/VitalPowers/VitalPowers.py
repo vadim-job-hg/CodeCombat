@@ -3,47 +3,47 @@
 # Код внутри функции не выполняется сразу. Он откладывается на потом.
 # Эта функция заставляет вашего героя поднять ближайшую монету.
 def pickUpNearestCoin():
-    items = self.findItems()
-    nearestCoin = self.findNearest(items)
-    if nearestCoin and self.distanceTo(nearestCoin) < 30:
-        if self.isReady("jump"):
-            self.jumpTo(nearestCoin.pos)
+    items = hero.findItems()
+    nearestCoin = hero.findNearest(items)
+    if nearestCoin and hero.distanceTo(nearestCoin) < 30:
+        if hero.isReady("jump"):
+            hero.jumpTo(nearestCoin.pos)
         else:
-            self.move(nearestCoin.pos)
+            hero.move(nearestCoin.pos)
 
 
 # С помощью этой функции ваш герой призывает солдата.
 def summonSoldier():
     # Заполни код здесь, что призвать солдата, если у тебя достаточно золота.
-    if self.gold > self.costOf("soldier"):
-        self.summon("soldier")
+    if hero.gold > hero.costOf("soldier"):
+        hero.summon("soldier")
 
 
 # Эта функция приказывает вашим солдатам атаковать ближайшего врага.
 def commandSoldiers():
-    for soldier in self.findFriends():
+    for soldier in hero.findFriends():
         enemy = soldier.findNearestEnemy()
         if enemy:
-            self.command(soldier, "attack", enemy)
+            hero.command(soldier, "attack", enemy)
 
 
 def attack(target):
     if target:
-        if (self.isReady("jump") and self.distanceTo > 10):
-            self.jumpTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
+        if (hero.isReady("jump") and hero.distanceTo > 10):
+            hero.jumpTo(target.pos)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.canCast('chain-lightning', target)):
+            hero.cast('chain-lightning', target)
         else:
-            self.attack(target)
+            hero.attack(target)
 
 
 def tacktick():
-    enemies = self.findEnemies()
-    nearest = self.findNearest(enemies)
-    friends = self.findFriends()
-    if nearest and (self.distanceTo(nearest) < 10 or self.now() > 25):
+    enemies = hero.findEnemies()
+    nearest = hero.findNearest(enemies)
+    friends = hero.findFriends()
+    if nearest and (hero.distanceTo(nearest) < 10 or hero.now() > 25):
         attack(nearest)
     elif nearest and len(friends) / 3 < len(enemies):
         attack(nearest)

@@ -1,6 +1,6 @@
 while True:
-    enemy = self.findNearestEnemy()
-    if (self.isReady("cleave")):
-        self.cleave(enemy)
+    enemy = hero.findNearestEnemy()
+    if (hero.isReady("cleave")):
+        hero.cleave(enemy)
     else:
-        self.shield()
+        hero.shield()

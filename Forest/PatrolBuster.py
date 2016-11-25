@@ -1,4 +1,4 @@
 while True:
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if (enemy):
-        self.attack(enemy)
+        hero.attack(enemy)

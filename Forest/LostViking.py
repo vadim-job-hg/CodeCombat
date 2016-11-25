@@ -21,7 +21,7 @@ sidemove = 1
 # Лабиринт это 35 шагов вдоль Оси X.
 while steps <= 35:
     # Сделайте следующий шаг:
-    self.moveXY(steps * X_PACE_LENGTH, sideSteps * Y_PACE_LENGTH)
+    hero.moveXY(steps * X_PACE_LENGTH, sideSteps * Y_PACE_LENGTH)
     if (steps % SWITCH == 0):
         sidemove = sidemove * -1
     sideSteps += sidemove

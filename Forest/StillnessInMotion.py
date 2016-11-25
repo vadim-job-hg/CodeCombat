@@ -1,10 +1,10 @@
 while True:
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if enemy:
-        distance = self.distanceTo(enemy)
+        distance = hero.distanceTo(enemy)
         if distance and distance < 5:
-            self.attack(enemy)
+            hero.attack(enemy)
         else:
-            self.shield()
+            hero.shield()
     else:
-        self.moveXY(40, 34)
+        hero.moveXY(40, 34)

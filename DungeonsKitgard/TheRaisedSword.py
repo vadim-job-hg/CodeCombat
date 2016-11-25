@@ -1,7 +1,7 @@
 # http://codecombat.com/play/level/the-raised-sword
-self.attack("Rig")
-self.attack("Rig")
-self.attack("Gurt")
-self.attack("Gurt")
-self.attack("Ack")
-self.attack("Ack")
+hero.attack("Rig")
+hero.attack("Rig")
+hero.attack("Gurt")
+hero.attack("Gurt")
+hero.attack("Ack")
+hero.attack("Ack")

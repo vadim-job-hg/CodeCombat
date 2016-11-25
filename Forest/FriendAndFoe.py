@@ -3,10 +3,10 @@
 # Command the peasants to battle and the peons to go away!
 
 while True:
-    friend = self.findNearestFriend()
+    friend = hero.findNearestFriend()
     if friend:
-        self.say("To battle, " + friend.id + "!")
+        hero.say("To battle, " + friend.id + "!")
     # Now find the nearest enemy and tell them to go away.
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if enemy:
-        self.say("To go away, " + enemy.id + "!")
+        hero.say("To go away, " + enemy.id + "!")

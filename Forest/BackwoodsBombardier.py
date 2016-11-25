@@ -3,11 +3,11 @@
 # pos.x is a number representing the horizontal position on the map
 # pos.y is a number representing the vertical position on the map
 while True:
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     if enemy:
         x = enemy.pos.x
         y = enemy.pos.y
         # say the x and y position separated by a comma
-        self.say(x + ',' + y)
+        hero.say(x + ',' + y)
     else:
-        self.say("Cease Fire!")
+        hero.say("Cease Fire!")

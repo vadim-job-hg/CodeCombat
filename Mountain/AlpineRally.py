@@ -6,13 +6,13 @@
 invis = -5
 while True:
     if (hero.now() - invis > 4):
-        if (self.canCast('haste', self)):
-            self.cast('haste', self)
-    if (self.canCast('invisibility', self)):
-        self.cast('invisibility', self)
+        if (hero.canCast('haste', self)):
+            hero.cast('haste', self)
+    if (hero.canCast('invisibility', self)):
+        hero.cast('invisibility', self)
         invis = hero.now()
-    # if(not(self.hasEffect('invisibility')) and self.canCast('earthskin', self)):
-    #    self.cast('earthskin', self)
+    # if(not(hero.hasEffect('invisibility')) and hero.canCast('earthskin', self)):
+    #    hero.cast('earthskin', self)
     direction = Vector(hero.pos.x + 30, hero.pos.y)
     enemy = hero.findNearest(hero.findByType('scout'))
     # if(hero.canCast('chain-lightning', enemy)):

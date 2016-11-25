@@ -9,8 +9,8 @@ firstXPos = 15
 firstYPos = 40
 # Find which starting mine connects to the ogre Chieftain.
 # resultColumn = 1 # fast way to win!!!!!!:-D
-self.say("I think it's column number: " + resultColumn)
-self.moveXY(resultColumn * mineDistance + firstXPos, firstYPos)
+hero.say("I think it's column number: " + resultColumn)
+hero.moveXY(resultColumn * mineDistance + firstXPos, firstYPos)
 
 
 

@@ -7,20 +7,20 @@
 
 # Вопрос: 2 == 3
 # Произнесите правильный ответ:
-self.say(False)
+hero.say(False)
 
 # Вопрос: 3 == 3
 # Ответьте ложь или истина на вопрос 2:
-self.say(True)
+hero.say(True)
 
 # Вопрос: "Three" == 3
 # Ответьте ложь или истина на вопрос 3:
-self.say(False)
+hero.say(False)
 
 # Вопрос: "Three" == "Three"
 # Ответьте ложь или истина на вопрос 4:
-self.say(True)
+hero.say(True)
 
 # Вопрос: 1 + 2 == 3
 # Ответьте ложь или истина на вопрос 5:
-self.say(True)
+hero.say(True)

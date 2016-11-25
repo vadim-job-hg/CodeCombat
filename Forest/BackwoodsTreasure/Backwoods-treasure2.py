@@ -1,22 +1,22 @@
 middleX = 61
 middleY = 52
 while True:
-    enemy = self.findNearest(self.findEnemies())
-    item = self.findNearest(self.findItems())
-    flag = self.findFlag()
+    enemy = hero.findNearest(hero.findEnemies())
+    item = hero.findNearest(hero.findItems())
+    flag = hero.findFlag()
     if (enemy):
-        dist = self.distanceTo(enemy);
+        dist = hero.distanceTo(enemy);
     if (enemy and dist < 10):
-        if (self.isReady("cleave")):
-            self.cleave(enemy)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
+        if (hero.isReady("cleave")):
+            hero.cleave(enemy)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
     elif (item):
-        self.move(item.pos)
+        hero.move(item.pos)
     elif (True):
-        self.moveXY(middleX, middleY)
+        hero.moveXY(middleX, middleY)

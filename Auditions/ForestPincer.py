@@ -3,12 +3,12 @@
 # Combine what you've learned about flags with your hero's combat skills.
 
 while True:
-    enemy = self.findNearestEnemy()
-    flag = self.findFlag()
+    enemy = hero.findNearestEnemy()
+    flag = hero.findFlag()
     if flag:
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
     elif enemy:
-        if self.isReady("cleave"):
-            self.cleave(enemy)
+        if hero.isReady("cleave"):
+            hero.cleave(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)

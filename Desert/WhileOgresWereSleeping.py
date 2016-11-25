@@ -35,16 +35,16 @@ while step < 5:
 while step < 10:
     step = moveHero(1)
     # coin = hero.findNearestItem()
-    coin = hero.findNearest(self.findItems())
+    coin = hero.findNearest(hero.findItems())
     # If the coin's value is less than 5 and is closer than 7 meters:
-    if coin and self.distanceTo(coin) < 7 and coin.value < 5:
-        self.moveXY(coin.pos.x, coin.pos.y)
+    if coin and hero.distanceTo(coin) < 7 and coin.value < 5:
+        hero.moveXY(coin.pos.x, coin.pos.y)
 
 while step < 15:
     step = moveHero(2)
     enemy = hero.findNearestEnemy()
     # If the enemy has less than 10 health and is closer than 7 meters:
-    if enemy and enemy.health < 10 and self.distanceTo(enemy) < 7:
+    if enemy and enemy.health < 10 and hero.distanceTo(enemy) < 7:
         hero.attack(enemy)
 
 hero.moveXY(10, 60)

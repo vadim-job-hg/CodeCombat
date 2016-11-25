@@ -3,41 +3,41 @@
 # Venture through the maze and pick up gems to fund your warchest.
 # Break down doors to unleash allies (or enemies).
 # For example, to attack the door labeled "g" use:
-# self.attack("g")
+# hero.attack("g")
 # If you have enough gold, you can call out for help by saying the type of unit you would like to summon!
-# self.say("soldier") to summon a Soldier at the cost of 20 gold!
-# self.say("archer") to summon an Archer at the cost of 25 gold!
+# hero.say("soldier") to summon a Soldier at the cost of 20 gold!
+# hero.say("archer") to summon an Archer at the cost of 25 gold!
 def attack():
-    enemy = self.findNearestEnemy()
+    enemy = hero.findNearestEnemy()
     while enemy and enemy.health > 0:
-        self.attack(enemy)
+        hero.attack(enemy)
 
 
-self.moveDown()
+hero.moveDown()
 attack()
-self.moveRight()
+hero.moveRight()
 attack()
-self.attack("g")
+hero.attack("g")
 attack()
-self.say("soldier")
+hero.say("soldier")
 attack()
-self.moveRight(4)
+hero.moveRight(4)
 attack()
-self.say("archer")
+hero.say("archer")
 attack()
-self.moveUp()
+hero.moveUp()
 attack()
-self.attack("h")
+hero.attack("h")
 attack()
-self.attack("i")
+hero.attack("i")
 attack()
-self.moveDown()
+hero.moveDown()
 attack()
-self.moveRight(2)
+hero.moveRight(2)
 attack()
-self.moveUp(5)
+hero.moveUp(5)
 attack()
-self.say("soldier")
+hero.say("soldier")
 attack()
-self.say("soldier")
+hero.say("soldier")
 attack()

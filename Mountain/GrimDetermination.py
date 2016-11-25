@@ -3,16 +3,16 @@ summonTypes = ['griffin-rider']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 # Найти паладина с самым низким количеством здоровья.
 def lowestHealthPaladin():
     lowestHealth = 99999
     lowestFriend = None
-    friends = self.findFriends()
+    friends = hero.findFriends()
     for friend in friends:
         if friend.type != "paladin":
             continue
@@ -27,32 +27,32 @@ def commandPaladin(paladin):
     if (paladin.canCast("heal")):
         target = lowestHealthPaladin()
         if target:
-            self.command(paladin, "cast", "heal", target)
+            hero.command(paladin, "cast", "heal", target)
     elif (paladin.health < 200):
-        self.command(paladin, "shield")
+        hero.command(paladin, "shield")
     else:
         target = paladin.findNearestEnemy()
         if (target):
-            self.command(paladin, "attack", target)
+            hero.command(paladin, "attack", target)
 
 
 def commandPeasant(peasant):
     item = peasant.findNearestItem()
     if item:
-        self.command(peasant, 'move', item.pos)
+        hero.command(peasant, 'move', item.pos)
 
 
 def commandGriffin(griffin):
-    target = self.findNearest(self.findByType('warlock'))
+    target = hero.findNearest(hero.findByType('warlock'))
     if not target:
         target = griffin.findNearestEnemy()
     if (target):
-        self.command(griffin, "attack", target)
+        hero.command(griffin, "attack", target)
 
 
 def commandFriends():
     # Командуй своими союзниками.
-    friends = self.findFriends()
+    friends = hero.findFriends()
     for friend in friends:
         if friend.type == "peasant":
             commandPeasant(friend)

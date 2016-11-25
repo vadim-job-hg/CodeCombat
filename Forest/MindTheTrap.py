@@ -2,14 +2,14 @@
 # Ты должен убедиться, что ты атакуешь врагов, которые находятся рядом с тобой!
 
 while True:
-    flag = self.findFlag()
-    enemy = self.findNearestEnemy()
+    flag = hero.findFlag()
+    enemy = hero.findNearestEnemy()
     if enemy:
-        dist = self.distanceTo(enemy)
+        dist = hero.distanceTo(enemy)
     if flag:
         # Возьми флаг.
-        self.pickUpFlag(flag)
-        self.say("Я должен взять флаг.")
+        hero.pickUpFlag(flag)
+        hero.say("Я должен взять флаг.")
     elif enemy:
         if (dist < 10):
-            self.attack(enemy)
+            hero.attack(enemy)

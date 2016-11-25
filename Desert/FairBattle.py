@@ -19,5 +19,5 @@ while True:
     enemies = hero.findEnemies()
     # Calculate and compare the total health of your soldiers and the ogres.
     if Calc(friends, enemies):
-        self.say("Attack")
+        hero.say("Attack")
         # Say "Attack" when you are ready.

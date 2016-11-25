@@ -9,7 +9,7 @@
 center = Vector(40, 34)
 
 # Положение персонажа на самом деле - вектор!
-partner = self.findByType("peasant")[0]
+partner = hero.findByType("peasant")[0]
 
 while True:  # Во-первых, тебе нужно найти вектор (расстояние и направление) позиции партнера относительно красной метки.
     vector = Vector.subtract(partner.pos, center)
@@ -17,5 +17,5 @@ while True:  # Во-первых, тебе нужно найти вектор (�
     moveToPos = Vector.subtract(center, vector)
 
     # В-третьих, двигайся к moveToPos.
-    self.move(moveToPos)
+    hero.move(moveToPos)
     pass

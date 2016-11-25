@@ -3,8 +3,8 @@
 # Огры могут вызвать подкрепление, если посчитают, что смогут добраться до Hushbaum'а или ваших лучников. Поэтому держите их в оборонительном кольце!
 def summonSoldier():
     # Заполни код здесь, что призвать солдата, если у тебя достаточно золота.
-    if self.gold > self.costOf("soldier"):
-        self.summon("soldier")
+    if hero.gold > hero.costOf("soldier"):
+        hero.summon("soldier")
 
 
 # Солдаты формируют круг и защищаются.
@@ -14,9 +14,9 @@ def commandSoldier(soldier, soldierIndex, numSoldiers):
     defendPos.x += 10 * Math.cos(angle)
     defendPos.y += 10 * Math.sin(angle)
     if (soldier.health > 60):
-        self.command(soldier, "defend", defendPos)
+        hero.command(soldier, "defend", defendPos)
     else:
-        self.command(soldier, "defend", {'x': 42, 'y': 40})
+        hero.command(soldier, "defend", {'x': 42, 'y': 40})
 
 
 # Найдите самую крепкую цель (больше всего здоровья)
@@ -24,7 +24,7 @@ def commandSoldier(soldier, soldierIndex, numSoldiers):
 def findStrongestTarget():
     mostHealth = 0
     bestTarget = None
-    enemies = self.findEnemies()
+    enemies = hero.findEnemies()
     # Определите, у какого из врагов больше всего уровень здоровья и направьте метод bestTarget на этого врага.
 
     # Концентрируйте огонь лучников на одного противника только в том случае, когда нападает большой огр.
@@ -38,9 +38,9 @@ def findStrongestTarget():
 def commandArcher(archer):
     nearest = archer.findNearestEnemy()
     if archerTarget:
-        self.command(archer, "attack", archerTarget)
+        hero.command(archer, "attack", archerTarget)
     elif nearest:
-        self.command(archer, "attack", nearest)
+        hero.command(archer, "attack", nearest)
 
 
 archerTarget = None
@@ -50,9 +50,9 @@ while True:  # Если враг, определенный как archerTarget �
         # Установите целью (или "аргументом") функции archerTarget, значение, возвращенное функцией findStrongestTarget().
         archerTarget = findStrongestTarget()
 
-    friends = self.findFriends()
-    soldiers = self.findByType("soldier")
-    archers = self.findByType("archer")
+    friends = hero.findFriends()
+    soldiers = hero.findByType("soldier")
+    archers = hero.findByType("archer")
     for i, soldier in enumerate(soldiers):
         commandSoldier(soldier, i, len(soldiers));
     summonSoldier()

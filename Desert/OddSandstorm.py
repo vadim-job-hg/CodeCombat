@@ -8,8 +8,8 @@ while enemyIndex < len(everybody):
     # Используйте квадратные скобки, чтобы получить имя огра из массива.
     if (everybody[enemyIndex]):
         # Атакуйте, используя переменную с именем огра.
-        self.attack(everybody[enemyIndex])
+        hero.attack(everybody[enemyIndex])
     # Увеличивай индекс на 2, чтобы перебрать друзей.
     enemyIndex += 2
-self.moveXY(36, 54)
+hero.moveXY(36, 54)
 # После уничтожения огров двигайся к оазису.

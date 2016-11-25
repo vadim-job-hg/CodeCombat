@@ -21,19 +21,19 @@ def radialToCartesian(radius, degrees):
     return {"x": xOffset, "y": yOffset}
 
 
-peasant = self.findByType("peasant")[0]
-soldiers = self.findByType("soldier")
+peasant = hero.findByType("peasant")[0]
+soldiers = hero.findByType("soldier")
 # Используй findByType чтобы сформировать массив из твоих солдат
 while True:
     # Используйте for-loop для перебора range(len(soldiers)).
     for index in range(len(soldiers)):
         offset = findSoldierOffset(soldiers, index)
         # Найдите смещение(offset) для солдата
-        # self.say(offset)
+        # hero.say(offset)
         # Добавьте offset.x и offset.y к pos.x и pos.y крестьянина
         x = offset.x + peasant.pos.x
         y = offset.y + peasant.pos.y
-        # self.say(x, y)
-        self.command(soldiers[index], "move", {'x': x, 'y': y})
+        # hero.say(x, y)
+        hero.command(soldiers[index], "move", {'x': x, 'y': y})
     # Герой должен поспевать за крестьянином!
-    self.move({"x": self.pos.x + 0.2, "y": self.pos.y})
+    hero.move({"x": hero.pos.x + 0.2, "y": hero.pos.y})

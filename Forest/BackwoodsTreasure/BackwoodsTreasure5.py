@@ -1,21 +1,21 @@
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 summonTypes = ['paladin']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'paladin':
             CommandPaladin(friend)
         elif friend.type == 'soldier':
@@ -25,58 +25,58 @@ def commandTroops():
 
 
 def CommandSoldier(soldier):
-    target = self.findNearest(self.findEnemies())
+    target = hero.findNearest(hero.findEnemies())
     if target:
-        self.command(soldier, "attack", target)
+        hero.command(soldier, "attack", target)
 
 
 def CommandPeasant(soldier):
     item = soldier.findNearestItem()
     if item:
-        self.command(soldier, "move", item.pos)
+        hero.command(soldier, "move", item.pos)
 
 
 def CommandPaladin(paladin):
     if (paladin.canCast("heal")):
-        self.command(paladin, "cast", "heal", self)
+        hero.command(paladin, "cast", "heal", self)
     else:
-        self.command(paladin, "shield")
+        hero.command(paladin, "shield")
 
 
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) < 10 and self.isReady("bash")):
-            self.bash(target)
+        if (hero.distanceTo(target) < 10 and hero.isReady("bash")):
+            hero.bash(target)
 
 
 buildTypes = ["fire-trap"]
 
 
 def buildTroops():
-    enemies = self.findEnemies()
-    enemy = self.findNearest(enemies)
-    items = self.findItems()
-    if enemy and len(enemies) > 2 and self.distanceTo(enemy) < 10:
+    enemies = hero.findEnemies()
+    enemy = hero.findNearest(enemies)
+    items = hero.findItems()
+    if enemy and len(enemies) > 2 and hero.distanceTo(enemy) < 10:
         type = "fire-trap"
-        if self.gold > 10:
-            self.buildXY(type, enemy.pos.x, enemy.pos.y)
-            self.shield()
-            self.shield()
-            self.shield()
-            self.shield()
-            self.shield()
+        if hero.gold > 10:
+            hero.buildXY(type, enemy.pos.x, enemy.pos.y)
+            hero.shield()
+            hero.shield()
+            hero.shield()
+            hero.shield()
+            hero.shield()
         else:
             pickUpNearestItem(items)
     elif enemy and len(enemies) == 0:
         type = "arrow-tower"
-        if self.gold > 60:
-            self.buildXY(type, self.pos.x, self.pos.y)
+        if hero.gold > 60:
+            hero.buildXY(type, hero.pos.x, hero.pos.y)
         else:
             pickUpNearestItem(items)
     else:

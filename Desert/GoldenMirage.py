@@ -14,10 +14,10 @@ def Coin(coins):
 
 
 while True:
-    coins = self.findItems()
+    coins = hero.findItems()
     if coins and len(coins):
         # The following code will help you debug:
         coin = Coin(coins)
-        self.say(coin.value);
-        self.moveXY(coin.pos.x, coin.pos.y);
+        hero.say(coin.value);
+        hero.moveXY(coin.pos.x, coin.pos.y);
         # When ready, delete the previous code and solve.

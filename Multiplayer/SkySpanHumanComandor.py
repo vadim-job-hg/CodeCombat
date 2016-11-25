@@ -10,28 +10,28 @@ hero = 'tharin'
 # hero = 'tharin'  # A fierce knight with battlecry abilities, type 'knight'.
 # hero = 'hushbaum'  # A fiery spellcaster hero, type 'librarian'.
 # hero = 'anya';  # A stealthy ranged attacker, type 'captain'.
-if (hero and not self.builtHero):
-    self.builtHero = self.build(hero)
+if (hero and not hero.builtHero):
+    hero.builtHero = hero.build(hero)
     return
 
 #### 2. Choose which unit to build each turn. #######################
 # Soldiers are hard-to-kill, low damage melee units who cost 20 gold.
 # Archers are fragile but deadly ranged units who cost 25 gold.
-# Units you build will go into the self.built list.
+# Units you build will go into the hero.built list.
 
 buildOrder = ['archer', 'soldier']
-buildType = buildOrder[len(self.built) % len(buildOrder)]
-if self.buildables[buildType].goldCost <= self.gold:
-    self.build(buildType)
+buildType = buildOrder[len(hero.built) % len(buildOrder)]
+if hero.buildables[buildType].goldCost <= hero.gold:
+    hero.build(buildType)
 
 ####### 3. Command minions to implement your tactics. ################
 # Minions obey 'move' and 'attack' commands.
 # Click on a minion to see its API.
 
-minions = self.getFriends()
+minions = hero.getFriends()
 for minion in minions:
-    if self.commandableTypes.indexOf(minion.type) == -1:  # TODO: fix Python in
-        # if not (minion.type in self.commandableTypes):
+    if hero.commandableTypes.indexOf(minion.type) == -1:  # TODO: fix Python in
+        # if not (minion.type in hero.commandableTypes):
         continue  # You can't command heroes.
-    # self.command(minion, 'move', {"x": 70, "y": 30})
-    self.command(minion, 'attack', minion.getNearestEnemy())
+    # hero.command(minion, 'move', {"x": 70, "y": 30})
+    hero.command(minion, 'attack', minion.getNearestEnemy())

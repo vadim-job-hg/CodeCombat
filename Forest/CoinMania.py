@@ -4,13 +4,13 @@
 # Let's say I want to collect gold with total value 20.
 # Here we use while loop, as we don't know how long the loop will run.
 
-while self.gold < 40:
-    self.moveRight()
+while hero.gold < 40:
+    hero.moveRight()
 
-self.moveLeft()
-self.moveLeft()
+hero.moveLeft()
+hero.moveLeft()
 while True:
-    self.attackNearbyEnemy()
+    hero.attackNearbyEnemy()
 
 # Now collect coins worth 40.
 # If you want to kill the ogre, be careful as you will need atleast 70 health.

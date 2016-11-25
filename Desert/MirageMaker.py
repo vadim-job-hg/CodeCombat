@@ -5,19 +5,19 @@
 # Теперь отступайте на свою базу, чтобы устроить им засаду.
 def pickUpNearestItem():
     while True:
-        items = self.findItems()
-        if (self.gold < 25):
-            nearestItem = self.findNearest(items)
+        items = hero.findItems()
+        if (hero.gold < 25):
+            nearestItem = hero.findNearest(items)
             if nearestItem:
-                self.moveXY(nearestItem.pos.x, nearestItem.pos.y)
+                hero.moveXY(nearestItem.pos.x, nearestItem.pos.y)
         else:
             break
 
 
 pickUpNearestItem()
-self.buildXY('decoy', 72, 68)
+hero.buildXY('decoy', 72, 68)
 while True:
-    if (self.health == self.maxHealth):
-        self.say('waka')
+    if (hero.health == hero.maxHealth):
+        hero.say('waka')
     else:
-        self.moveXY(21, 16)
+        hero.moveXY(21, 16)

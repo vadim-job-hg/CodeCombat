@@ -36,7 +36,7 @@ for deerIndex in range(len(friends)):
             # Put the reindeer in the assignments array.
             assignments[posIndex] = friends[deerIndex]
             # Command the reindeer to move to the pen position.
-            self.command(assignments[posIndex], 'move', penPositions[posIndex])
+            hero.command(assignments[posIndex], 'move', penPositions[posIndex])
             # break out of the inner for loop here so we don't reassign the deer.
             break
             pass

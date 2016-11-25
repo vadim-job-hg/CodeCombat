@@ -2,7 +2,7 @@
 # На этом уровне ваш герой не должен сражаться.
 # Прикажите вашим лучникам стрелять во врагов с наибольшим уровнем здоровья!
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
 
@@ -11,7 +11,7 @@ def CommandArcher(soldier):
     target = None
     leastHealth = 0
     enemyIndex = 0
-    enemies = self.findEnemies()
+    enemies = hero.findEnemies()
     # Просмотрите всех врагов.
     while enemyIndex < len(enemies):
         if (enemies[enemyIndex].health > leastHealth):
@@ -19,7 +19,7 @@ def CommandArcher(soldier):
             target = enemies[enemyIndex]
         enemyIndex = enemyIndex + 1
     if target:
-        self.command(soldier, "attack", target)
+        hero.command(soldier, "attack", target)
 
 
 while True:

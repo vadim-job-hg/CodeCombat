@@ -12,7 +12,7 @@
 # HINT: the default code for the other team is going for this path too!
 coordinatesToBuy = [[3, 0], [3, 1], [3, 2], [3, 3], [3, 4], [3, 5], [3, 6]]
 
-tiles = self.tileGroups[tileGroupLetter]  # tiles available this turn
+tiles = hero.tileGroups[tileGroupLetter]  # tiles available this turn
 tileIWant = None
 for tile in tiles:
     if tile.owner: continue  # can't buy a tile that's been bought

@@ -1,17 +1,17 @@
 while True:
-    flag = self.findFlag()
-    enemy = self.findNearestEnemy()
+    flag = hero.findFlag()
+    enemy = hero.findNearestEnemy()
     if (flag):
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
     elif (enemy):
-        dist = self.distanceTo(enemy)
+        dist = hero.distanceTo(enemy)
         if (dist < 25):
-            if (self.isReady("cleave") and dist < 5):
-                self.cleave(enemy)
+            if (hero.isReady("cleave") and dist < 5):
+                hero.cleave(enemy)
             else:
-                if (self.isReady("bash")):
-                    self.bash(enemy)
+                if (hero.isReady("bash")):
+                    hero.bash(enemy)
                 else:
-                    self.attack(enemy)
+                    hero.attack(enemy)
     else:
-        self.shield()
+        hero.shield()

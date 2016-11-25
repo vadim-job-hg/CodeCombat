@@ -8,7 +8,7 @@ while True:
         targetY = hero.pos.y + 5 * Math.sin(angle)
         # Используй isPathClear для проверки 
         # Если путь свободен, двигайся к цели.
-        if (hero.isPathClear(self.pos, {'x': targetX, 'y': targetY})):
+        if (hero.isPathClear(hero.pos, {'x': targetX, 'y': targetY})):
             hero.moveXY(targetX, targetY)
         else:
             # В противном случае немного повернись по часовой стрелке.

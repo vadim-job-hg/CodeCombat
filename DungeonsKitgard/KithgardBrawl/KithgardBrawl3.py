@@ -1,5 +1,5 @@
 while True:
-    enemys = self.findEnemies()
+    enemys = hero.findEnemies()
     index = 0
     closest_soldier = None
     soldier_dist = 999
@@ -10,7 +10,7 @@ while True:
     close_count = 0;
     priority = None
     while (index < len(enemys)):
-        distance = self.distanceTo(enemys[index])
+        distance = hero.distanceTo(enemys[index])
         shield = False;
         if (enemys[index].type == 'shaman' and distance < 20):
             priority = enemys[index];
@@ -37,26 +37,26 @@ while True:
         #        enemy = closest_soldier
         else:
             enemy = closest
-        if (self.health < self.maxHealth / 3):
-            item = self.findNearest(self.findItems())
+        if (hero.health < hero.maxHealth / 3):
+            item = hero.findNearest(hero.findItems())
             if (item):
-                if (self.isReady("jump")):
-                    self.jumpTo(item.pos)
+                if (hero.isReady("jump")):
+                    hero.jumpTo(item.pos)
                 else:
-                    self.move(item.pos)
+                    hero.move(item.pos)
         elif (enemy):
-            if (self.isReady("jump") and self.distanceTo > 10):
-                self.jumpTo(enemy.pos)
-            elif (self.isReady("bash")):
-                self.bash(enemy)
-            elif (self.isReady("power-up")):
-                self.powerUp()
-                self.attack(enemy)
-            elif (self.isReady("cleave") and close_count >= 7):
-                self.cleave(enemy)
+            if (hero.isReady("jump") and hero.distanceTo > 10):
+                hero.jumpTo(enemy.pos)
+            elif (hero.isReady("bash")):
+                hero.bash(enemy)
+            elif (hero.isReady("power-up")):
+                hero.powerUp()
+                hero.attack(enemy)
+            elif (hero.isReady("cleave") and close_count >= 7):
+                hero.cleave(enemy)
             elif (shield):
-                self.shield()
+                hero.shield()
             elif (close_count < 10 or priority):
-                self.attack(enemy)
+                hero.attack(enemy)
             else:
-                self.shield()
+                hero.shield()

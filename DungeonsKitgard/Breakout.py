@@ -1,8 +1,8 @@
 # https://codecombat.com/play/level/breakout
 # Освободи союзника и очисть путь для побега!
-self.moveRight()
-self.attack('Weak Door')
-self.moveRight()
-self.moveDown()
+hero.moveRight()
+hero.attack('Weak Door')
+hero.moveRight()
+hero.moveDown()
 while True:
-    self.attack('Door')
+    hero.attack('Door')

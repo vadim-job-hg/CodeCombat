@@ -1,7 +1,7 @@
 # http://codecombat.com/play/level/assembly-speed
 
 speed = 76660813  # ∆ Put your answer here.
-self.say(speed)
+hero.say(speed)
 
 
 
@@ -26,7 +26,7 @@ self.say(speed)
 # What's the value of %eax when the last instruction (the NOP) runs?
 
 #speed = 0  # ∆ Put your answer here.
-#self.say(speed)
+#hero.say(speed)
 
 # Check the Help (File tab) to see the file. It's also included below.
 # ------------------------------------------

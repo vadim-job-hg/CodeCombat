@@ -26,8 +26,8 @@ def findTarget():
     enemy_return = None
     for type in enemy_types.keys():
         if enemy_types[type] and enemy_types[type].danger > danger:
-            enemy = self.findNearest(self.findByType(type))
-            if enemy and self.distanceTo(enemy) < enemy_types[type].focus:
+            enemy = hero.findNearest(hero.findByType(type))
+            if enemy and hero.distanceTo(enemy) < enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     return enemy_return
@@ -38,34 +38,34 @@ def findTarget():
     enemy_return = None
     for type in enemy_types.keys():
         if enemy_types[type] and enemy_types[type].danger > danger:
-            enemy = self.findNearest(self.findByType(type))
-            if enemy and enemy.team != hero.team and self.distanceTo(enemy) < enemy_types[type].focus:
+            enemy = hero.findNearest(hero.findByType(type))
+            if enemy and enemy.team != hero.team and hero.distanceTo(enemy) < enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if enemy_return is None:
-        enemy_return = self.findNearest(self.findEnemies())
+        enemy_return = hero.findNearest(hero.findEnemies())
     return enemy_return
 
 
 def moveTo(position, fast=True):
     if position:
-        if (self.isReady("jump") and fast):
-            self.jumpTo(position)
+        if (hero.isReady("jump") and fast):
+            hero.jumpTo(position)
         else:
-            self.move(position)
+            hero.move(position)
 
 
 summonTypes = ['soldier','soldier','soldier','soldier','soldier','soldier','paladin']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'paladin':
             CommandPaladin(friend)
         elif friend.type == 'soldier' or friend.type == 'archer' or friend.type == 'griffin-rider' or friend.type == 'skeleton':
@@ -75,24 +75,24 @@ def commandTroops():
 
 
 def CommandSoldier(soldier):
-    self.command(soldier, "defend", hero)
+    hero.command(soldier, "defend", hero)
 
 
 def CommandPeasant(soldier):
     item = soldier.findNearestItem()
     if item:
-        self.command(soldier, "move", item.pos)
+        hero.command(soldier, "move", item.pos)
 
 
 def CommandPaladin(paladin):
     if (paladin.canCast("heal") and hero.health<hero.maxHealth):
-        self.command(paladin, "cast", "heal", self)
+        hero.command(paladin, "cast", "heal", self)
     else:
-        self.command(paladin, "defend", hero)
+        hero.command(paladin, "defend", hero)
 
 
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
@@ -104,37 +104,37 @@ def attack():
             hero.cast('summon-burl')
         if (hero.canCast('summon-undead')):
             hero.cast('summon-undead')
-        if (self.canCast('invisibility', self)):
-            self.cast('invisibility', self)
+        if (hero.canCast('invisibility', self)):
+            hero.cast('invisibility', self)
         if (hero.canCast('raise-dead')):
             hero.cast('raise-dead')
-        if(self.isReady("throw") and self.distanceTo(target)<hero.trowRange):
-            self.trow(target)
+        if(hero.isReady("throw") and hero.distanceTo(target)<hero.trowRange):
+            hero.trow(target)
         elif (hero.canCast('poison-cloud', target)):
             hero.cast('poison-cloud', target)
         elif (hero.canCast('fear', target)):
             hero.cast('fear', target)
         else:
-            if (self.canCast('earthskin', self)):
-                self.cast('earthskin', self)
-            elif (self.canCast('chain-lightning', target)):
-                self.cast('chain-lightning', target)
-            elif (self.distanceTo(target) > 100):
+            if (hero.canCast('earthskin', self)):
+                hero.cast('earthskin', self)
+            elif (hero.canCast('chain-lightning', target)):
+                hero.cast('chain-lightning', target)
+            elif (hero.distanceTo(target) > 100):
                 moveTo(target.pos)
             #elif (hero.canCast('drain-life', target)):
             #    hero.cast('drain-life', target)
-            elif (self.isReady("attack")):
-                self.attack(target)
+            elif (hero.isReady("attack")):
+                hero.attack(target)
 
 
 invis = -5
 while True:
     commandTroops()
     if hero.now() - invis < 4:
-        items = self.findItems()
+        items = hero.findItems()
         pickUpNearestItem(items)
     else:
-        if (self.canCast('earthskin', self)):
-            self.cast('earthskin', self)
+        if (hero.canCast('earthskin', self)):
+            hero.cast('earthskin', self)
         attack()
         summonTroops()

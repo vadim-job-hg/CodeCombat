@@ -7,18 +7,18 @@ index = len(colors)
 
 def drawCircle(x, y, size):
     angle = 0
-    self.toggleFlowers(False)
+    hero.toggleFlowers(False)
     while angle <= Math.PI * 2:
         newX = x + (size * Math.cos(angle))
         newY = y + (size * Math.sin(angle))
-        self.moveXY(newX, newY)
-        self.toggleFlowers(True)
+        hero.moveXY(newX, newY)
+        hero.toggleFlowers(True)
         angle += 0.2
 
 
 for i in range(30, 120, 30):
     for j in range(30, 120, 30):
         color = colors[index % len(colors)]
-        self.setFlowerColor(color)
+        hero.setFlowerColor(color)
         index += 1
         drawCircle(i, j, 10)

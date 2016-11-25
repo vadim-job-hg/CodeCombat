@@ -24,10 +24,10 @@ while True:
         # If there is not enough gold, then say "Non satis".
         if goldAmount > 104:
             # If there is too much gold, then say "Nimis".
-            self.say(less)
+            hero.say(less)
         # If there is exactly 104 gold, then collect all coins.
         if goldAmount < 104:
-            self.say(more)
+            hero.say(more)
         pass
         if goldAmount == 104:
             break

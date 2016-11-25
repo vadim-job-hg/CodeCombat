@@ -7,7 +7,7 @@ enemy_types['witch'] = {'danger': 8, 'focus': 10}
 enemy_types['brawler'] = {'danger': 7, 'focus': 10}
 enemy_types['ogre'] = {'danger': 5, 'focus': 10}
 enemy_types['chieftain'] = {'danger': 6, 'focus': 10}
-if self.team == 'humans':
+if hero.team == 'humans':
     team = 'humans'
 else:
     team = 'ogres'
@@ -17,29 +17,29 @@ def findTarget():
     danger = 0
     enemy_return = None
     if enemy_return is None:
-        enemy_return = self.findNearest(self.findEnemies())
+        enemy_return = hero.findNearest(hero.findEnemies())
     return enemy_return
 
 
 def moveTo(position, fast=True):
     if position:
-        if (self.isReady("jump") and fast):
-            self.jumpTo(position)
+        if (hero.isReady("jump") and fast):
+            hero.jumpTo(position)
         else:
-            self.move(position)
+            hero.move(position)
 
 
 summonTypes = ['soldier','soldier','soldier','soldier','soldier','soldier','paladin']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'paladin':
             CommandPaladin(friend)
         elif friend.type == 'soldier':
@@ -49,22 +49,22 @@ def commandTroops():
 
 
 def CommandSoldier(soldier):
-    #target = self.findNearest(self.findEnemies())
+    #target = hero.findNearest(hero.findEnemies())
     if target:
-        self.command(soldier, "attack", target)
+        hero.command(soldier, "attack", target)
 
 
 def CommandPeasant(soldier):
     item = soldier.findNearestItem()
     if item:
-        self.command(soldier, "move", item.pos)
+        hero.command(soldier, "move", item.pos)
 
 
 def CommandPaladin(paladin):
     if (paladin.canCast("heal")):
-        self.command(paladin, "cast", "heal", self)
+        hero.command(paladin, "cast", "heal", self)
     else:
-        self.command(paladin, "shield")
+        hero.command(paladin, "shield")
 
 
 def attack():
@@ -81,29 +81,29 @@ def attack():
             hero.cast('drain-life', target)
         elif (hero.canCast('fear', target)):
             hero.cast('fear', target)
-        elif (self.canCast('invisibility', self)):
-            self.cast('invisibility', self)
+        elif (hero.canCast('invisibility', self)):
+            hero.cast('invisibility', self)
         else:
-            if (self.canCast('earthskin', self)):
-                self.cast('earthskin', self)
-            elif (self.canCast('chain-lightning', target)):
-                self.cast('chain-lightning', target)
-            elif (self.distanceTo(target) > 10):
+            if (hero.canCast('earthskin', self)):
+                hero.cast('earthskin', self)
+            elif (hero.canCast('chain-lightning', target)):
+                hero.cast('chain-lightning', target)
+            elif (hero.distanceTo(target) > 10):
                 moveTo(target.pos)
-            elif (self.isReady("attack")):
-                self.attack(target)
+            elif (hero.isReady("attack")):
+                hero.attack(target)
 
 
 invis = -5
 while True:
     target = findTarget()
     commandTroops()
-    if (self.canCast('invisibility', self)):
-        self.cast('invisibility', self)
+    if (hero.canCast('invisibility', self)):
+        hero.cast('invisibility', self)
         invis = hero.now()
     else:
-        if (self.canCast('earthskin', self)):
-            self.cast('earthskin', self)
+        if (hero.canCast('earthskin', self)):
+            hero.cast('earthskin', self)
         attack()
         summonTroops()
 

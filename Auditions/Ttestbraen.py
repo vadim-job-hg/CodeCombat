@@ -1,30 +1,30 @@
 # http://codecombat.com/play/level/testbraen
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo(position) > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo(position) > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
-        elif (self.isReady("attack")):
-            self.attack(target)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.canCast('chain-lightning', target)):
+            hero.cast('chain-lightning', target)
+        elif (hero.isReady("attack")):
+            hero.attack(target)
         else:
             pass
 
 while True:
-    flag = self.findFlag()
+    flag = hero.findFlag()
     if flag:
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
     else:
-        enemy = self.findNearest(self.findEnemies())
+        enemy = hero.findNearest(hero.findEnemies())
         if enemy:
             attack(enemy)
             # find some enemy to attack

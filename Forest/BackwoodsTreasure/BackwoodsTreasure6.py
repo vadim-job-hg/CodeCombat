@@ -1,18 +1,18 @@
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
 
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo(position) > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo(position) > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 def action():
-        target = self.findNearest(self.findEnemies())
+        target = hero.findNearest(hero.findEnemies())
         if (hero.canCast('summon-burl', hero)):
             hero.cast('summon-burl')
         elif (hero.canCast('summon-undead')):
@@ -20,7 +20,7 @@ def action():
         elif (target and hero.canCast('fear', target)):
             hero.cast('fear', target)
 while True:
-    items = self.findItems()
+    items = hero.findItems()
     action()
     if len(items) > 0:
         pickUpNearestItem(items)

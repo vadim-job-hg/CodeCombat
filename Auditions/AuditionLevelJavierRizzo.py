@@ -27,7 +27,7 @@ enemy_types['thrower'] = {'danger': 3, 'focus': 22}
 enemy_types['munchkin'] = {'danger': 2, 'focus': 15}
 enemy_types['yak'] = {'danger': -1, 'focus': 0}
 enemy_types['ice-yak'] = {'danger': -1, 'focus': 0}
-if self.team == 'humans':
+if hero.team == 'humans':
     team = 'humans'
 else:
     team = 'ogres'
@@ -38,12 +38,12 @@ def findTarget():
     enemy_return = None
     for type in enemy_types.keys():
         if enemy_types[type].danger > danger:
-            enemy = self.findNearest(self.findByType(type))
-            if enemy and enemy.team != team and self.distanceTo(enemy) < enemy_types[type].focus:
+            enemy = hero.findNearest(hero.findByType(type))
+            if enemy and enemy.team != team and hero.distanceTo(enemy) < enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if enemy_return is None:
-        enemy_return = self.findNearest(self.findEnemies())
+        enemy_return = hero.findNearest(hero.findEnemies())
     return enemy_return
 
 
@@ -51,13 +51,13 @@ summonTypes = ['paladin']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'paladin':
             CommandPaladin(friend)
         else:
@@ -65,47 +65,47 @@ def commandTroops():
 
 
 def CommandSoldier(soldier):
-    target = self.findNearest(self.findEnemies())
+    target = hero.findNearest(hero.findEnemies())
     if target:
-        self.command(soldier, "attack", target)
+        hero.command(soldier, "attack", target)
 
 
 def CommandPaladin(paladin):
     if (paladin.canCast("heal")):
-        if (self.health < self.maxHealth * 0.6):
+        if (hero.health < hero.maxHealth * 0.6):
             target = self
         if target:
-            self.command(paladin, "cast", "heal", target)
+            hero.command(paladin, "cast", "heal", target)
     else:
-        target = self.findNearest(self.findEnemies())
-        self.command(paladin, "attack", target)
+        target = hero.findNearest(hero.findEnemies())
+        hero.command(paladin, "attack", target)
 
 
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo(position) > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo(position) > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.canCast('chain-lightning', target)):
+            hero.cast('chain-lightning', target)
         else:
-            self.attack(target)
+            hero.attack(target)
 
 
 while True:
-    flag = self.findFlag()
+    flag = hero.findFlag()
     summonTroops()
     commandTroops()
     if flag:
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
     else:
         enemy = findTarget()
         if enemy:

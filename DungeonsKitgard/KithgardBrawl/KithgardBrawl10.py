@@ -19,8 +19,8 @@ def findTarget():
     enemy_return = None
     for type in enemy_types.keys():
         if enemy_types[type].danger > danger:
-            enemy = self.findNearest(self.findByType(type))
-            if enemy and self.distanceTo(enemy) < enemy_types[type].focus:
+            enemy = hero.findNearest(hero.findByType(type))
+            if enemy and hero.distanceTo(enemy) < enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if danger < 3:
@@ -29,43 +29,43 @@ def findTarget():
 
 
 def pickUpNearestItem(items):
-    nearestItem = self.findNearest(items)
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
 
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo(position) > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo(position) > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.canCast('chain-lightning', target)):
-            self.cast('chain-lightning', target)
-        elif (self.isReady("attack")):
-            self.attack(target)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.canCast('chain-lightning', target)):
+            hero.cast('chain-lightning', target)
+        elif (hero.isReady("attack")):
+            hero.attack(target)
         else:
-            self.shield()
+            hero.shield()
 
 
 summonTypes = ['paladin', 'archer', 'soldier']
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandTroops():
-    for index, friend in enumerate(self.findFriends()):
+    for index, friend in enumerate(hero.findFriends()):
         if friend.type == 'archer':
             CommandArcher(friend)
         elif friend.type == 'paladin':
@@ -78,17 +78,17 @@ def commandTroops():
 
 def CommandPaladin(paladin):
     if (paladin.canCast("heal")):
-        if (self.health < self.maxHealth * 0.6):
+        if (hero.health < hero.maxHealth * 0.6):
             target = self
         else:
             target = lowestHealthFriend()
         if target:
-            self.command(paladin, "cast", "heal", target)
+            hero.command(paladin, "cast", "heal", target)
     elif (paladin.health < 100):
-        self.command(paladin, "shield")
+        hero.command(paladin, "shield")
     else:
         if enemyattack:
-            self.command(paladin, "attack", enemyattack)
+            hero.command(paladin, "attack", enemyattack)
 
 
 def CommandSoldier(soldier):
@@ -97,18 +97,18 @@ def CommandSoldier(soldier):
 
 def CommandArcher(soldier):
     if enemyattack:
-        self.command(soldier, "attack", enemyattack)
+        hero.command(soldier, "attack", enemyattack)
 
 
 def CommandPeasant(soldier):
     if enemyattack:
-        self.command(soldier, "attack", enemyattack)
+        hero.command(soldier, "attack", enemyattack)
 
 
 def lowestHealthFriend():
     lowestHealth = 99999
     lowestFriend = None
-    friends = self.findFriends()
+    friends = hero.findFriends()
     for friend in friends:
         if friend.health < lowestHealth and friend.health < friend.maxHealth:
             lowestHealth = friend.health
@@ -120,12 +120,12 @@ def lowestHealthFriend():
 while True:
     summonTroops()
     commandTroops()
-    items = self.findItems()
-    if (len(items) > 0 and self.health < self.maxHealth * 0.5):
+    items = hero.findItems()
+    if (len(items) > 0 and hero.health < hero.maxHealth * 0.5):
         pickUpNearestItem(items)
     else:
         enemyattack = findTarget()
         if (enemyattack):
             attack(enemyattack)
         else:
-            self.shield()
+            hero.shield()

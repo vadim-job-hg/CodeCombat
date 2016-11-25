@@ -5,50 +5,50 @@ summonTypes = ['archer', 'archer', 'archer', 'archer', 'archer', 'archer', 'sold
 
 
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and self.distanceTo > 10 and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and hero.distanceTo > 10 and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 # pickup coin
 def pickUpNearestItem():
-    items = self.findItems()
-    nearestItem = self.findNearest(items)
+    items = hero.findItems()
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
 
 def summonTroops():
-    type = summonTypes[len(self.built) % len(summonTypes)]
-    if self.gold > self.costOf(type):
-        self.summon(type)
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 def commandSoldiers():
-    for soldier in self.findFriends():
-        enemy = self.findNearest(self.findEnemies())
+    for soldier in hero.findFriends():
+        enemy = hero.findNearest(hero.findEnemies())
         if enemy and (soldier.type == 'archer' or soldier.type == 'soldier'):
-            self.command(soldier, "attack", enemy)
+            hero.command(soldier, "attack", enemy)
 
 
 def attack(target):
     if target:
-        if (self.distanceTo(target) > 10):
+        if (hero.distanceTo(target) > 10):
             moveTo(target.pos)
-        elif (self.isReady("bash")):
-            self.bash(target)
-        elif (self.isReady("attack")):
-            self.attack(target)
+        elif (hero.isReady("bash")):
+            hero.bash(target)
+        elif (hero.isReady("attack")):
+            hero.attack(target)
         else:
-            self.shield()
+            hero.shield()
 
 
 while True:
     summonTroops()
     commandSoldiers()
-    enemy = self.findNearest(self.findEnemies())
-    if (enemy and self.distanceTo(enemy) < 10):
+    enemy = hero.findNearest(hero.findEnemies())
+    if (enemy and hero.distanceTo(enemy) < 10):
         attack(enemy)
     else:
         pickUpNearestItem()

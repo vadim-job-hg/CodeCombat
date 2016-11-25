@@ -2,6 +2,6 @@
 # Avoid Burobb the Brawler
 # Code is ready, click submit.
 while True:
-    flag = self.findFlag()
+    flag = hero.findFlag()
     if flag:
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)

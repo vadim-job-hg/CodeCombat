@@ -1,11 +1,11 @@
 # Двигайтесь вперед чтобы достичь оазиса,
 # но двигайтесь назад, чтобы избежать яков поблизости.
 while True:
-    enemy = self.findNearestEnemy()
-    if enemy and self.distanceTo(enemy) < 10:
-        x = self.pos.x - 10
-        y = self.pos.y
+    enemy = hero.findNearestEnemy()
+    if enemy and hero.distanceTo(enemy) < 10:
+        x = hero.pos.x - 10
+        y = hero.pos.y
     else:
-        x = self.pos.x + 10
-        y = self.pos.y
-    self.moveXY(x, y)
+        x = hero.pos.x + 10
+        y = hero.pos.y
+    hero.moveXY(x, y)

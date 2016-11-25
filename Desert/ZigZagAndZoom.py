@@ -20,7 +20,7 @@ def mod9(n):
 
 # Don't change the following code:
 while True:
-    time = self.now()
+    time = hero.now()
     x = 10 + time
     if time < 30:
         y = 10 + 3 * mod15(time)
@@ -29,4 +29,4 @@ while True:
     else:
         y = 34
         x = 71
-    self.moveXY(x, y)
+    hero.moveXY(x, y)

@@ -4,7 +4,7 @@
 # You'll need to find the nearest coins on your own.
 
 while True:
-    coins = self.findItems()
+    coins = hero.findItems()
     coinIndex = 0
     nearest = None
     nearestDistance = 9999
@@ -13,12 +13,12 @@ while True:
     while coinIndex < len(coins):
         coin = coins[coinIndex]
         coinIndex += 1
-        distance = self.distanceTo(coin)
+        distance = hero.distanceTo(coin)
         if (distance < nearestDistance):
             nearest = coin
             nearestDistance = distance
             # If this coin's distance is less than the nearestDistance
             # Set nearest to coin
             # Set nearestDistance to distance
-    self.moveXY(nearest.pos.x, nearest.pos.y)
+    hero.moveXY(nearest.pos.x, nearest.pos.y)
     # If there's a nearest coin, move to its position. You'll need moveXY so you don't cut corners and hit a trap.

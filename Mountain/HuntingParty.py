@@ -3,32 +3,32 @@
 # Вы можете использовать метод findNearestEnemy() на Ваших солдатах, для того, чтобы находить ближайшего к ним, а не к себе, противника.
 index = 0
 while True:
-    friends = self.findFriends()
-    enemy = self.findNearest(self.findEnemies())
-    if enemy and self.distanceTo(enemy) < 20:
-        if (self.isReady("jump") and self.distanceTo(enemy) > 10):
-            self.jumpTo(enemy.pos)
-        elif (self.isReady("cleave")):
-            self.cleave(enemy)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
+    friends = hero.findFriends()
+    enemy = hero.findNearest(hero.findEnemies())
+    if enemy and hero.distanceTo(enemy) < 20:
+        if (hero.isReady("jump") and hero.distanceTo(enemy) > 10):
+            hero.jumpTo(enemy.pos)
+        elif (hero.isReady("cleave")):
+            hero.cleave(enemy)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
     else:
-        if (self.now() < 7):
+        if (hero.now() < 7):
             pos = {'x': 87, 'y': 49}
         else:
             pos = {'x': 12, 'y': 47}
-        if (self.isReady("jump")):
-            self.jumpTo(pos)
+        if (hero.isReady("jump")):
+            hero.jumpTo(pos)
         else:
-            self.move(pos)
+            hero.move(pos)
     for j in range(len(friends)):
         friend = friends[j]
-        if (friend.pos.y > 46 and self.now() < 5):
+        if (friend.pos.y > 46 and hero.now() < 5):
             pos = {'x': 12, 'y': 64}
         elif (friend.pos.y > 46):
             if (friend.type != 'archer'):
@@ -42,8 +42,8 @@ while True:
                 pos = {'x': 51, 'y': 32}
         enemy = friend.findNearestEnemy()
         if (friend.health < 29 or (enemy and friend.type == 'archer' and friend.distanceTo(enemy) < 22)):
-            self.command(friend, 'move', {'x': 11, 'y': 47})
+            hero.command(friend, 'move', {'x': 11, 'y': 47})
         elif enemy and friend.distanceTo(enemy) < 20:
-            self.command(friend, 'attack', enemy)
+            hero.command(friend, 'attack', enemy)
         else:
-            self.command(friend, 'move', pos)
+            hero.command(friend, 'move', pos)

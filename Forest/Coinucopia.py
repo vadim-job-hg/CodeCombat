@@ -1,6 +1,6 @@
 while True:
-    flag = self.findFlag();
+    flag = hero.findFlag();
     if (flag):
-        self.pickUpFlag(flag)
+        hero.pickUpFlag(flag)
     else:
-        self.say("Place a flag for me to go to.");
+        hero.say("Place a flag for me to go to.");

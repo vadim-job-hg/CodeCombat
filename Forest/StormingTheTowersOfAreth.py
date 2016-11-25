@@ -17,6 +17,6 @@ hero.moveXY(85, 34)
 hero.buildXY('fire-trap', 90, 53)
 hero.buildXY('fire-trap', 60, 63)
 
-self.say("Retreat!")
+hero.say("Retreat!")
 # Беги к точке сбора, помеченной деревянным крестом в дальнем левом краю.
 hero.moveXY(11, 28)

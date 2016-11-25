@@ -7,46 +7,46 @@ hero.moveRight();
 hero.moveRight();
 hero.moveUp();
 hero.moveRight(5);
-enemy = self.findNearestEnemy()
+enemy = hero.findNearestEnemy()
 while enemy:
-    self.attack(enemy)
-    enemy = self.findNearestEnemy()
+    hero.attack(enemy)
+    enemy = hero.findNearestEnemy()
 hero.moveUp(3);
 hero.moveLeft();
 hero.moveDown(3);
 hero.moveLeft(2);
-enemy = self.findNearestEnemy()
+enemy = hero.findNearestEnemy()
 while enemy:
-    self.attack(enemy)
-    enemy = self.findNearestEnemy()
+    hero.attack(enemy)
+    enemy = hero.findNearestEnemy()
 hero.moveUp(2);
-enemy = self.findNearestEnemy()
+enemy = hero.findNearestEnemy()
 while enemy:
-    self.attack(enemy)
-    enemy = self.findNearestEnemy()
+    hero.attack(enemy)
+    enemy = hero.findNearestEnemy()
 hero.moveDown(2);
 hero.moveLeft(2);
-enemy = self.findNearestEnemy()
+enemy = hero.findNearestEnemy()
 while enemy:
-    self.attack(enemy)
-    enemy = self.findNearestEnemy()
+    hero.attack(enemy)
+    enemy = hero.findNearestEnemy()
 hero.moveUp(2);
-enemy = self.findNearestEnemy()
+enemy = hero.findNearestEnemy()
 while enemy:
-    self.attack(enemy)
-    enemy = self.findNearestEnemy()
+    hero.attack(enemy)
+    enemy = hero.findNearestEnemy()
 hero.moveDown(3);
 hero.moveLeft(2);
 hero.moveUp();
-enemy = self.findNearestEnemy()
+enemy = hero.findNearestEnemy()
 while enemy:
-    self.attack(enemy)
-    enemy = self.findNearestEnemy()
+    hero.attack(enemy)
+    enemy = hero.findNearestEnemy()
 hero.moveUp(2);
-enemy = self.findNearestEnemy()
+enemy = hero.findNearestEnemy()
 while enemy:
-    self.attack(enemy)
-    enemy = self.findNearestEnemy()
+    hero.attack(enemy)
+    enemy = hero.findNearestEnemy()
 hero.moveDown(3);
 hero.moveRight(2);
 hero.moveDown();

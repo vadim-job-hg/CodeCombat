@@ -2,10 +2,10 @@
 # http://codecombat.com/play/level/loop-da-loop
 while True:
     # Двигаться вправо
-    self.moveRight()
+    hero.moveRight()
     # Двигаться вверх
-    self.moveUp()
+    hero.moveUp()
     # Двигаться влево
-    self.moveLeft()
+    hero.moveLeft()
     # Двигаться вниз
-    self.moveDown()
+    hero.moveDown()

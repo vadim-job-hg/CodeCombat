@@ -4,30 +4,30 @@ array = [[31, 26], [53, 21], [74, 21], [86, 21], [112, 23], [127, 25], [68, 20],
          [103, 125], [41, 95], [40, 84], [100, 89], [130, 72], [102, 55]]
 arrayIndex = 0;
 while arrayIndex < len(array):
-    enemy = self.findNearest(self.findEnemies())
-    item = self.findNearest(self.findItems())
-    if (enemy and self.distanceTo(enemy) < 50):
-        if (self.isReady('jump') and self.distanceTo(enemy) > 10):
-            self.jumpTo(enemy.pos)
-        elif (self.isReady("cleave")):
-            self.cleave(enemy)
-        elif (self.isReady("bash")):
-            self.bash(enemy)
-        elif (self.isReady("power-up")):
-            self.powerUp()
-            self.attack(enemy)
+    enemy = hero.findNearest(hero.findEnemies())
+    item = hero.findNearest(hero.findItems())
+    if (enemy and hero.distanceTo(enemy) < 50):
+        if (hero.isReady('jump') and hero.distanceTo(enemy) > 10):
+            hero.jumpTo(enemy.pos)
+        elif (hero.isReady("cleave")):
+            hero.cleave(enemy)
+        elif (hero.isReady("bash")):
+            hero.bash(enemy)
+        elif (hero.isReady("power-up")):
+            hero.powerUp()
+            hero.attack(enemy)
         else:
-            self.attack(enemy)
+            hero.attack(enemy)
     elif (item):
-        if (self.isReady('jump')):
-            self.jumpTo(item.pos)
+        if (hero.isReady('jump')):
+            hero.jumpTo(item.pos)
         else:
-            self.move(item.pos)
+            hero.move(item.pos)
     else:
-        if (self.isReady('jump')):
-            self.jumpTo({'x': array[arrayIndex][0], 'y': array[arrayIndex][1]})
+        if (hero.isReady('jump')):
+            hero.jumpTo({'x': array[arrayIndex][0], 'y': array[arrayIndex][1]})
         else:
-            self.moveXY(array[arrayIndex][0], array[arrayIndex][1])
+            hero.moveXY(array[arrayIndex][0], array[arrayIndex][1])
         arrayIndex += 1
 # Ты должен проложить свой путь к первому испытанию ( Оазис Марр) убивая врагов на протяжении всего пути. Как достигнешь его собери все грибы и испытание начнется. Если переживешь нападение, то держи путь к следующему Оазису за вторым испытанием, а затем - в Храм. Как пройдешь все испытания, ты сразишься с главным боссом. Удачи!
 # Подсказка: Очки с высокой дальностью видимости очень помогут вам на этом уровне, поэтому купите лучшее из того, что вы можете получить.

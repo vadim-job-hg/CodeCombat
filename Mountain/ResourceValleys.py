@@ -8,7 +8,7 @@ def commandPeasant(peasant, coins):
     # Command the peasant to find the nearest of their coins array:
     item = peasant.findNearest(coins)
     if item:
-        self.command(peasant, "move", item.pos)
+        hero.command(peasant, "move", item.pos)
 
 
 friends = hero.findFriends()

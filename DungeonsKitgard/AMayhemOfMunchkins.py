@@ -1,4 +1,4 @@
 # Внутри цикла, используйте findNearestEnemy и атакуйте!
 while True:
-    enemy = self.findNearestEnemy()
-    self.attack(enemy)
+    enemy = hero.findNearestEnemy()
+    hero.attack(enemy)

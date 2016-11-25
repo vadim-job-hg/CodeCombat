@@ -3,15 +3,15 @@ index = len(path)
 max = len(path)
 while True:
     # Найдите лучника.
-    friend = self.findNearest(self.findFriends())
-    enemy = self.findNearest(self.findEnemies())
+    friend = hero.findNearest(hero.findFriends())
+    enemy = hero.findNearest(hero.findEnemies())
     
     # Прикажите лучнику атаковать противника.
     if friend and enemy:
         if(friend.distanceTo(enemy)>16):
-            self.command(friend, "attack", enemy)
+            hero.command(friend, "attack", enemy)
         else:
-            self.command(friend, "move", path[index%len(path)])
+            hero.command(friend, "move", path[index%len(path)])
     if(friend.pos.x == path[index % max].x):
            index = index + 1
     # Подождите-ка! Как то не очень получается. Может быть следует попробовать что-нибудь другое?

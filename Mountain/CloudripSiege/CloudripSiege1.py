@@ -1,14 +1,14 @@
 def moveTo(position, fast=True):
-    if (self.isReady("jump") and fast):
-        self.jumpTo(position)
+    if (hero.isReady("jump") and fast):
+        hero.jumpTo(position)
     else:
-        self.move(position)
+        hero.move(position)
 
 
 # pickup coin
 def pickUpNearestItem():
-    items = self.findItems()
-    nearestItem = self.findNearest(items)
+    items = hero.findItems()
+    nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
@@ -19,10 +19,10 @@ buildTypes = ['arrow-tower']
 
 
 def buildTroops():
-    coor = coors[len(self.built) % len(coors)]
-    type = buildTypes[len(self.built) % len(buildTypes)]
-    if self.gold > self.costOf(type):
-        self.buildXY(type, coor[0], coor[1])
+    coor = coors[len(hero.built) % len(coors)]
+    type = buildTypes[len(hero.built) % len(buildTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.buildXY(type, coor[0], coor[1])
 
 
 while True:
