@@ -5,8 +5,4 @@ https://codecombat.com/play/level/stormcloud
 subscribers
 ?session=5774c7fd4fe71e2700823ea7&observing=true
 desert
-
-
-
-/play/level/mad-maxer-redemption
 /play/level/sarven-sum
