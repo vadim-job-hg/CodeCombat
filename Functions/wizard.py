@@ -52,12 +52,8 @@ def summonTroops():
 
 def commandTroops():
     for index, friend in enumerate(hero.findFriends()):
-        if friend.type == 'paladin':
-            CommandPaladin(friend)
-        elif friend.type == 'soldier' or friend.type == 'archer' or friend.type == 'griffin-rider' or friend.type == 'skeleton':
+        if friend.type == 'soldier' or friend.type == 'archer' or friend.type == 'griffin-rider' or friend.type == 'skeleton':
             CommandSoldier(friend)
-        elif friend.type == 'peasant':
-            CommandPeasant(friend)
 
 
 def CommandSoldier(soldier):
