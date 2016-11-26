@@ -3,6 +3,8 @@ https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39
 
 https://codecombat.com/play/level/stormcloud
 subscribers
+subscribers
+?session=5774c7fd4fe71e2700823ea7&observing=true
 /play/level/timber-turncoat
 /play/level/dance-off
 /play/level/black-diamond
