@@ -3,6 +3,19 @@ https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39
 
 https://codecombat.com/play/level/stormcloud
 subscribers
-
-desert
-/play/level/sarven-sum
+/play/level/timber-turncoat
+/play/level/dance-off
+/play/level/black-diamond
+/play/level/treasure-cave
+/play/level/alpine-rally
+/play/level/fizzbuzz-path
+/play/level/restless-dead
+/play/level/protect-and-serve
+/play/level/what-in-carnation
+pesky-yaks
+/play/level/sowing-fire
+/play/level/misty-island-mine
+/play/level/misty-island-mine
+/play/level/deadly-discs
+/play/level/deadly-discs
+/play/level/raiders-of-the-long-dark
