@@ -1,0 +1,1 @@
+#https://codecombat.com/play/level/mad-maxer-gets-greedy
