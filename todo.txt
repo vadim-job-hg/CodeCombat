@@ -1,10 +1,5 @@
 https://codecombat.com/play/level/serpent-savings
 https://codecombat.com/play/level/serpent-savings?session=56c56e6d5e72ba26006c39a4&observing=true
-https://codecombat.com/play/level/gardener
 https://codecombat.com/play/level/assembly-speed
-https://codecombat.com/play/level/fence-builder
-https://codecombat.com/play/level/humantron
-https://codecombat.com/play/level/rectangle-formation
-https://codecombat.com/play/level/explosive-works
 https://codecombat.com/play/level/favorable-odds
 https://codecombat.com/play/level/stormcloud
