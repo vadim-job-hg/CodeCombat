@@ -1,4 +1,5 @@
 #https://codecombat.com/play/level/humantron
+
 # Form the rectangle of units around the peasant.
 # You need 2 archers and 2 soldiers.
 

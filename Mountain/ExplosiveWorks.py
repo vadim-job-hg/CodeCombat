@@ -1,4 +1,5 @@
-# https://codecombat.com/play/level/explosive-works
+#https://codecombat.com/play/level/explosive-works
+
 # Put explosives to clear a dungeon passage.
 
 # Mines should form a rectangle with the certain perimeter.
