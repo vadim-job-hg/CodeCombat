@@ -6,3 +6,5 @@ https://codecombat.com/play/level/fence-builder
 https://codecombat.com/play/level/humantron
 https://codecombat.com/play/level/rectangle-formation
 https://codecombat.com/play/level/explosive-works
+https://codecombat.com/play/level/favorable-odds
+https://codecombat.com/play/level/stormcloud
