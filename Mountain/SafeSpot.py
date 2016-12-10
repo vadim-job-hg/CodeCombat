@@ -1,10 +1,11 @@
-# https://codecombat.com/play/level/safe-spot
-
-# Shout to activate the  bombs and move to the entrance.
+#https://codecombat.com/play/level/safe-spot
+# todo:
+# Activate bombs and survive, then reach the dungeon enter.
 
 # The function checks if numbers are almost equal.
 def almostEqual(n1, n2):
-    return abs(n1 - n2) <= 0.5
+    return abs(n1 - n2)
+
 
 # The function checks that all
 # thangs are on the same distance from the hero.
@@ -15,14 +16,13 @@ def allSameDistance(thangs):
     etalon = hero.distanceTo(thangs[0])
     # Iterate all thangs:
     for thang in thangs:
-        # Use almostEqual to check if not the distance
-        # between the unit and the etalon:
-        almost = almostEqual(hero.distanceTo(thang), etalon)
-        if not(almost):
-            # Return False.
+        # If the distance to the current thang
+        # is not almost equal to the etalon:
+        if not (almostEqual(hero.distanceTo(thang), etalon)):
             return False
-    # All the same. Return  True.
+
     return True
+
 
 bombs = hero.findEnemies()
 for x in range(36, 45):

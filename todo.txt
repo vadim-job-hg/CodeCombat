@@ -4,3 +4,5 @@ https://codecombat.com/play/level/assembly-speed
 https://codecombat.com/play/level/cross-bones?course=56462f935afde0c6fd30fc8c&course-instance=56fc25d7263b0220002aff0e
 ?session=5774c7fd4fe71e2700823ea7&observing=true
 https://codecombat.com/play/level/precision-kicking
+https://codecombat.com/play/level/gem-ring
+
