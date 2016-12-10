@@ -21,3 +21,4 @@ for gem in gems:
         hero.moveXY(gem.pos.x, gem.pos.y)
         # Return to the centre.
         hero.moveXY(centre.x, centre.y)
+
