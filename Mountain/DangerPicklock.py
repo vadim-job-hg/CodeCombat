@@ -15,8 +15,9 @@ while True:
     # Circle radius:
     radius = bomb.distanceTo(wizards[0])
     # Find the current area of the circle.
-    area = radius*Math.PI*Math.PI
+    area = radius*radius*Math.PI
     # If it's almost equal to chargeArea:
     if(almostEqual(chargeArea, area)):
         # Say something: 
         hero.say('Run, Forest, Run')
+
