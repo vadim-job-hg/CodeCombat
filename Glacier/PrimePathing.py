@@ -3,7 +3,7 @@
 # Check the guide for clarification.
 route = [[6, 41, 0], [3, 16, 1], [79, 5, 0], [91, 12, 1], [82, 62, 0], [81, 62, 0], [80, 62, 0], [79, 62, 0],
          [78, 62, 0], [78, 62, 0], [77, 62, 0]]
-routeIndex = 0;
+routeIndex = 0
 SafeWay = [[70, 40]]
 SafeWayIndex = 1
 
