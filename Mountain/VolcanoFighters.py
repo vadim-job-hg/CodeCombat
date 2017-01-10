@@ -29,10 +29,11 @@ mb = findMostBottom(paladins)
 
 # Use X coordinate from the top left paladin
 # and Y coordinate from the bottom right paladin.
-x = ml.x
-y = mb.y
+x = ml.pos.x
+y = mb.pos.y
 # Move to {X, Y} point from the previous step.
 hero.moveXY(x, y)
 # Shield while the volcano is erupting.
 while True:
     hero.shield()
+

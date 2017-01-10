@@ -12,11 +12,11 @@ while True:
     if (goldAmount >= 25):
         hero.buildXY('decoy', item.pos.x, item.pos.y)
         # Считайте количество уже построенных приманок.
-        decoysBuilt += 1
+        decoysBuilt = decoysBuilt + 1
     # Прерывайте цикл когда построите 4.
     if (decoysBuilt == 4):
         break
-    hero.say("Приманки построены!")
-    # Идите к Нарье и сообщите сколько приманок построено.
-    hero.moveXY(14, 36)
-    hero.say(decoysBuilt)
+hero.say("Приманки построены!")
+# Идите к Нарье и сообщите сколько приманок построено.
+hero.moveXY(14, 36)
+hero.say(decoysBuilt)
