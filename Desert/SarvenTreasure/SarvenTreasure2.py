@@ -39,9 +39,9 @@ while True:
     item = hero.findNearest(items)
     if enemy and hero.distanceTo(enemy) > 10 and items and (item.pos.x < 30 or item.pos.x > 60):
         pickUpNearestItem(items)
-    # elif(enemy and hero.isReady("bash")):
-    #    hero.bash(enemy)
-    # elif(enemy and hero.canCast('chain-lightning', enemy)):
-    #    hero.cast('chain-lightning', enemy)
+    elif(enemy and hero.isReady("bash")):
+        hero.bash(enemy)
+    elif(enemy and hero.canCast('chain-lightning', enemy)):
+        hero.cast('chain-lightning', enemy)
     elif (moveHero()):
         index = index + 1
