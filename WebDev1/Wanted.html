@@ -1,0 +1,74 @@
+<!-- https://codecombat.com/play/level/wanted -->
+<style>
+    @import 'https://fonts.googleapis.com/css?family=Holtwood+One+SC';
+    .wanted-poster {
+        font-family: 'Holtwood One SC';
+        text-align: center;
+        /* Increase width if your poster needs it */
+        width: 700px;
+    }
+    h1 {
+        font-size: 7em;
+    }
+    h2 {
+        /* Decrease h2 font-size if their name is too long */
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    li {
+        text-align: left;
+        font-size: 1.5em;
+    }
+    img#most-wanted {
+        width: 240px;
+    }
+</style>
+
+<body>
+    <div class="wanted-poster container">
+        <h1 id="title">Wanted</h1>
+        
+        <!-- Find an image from the Image Gallery above, or use your own image link. -->
+        <img src="https://codecombat.com/file/db/thang.type/56d0cfa063103d2a00af5449/portrait.png" id="most-wanted">
+        
+        <!-- Who is wanted? -->
+        <h2 id="who">Who?</h2>
+        
+        <!-- What are they wanted for? -->
+        <h3 id="why">For Reckless, Inhuman Crimes:</h3>
+        <ul id="crimes" class="list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        
+        <!-- What is the reward? -->
+        <h2 id="reward">Reward: 1$</h2>
+        
+        <!-- Who are their partners in crime? -->
+        <h3>Known Accomplices</h3>
+        <div class="row">
+            <div class="accomplice col-sm-4 captured">
+                <img src="https://codecombat.com/file/db/thang.type/5432f9d18364d30000d1f943/portrait.png">
+                <h3>1</h3>
+            </div>
+            
+            <div class="accomplice col-sm-4">
+                <img src="https://codecombat.com/file/db/thang.type/5432f9d18364d30000d1f943/portrait.png">
+                <h3>2</h3>
+            </div>
+            
+            <!-- Add a third accomplice here. Choose whether they are class "captured". -->
+            <div class="accomplice col-sm-4">
+                <img src="https://codecombat.com/file/db/thang.type/5432f9d18364d30000d1f943/portrait.png">
+                <h3>3</h3>
+            </div>
+        </div>
+        
+        <!-- How do want them captured? -->
+        <h2 id="capture-method">Capture Alive Only</h2>
+    </div>
+</body>
