@@ -2,4 +2,7 @@ https://codecombat.com/play/level/footsteps-in-a-maze
 https://codecombat.com/play/level/may-the-odds-be-with-you
 https://codecombat.com/play/level/array-level-desert
 https://codecombat.com/play/level/grab-n-go
+https://codecombat.com/play/level/wanted
+https://codecombat.com/play/level/gameville
+
 ?session=5697f4e2de16c626003e6aa3&observing=true
