@@ -1,4 +1,10 @@
 https://codecombat.com/play/level/grab-n-go
 https://codecombat.com/play/level/gameville
-
+https://codecombat.com/play/level/toggulation
+https://codecombat.com/play/level/toss-the-rock
 ?session=5697f4e2de16c626003e6aa3&observing=true
+https://codecombat.com/play/level/chokepoint
+https://codecombat.com/play/level/palimpsest
+https://codecombat.com/play/level/marginal-utility
+https://codecombat.com/play/level/eventful-selectors
+https://codecombat.com/play/level/disappearing-act
