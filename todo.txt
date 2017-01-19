@@ -8,3 +8,5 @@ https://codecombat.com/play/level/palimpsest
 https://codecombat.com/play/level/marginal-utility
 https://codecombat.com/play/level/eventful-selectors
 https://codecombat.com/play/level/disappearing-act
+https://codecombat.com/play/level/k-means-cluster-wars
+https://codecombat.com/play/level/gridmancer-eppstein-polygon
