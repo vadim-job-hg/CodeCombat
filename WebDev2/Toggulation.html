@@ -1,4 +1,5 @@
 <!-- https://codecombat.com/play/level/toggulation -->
+<!-- https://codecombat.com/play/level/toggulation -->
 <!-- The 'toggleClass' jQuery function turns on/off... -->
 <!-- ... classes whether or not the class is off/on. -->
 
@@ -6,8 +7,10 @@
     var image = $("img");
     var header = $("h1");
     function toggleExpand() {
+        image.toggleClass("h1");
         image.toggleClass("expand");
         // Toggle class "expand" on 'h1':
+        header.toggleClass("h1");
         header.toggleClass("expand");
     }
     image.on("click", toggleExpand);
