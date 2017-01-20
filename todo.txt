@@ -4,3 +4,4 @@ https://codecombat.com/play/level/eventful-selectors
 https://codecombat.com/play/level/disappearing-act
 https://codecombat.com/play/level/k-means-cluster-wars
 https://codecombat.com/play/level/gridmancer-eppstein-polygon
+https://codecombat.com/play/level/snowflakes-on-the-ice?session=5697f4e2de16c626003e6aa3&observing=true
