@@ -1,22 +1,28 @@
-if (1 + 1 + 1 == 3):
-    hero.moveXY(15, 41)
+# https://codecombat.com/play/level/gems-or-death
+# Команды, находящиеся в теле if-оператора, написанные ниже будут исполнятся только если условие будет выполнено.
+# Исправьте все if-операторы для прохождения уровня.
 
-if (2 + 2 == 5):
-    hero.moveXY(25, 16)
+# == значит "равно ли", т.е. сравнение.
+if 1 + 1 + 1 == 30:  # ∆ Сделайте тут "false"
+    hero.moveXY(5, 15)  # Идите к первой группе мин.
 
-if (2 + 2 == 4):
-    hero.moveXY(25, 15)
+if 2 + 2 == 4:  # ∆ Сделайте тут "true"
+    hero.moveXY(15, 40)  # Идите к первому самоцвету.
 
-if (1 + 1 < 3):
+# != значит "не равно".
+if 2 + 3 != 4:  # ∆ Сделайте тут "true"
+    hero.moveXY(25, 15)  # Идите ко второму самоцвету.
+
+# < значит "меньше чем".
+if 2 + 2 < 5:  # ∆ Сделайте тут "true"
     enemy = hero.findNearestEnemy()
-    if (enemy):
-        hero.attack(enemy)
+    hero.attack(enemy)
 
-if (2 < 4):
-    hero.moveXY(53, 18)
+if 2 < 0:  # ∆ Сделайте тут "false"
+    hero.moveXY(40, 55)
 
-if (True):
-    hero.moveXY(55, 25)
+if not True:  # ∆ Сделайте тут "false"
+    hero.moveXY(50, 10)
 
-if (False):
+if not False:  # ∆ Сделайте тут "true"
     hero.moveXY(55, 25)
