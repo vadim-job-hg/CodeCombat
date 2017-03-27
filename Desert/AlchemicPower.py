@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/alchemic-power
+# https://codecombat.com/play/level/alchemic-power
 # Wait for alchemist's commands to fetch potions.
 
 # The event handler for the pet's event "hear".

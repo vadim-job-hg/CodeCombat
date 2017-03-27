@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/chain-of-command
+# https://codecombat.com/play/level/chain-of-command
 # Only your pet can wake the wizard up.
 
 # It's an event handler for pet's "hear".

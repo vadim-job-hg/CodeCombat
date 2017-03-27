@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/dangerous-key
+# https://codecombat.com/play/level/dangerous-key
 # Listen to the paladin and fetch the right key.
 
 def onHear(event):
