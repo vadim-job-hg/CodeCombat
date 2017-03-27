@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/perilous-passage
+# https://codecombat.com/play/level/perilous-passage
 # Rally the peasants to protect their home!
 # Have them build only 1 trap between them and the enemy.
 def findTheMiddle(pos1, pos2):

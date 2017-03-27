@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/sarven-sum
+# https://codecombat.com/play/level/sarven-sum
 # Чтобы отключить огненные ловушки, добавьте значение lowest.trap к максимальному значению.
 # Идите к белому кресту и скажите Китти ответ.
 # Сокрушите всех огров, если осмелитесь

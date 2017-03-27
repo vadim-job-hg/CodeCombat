@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/safe-spot
+# https://codecombat.com/play/level/safe-spot
 # todo:
 # Activate bombs and survive, then reach the dungeon enter.
 

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/almost-perfect-minefield
+# https://codecombat.com/play/level/almost-perfect-minefield
 # Escape from the minefield.
 # You need to pass the marked line. (x = 72).
 

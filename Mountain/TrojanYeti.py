@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/trojan-yeti
+# https://codecombat.com/play/level/trojan-yeti
 
 # You need to defeat ogres.
 # Send wereyeti peasants to the ogre camp and watch.

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/police-raid
+# https://codecombat.com/play/level/police-raid
 # Wait for ogres, defeat them and collect gold.
 
 while True:

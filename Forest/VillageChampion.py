@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/village-champion
+# https://codecombat.com/play/level/village-champion
 # Incoming munchkins! Defend the town!
 
 # Define your own function to fight the enemy!

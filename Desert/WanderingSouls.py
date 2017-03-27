@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/wandering-souls
+# https://codecombat.com/play/level/wandering-souls
 # Defeat skeletons and collect lightstones.
 
 while True:

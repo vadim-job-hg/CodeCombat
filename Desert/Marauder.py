@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/marauder
+# https://codecombat.com/play/level/marauder
 # Destroy mechs and collect gold from them.
 
 while True:

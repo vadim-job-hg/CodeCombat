@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/northwest
+# https://codecombat.com/play/level/northwest
 # Your pet should find and bring a potion to the hero.
 
 # This function checks if the word is in the text.

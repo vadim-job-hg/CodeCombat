@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/recruiting-queue
+# https://codecombat.com/play/level/recruiting-queue
 # Call peasants one after another.
 
 # Neutral units are detected as enemies.

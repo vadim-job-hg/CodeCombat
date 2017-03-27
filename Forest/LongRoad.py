@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/long-road
+# https://codecombat.com/play/level/long-road
 # Move to the right side of the forest.
 
 # This function should check for items near the pet and fetch them.

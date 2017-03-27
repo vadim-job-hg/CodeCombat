@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/rational-defense
+# https://codecombat.com/play/level/rational-defense
 # Protect the peasants.
 
 # Move the peasants away from the woods.

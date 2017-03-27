@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/power-points
+# https://codecombat.com/play/level/power-points
 # You need to find and kill 3 skeletons.
 # Skeletons and useful items can be summoned in the points of Power.
 # You should move to the point and say the spell "VENI".

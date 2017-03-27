@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/eves-codecombat
+# https://codecombat.com/play/level/eves-codecombat
 # Attack the door.
 # Собери все самоцветы, используя команды перемещения.
 hero.attack('Door')

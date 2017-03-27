@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/how-much
+# https://codecombat.com/play/level/how-much
 # Calculate the perimeter and the area of the garden
 # and pay the fair price for that.
 

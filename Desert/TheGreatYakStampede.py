@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/the-great-yak-stampede
+# https://codecombat.com/play/level/the-great-yak-stampede
 
 # Спасите деревню, блокируя путь прибывающему стаду яков.
 # Подойдите ближе к красному Х

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/stranded-in-the-dunes
+# https://codecombat.com/play/level/stranded-in-the-dunes
 # Иди к крайней правой стороне карты, чтобы обнаружить новые места.
 # Смотри инструкцию для уточнения.
 def moveTo(position):

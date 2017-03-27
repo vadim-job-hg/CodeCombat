@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/make-advances
+# https://codecombat.com/play/level/make-advances
 # Advance through the forgotten tomb.
 # Be wary, traps lay in wait to ruin your day!
 

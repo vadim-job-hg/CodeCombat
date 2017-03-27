@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/crushing-it
+# https://codecombat.com/play/level/crushing-it
 
 game.spawnHeroXY(44, 35)
 game.addSurviveGoal()

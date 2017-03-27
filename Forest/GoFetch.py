@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/go-fetch
+# https://codecombat.com/play/level/go-fetch
 #Commented out to stop infinite loop.
 # You've been caught in a burl trap!
 # Send your pet to fetch the health potions!

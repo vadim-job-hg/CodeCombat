@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/echo-of-war
+# https://codecombat.com/play/level/echo-of-war
 # Destroy 5 robobombs. Some of them are old and safe.
 # Old (safe) bombs have the certain letter in their id.
 

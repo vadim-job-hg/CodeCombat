@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/short-sighted-burl
+# https://codecombat.com/play/level/short-sighted-burl
 # The gold is guarded by a burl.
 # The burl is short-sighted but it has good hearing.
 # Collect coins and run unless the burl will find you.

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/circumference-of-yaks
+# https://codecombat.com/play/level/circumference-of-yaks
 
 # Вычисли длины окружностей яков.
 

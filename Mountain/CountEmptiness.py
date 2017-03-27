@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/count-emptiness
+# https://codecombat.com/play/level/count-emptiness
 # Solve the riddler puzzle and find the treasure.
 # Count whitespaces in on both sides of a riddle.
 

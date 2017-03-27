@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/medic-school
+# https://codecombat.com/play/level/medic-school
 # This function checks if the phrase starts with the word.
 def startsWith(phrase, word):
     # If the word is longer than the text, return False.

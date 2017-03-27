@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/second-gem
+# https://codecombat.com/play/level/second-gem
 # One gem is safe, others are bombs.
 # But you know the answer: always take the second.
 

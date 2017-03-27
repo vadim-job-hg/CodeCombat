@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/uneasy-truce
+# https://codecombat.com/play/level/uneasy-truce
 # Summon one soldier for every ogre to the south of you!
 # Don't count the ogres to the north!
 

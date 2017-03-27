@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/elseweyr
+# https://codecombat.com/play/level/elseweyr
 # Your cleave is on a 10 second cooldown.
 # Use an else-statement to defend yourself while recharging.
 

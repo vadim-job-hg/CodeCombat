@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/coin-hunter
+# https://codecombat.com/play/level/coin-hunter
 # If you want to be a good hunter you need be patient.
 # To make the training more interesting Senick poisoned you.
 # While you aren't moving the poison is harmless.

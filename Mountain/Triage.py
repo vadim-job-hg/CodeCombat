@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/triage
+# https://codecombat.com/play/level/triage
 # Triage the wounded soldiers.
 
 doctor = hero.findByType("paladin")[0]

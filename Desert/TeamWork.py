@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/team-work
+# https://codecombat.com/play/level/team-work
 # Should fill in some default source
 def commandTroops():
     for index, friend in enumerate(hero.findFriends()):

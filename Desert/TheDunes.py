@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/the-dunes
+# https://codecombat.com/play/level/the-dunes
 # Соберите монеты. Игнорируйте яков и бурлей. Сражайтесь с метателями и ограми.
 while True:
     enemy = hero.findNearestEnemy()

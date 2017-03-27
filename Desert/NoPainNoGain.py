@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/no-pain-no-gain
+# https://codecombat.com/play/level/no-pain-no-gain
 # Run while you can, but watch your health.
 
 # While hero's health greater than 200:

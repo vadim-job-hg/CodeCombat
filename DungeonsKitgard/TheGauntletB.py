@@ -1,5 +1,5 @@
-#https://codecombat.com/play/level/the-gauntlet-b
-#https://codecombat.com/play/level/the-gauntlet-a
+# https://codecombat.com/play/level/the-gauntlet-b
+# https://codecombat.com/play/level/the-gauntlet-a
 # Используйте то, что вы изучили, чтобы победить огров.
 # Помни: чтобы сокрушить огра-манчкина нужно атаковать его дважды!
 while True:

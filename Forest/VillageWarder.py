@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/village-warder
+# https://codecombat.com/play/level/village-warder
 # This function attacks the nearest enemy.
 def findAndAttackEnemy():
     enemy = hero.findNearestEnemy()

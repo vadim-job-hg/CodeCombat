@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/agrippa-refactored
+# https://codecombat.com/play/level/agrippa-refactored
 def cleaveOrAttack(enemy):
     # If "cleave" is ready, cleave; otherwise, attack.
     # enemy = hero.findNearestEnemy()

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/spinach-power
+# https://codecombat.com/play/level/spinach-power
 # Collect exactly no more than 7 spinach potions.
 # With these potions you'll be strong enough to kill ogres.
 

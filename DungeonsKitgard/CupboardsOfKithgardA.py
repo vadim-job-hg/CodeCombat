@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/cupboards-of-kithgard-a
+# https://codecombat.com/play/level/cupboards-of-kithgard-a
 # Поблизости может быть что-то, что поможет тебе.
 
 # Сначала двигайся к Шкафу.

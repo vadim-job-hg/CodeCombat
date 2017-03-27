@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/a-maze-ing
+# https://codecombat.com/play/level/a-maze-ing
 game.addCollectGoal()
 
 game.spawnHeroXY(9, 59)

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/vision-of-ogres
+# https://codecombat.com/play/level/vision-of-ogres
 # Destroy a real ogre and illusions will disappear.
 
 def findRealEnemy(enemies):

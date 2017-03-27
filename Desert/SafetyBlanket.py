@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/safety-blanket
+# https://codecombat.com/play/level/safety-blanket
 # This is an array of nearby names!
 # Enemies are at the 0, 2, 4, and 6 indexes of the array.
 names = [

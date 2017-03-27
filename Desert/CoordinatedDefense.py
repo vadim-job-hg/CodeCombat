@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/coordinated-defense
+# https://codecombat.com/play/level/coordinated-defense
 # Protect peasants from ogres.
 
 while True:

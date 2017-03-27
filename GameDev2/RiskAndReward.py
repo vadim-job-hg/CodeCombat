@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/risk-and-reward
+# https://codecombat.com/play/level/risk-and-reward
 # The player only needs to collect some of the gems.
 game.spawnHeroXY(39, 23)
 

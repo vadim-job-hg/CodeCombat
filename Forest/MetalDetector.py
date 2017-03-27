@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/metal-detector
+# https://codecombat.com/play/level/metal-detector
 # The ogre camp is well guarded, but we'll use the ogres' greed.
 # The artillery uses coins as a target.
 # But the artillery rangefinder device isn't working in the forest.

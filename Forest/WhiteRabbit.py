@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/white-rabbit
+# https://codecombat.com/play/level/white-rabbit
 # Follow by the lightstone and escape from the room.
 
 while True:

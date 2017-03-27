@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/scylla-and-charybdis
+# https://codecombat.com/play/level/scylla-and-charybdis
 # Listen mages' phrases and hide.
 
 # The event handler for the pet.

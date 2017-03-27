@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/guard-dog
+# https://codecombat.com/play/level/guard-dog
 # You can't help the peasants across the river.
 # But, your pet can!
 # Teach your wolf to be a guard dog.

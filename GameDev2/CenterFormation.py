@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/center-formation
+# https://codecombat.com/play/level/center-formation
 # Night is coming! Move all the soldiers towards the fire.
 
 def centerFormation(event):

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/brawler-hunt
+# https://codecombat.com/play/level/brawler-hunt
 # Огры идут по одному.
 # Не беспокойся по поводу мелких и средних огров.
 # Твои цели - это драчуны (brawler)

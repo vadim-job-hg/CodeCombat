@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/canyon-of-storms
+# https://codecombat.com/play/level/canyon-of-storms
 # A desert storm is coming!
 # Yaks can detect when a storm is coming.
 

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/adventure-time
+# https://codecombat.com/play/level/adventure-time
 # game.time is the time that has passed in the game
 game.spawnHeroXY("guardian", 10, 35)
 game.addSurviveGoal()

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/forest-cannon-dancing
+# https://codecombat.com/play/level/forest-cannon-dancing
 # Your pet should run back and forth on the marks.
 # The hero should cheer the whole time!
 

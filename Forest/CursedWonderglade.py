@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/cursed-wonderglade
+# https://codecombat.com/play/level/cursed-wonderglade
 # Wonderglade has changed since our last visit.
 # Ogres cursed it and we should defeat them.
 # The burl still is collecting gems, so don't touch them.

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/convenient-enemy
+# https://codecombat.com/play/level/convenient-enemy
 # Ogres are hiding in woods. Protect the peasants.
 # The last word in the peasants' messages are a hint.
 

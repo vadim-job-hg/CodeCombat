@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/if-stravaganza
+# https://codecombat.com/play/level/if-stravaganza
 # Defeat the ogres from within their own camp!
 
 while True:

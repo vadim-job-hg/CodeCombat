@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/danger-picklock
+# https://codecombat.com/play/level/danger-picklock
 # You need to break the door.
 
 # The function checks the equality with 5% inaccuracy.

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/cluttered-corridors
+# https://codecombat.com/play/level/cluttered-corridors
 
 # Help the pet find the exit.
 

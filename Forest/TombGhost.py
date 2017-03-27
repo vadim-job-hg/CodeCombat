@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/tomb-ghost
+# https://codecombat.com/play/level/tomb-ghost
 # The only exit is blocked by ogres.
 # Hide from the skeletons and kill ogres one by one.
 

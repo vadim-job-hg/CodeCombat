@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/chameleons
+# https://codecombat.com/play/level/chameleons
 # Ogres are disguised as gems or coins.
 
 while True:

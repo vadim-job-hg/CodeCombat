@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/coincrumbs
+# https://codecombat.com/play/level/coincrumbs
 # Follow by the coin trail and escape from the room.
 
 while True:

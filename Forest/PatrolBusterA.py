@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/patrol-buster-a
+# https://codecombat.com/play/level/patrol-buster-a
 # Помните, что врага в данный момент может не быть рядом.
 while True:
     enemy = hero.findNearestEnemy()

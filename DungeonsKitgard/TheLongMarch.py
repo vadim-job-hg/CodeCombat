@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/the-long-march
+# https://codecombat.com/play/level/the-long-march
 # Победи огров.
 # Помни, что каждому из них нужно нанести два удара.
 hero.attack('Rig')

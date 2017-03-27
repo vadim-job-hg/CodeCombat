@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/desert-delta
+# https://codecombat.com/play/level/desert-delta
 # Only attack the enemies in the enemyNames array.
 # Be sure to attack in order! 0 -> 1 -> 2 -> 3
 enemyNames = ["Kog", "Godel", "Vorobun", "Rexxar"]

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/forest-jogging
+# https://codecombat.com/play/level/forest-jogging
 # Let's train your pet a little.
 
 # This function makes a pet run around.

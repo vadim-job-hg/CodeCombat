@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/explosive-works
+# https://codecombat.com/play/level/explosive-works
 
 # Put explosives to clear a dungeon passage.
 

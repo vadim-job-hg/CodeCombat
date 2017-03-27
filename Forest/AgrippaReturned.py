@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/agrippa-returned
+# https://codecombat.com/play/level/agrippa-returned
 def enemyInRange(enemy):
     # Return true if the enemy is less than 5 units away.
     if hero.distanceTo(enemy)<5:

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/area-of-yetis
+# https://codecombat.com/play/level/area-of-yetis
 # Defeat Yetis.
 
 # The chosen one can stun yetis with the Shout.

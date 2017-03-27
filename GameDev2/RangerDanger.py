@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/ranger-danger
+# https://codecombat.com/play/level/ranger-danger
 # Archers are powerful ranged units!
 # While soldiers have health, archers provide damage.
 

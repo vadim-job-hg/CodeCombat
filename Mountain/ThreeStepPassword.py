@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/three-step-password
+# https://codecombat.com/play/level/three-step-password
 
 # Find a password for the gates and defeat ogres.
 

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/skeleton-puzzle
+# https://codecombat.com/play/level/skeleton-puzzle
 #also see this https://github.com/Shyrshik/ss/blob/master/skeleton-puzzle%20-%20%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F
 
 # Solve the puzzle and the treasures will be yours.

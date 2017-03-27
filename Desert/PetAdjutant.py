@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/pet-adjutant
+# https://codecombat.com/play/level/pet-adjutant
 # Survive while wizards are casting to escape you.
 # The medic and the cannon can help you.
 

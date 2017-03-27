@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/hit-and-freeze
+# https://codecombat.com/play/level/hit-and-freeze
 # You are trapped, but still dangerous.
 # Don't do any unnecessary movements, it'll be painful.
 # Hit ogres only they are near you and you can reach them with your sword.

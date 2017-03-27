@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/phd-kitty
+# https://codecombat.com/play/level/phd-kitty
 # Kitty is the smartest cougar. It knows everything.
 # Let's make a show for those peasants.
 

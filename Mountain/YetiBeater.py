@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/yeti-beater
+# https://codecombat.com/play/level/yeti-beater
 # Follow by one of the peasants and escape from yetis.
 
 def startsWith(phrase, word):

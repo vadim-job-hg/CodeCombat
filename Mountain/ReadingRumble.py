@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/reading-rumble
+# https://codecombat.com/play/level/reading-rumble
 # Defeat all incoming ogres.
 
 while True:

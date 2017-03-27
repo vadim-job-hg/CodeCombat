@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/passing-through
+# https://codecombat.com/play/level/passing-through
 # Don't insult this tribe of peaceful ogres.
 hero.wait(1)
 while True:

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/vorpal-mouse
+# https://codecombat.com/play/level/vorpal-mouse
 
 game.spawnHeroXY(40, 40)
 

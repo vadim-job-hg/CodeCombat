@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/over-the-garden-wall
+# https://codecombat.com/play/level/over-the-garden-wall
 # Use game.spawnXY() to build a fence around the farm!
 game.spawnXY("fence", 39, 6)
 # Spawn more fences...

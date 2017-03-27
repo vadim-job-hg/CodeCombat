@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/guess-my-number
+# https://codecombat.com/play/level/guess-my-number
 # You need to guess the number from 0 to 1000 (0 <= n <= 1000).
 # You have 10 attempts!
 # For each attempt Riddler will say if the number is less or greater.

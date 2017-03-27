@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/olympic-race
+# https://codecombat.com/play/level/olympic-race
 # The pet must win the race.
 # Runners should touch a mark and run back.
 

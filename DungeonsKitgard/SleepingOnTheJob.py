@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/sleeping-on-the-job
+# https://codecombat.com/play/level/sleeping-on-the-job
 
 # The guards protect the buttons to the door.
 

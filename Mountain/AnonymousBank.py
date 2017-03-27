@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/anonymous-bank
+# https://codecombat.com/play/level/anonymous-bank
 
 # Find passwords and get treasures.
 

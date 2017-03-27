@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/blind-distance
+# https://codecombat.com/play/level/blind-distance
 # It's an ambush and your only weapon is the old, blind wizard.
 # Your task is to tell him the distance to the coming ogres.
 # Don't worry about the direction.

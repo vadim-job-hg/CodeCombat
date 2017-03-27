@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/ice-hunter
+# https://codecombat.com/play/level/ice-hunter
 # Hunt for 4 yaks. Choose only the small ones.
 # Small yak names contain a "bos" substring.
 

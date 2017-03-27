@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/double-agent
+# https://codecombat.com/play/level/double-agent
 
 # Use the hidden number in the agent's message to escape.
 # Count the number of trailing and leading whitespaces.

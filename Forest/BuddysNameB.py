@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/buddys-name-b
+# https://codecombat.com/play/level/buddys-name-b
 # The pet should greet the hero and the peasant.
 
 # Use this function as a handler for "hear" events on pet.

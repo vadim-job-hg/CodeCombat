@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/form-up
+# https://codecombat.com/play/level/form-up
 # Those soldiers before the gate are new recruits aren't trained.
 # We should form up them by their height.
 # Their 'health' property is proportional to their height.

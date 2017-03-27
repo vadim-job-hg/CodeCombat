@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/buddys-name-a
+# https://codecombat.com/play/level/buddys-name-a
 # The peasant need to know the name of the pet.
 
 # Use this function as a handler for "hear" events on pet.

@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/usual-day
+# https://codecombat.com/play/level/usual-day
 # Kill munchkins, collect coins. Everything as usual.
 # Use AND operator to check thang's existence and type in one statement.
 

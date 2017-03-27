@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/aggressive-mimicry
+# https://codecombat.com/play/level/aggressive-mimicry
 # Protect the village from ogres.
 # Watch for ogres, peasants and "peasants".
 

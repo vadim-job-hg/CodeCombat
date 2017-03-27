@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/distracting-dungeon
+# https://codecombat.com/play/level/distracting-dungeon
 # Navigate the mountain maze with a peasant pal.
 # Advanced while-loop usage is required!
 

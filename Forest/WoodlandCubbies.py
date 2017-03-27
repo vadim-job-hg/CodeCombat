@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/woodland-cubbies
+# https://codecombat.com/play/level/woodland-cubbies
 # Navigate through the woods, but be on the lookout!
 # These forest cubbies may contain ogres!
 hero.moveXY(19, 33)

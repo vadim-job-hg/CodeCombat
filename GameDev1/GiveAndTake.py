@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/give-and-take
+# https://codecombat.com/play/level/give-and-take
 
 
 game.spawnHeroXY(40, 50)

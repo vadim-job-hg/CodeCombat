@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/touch-of-death
+# https://codecombat.com/play/level/touch-of-death
 # Накладывай заклинание "drain-life" на короткой дистанции.
 # Используй посох для атаки на расстоянии.
 

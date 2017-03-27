@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/tactical-timing
+# https://codecombat.com/play/level/tactical-timing
 # Помогите на передней линии.
 # Возвращайтесь к флагу, если кто-нибудь пытается прокрасться.
 while True:

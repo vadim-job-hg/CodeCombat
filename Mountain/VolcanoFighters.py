@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/volcano-fighters
+# https://codecombat.com/play/level/volcano-fighters
 # Complete the paladin rectangle to protect people.
 
 # The function find the most left unit.

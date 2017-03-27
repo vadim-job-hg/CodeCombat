@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/rectangle-formation
+# https://codecombat.com/play/level/rectangle-formation
 # Form up soldiers and archers in rectangle formations.
 
 # The distance between units.

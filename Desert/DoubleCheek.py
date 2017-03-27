@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/double-cheek
+# https://codecombat.com/play/level/double-cheek
 # Kill at least 6 ogres on the left side.
 # Then, collect at least 30 gold on the right.
 # This variable is used for counting ogres.

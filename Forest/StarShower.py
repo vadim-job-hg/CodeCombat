@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/star-shower
+# https://codecombat.com/play/level/star-shower
 # A star shower is a time when gems and coins appear around you.
 # Metal coins disappear quickly, run for them only they are close (< 20m).
 # Gems don't disappear, run for them every time when you see them.

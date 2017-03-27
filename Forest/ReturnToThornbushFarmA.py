@@ -1,4 +1,4 @@
-#https://codecombat.com/play/level/return-to-thornbush-farm-a
+# https://codecombat.com/play/level/return-to-thornbush-farm-a
 # The function maybeBuildTrap defines TWO parameters!
 def maybeBuildTrap(x, y):
     # Use x and y as the coordinates to move to.
