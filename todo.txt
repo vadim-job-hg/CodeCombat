@@ -4,3 +4,4 @@ https://codecombat.com/play/level/dagrons-of-kithgard
 https://codecombat.com/play/level/lay-on-hands
 https://codecombat.com/play/level/bane-20
 https://codecombat.com/play/level/mail-interceptor
+https://codecombat.com/play/level/throwing-fire
