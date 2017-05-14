@@ -1,14 +1,8 @@
 https://codecombat.com/play/level/hitman
 https://codecombat.com/play/level/darkhopper
-https://codecombat.com/play/level/lay-on-hands
-https://codecombat.com/play/level/bane-20
-https://codecombat.com/play/level/mail-interceptor
-https://codecombat.com/play/level/throwing-fire
-https://codecombat.com/play/level/peek-a-boom
+
 https://codecombat.com/play/level/pet-dev
 https://codecombat.com/play/level/behind-the-darkness
 https://codecombat.com/play/level/throwing-fire
 https://codecombat.com/play/level/freezing-backstab-dev
-https://codecombat.com/play/level/pet-dev
-https://codecombat.com/play/level/peek-a-boom
 https://codecombat.com/play/level/dagrons-of-kithgard
