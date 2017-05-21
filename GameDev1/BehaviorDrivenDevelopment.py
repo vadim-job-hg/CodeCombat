@@ -28,16 +28,6 @@ ogre3.behavior = "AttacksNearest"
 archer1 = game.spawnXY("archer", 10, 30)
 # Assign "Defends" to archer1.behavior
 archer1.behavior = "Defends"
-archer2 = game.spawnXY("archer", 47, 55)
-archer3 = game.spawnXY("archer", 47, 45)
-archer4 = game.spawnXY("archer", 48, 38)
-archer5 = game.spawnXY("archer", 47, 28)
-archer6 = game.spawnXY("archer", 49, 13)
-archer2.behavior = "Defends"
-archer3.behavior = "Defends"
-archer4.behavior = "Defends"
-archer5.behavior = "Defends"
-archer6.behavior = "Defends"
 # Don't need to change anything below here.
 # But feel free to take a look!
 player = game.spawnHeroXY("raider", 20, 30)
