@@ -1,0 +1,34 @@
+<!-- https://codecombat.com/play/level/attr-itude -->
+<!-- Remember the word "attributes"? -->
+<!-- Stuff like id="", class="", src="". -->
+<!-- jQuery uses .attr(attrName, attrValue) to change them!-->
+<!-- Help finish a simple mine game by displaying a new image -->
+
+<script>
+    $(".good").on("click", onGoodClick);
+    $(".bad").on("click", onBadClick);
+    function onGoodClick() {
+        $(this).attr("src", "file/db/thang.type/545bacb41e649a4495f887da/portrait.png");
+    }
+    function onBadClick() {
+        $(".good").off("click");
+        $("h1").show();
+        // Only one of the images has the "bad" class.
+        // When it is clicked, display something surprising!
+        // Use .attr() to set $(this)'s "src" to a different image:
+        $(this).attr('src', 'file/db/thang.type/54eb540b49fa2d5c905ddf1a/portrait.png');
+    }
+</script>
+<h1 id="loseText">You Lose!</h1>
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        text-align: center;
+    }
+    #loseText {
+        display: none;
+    }
+</style>
