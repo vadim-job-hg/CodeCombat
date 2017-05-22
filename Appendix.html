@@ -1,0 +1,24 @@
+<!--https://codecombat.com/play/level/appendix-->
+<!-- jQuery can even create brand new elements! -->
+<!-- Passing an html element in as a string will cause jQuery to create a new element of that type! -->
+<!-- Using .append(), jQuery can add these new elements to others. -->
+<script>
+    $("#hello").on("click", onHelloClick);
+    $("#goodbye").on("click", onGoodbyeClick);
+    function onHelloClick(event) {
+        // newDiv will contain a jQuery object with a new div.
+        var newDiv = $("<div>");
+        // Set the newDiv's text to "Hi" using .text():
+        newDiv.text("Hi")
+        // Using .append(), this element will be added to another element (#replies in this case).
+        $("#replies").append(newDiv);
+    }
+    function onGoodbyeClick(event) {
+        // Create a variable containing a new div by passing in "<div>" to the jQuery $.
+        var newDiv = $("<div>");
+        // Give this div the text "Bye" using .text():
+        newDiv.text("Bye")
+        // Use .append() to add your div to #replies:
+        $("#replies").append(newDiv);
+    }
+</script>
