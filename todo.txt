@@ -5,3 +5,4 @@ https://codecombat.com/play/level/freezing-backstab-dev
 https://codecombat.com/play/level/appendix
 https://codecombat.com/play/level/attr-itude
 https://codecombat.com/play/level/tabloid
+https://codecombat.com/play/level/game-grove
