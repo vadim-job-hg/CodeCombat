@@ -2,3 +2,4 @@ https://codecombat.com/play/level/hitman
 https://codecombat.com/play/level/darkhopper
 https://codecombat.com/play/level/behind-the-darkness
 https://codecombat.com/play/level/freezing-backstab-dev
+https://codecombat.com/play/level/serpent-savings?session=56c72185ed946a44005039fe&observing=true
