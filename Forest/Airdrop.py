@@ -14,6 +14,8 @@ pet.on("spawn", onSpawn)
 while True:
     # Guard the left passage: 
     enemy = hero.findNearestEnemy()
-    if enemy:
+    if enemy and enemy.pos.x<25:
         hero.attack(enemy)
+    
+
     
