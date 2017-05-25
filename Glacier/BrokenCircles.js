@@ -1,4 +1,4 @@
-/**
+Can you get a Python version of this?
  * Created by knubisoft-1 on 11.08.2016.
  */
 var r = 10;
