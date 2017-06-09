@@ -2,3 +2,4 @@ https://codecombat.com/play/level/serpent-savings?session=56c72185ed946a44005039
 BrokenCircles in python
 https://codecombat.com/play/level/broken-circles
 https://codecombat.com/play/level/prime-pathing
+https://codecombat.com/play/level/hover-and-under
