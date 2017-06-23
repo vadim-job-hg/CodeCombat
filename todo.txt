@@ -4,3 +4,4 @@ https://codecombat.com/play/level/broken-circles
 https://codecombat.com/play/level/prime-pathing
 https://codecombat.com/play/level/hover-and-under
 https://codecombat.com/play/level/brown-noise
+https://codecombat.com/play/level/air-bridge
