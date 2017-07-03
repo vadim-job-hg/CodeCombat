@@ -1,4 +1,4 @@
-# https://codecombat.com/play/level/threes-company
+<!-- https://codecombat.com/play/level/threes-company -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js">
 </script>
 <script>
