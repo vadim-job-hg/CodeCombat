@@ -3,5 +3,3 @@ BrokenCircles in python
 https://codecombat.com/play/level/broken-circles
 https://codecombat.com/play/level/prime-pathing
 https://codecombat.com/play/level/hover-and-under
-
-https://codecombat.com/play/level/behind-the-darkness?session=594e0889756df9002b57ee0a
