@@ -3,7 +3,6 @@ BrokenCircles in python
 https://codecombat.com/play/level/broken-circles
 https://codecombat.com/play/level/prime-pathing
 
-https://codecombat.com/play/level/seeing-is-believing
 https://codecombat.com/play/level/arrowproof-wolf
 
 https://codecombat.com/play/level/sacred-grove
