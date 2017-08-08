@@ -8,3 +8,4 @@ https://codecombat.com/play/level/arrowproof-wolf
 https://codecombat.com/play/level/sacred-grove
 https://codecombat.com/play/level/kelvintaph-revengers
 https://codecombat.com/play/level/the-revenge-of-the-dragon-master
+/var/www/CodeCombat/Glacier/PrecisionKicking.py
