@@ -1,2 +1,0 @@
-/var/www/CodeCombat/Glacier/PrecisionKicking.py
-
