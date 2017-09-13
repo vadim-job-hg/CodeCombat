@@ -25,9 +25,10 @@ hero.say('all')
 hero.moveXY(16, 34)
 while True:
     enemy = hero.findNearestEnemy()
+    item = hero.findNearestItem()
     if enemy:
         hero.attack(enemy)
-    item = hero.findNearestItem()
-    if item:
+    elif item:
         hero.move(item.pos)
-
+    else:
+        hero.moveXY(64, 34)
