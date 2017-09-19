@@ -22,7 +22,7 @@ scoutSpawner.spawnDelay = 5
 # Those forest tiles should block passages.
 passageForest1 = game.spawnXY("forest", 28, 34)
 # Create the second forest and block the second passage:
-passageForest1 = game.spawnXY("forest", 52, 34)
+passageForest2 = game.spawnXY("forest", 52, 34)
 
 ui.track(game, "defeated")
 
@@ -45,3 +45,4 @@ def onDefeat(event):
 game.setActionFor("scout", "defeat", onDefeat)
 game.setActionFor("munchkin", "defeat", onDefeat)
 # Beat the game!
+
