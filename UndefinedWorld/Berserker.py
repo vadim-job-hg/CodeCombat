@@ -1,3 +1,4 @@
+# https://codecombat.com/play/level/berserker
 # Use the new "collide" event to clear the path.
 
 hero = game.spawnHeroXY('captain', 12, 34)
@@ -6,7 +7,7 @@ game.addMoveGoalXY(76, 34)
 ui.track(game, "time")
 
 # The duration of the mushroom power.
-game.powerDuration = 2
+game.powerDuration = 5
 # Use it to track the power time.
 game.powerEndTime = 0
 
@@ -51,7 +52,7 @@ hero.on("collect", onCollect)
 def checkTimers():
     # If game time is greater than game's powerEndTime
     # and the hero's scale is 2: 
-    if hero.scale==2:
+    if hero.scale==2 and game.time>game.powerEndTime::
         # Set the hero's scale to 1.
         hero.scale = 1
     pass
