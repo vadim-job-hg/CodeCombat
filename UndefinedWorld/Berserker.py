@@ -52,7 +52,7 @@ hero.on("collect", onCollect)
 def checkTimers():
     # If game time is greater than game's powerEndTime
     # and the hero's scale is 2: 
-    if hero.scale==2 and game.time>game.powerEndTime::
+    if hero.scale==2 and game.time>game.powerEndTime:
         # Set the hero's scale to 1.
         hero.scale = 1
     pass
