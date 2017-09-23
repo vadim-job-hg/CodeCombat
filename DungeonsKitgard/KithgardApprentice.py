@@ -133,19 +133,19 @@ def lowestHealthFriend():
 
 
 while True:
-summonTroops()
-commandTroops()
-items = hero.findItems()
-enimies = hero.findEnemies()
-# for enemy in enimies:
-#    hero.say(enemy.type)
-if (len(items) > 0 and hero.health < hero.maxHealth * 0.5):
-    pickUpNearestItem(items)
-else:
-    enemyattack = findTarget()
-    if not enemyattack:
-        enemyattack = hero.findNearest(hero.findEnemies())
-    if (enemyattack):
-        attack(enemyattack)
+    summonTroops()
+    commandTroops()
+    items = hero.findItems()
+    enimies = hero.findEnemies()
+    # for enemy in enimies:
+    #    hero.say(enemy.type)
+    if (len(items) > 0 and hero.health < hero.maxHealth * 0.5):
+        pickUpNearestItem(items)
     else:
-        hero.shield()
+        enemyattack = findTarget()
+        if not enemyattack:
+            enemyattack = hero.findNearest(hero.findEnemies())
+        if (enemyattack):
+            attack(enemyattack)
+        else:
+            hero.shield()

@@ -1,17 +1,10 @@
 # http://codecombat.com/play/level/tactical-strike
-# Уничтожьте огров.
+# Победи огров.
 while True:
     hero.moveDown()
+    hero.moveRight()
     enemy = hero.findNearestEnemy()
-    hero.attack(enemy)
-    enemy = hero.findNearestEnemy()
-    hero.attack(enemy)
-    enemy = hero.findNearestEnemy()
-    hero.attack(enemy)
-    enemy = hero.findNearestEnemy()
-    hero.attack(enemy)
-    hero.moveUp(2)
-    hero.moveRight(3)
-    hero.moveDown(2)
-    hero.moveLeft()
+    while enemy:
+        hero.attack(enemy)
+        enemy = hero.findNearestEnemy()
     hero.moveDown()
