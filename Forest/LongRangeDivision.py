@@ -19,5 +19,5 @@ hero.say("Заряд!")
 
 # Теперь используйте while-true цикл для атаки противников.
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     hero.attack(enemy)

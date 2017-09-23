@@ -20,6 +20,6 @@ pet.on("hear", hearGuards)
 # You don't have to change code below.
 # Your hero should protect the right bottom passage.
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         hero.attack(enemy)

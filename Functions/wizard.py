@@ -29,7 +29,7 @@ def findTarget():
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if enemy_return is None:
-        enemy_return = hero.findNearest(hero.findEnemies())
+        enemy_return = hero.findNearestEnemy()
     return enemy_return
 
 

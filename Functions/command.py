@@ -30,18 +30,18 @@ def CommandPaladin(paladin):
     elif (paladin.health < 100):
         hero.command(paladin, "shield")
     else:
-        target = hero.findNearest(hero.findEnemies())
+        target = hero.findNearestEnemy()
         hero.command(paladin, "attack", target)
 
 
 def CommandSoldier(soldier):
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if target:
         hero.command(soldier, "attack", target)
 
 
 def CommandArcher(soldier):
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if target:
         hero.command(soldier, "attack", target)
 

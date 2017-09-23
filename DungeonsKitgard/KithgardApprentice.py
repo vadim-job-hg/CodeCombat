@@ -38,7 +38,7 @@ def findTarget():
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if enemy_return is None:
-        enemy_return = hero.findNearest(hero.findEnemies())
+        enemy_return = hero.findNearestEnemy()
     return enemy_return
 
 
@@ -144,7 +144,7 @@ while True:
     else:
         enemyattack = findTarget()
         if not enemyattack:
-            enemyattack = hero.findNearest(hero.findEnemies())
+            enemyattack = hero.findNearestEnemy()
         if (enemyattack):
             attack(enemyattack)
         else:

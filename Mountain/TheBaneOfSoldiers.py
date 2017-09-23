@@ -1,7 +1,7 @@
 # Robobombs explode when they die or touch an enemy.
 # Split up your soldiers so that they don't all get exploded together.
 def commandSoldier(soldier, index):
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if (target and index == 0):
         hero.command(soldier, "attack", target)
     else:

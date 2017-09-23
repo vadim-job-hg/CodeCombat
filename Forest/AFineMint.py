@@ -13,7 +13,7 @@ def pickUpCoin():
 # Find the nearest enemy and attack them if they exist!
 def attackEnemy():
     # enemy = hero.findNearestEnemy()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         hero.attack(enemy)
 

@@ -14,7 +14,7 @@ while True:  # Здесь создется вектор, который буде
     goal = Vector.multiply(goal, 10)
 
     # Чтобы обойти яка, когда он находится в пределах 10-ти метров, ты должен идти по вектору от него.
-    yak = hero.findNearest(hero.findEnemies())
+    yak = hero.findNearestEnemy()
     distance = hero.distanceTo(yak)
     if distance < 10:
         # Создай вектор от яка к герою.

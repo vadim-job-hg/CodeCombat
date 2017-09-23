@@ -24,7 +24,7 @@ pet.on("hear", deliverCommand)
 
 # You haven't change the code below.
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         # If an enemy is too strong.
         if enemy.type == "brawler":

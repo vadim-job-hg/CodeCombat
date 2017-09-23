@@ -16,7 +16,7 @@ def summonTroops():
 
 def commandTroops():
     for soldier in hero.findFriends():
-        enemy = hero.findNearest(hero.findEnemies())
+        enemy = hero.findNearestEnemy()
         if enemy:
             hero.command(soldier, "attack", enemy)
 
@@ -37,7 +37,7 @@ buildTypes = ["fire-trap"]
 
 
 def buildTroops():
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy and hero.distanceTo(enemy) < 20:
         type = buildTypes[len(hero.built) % len(buildTypes)]
         if hero.gold > hero.costOf(type):
@@ -49,5 +49,5 @@ while True:
     if len(items) > 0 and hero.health < hero.maxHealth * 0.4:
         pickUpNearestItem(items)
     else:
-        attack(hero.findNearest(hero.findEnemies()))
+        attack(hero.findNearestEnemy())
     buildTroops()

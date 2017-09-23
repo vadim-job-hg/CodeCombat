@@ -33,7 +33,7 @@ def attack(target):
 while True:
     summonTroops()
     commandTroops()
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     knight = hero.findNearest(hero.findByType('knight'))
     captain = hero.findNearest(hero.findByType('captain'))
     # Enemies = hero.findEnemies()

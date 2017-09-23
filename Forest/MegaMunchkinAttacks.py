@@ -4,7 +4,7 @@ max = len(path)
 while True:
     # Найдите лучника.
     friend = hero.findNearest(hero.findFriends())
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     
     # Прикажите лучнику атаковать противника.
     if friend and enemy:

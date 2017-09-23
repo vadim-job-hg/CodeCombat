@@ -27,7 +27,7 @@ def summonTroops():
 
 def commandSoldiers():
     for soldier in hero.findFriends():
-        enemy = hero.findNearest(hero.findEnemies())
+        enemy = hero.findNearestEnemy()
         if enemy and (soldier.type == 'archer' or soldier.type == 'soldier'):
             hero.command(soldier, "attack", enemy)
 
@@ -47,7 +47,7 @@ def attack(target):
 while True:
     summonTroops()
     commandSoldiers()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if (enemy and hero.distanceTo(enemy) < 10):
         attack(enemy)
     else:

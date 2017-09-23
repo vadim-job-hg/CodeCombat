@@ -14,7 +14,7 @@ topEnd = 1000
 curnumber = 500
 while True:
     # You need to kill the enemy before the next attempt.
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         if enemy.type == 'scout':
             lowEnd = curnumber + 1

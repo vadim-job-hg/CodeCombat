@@ -5,7 +5,7 @@
 # Write the function "hitAndRun".
 # If there is a target, then hit it and run in the village.
 def hitAndRun():
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy and enemy.pos.y>20 and enemy.pos.y<30:
         hero.attack(enemy)
         hero.moveXY(44, 25)

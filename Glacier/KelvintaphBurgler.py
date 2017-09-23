@@ -73,7 +73,7 @@ def CommandArcher(soldier):
 
 
 def KillRobots(soldier):
-    robot = hero.findNearest(hero.findEnemies())
+    robot = hero.findNearestEnemy()
     if robot:
         hero.command(soldier, "attack", robot)
 

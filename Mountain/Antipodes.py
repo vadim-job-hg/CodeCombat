@@ -30,4 +30,4 @@ for friend in friends:
 hero.wait(20)
 enemies = hero.findEnemies()
 while len(enemies) == 1:
-    hero.attack(hero.findNearest(hero.findEnemies()))
+    hero.attack(hero.findNearestEnemy())

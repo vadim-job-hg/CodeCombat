@@ -36,7 +36,7 @@ def summonSoldier(lenlist):
 # commands attack
 def commandSoldiers():
     for soldier in hero.findFriends():
-        enemy = hero.findNearest(hero.findEnemies())
+        enemy = hero.findNearestEnemy()
         if enemy and soldier.type == 'archer':
             hero.command(soldier, "attack", enemy)
 
@@ -51,5 +51,5 @@ while True:
     if (len(items) > 0):
         pickUpNearestItem(items)
     else:
-        enemy = hero.findNearest(hero.findEnemies())
+        enemy = hero.findNearestEnemy()
         attack(enemy)

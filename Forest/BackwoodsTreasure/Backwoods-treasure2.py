@@ -1,7 +1,7 @@
 middleX = 61
 middleY = 52
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     item = hero.findNearest(hero.findItems())
     flag = hero.findFlag()
     if (enemy):

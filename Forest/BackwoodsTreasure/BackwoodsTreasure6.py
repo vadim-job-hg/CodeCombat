@@ -12,7 +12,7 @@ def moveTo(position, fast=True):
 
 
 def action():
-        target = hero.findNearest(hero.findEnemies())
+        target = hero.findNearestEnemy()
         if (hero.canCast('summon-burl', hero)):
             hero.cast('summon-burl')
         elif (hero.canCast('summon-undead')):

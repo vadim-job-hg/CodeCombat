@@ -107,7 +107,7 @@ while True:
     else:
         enemyattack = findTarget()
         if not enemyattack:
-            enemyattack = hero.findNearest(hero.findEnemies())
+            enemyattack = hero.findNearestEnemy()
         if (enemyattack and False):
             attack(enemyattack)
         else:

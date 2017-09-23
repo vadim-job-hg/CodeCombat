@@ -35,6 +35,6 @@ while True:
 # Fight the ogres:
 # Defend the last point yourself:
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         hero.attack(enemy)

@@ -114,7 +114,7 @@ while True:
         if moveHero():
             index = index + 1
     else:
-        enemy = hero.findNearest(hero.findEnemies())
+        enemy = hero.findNearestEnemy()
         if enemy:
             attack(enemy)
         else:

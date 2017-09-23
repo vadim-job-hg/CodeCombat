@@ -140,7 +140,7 @@ while True:
         summonTroops()
     commandTroops()
     items = hero.findItems()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     enemyattack = findTarget()
     if (len(items) > 0 and hero.health < hero.maxHealth * 0.5):
         pickUpNearestItem(items)
@@ -148,7 +148,7 @@ while True:
         if drawCircle(60, 45, 35):
             angle += 0.2
             # if not enemyattack:
-            #    enemyattack = hero.findNearest(hero.findEnemies())
+            #    enemyattack = hero.findNearestEnemy()
             # if(enemyattack):
             #    attack(enemyattack)
             # else:

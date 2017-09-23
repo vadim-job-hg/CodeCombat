@@ -18,7 +18,7 @@ pet.on("hear", waitFetch)
 
 # You don't have to change code below.
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         hero.attack(enemy)
     else:

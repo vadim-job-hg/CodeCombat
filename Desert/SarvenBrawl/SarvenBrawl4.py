@@ -17,7 +17,7 @@ def findTarget():
     danger = 0
     enemy_return = None
     if enemy_return is None:
-        enemy_return = hero.findNearest(hero.findEnemies())
+        enemy_return = hero.findNearestEnemy()
     return enemy_return
 
 
@@ -49,7 +49,7 @@ def commandTroops():
 
 
 def CommandSoldier(soldier):
-    #target = hero.findNearest(hero.findEnemies())
+    #target = hero.findNearestEnemy()
     if target:
         hero.command(soldier, "attack", target)
 

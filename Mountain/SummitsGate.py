@@ -35,7 +35,7 @@ def commandPaladin(paladin):
     elif stage == 5:
         hero.command(paladin, "move", {'x': 284, 'y': 33})
     else:
-        target = hero.findNearest(hero.findEnemies())
+        target = hero.findNearestEnemy()
         if (warlock):
             target = warlock
         if (target):
@@ -43,7 +43,7 @@ def commandPaladin(paladin):
 
 
 def commandSoldier(soldier):
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if (warlock):
         target = warlock
     if stage == 3:
@@ -89,7 +89,7 @@ hero.moveXY(31, 56)
 while True:
     catapult = hero.findNearest(hero.findByType('catapult'))
     warlock = hero.findNearest(hero.findByType('warlock'))
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     nearestItem = hero.findNearest(hero.findItems())
     now = hero.now()
     if catapult:

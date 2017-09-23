@@ -3,7 +3,7 @@
 # Move to the point between their position and the tower's position!
 
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     friend = hero.findNearest(hero.findFriends())
     # Find the point between the enemy's position and your friend's position.
     # Check the guide if you need more help!

@@ -4,7 +4,7 @@ array = [[31, 26], [53, 21], [74, 21], [86, 21], [112, 23], [127, 25], [68, 20],
          [103, 125], [41, 95], [40, 84], [100, 89], [130, 72], [102, 55]]
 arrayIndex = 0;
 while arrayIndex < len(array):
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     item = hero.findNearest(hero.findItems())
     if (enemy and hero.distanceTo(enemy) < 50):
         if (hero.isReady('jump') and hero.distanceTo(enemy) > 10):

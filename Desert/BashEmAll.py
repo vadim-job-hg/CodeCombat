@@ -3,7 +3,7 @@
 # Это специально обученные, обезжиренное убер-огры. Они очень сильны.
 # Ключевое слово: "обезжиренные"
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         if (hero.isReady('bash')):
             hero.bash(enemy)

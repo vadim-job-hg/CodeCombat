@@ -2,7 +2,7 @@
 def cleaveOrAttack(enemy):
     # If "cleave" is ready, cleave; otherwise, attack.
     # enemy = hero.findNearestEnemy()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if (enemy):
         dist = hero.distanceTo(enemy)
         if (dist < 5):

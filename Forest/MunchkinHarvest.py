@@ -2,7 +2,7 @@
 # Рассекай манчкинов чтобы выжить!
 # Убедись что у тебя достаточно брони.
 while True:
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if target:
         if (hero.isReady("cleave")):
             hero.cleave(target)

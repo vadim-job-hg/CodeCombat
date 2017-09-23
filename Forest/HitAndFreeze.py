@@ -16,7 +16,7 @@ def inAttackRange(enemy):
 while True:
     # Find the nearest enemy and store it in the variable.
     #enemy = hero.findNearestEnemy()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     # Call 'inAttackRange' function with the parameter from the previous step.
     # Save the result in a variable ('canAttack' for example).
     canAttack = inAttackRange(enemy)

@@ -28,7 +28,7 @@ hero.say(password)
 
 # Defeat the ogres.
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         hero.attack(enemy)
 

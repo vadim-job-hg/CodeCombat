@@ -4,7 +4,7 @@
 # Define your own function to fight the enemy!
 # In the function, find an enemy, then cleave or attack it.
 def attttaaaaacccckkkk():
-    enemy =  hero.findNearest(hero.findEnemies())
+    enemy =  hero.findNearestEnemy()
     #enemy = hero.findNearestEnemy()
     if enemy:
         if enemy and hero.isReady('cleave'):

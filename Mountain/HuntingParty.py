@@ -4,7 +4,7 @@
 index = 0
 while True:
     friends = hero.findFriends()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy and hero.distanceTo(enemy) < 20:
         if (hero.isReady("jump") and hero.distanceTo(enemy) > 10):
             hero.jumpTo(enemy.pos)

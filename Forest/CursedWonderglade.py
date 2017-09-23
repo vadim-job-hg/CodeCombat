@@ -14,7 +14,7 @@ while True:
     # Find the nearest enemy.
     # Attack it if it exists and its type isn't "burl".
     #enemy = hero.findNearestEnemy()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if(enemy and enemy.type!='burl'):
         hero.attack(enemy)
     pass

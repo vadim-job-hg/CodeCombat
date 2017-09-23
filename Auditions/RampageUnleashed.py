@@ -52,7 +52,7 @@ def findTarget():
                 enemy_return = enemy
                 danger = enemy_types[type].danger
     if enemy_return is None:
-        enemy_return = hero.findNearest(hero.findEnemies())
+        enemy_return = hero.findNearestEnemy()
     return enemy_return
 
 
@@ -74,7 +74,7 @@ def commandTroops():
 
 
 def CommandSoldier(soldier):
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if target:
         hero.command(soldier, "attack", target)
 
@@ -86,7 +86,7 @@ def CommandPaladin(paladin):
         if target:
             hero.command(paladin, "cast", "heal", target)
     else:
-        target = hero.findNearest(hero.findEnemies())
+        target = hero.findNearestEnemy()
         hero.command(paladin, "attack", target)
 
 

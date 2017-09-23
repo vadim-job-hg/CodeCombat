@@ -18,6 +18,6 @@ for x in range(12, 12 + 8 * 6, 8):
 # When they are near (about 20 metres from the hero) blow mines with your hero.
 # Just move at the nearest mine when it's the time.
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy and hero.distanceTo(enemy) <= 20:
         hero.moveXY(x, y)

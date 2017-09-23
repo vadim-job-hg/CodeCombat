@@ -9,7 +9,7 @@ def maybeBuildSomething(buildType, x, y):
     # Use x and y as the coordinates to move to.
     hero.moveXY(x, y)
     # Check if there is an enemy nearby.
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy and hero.distanceTo(enemy) < 50:
         # If an enemy here, then build 'buildType' at the given 'x' and 'y'.
         hero.buildXY(buildType, x, y)

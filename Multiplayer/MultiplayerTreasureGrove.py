@@ -27,7 +27,7 @@ def attack(target):
 
 while True:
     items = hero.findItems()
-    enemyattack = hero.findNearest(hero.findEnemies())
+    enemyattack = hero.findNearestEnemy()
     if enemyattack and hero.distanceTo(enemyattack) < 2:
         if (enemyattack):
             attack(enemyattack)

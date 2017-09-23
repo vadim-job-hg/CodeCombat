@@ -23,7 +23,7 @@ def CommandPaladin(paladin):
     elif (paladin.health < 100):
         hero.command(paladin, "shield")
     else:
-        target = hero.findNearest(hero.findEnemies())
+        target = hero.findNearestEnemy()
         hero.command(paladin, "attack", target)
 
 
@@ -54,7 +54,7 @@ while True:
     if flag:
         hero.pickUpFlag(flag)
     else:
-        enemy = hero.findNearest(hero.findEnemies())
+        enemy = hero.findNearestEnemy()
         if enemy:
             attack(enemy)
             # find some enemy to attack

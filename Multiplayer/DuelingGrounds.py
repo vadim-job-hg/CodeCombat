@@ -36,7 +36,7 @@ def findTarget():
     if enemy_return:
         pass
     else:
-        enemy_return = hero.findNearest(hero.findEnemies())
+        enemy_return = hero.findNearestEnemy()
     return enemy_return
 
 
@@ -142,7 +142,7 @@ while True:
     else:
         enemyattack = findTarget()
         if not enemyattack:
-            enemyattack = hero.findNearest(hero.findEnemies())
+            enemyattack = hero.findNearestEnemy()
         if (enemyattack):
             attack(enemyattack)
         else:

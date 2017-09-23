@@ -13,7 +13,7 @@ eCount = 0
 iCount = 0
 hero.wait(1)
 while True:  # enemy = hero.findNearestEnemy()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     # item  = hero.findNearestItem()
     item = hero.findNearest(hero.findItems())
     if (enemy):

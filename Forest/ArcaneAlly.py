@@ -18,5 +18,5 @@ def attack(target):
 
 
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     attack(enemy)

@@ -24,7 +24,7 @@ while True:
     if flag:
         hero.pickUpFlag(flag)
     else:
-        enemy = hero.findNearest(hero.findEnemies())
+        enemy = hero.findNearestEnemy()
         if enemy:
             attack(enemy)
             # find some enemy to attack

@@ -25,7 +25,7 @@ def commandTroops():
 
 
 def CommandSoldier(soldier):
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if target:
         hero.command(soldier, "attack", target)
 

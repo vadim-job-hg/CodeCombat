@@ -45,4 +45,4 @@ while True:
         enemy = chooseTarget(friend)
         if (enemy):
             hero.command(friend, 'attack', enemy)
-    attack(hero.findNearest(hero.findEnemies()))
+    attack(hero.findNearestEnemy())

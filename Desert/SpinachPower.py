@@ -15,7 +15,7 @@ while potionCount != 7:
 # When the while loop is finished.
 # Go and fight!.
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         hero.attack(enemy)
 

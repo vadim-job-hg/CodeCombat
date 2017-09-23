@@ -3,7 +3,7 @@
 # Посетите статую, что бы начать бой.
 while True:
     # Удерживайте позици и победите атакующих огров.
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy and hero.health > hero.maxHealth / 3:
         hero.attack(enemy)
     else:

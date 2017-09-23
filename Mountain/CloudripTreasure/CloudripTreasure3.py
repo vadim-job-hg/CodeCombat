@@ -29,7 +29,7 @@ def CommandPaladin(paladin):
     if (paladin.canCast("heal") and hero.health < hero.maxHealth * 0.6):
         hero.command(paladin, "cast", "heal", self)
     else:
-        target = hero.findNearest(hero.findEnemies())
+        target = hero.findNearestEnemy()
         hero.command(paladin, "attack", target)
 
 
@@ -46,7 +46,7 @@ def commandTroops():
 
 
 def CommandSoldier(paladin):
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if target:
         hero.command(paladin, "attack", target)
 
@@ -72,5 +72,5 @@ def attack(target):
 while True:
     summonTroops()
     commandTroops()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     attack(enemy)

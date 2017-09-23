@@ -46,7 +46,7 @@ while True:
     summonTroops()
     commandSoldiers()
     items = hero.findItems()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if (len(items) > 0 or (enemy and hero.distanceTo(enemy) > 10)):
         pickUpNearestItem(items)
     else:

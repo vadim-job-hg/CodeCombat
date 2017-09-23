@@ -4,11 +4,11 @@
 while True:
     flag = hero.findFlag()
     # target = hero.findNearestEnemy()
-    target = hero.findNearest(hero.findEnemies())
+    target = hero.findNearestEnemy()
     if flag:
         hero.pickUpFlag(flag)
     else:
-        target = hero.findNearest(hero.findEnemies())
+        target = hero.findNearestEnemy()
         if target:
             if (hero.isReady("cleave")):
                 hero.cleave(target)

@@ -7,7 +7,7 @@ while True:  # Переход к ближайшей монете.
         hero.move(item.pos)
     if hero.gold > hero.costOf("soldier"):
         hero.summon("soldier")
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy:
         soldiers = hero.findFriends()
         soldierIndex = 0

@@ -25,7 +25,7 @@ def translate(event):
 pet.on("hear", translate)
 
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     # Don't attack Brawlers.
     if enemy and enemy.type != "brawler":
         hero.attack(enemy)

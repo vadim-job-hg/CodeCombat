@@ -4,7 +4,7 @@
 # Используй тригонометрию, чтобы найти угол в радианах!
 
 while True:
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     if enemy and hero.distanceTo(enemy) < 70:
         O = Math.abs(enemy.pos.y - hero.pos.y)
         A = Math.abs(enemy.pos.x - hero.pos.x)

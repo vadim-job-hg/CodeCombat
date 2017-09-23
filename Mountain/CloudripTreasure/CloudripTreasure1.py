@@ -55,7 +55,7 @@ def commandTroops():
             if item:
                 hero.command(friend, 'move', item.pos)
         else:
-            enemy = hero.findNearest(hero.findEnemies())
+            enemy = hero.findNearestEnemy()
             if enemy:
                 hero.command(friend, "attack", enemy)
 
@@ -78,5 +78,5 @@ def attack(target):
 while True:
     summonTroops()
     commandTroops()
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     attack(enemy)

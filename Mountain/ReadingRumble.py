@@ -3,7 +3,7 @@
 
 while True:
     # Find the nearest enemy.
-    enemy = hero.findNearest(hero.findEnemies())
+    enemy = hero.findNearestEnemy()
     # If there is an enemy, and it is a "brawler":
     if enemy and enemy.type == 'brawler':
         # Then say its name (.id) in UPPERCASE.
