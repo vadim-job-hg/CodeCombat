@@ -2,7 +2,7 @@
 # In this level the evilstone is bad! Avoid them walking the other direction.
 while True:
     # evilstone = hero.findNearestItem()
-    evilstone = hero.findNearest(hero.findItems())
+    evilstone = hero.findNearestItem()
     if evilstone:
         pos = evilstone.pos
         if pos.x == 34:

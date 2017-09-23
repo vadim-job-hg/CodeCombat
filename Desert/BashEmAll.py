@@ -10,7 +10,7 @@ while True:
         else:
             hero.moveXY(40, 34)
     else:
-        item = hero.findNearest(hero.findItems())
+        item = hero.findNearestItem()
         if item:
             hero.moveXY(item.pos.x, item.pos.y)
             hero.moveXY(40, 34)

@@ -20,7 +20,7 @@ def isCoinClose(coin):
 
 while True:
     #item = hero.findNearestItem()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if item:
         # If the item is close enough, then move and take it.
         if isCoinClose(item):

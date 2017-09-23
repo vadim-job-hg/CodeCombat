@@ -1,5 +1,5 @@
 while True:
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if (item):
         if (hero.isReady("jump")):
             hero.jumpTo({'x': item.pos.x, 'y': item.pos.y})

@@ -9,7 +9,7 @@ while True:
         if not enemy.type is "peon":
             hero.attack(enemy)
     # item = hero.findNearestItem()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if item and item.type != 'poison':
         hero.move(item.pos)
         # Gather the item only if it is not poison.

@@ -9,7 +9,7 @@
 def coinDistance():
     # Write the function.
     # item = hero.findNearestItem()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if item:
         return hero.distanceTo(item)
     else:

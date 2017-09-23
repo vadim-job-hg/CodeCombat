@@ -7,7 +7,7 @@ points[2] = {"x": 33, "y": 26}
 points[3] = {"x": 47, "y": 26}
 # Собери 80 золота.
 while hero.gold < 80:
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if (item):
         if (hero.isReady("jump")):
             hero.jumpTo({'x': item.pos.x, 'y': item.pos.y})

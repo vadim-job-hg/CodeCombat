@@ -4,7 +4,7 @@ while True:
     enemies = hero.findEnemies()
     enemy = hero.findNearest(enemies)
     if (hero.health < hero.maxHealth / 3 and item and hero.distanceTo(item) < 50):
-        item = hero.findNearest(hero.findItems())
+        item = hero.findNearestItem()
         if (item and hero.distanceTo(item) < 30):
             if (hero.isReady("jump")):
                 hero.jumpTo(item.pos)

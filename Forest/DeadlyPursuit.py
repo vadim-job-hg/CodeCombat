@@ -5,7 +5,7 @@
 while True:
     flag = hero.findFlag()
     # item = hero.findNearestItem()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if flag:
         hero.buildXY('fire-trap', flag.pos.x, flag.pos.y)
         hero.pickUpFlag(flag)

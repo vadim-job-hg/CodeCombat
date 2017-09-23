@@ -1,7 +1,7 @@
 # https://codecombat.com/play/level/black-diamond
 # use ring of speed
 while True:
-    gem = hero.findNearest(hero.findItems())
+    gem = hero.findNearestItem()
     if gem:
         clear = hero.isPathClear(hero.pos, gem.pos)
     # Метод isPathClear моказывает наличие препятствий на пути.

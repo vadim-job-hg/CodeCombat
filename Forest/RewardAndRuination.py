@@ -11,7 +11,7 @@ while True:
     # Now that you have sweet revenge, why not have your cake and eat it, too?
     # Find the item's position and say it for your artillery to target.
     # item = hero.findNearestItem()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if item:
         itemPos = item.pos.x + " " + item.pos.y
         hero.say("Enemy at " + itemPos)

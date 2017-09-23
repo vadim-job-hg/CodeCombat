@@ -79,7 +79,7 @@ def attack(target):
 
 
 def pickUpNearestItem():
-    nearestItem = hero.findNearest(hero.findItems())
+    nearestItem = hero.findNearestItem()
     if nearestItem:
         moveTo(nearestItem.pos)
 
@@ -90,7 +90,7 @@ while True:
     catapult = hero.findNearest(hero.findByType('catapult'))
     warlock = hero.findNearest(hero.findByType('warlock'))
     target = hero.findNearestEnemy()
-    nearestItem = hero.findNearest(hero.findItems())
+    nearestItem = hero.findNearestItem()
     now = hero.now()
     if catapult:
         stage = 1

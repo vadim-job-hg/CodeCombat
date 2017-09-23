@@ -1,6 +1,6 @@
 # Собери 80 золота
 while hero.gold < 80:
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if (item):
         if (hero.isReady("jump")):
             hero.jumpTo({'x': item.pos.x, 'y': item.pos.y})

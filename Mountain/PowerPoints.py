@@ -35,7 +35,7 @@ for i in range(len(powerMap)):
             if (enemy):
                 while enemy.health > 0:
                     hero.attack(enemy)
-            item = hero.findNearest(hero.findItems())
+            item = hero.findNearestItem()
             if (item):
                 hero.moveXY(item.pos.x, item.pos.y)
 

@@ -35,7 +35,7 @@ while step < 5:
 while step < 10:
     step = moveHero(1)
     # coin = hero.findNearestItem()
-    coin = hero.findNearest(hero.findItems())
+    coin = hero.findNearestItem()
     # If the coin's value is less than 5 and is closer than 7 meters:
     if coin and hero.distanceTo(coin) < 7 and coin.value < 5:
         hero.moveXY(coin.pos.x, coin.pos.y)

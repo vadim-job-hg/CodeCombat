@@ -5,7 +5,7 @@
 
 while True:
     # item = hero.findNearestItem()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if item and item.type != 'gem':
         # If item.type isn't equal "gem":
         hero.moveXY(item.pos.x, item.pos.y)

@@ -8,7 +8,7 @@ while True:
     # enemy = hero.findNearestEnemy()
     # item = hero.findNearestItem()
     enemy = hero.findNearestEnemy()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     # Если нет врага, продолжаем выйдя из этого витка цикла.
     if not enemy:
         continue

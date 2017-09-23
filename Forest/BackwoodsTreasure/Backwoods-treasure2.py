@@ -2,7 +2,7 @@ middleX = 61
 middleY = 52
 while True:
     enemy = hero.findNearestEnemy()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     flag = hero.findFlag()
     if (enemy):
         dist = hero.distanceTo(enemy);

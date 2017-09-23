@@ -8,7 +8,7 @@ while True:
     # Find the nearest item.
     # Collect it (if it exists) only if its type isn't "gem".
     #item = hero.findNearestItem()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if(item and item.type!='gem'):
         hero.moveXY(item.pos.x, item.pos.y)
     # Find the nearest enemy.

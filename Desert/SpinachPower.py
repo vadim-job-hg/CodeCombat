@@ -7,7 +7,7 @@ potionCount = 0
 # Use while with a condition to check the number of collected potions.
 # Δ Wrap the next code block into while loop.
 while potionCount != 7:
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if item:
         hero.moveXY(item.pos.x, item.pos.y)
         potionCount += 1

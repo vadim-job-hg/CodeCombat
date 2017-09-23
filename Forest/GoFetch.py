@@ -7,7 +7,7 @@ def goFetch():
     # You can use loops in a handler function.
     while True:
         #potion = hero.findNearestItem()
-        potion = hero.findNearest(hero.findItems())
+        potion = hero.findNearestItem()
         if potion:
             # Use pet.fetch() to have your pet fetch a potion:
             pet.fetch(potion)

@@ -15,7 +15,7 @@ hero.wait(1)
 while True:  # enemy = hero.findNearestEnemy()
     enemy = hero.findNearestEnemy()
     # item  = hero.findNearestItem()
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if (enemy):
         attack(enemy)
         attack(enemy)

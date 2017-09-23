@@ -25,7 +25,7 @@ while True:
     time = hero.now()
     x = mod30(time) + 25
     y = mod40(time) + 10
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if (item and hero.distanceTo(item) < 7):
         hero.moveXY(item.pos.x, item.pos.y)
         hero.moveXY(x, y)

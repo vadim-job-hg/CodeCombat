@@ -7,7 +7,7 @@ def maybeBuildTrap(x, y):
     # Move to the x,y postion and build a 'fire-trap' if a coin is near.
     # Write this function.
     hero.moveXY(x, y)
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if item and hero.distanceTo(item) < 30:
         hero.buildXY('fire-trap', x, y)
 

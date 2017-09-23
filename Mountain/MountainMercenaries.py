@@ -2,7 +2,7 @@
 
 while True:  # Переход к ближайшей монете.
     # Используйте 'move' вместо 'moveXY', чтобы командовать постоянно.
-    item = hero.findNearest(hero.findItems())
+    item = hero.findNearestItem()
     if (item):
         hero.move(item.pos)
     if hero.gold > hero.costOf("soldier"):

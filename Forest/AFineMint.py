@@ -4,7 +4,7 @@
 
 def pickUpCoin():
     # coin = hero.findNearestItem()
-    coin = hero.findNearest(hero.findItems())
+    coin = hero.findNearestItem()
     if coin:
         hero.moveXY(coin.pos.x, coin.pos.y)
 

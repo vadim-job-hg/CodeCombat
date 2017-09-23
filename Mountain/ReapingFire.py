@@ -26,7 +26,7 @@ def commandAttack():
 
 
 def pickUpCoin():
-    nearestItem = hero.findNearest(hero.findItems())
+    nearestItem = hero.findNearestItem()
     if nearestItem:
         moveTo(nearestItem.pos)
 
