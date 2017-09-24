@@ -9,7 +9,7 @@ while True:
     # Найди у кого из друзей самый низкий уровень здоровья.
     friends = hero.findFriends()
     for friend in friends:
-        if leastHealth>friend.health:
+        if leastHealth > friend.health and friend.type != 'archer':
             weakestFriend = friend
             leastHealth = friend.health
     # Скажи другу с самым низким уровнем здоровья, идти домой первым.
