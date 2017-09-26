@@ -1,5 +1,6 @@
 # https://codecombat.com/play/level/accounts-department
 # Count collected item values and use them for scoring.
+
 # Setup characters.
 hero = game.spawnHeroXY("captain", 40, 34)
 hero.maxSpeed = 20
