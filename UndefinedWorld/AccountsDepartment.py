@@ -1,6 +1,4 @@
 # https://codecombat.com/play/level/accounts-department
-# Count collected item values and use them for scoring.
-
 # Setup characters.
 hero = game.spawnHeroXY("captain", 40, 34)
 hero.maxSpeed = 20
@@ -45,7 +43,7 @@ def onCollect(event):
         pass
 
 # Assign onCollect handler for "hero" on "collect" event.
-game.setActionFor('hero', 'collect', onCollect)
+hero.on("collect", onCollect)
 
 # Setup the goals and UI.
 endTime = 30
