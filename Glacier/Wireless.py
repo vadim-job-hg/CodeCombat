@@ -29,7 +29,7 @@ def replaceMissingLink(linkedList, broken, replacement):
 def diagnoseList(linkedList):
     current = linkedList
     # Use "next" property to iterate the list.
-    # If some robot iss dead, return that robot:
+    # If some robot ass dead, return that robot:
     while current:
         if current.health <= 0:
             #hero.say(current.health)
