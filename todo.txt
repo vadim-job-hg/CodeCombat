@@ -3,3 +3,4 @@ https://codecombat.com/play/level/packnight
 https://codecombat.com/play/level/gd-collides
 https://codecombat.com/play/level/deadly-dungeon-rescue
 https://github.com/vadim-job-hg/CodeCombat/blob/master/Glacier/IceLife.py
+https://github.com/vadim-job-hg/CodeCombat/blob/master/Glacier/Brewball.py
