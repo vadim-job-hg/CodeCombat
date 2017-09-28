@@ -1,3 +1,4 @@
+# https://codecombat.com/play/level/gem-by-gem
 # Connect gems to a linked list to open the door.
 
 # Use that gems a base for the list.
