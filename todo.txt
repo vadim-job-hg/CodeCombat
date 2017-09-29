@@ -5,3 +5,9 @@ https://codecombat.com/play/level/deadly-dungeon-rescue
 https://github.com/vadim-job-hg/CodeCombat/blob/master/Glacier/IceLife.py
 https://github.com/vadim-job-hg/CodeCombat/blob/master/Glacier/Brewball.py
 https://codecombat.com/play/level/binary-search
+https://codecombat.com/play/level/difficulty-coin
+https://codecombat.com/play/level/packnight
+https://codecombat.com/play/level/pac-power
+https://codecombat.com/play/level/pac-ogres
+https://codecombat.com/play/level/pac-collector
+https://codecombat.com/play/level/oggrer
