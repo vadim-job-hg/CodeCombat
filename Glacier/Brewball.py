@@ -1,42 +1,51 @@
 # http://codecombat.com/play/level/brewball
-# Скажи кое-что в расстоянии 10м от Омарна чтобы он кинул зелье.
-# Поймай зелье стоя рядом с ним прежде чем он упадет.
-# НЕ ДАЙ ЗЕЛЬЮ УПАСТЬ НА ЗЕМЛЮ!
-def arowndMine(move, trap, radius = 3):
-    way = Vector.subtract(hero.pos, trap.pos)
-    normal = Vector.normalize(way)
-    direction = Vector.multiply(normal, radius+3)
-    wayCorr =  Vector.add(trap.pos, direction)
-    dot = Vector.normalize(move)
-    dot = Vector.add(wayCorr, dot)
-    way = Vector.subtract(dot, trap.pos)
-    normal = Vector.normalize(way)
-    direction = Vector.multiply(normal, radius+2)
-    wayCorr =  Vector.add(trap.pos, direction)
-    return wayCorr
-home = Vector(14, 34)
+def avoidNearest(target):
+    nearest = hero.findNearest(firetraps)
+    h2t = Vector.subtract(target, hero.pos)
+    h2n = Vector.subtract(nearest.pos, hero.pos)
+    if hero.distanceTo(nearest) > 4:
+        step = Vector.normalize(h2t)
+        nPos = Vector.add(hero.pos, step)
+        hero.moveXY(nPos.x, nPos.y)
+        return
+
+    angle1 = Vector.heading(h2t)
+    angle2 = Vector.heading(h2n)
+
+    if target.x < nearest.pos.x:
+        angle1 = - angle1
+        angle2 = - angle2
+        angle1 = Math.PI - angle1
+        angle2 = Math.PI - angle2
+
+    # if Vector.heading(h2t) > Vector.heading(h2n):
+    if angle1 > angle2:
+        adVec = Vector.rotate(h2n, Math.PI / 2)
+    else:
+        adVec = Vector.rotate(h2n, - Math.PI / 2)
+        pass
+    nPos = Vector.add(hero.pos, adVec)
+    hero.moveXY(nPos.x, nPos.y)
+
+
 while True:
     potion = hero.findFriendlyMissiles()[0]
     firetraps = hero.findHazards()
-    # Запомни что огненная ловушка сработает если ты подойдешь ближе чем 3 метра!
+    # Remember that a Fire Trap will trigger if you move closer than 3 meters!
     omarn = hero.findByType("potion-master")[0]
     if potion:
         dest = potion.targetPos;
-        direction = Vector.multiply(Vector.normalize(Vector.subtract(dest, hero.pos)), 3)
-        move = Vector.add(hero.pos, direction)
-        trap = hero.findNearest(firetraps)
-        if trap and hero.distanceTo(trap) < 4:
-            move = arowndMine(move, trap)
-        hero.move(move)
+        # Go get the potion.
+        avoidNearest(dest)
+
+        pass
     else:
         if omarn and hero.distanceTo(omarn) > 10:
-            # Вернись к Омарну.
-            direction = Vector.multiply(Vector.normalize(Vector.subtract(home, hero.pos)), 10)
-            move = Vector.add(hero.pos, direction)
-            # Предупреждение: isPathClear не работает с Радиацией!
-            trap = hero.findNearest(firetraps)
-            if trap and hero.distanceTo(trap) < 4:
-                move = arowndMine(move, trap)
-            hero.move(move)
+            # Move back to Omarn.
+            avoidNearest(omarn.pos)
+
+            # Warning: isPathClear doesn't work with Hazards!
+            pass
         else:
             hero.say("Hup, hup!")
+
