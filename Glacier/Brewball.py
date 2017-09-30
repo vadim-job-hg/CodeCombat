@@ -34,7 +34,7 @@ while True:
     # Remember that a Fire Trap will trigger if you move closer than 3 meters!
     omarn = hero.findByType("potion-master")[0]
     if potion:
-        dest = potion.targetPos;
+        dest = potion.targetPos
         # Go get the potion.
         avoidNearest(dest)
 
