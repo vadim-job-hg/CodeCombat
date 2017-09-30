@@ -39,4 +39,3 @@ while len(punch_array) > 0:
     hero.wait(1)
     hero.command(friend, 'move', vector)
     # hero.say(punch_array[0])
-
