@@ -8,6 +8,7 @@ def spawnValuable(itemType, lifetime):
     item = game.spawnXY(itemType, x, y)
     item.destroyTime = game.time + lifetime
 
+
 # This spawns the treasure set.
 def spawnTreasures():
     spawnValuable("bronze-coin", 6)
@@ -15,15 +16,17 @@ def spawnTreasures():
     spawnValuable("gold-coin", 4)
     spawnValuable("gem", 2)
 
+
 # The event handler for items.
 def onSpawn(event):
     item = event.target
     while True:
         # If the game time is greater than item destroyTime:
-        if game.time>destroyTime:
+        if game.time >= item.destroyTime:
             # Destroy the item:
             item.destroy()
         pass
+
 
 game.setActionFor("bronze-coin", "spawn", onSpawn)
 game.setActionFor("silver-coin", "spawn", onSpawn)
@@ -45,6 +48,7 @@ goal = game.addManualGoal("Collect at least 50 gold for 30 seconds.")
 hero = game.spawnHeroXY("captain", 40, 34)
 hero.maxSpeed = 25
 
+
 def onCollect(event):
     item = event.other
     # If the item has 'value' property:
@@ -52,17 +56,20 @@ def onCollect(event):
         # Increase the game score by item's value:
         game.score += item.value
 
+
 hero.on("collect", onCollect)
+
 
 # This checks timers for treasure spawning.
 def checkSpawns():
     # If game time is greater than game spawnTime:
-    if game.time>game.spawnTime:
+    if game.time > game.spawnTime:
         # Use spawnTreasures to create more items.
         spawnTreasures()
         # Increase game.spawnTime by game.spawnInterval:
-        game.spawnTime +=game.spawnInterval
+        game.spawnTime += game.spawnInterval
     pass
+
 
 # This checks the goal state.
 def checkGoal():
@@ -71,11 +78,13 @@ def checkGoal():
     else:
         goal.success = False
 
+
 # This checks the game state.
 def checkGameOver():
     if game.time > 30:
         checkGoal()
         db.set("topScore", game.score)
+
 
 while True:
     checkSpawns()
