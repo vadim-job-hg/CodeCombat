@@ -15,3 +15,4 @@ https://codecombat.com/play/level/game-of-coins-iteration-2
 https://codecombat.com/play/level/game-of-coins-iteration-3
 https://codecombat.com/play/level/game-of-coins-iteration-4
 https://codecombat.com/play/level/game-of-coins-iteration-5
+https://codecombat.com/play/level/teatime
