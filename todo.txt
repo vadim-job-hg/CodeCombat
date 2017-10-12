@@ -10,8 +10,6 @@ https://codecombat.com/play/level/pac-power
 https://codecombat.com/play/level/pac-ogres
 https://codecombat.com/play/level/pac-collector
 https://codecombat.com/play/level/oggrer
-https://codecombat.com/play/level/game-of-coins-iteration-3
-https://codecombat.com/play/level/game-of-coins-iteration-4
 https://codecombat.com/play/level/game-of-coins-iteration-5
 https://codecombat.com/play/level/teatime
 https://codecombat.com/play/level/pac-forest
