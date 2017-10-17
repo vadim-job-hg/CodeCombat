@@ -1,0 +1,1 @@
+# https://codecombat.com/play/level/game-of-coins-step-1-layout?

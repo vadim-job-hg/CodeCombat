@@ -14,3 +14,8 @@ https://codecombat.com/play/level/game-of-coins-iteration-5
 https://codecombat.com/play/level/teatime
 https://codecombat.com/play/level/pac-forest
 https://codecombat.com/play/level/roulette-wheel-battle
+https://codecombat.com/play/level/dont-touch-them
+https://codecombat.com/play/level/lernaean-hydra
+https://codecombat.com/play/level/teatime
+https://codecombat.com/play/level/roulette-wheel-battle
+https://codecombat.com/play/level/game-dev-2-final-project?

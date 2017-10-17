@@ -1,4 +1,4 @@
-# https://codecombat.com/play/level/game-of-coins-iteration-2
+# https://codecombat.com/play/level/game-of-coins-step-4-power-ups?
 # The game layout and items. Scroll down.
 game.spawnXY("forest", 16, 16)
 game.spawnXY("forest", 32, 16)
@@ -71,40 +71,101 @@ game.spawnXY("mushroom", 72, 32)
 game.spawnXY("mushroom", 40, 56)
 
 game.score = 1000
-game.addCollectGoal()
+# The duration of power-ups.
+game.powerDuration = 4
+# The time until a power-up runs out. Used for UI.
+game.powerTime = 0
+# The time a power-up expires. Used internally.
+game.powerEndTime = 0
 ui.track(game, "time")
-# Add UI for the game score.
 ui.track(game, "score")
+# Add ui for game.powerTime:
+
+
+game.addCollectGoal()
+game.addSurviveGoal();
 
 hero = game.spawnHeroXY("knight", 8, 8)
-# High speed simplifies the level testing.
 hero.maxSpeed = 30
+
+# The function make the hero big and strong.
+def powerHeroUp():
+    hero.scale = 2
+    hero.attackDamage = 100
+    game.powerEndTime = game.time + game.powerDuration
+
+# The function return the hero in the normal state.
+def powerHeroDown():
+    hero.scale = 1
+    hero.attackDamage = 1
 
 def onCollect(event):
     player = event.target
     item = event.other
-    # If the item's type is "coin":
-    if item.type=="coin":
-        # Increase the game score by 1.
+    if item.type == "bronze-coin":
         game.score += 1
-    # If the item is "mushroom", then increase by 5.
-    elif item.type=="mushroom":
+    if item.type == "mushroom":
         game.score += 5
+        # Use powerHeroUp to strengthen the hero:
+        powerHeroUp()
 
-# Assign the event handler on the hero's "collect" event.
+def onCollide(event):
+    player = event.target
+    other = event.other
+    # If other is a "scout" and the player's scale is 2:
+    if other.type == 'scout' and player.scale==2:
+        # Defeat the other with the defeat method:
+        other.die()
+
 hero.on("collect", onCollect)
+# Assign the event handler for the hero's "collide" event:
+hero.on("collide", onCollide)
 
-# The function is controlling "time" score.
+generator = game.spawnXY("generator", 41, 31)
+generator.spawnType = "scout"
+generator.spawnDelay = 6;
+
+def onSpawn(event):
+    unit = event.target
+    unit.maxSpeed = 8
+    unit.attackDamage = hero.maxHealth
+    while True:
+        # Enemies run away from the big hero.
+        if hero.scale == 2:
+            unit.behavior = "RunsAway"
+        else:
+            unit.behavior = "AttacksNearest"
+
+def onDefeat(event):
+    # Increase game.score for defeated enemies:
+    game.score +=1
+    pass
+
+game.setActionFor("scout", "spawn", onSpawn)
+# Set the action for "scout"'s "defeat" event:
+game.setActionFor("scout", "defeat", onDefeat)
+
 def checkTimeScore():
-    # Each time frame we reduce the game score:
     game.score -= 0.5
-    # If the game score less than 0:
-    if game.score<0:
-        # Set the game score equal 0:
-        game.score=0
+    if game.score < 0:
+        game.score = 0
 
-# The main game loop.
-while True:
+def checkPowerTimer():
+    # Remaining power time.
+    game.powerTime = game.powerEndTime - game.time
+    if game.powerTime <= 0:
+        game.powerTime = 0
+        # If the hero's scale is 2:
+        if hero.scale==2:
+            # Use powerHeroDown to end the power-up.
+            powerHeroDown()
+
+# Lets combine all the time based functions.
+def checkTimers():
     checkTimeScore()
+    checkPowerTimer()
+
+while True:
+    checkTimers()
 
 # Win the game.

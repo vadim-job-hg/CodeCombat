@@ -1,4 +1,4 @@
-# https://codecombat.com/play/level/game-of-coins-iteration-3
+# https://codecombat.com/play/level/game-of-coins-step-2-score?
 # The game layout and items. Scroll down.
 game.spawnXY("forest", 16, 16)
 game.spawnXY("forest", 32, 16)
@@ -71,47 +71,40 @@ game.spawnXY("mushroom", 72, 32)
 game.spawnXY("mushroom", 40, 56)
 
 game.score = 1000
-ui.track(game, "time")
-ui.track(game, "score")
 game.addCollectGoal()
-# Enemies mean that we need a survive goal:
-game.addSurviveGoal()
+ui.track(game, "time")
+# Add UI for the game score.
+ui.track(game, "score")
 
 hero = game.spawnHeroXY("knight", 8, 8)
+# High speed simplifies the level testing.
 hero.maxSpeed = 30
 
 def onCollect(event):
     player = event.target
     item = event.other
-    if item.type == "coin":
+    # If the item's type is "coin":
+    if item.type=="coin":
+        # Increase the game score by 1.
         game.score += 1
-    if item.type == "mushroom":
+    # If the item is "mushroom", then increase by 5.
+    elif item.type=="mushroom":
         game.score += 5
 
+# Assign the event handler on the hero's "collect" event.
 hero.on("collect", onCollect)
 
-# Spawn the monster generator in the center:
-munchkinSpawner = game.spawnXY("generator", 40, 32)
-# The generator should spawn "scout" ogres:
-munchkinSpawner.spawnType = "scout"
-# Set the spawn delay greater than the default one:
-munchkinSpawner.spawnDelay = 40
-
-# The function configure new spawned ogres.
-def onSpawn(event):
-    unit = event.target
-    unit.maxSpeed = 8
-    # The enemy attack damage should be greater
-    # or equal the hero's maximum health.
-    unit.attackDamage = hero.maxHealth
-
-# Set the event handler "scout"s' "spawn" event.
-
-
+# The function is controlling "time" score.
 def checkTimeScore():
+    # Each time frame we reduce the game score:
     game.score -= 0.5
-    if game.score < 0:
-        game.score = 0
+    # If the game score less than 0:
+    if game.score<0:
+        # Set the game score equal 0:
+        game.score=0
 
+# The main game loop.
 while True:
     checkTimeScore()
+
+# Win the game.
