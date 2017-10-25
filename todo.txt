@@ -14,3 +14,4 @@ https://codecombat.com/play/level/quantum-jump
 https://codecombat.com/play/level/the-rule-of-the-square
 https://codecombat.com/play/level/the-secret-chambers-of-mount-mokbokui
 https://codecombat.com/play/level/wormhole-trigger
+https://codecombat.com/play/level/escort-duty
