@@ -15,7 +15,11 @@ http://codecombat.com/play/level/forgetful-gemsmith
 [PYTHON](ForgetfulGemsmith.py)
 
 </li>
-<li>[JAVASCRIPT]</li>
+<li>
+
+[JAVASCRIPT](ForgetfulGemsmith.js)
+
+</li>
 </td>
 </tr>
 <table>
