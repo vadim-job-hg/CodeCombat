@@ -1,6 +1,6 @@
 # Gems In The Depth  - Самоцветы в глубине
 
-http://codecombat.com/play/level/forgetful-gemsmith
+https://codecombat.com/play/level/gems-in-the-deep?
 <table>
 <tr>
 <td>
