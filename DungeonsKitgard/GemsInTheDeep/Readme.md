@@ -1,6 +1,6 @@
 # Gems In The Depth  - Самоцветы в глубине
 
-https://codecombat.com/play/level/gems-in-the-deep?
+https://codecombat.com/play/level/gems-in-the-deep
 <table>
 <tr>
 <td>
