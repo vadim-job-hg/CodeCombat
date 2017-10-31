@@ -1,7 +1,27 @@
-#{WORDNAME}
+# Forgetful Gemsmith  - Забывчивый ювелир
 
-{LINK}
+http://codecombat.com/play/level/forgetful-gemsmith
+<table>
+<tr>
+<td>
 
 ![Hero Picture](hero.png?raw=true "Hero Picture")
+
+</td>
+<td>
+<ul>
+<li>
+
+[PYTHON](ForgetfulGemsmith.py)
+
+</li>
+<li>
+
+[JAVASCRIPT](ForgetfulGemsmith.js)
+
+</li>
+</td>
+</tr>
+<table>
 
 {VIDEO}
