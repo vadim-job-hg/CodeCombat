@@ -1,4 +1,4 @@
-# Forgetful Gemsmith  - Забывчивый ювелир
+# Gems In The Depth  - Самоцветы в глубине
 
 http://codecombat.com/play/level/forgetful-gemsmith
 <table>
