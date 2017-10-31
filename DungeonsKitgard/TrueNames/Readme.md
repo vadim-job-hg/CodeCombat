@@ -1,4 +1,4 @@
-# True Names  - {name} 
+# True Names  - Верные имена
 
 http://codecombat.com/play/level/true-names
 <table>
