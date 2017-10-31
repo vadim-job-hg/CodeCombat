@@ -23,5 +23,3 @@ http://codecombat.com/play/level/forgetful-gemsmith
 </td>
 </tr>
 <table>
-
-{VIDEO}
