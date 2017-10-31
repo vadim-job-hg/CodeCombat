@@ -1,4 +1,3 @@
-# http://codecombat.com/play/level/true-names
 hero.moveRight()
 hero.attack("Brak")
 hero.attack("Brak")
