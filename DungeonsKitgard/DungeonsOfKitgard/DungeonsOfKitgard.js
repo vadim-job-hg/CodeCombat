@@ -1,3 +1,3 @@
-hero.moveRight()
-hero.moveDown()
-hero.moveRight()
+hero.moveRight();
+hero.moveDown();
+hero.moveRight();

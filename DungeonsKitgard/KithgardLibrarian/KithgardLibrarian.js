@@ -1,3 +1,3 @@
-hero.moveRight()
-hero.say("Hush")
-hero.moveRight()
+hero.moveRight();
+hero.say("Hush");
+hero.moveRight();
