@@ -1,6 +1,6 @@
-# Circle Walking  - {name} 
+# Circle Walking  - Прогулка по кругу
 
-{link}
+https://codecombat.com/play/level/circle-walking
 <table>
 <tr>
 <td>
