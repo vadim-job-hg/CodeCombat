@@ -1,6 +1,6 @@
 # The Second Kithmaze  - Второй лабиринт Китгарда
 
-{link}
+http://codecombat.com/play/level/the-second-kithmaze
 <table>
 <tr>
 <td>
