@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Skating Away  - Скольжение
 
-{link}
+https://codecombat.com/play/level/skating-away
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SkatingAway.py)
 
 </li>
 </td>
