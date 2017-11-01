@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Precision Kicking  - Прицельный пинок 
 
-{link}
+https://codecombat.com/play/level/precision-kicking
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PrecisionKicking.py)
 
 </li>
 </td>
