@@ -7,3 +7,5 @@ while True:
     if enemy:
         # Attack the enemy if it exists:
         hero.attack(enemy)
+    else:
+        hero.move(40, 34)
