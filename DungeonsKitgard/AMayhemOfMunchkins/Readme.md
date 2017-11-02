@@ -12,7 +12,7 @@ https://codecombat.com/play/level/a-mayhem-of-munchkins
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AMayhemOfMunchkins.py)
 
 </li>
 </td>
