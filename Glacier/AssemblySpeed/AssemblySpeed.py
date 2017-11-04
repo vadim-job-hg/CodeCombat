@@ -1,22 +1,5 @@
-# http://codecombat.com/play/level/assembly-speed
-
 speed = 76660813  # ∆ Put your answer here.
 hero.say(speed)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #************************************************************************
 # Say the correct speed to insert our spybot into the line of robots.

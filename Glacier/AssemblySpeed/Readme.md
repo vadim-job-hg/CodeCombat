@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Assembly Speed
 
-{link}
+http://codecombat.com/play/level/assembly-speed
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AssemblySpeed.py)
 
 </li>
 </td>
