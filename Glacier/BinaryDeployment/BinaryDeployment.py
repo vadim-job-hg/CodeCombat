@@ -1,45 +1,23 @@
-# http://codecombat.com/play/level/binary-deployment
-# Recruit soldiers and archers to fill out each squadron.
-# Each paladin has a decimal number stored in her deployment attribute.
-# Convert these to binary and represent them with line soldiers and archers next to each paladin.
-# Soldiers are 0s, archers are 1s.
-# For the bonus goal, add griffins as 2s for trinary number lines next to the warlocks.
-# Check the guide for help with binary numbers.
-def getNum(number, delimer=2):
-    return number % delimer
+units = ['soldier', 'archer', 'griffin-rider']
 
+for i in range(len(hero.findFriends())):
+    result = ""
+    unit = hero.findFriends()[i]
+    if unit.type == "paladin":
+        divide = 2
+    else:
+        divide = 3
+    number = unit.deployment
+    while number >= divide:
+        a = number % divide
+        number = (number - a) / divide
+        result = a + result
+    result = number + result
 
-summonTypes = ['soldier', 'archer', 'griffin-rider']
+    while len(result) < 8:
+        result = '0' + result
 
-
-def summonTroops(num, coorX, coorY):
-    type = summonTypes[num]
-    if hero.gold > hero.costOf(type):
-        hero.summon(type)
-        friends = hero.findByType(summonTypes[num], hero.findFriends())
-        hero.command(friends[len(friends) - 1], 'move', {'x': coorX, 'y': coorY})
-
-
-array = []
-maxY = 55
-minY = 10
-countY = 7
-minX = 22
-maxX = 63
-countX = 8
-iY = 0
-friends = hero.findByType('paladin', hero.findFriends())
-for index, friend in enumerate(friends):
-    array.append([friend.deployment, 2, friend.pos.y])
-friends = hero.findByType('warlock', hero.findFriends())
-for index, friend in enumerate(friends):
-    array.append([friend.deployment, 3, friend.pos.y])
-for y in range(maxY, minY - 1, (minY - maxY) / (countY - 1)):
-    iX = 0
-    number = array[iY][0]
-    for x in range(maxX, minX - 1, (minX - maxX) / (countX - 1)):
-        num = getNum(number, array[iY][1])
-        number = Math.floor(number / array[iY][1])
-        summonTroops(num, x, array[iY][2])
-        iX = iX + 1
-    iY = iY + 1
+    for k in range(len(result)):
+        m = result[k]
+        hero.summon(units[m])
+        hero.command(hero.built[len(hero.built) - 1], "move", {'x': 14 + k * 6, 'y': unit.pos.y})
