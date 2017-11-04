@@ -1,4 +1,4 @@
-# Assembly Speed
+# Assembly Speed  - Скорость сборки 
 
 http://codecombat.com/play/level/assembly-speed
 <table>
