@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# Kelvintaph Burgler  - Злодей в Kelvintaph
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](KelvintaphBurgler.py)
 
 </li>
 </td>

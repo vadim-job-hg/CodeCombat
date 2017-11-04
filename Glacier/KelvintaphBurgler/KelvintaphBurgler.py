@@ -1,154 +1,161 @@
-# http://codecombat.com/play/level/kelvintaph-burgler
-# Что это за жуткие артефакты? Не дайте им взорвать себя!
-# Ледяные врата откроются, когда оба огра будут мертвы.
-coors1 = [0, 0]
-coors2 = [0, 0]
+excepE = ['tower']
+dest = {'x': 78, 'y': 39}
+done = False
 
 
-def moveTo(position, fast=True):
-    if (hero.isReady("jump") and fast):
-        hero.jumpTo(position)
-    else:
-        hero.move(position)
+def getPos(obj):
+    return obj.pos.x, obj.pos.y
 
 
-summonTypes = ['soldier']
+def toPos(x, y):
+    return {'x': x, 'y': y}
 
 
-def summonTroops():
-    type = summonTypes[len(hero.built) % len(summonTypes)]
-    if hero.gold > hero.costOf(type):
-        hero.summon(type)
+def rushTo(xy):
+    if hero.isReady("jump"):
+        hero.jumpTo(xy)
+    hero.move(xy)
 
 
-def commandTroops():
-    for index, friend in enumerate(hero.findFriends()):
-        if chieftain and friend.type != 'paladin':
-            continue
-        if witch and friend.type != 'paladin':
-            continue
-        if chieftain and chieftain.pos.x < 57 and chieftain.pos.x > 43:
-            hero.command(friend, "move", {'x': 25, 'y': 48})
-        elif not chieftain and friend.pos.x < 40:
-            hero.command(friend, "move", {'x': 51, 'y': 51})
-        elif friend.type == 'paladin':
-            CommandPaladin(friend)
-        elif friend.type == 'soldier':
-            if friend.pos.y > 30:
-                CommandSoldier(friend)
+def exclude(units, exceps):
+    return [u for u in units if u.type not in exceps]
+
+
+def farthest(enemies):
+    farthestD = 0
+    for enemy in enemies:
+        d = hero.distanceTo(enemy)
+        if d > farthestD and enemy.health > 0:
+            farthestD = d
+            farthest = enemy
+    return farthest
+
+
+def nearby(enemies, dis):
+    return sum([hero.distanceTo(e) < dis for e in enemies])
+
+
+def selfDying(self):
+    if self.health < self.maxHealth / 2:
+        hero.command(self, "move", {'x': self.pos.x - 1, 'y': self.pos.y})
+
+
+def evade():
+    x, y = getPos(hero)
+    orbs = hero.findEnemyMissiles()
+    if len(orbs):
+        orb = hero.findNearest(orbs)
+        if hero.distanceTo(orb) < 3:
+            if y > 14:
+                hero.moveXY(x, y - 7)
             else:
-                KillRobots(friend)
-        else:
-            CommandArcher(friend)
+                hero.moveXY(x, y + 7)
 
 
-def CommandPaladin(paladin):
-    if (paladin.canCast("heal") and not chieftain):
-        target = lowestHealthFriend()
-        if target:
-            hero.command(paladin, "cast", "heal", target)
-    elif (paladin.health < 100):
-        hero.command(paladin, "shield")
-    else:
-        if witch:
-            hero.command(paladin, "attack", witch)
-        elif (chieftain):
-            hero.command(paladin, "attack", chieftain)
-        else:
-            hero.command(paladin, "move", {'x': 78, 'y': 40})
-
-
-def CommandSoldier(soldier):
-    if witch:
-        hero.command(soldier, "attack", witch)
-    else:
-        hero.command(soldier, "move", {'x': 78, 'y': 40})
-
-
-def CommandArcher(soldier):
-    if witch:
-        hero.command(soldier, "attack", witch)
-    else:
-        hero.command(soldier, "move", {'x': 78, 'y': 40})
-
-
-def KillRobots(soldier):
-    robot = hero.findNearestEnemy()
-    if robot:
-        hero.command(soldier, "attack", robot)
-
-
-def lowestHealthFriend():
-    lowestHealth = 99999
-    lowestFriend = None
+def lowHP():
     friends = hero.findFriends()
-    for friend in friends:
-        if friend.health < lowestHealth and friend.health < friend.maxHealth:
-            lowestHealth = friend.health
-            lowestFriend = friend
-
-    return lowestFriend
-
-
-def RunFrom():
-    missiles = hero.findEnemyMissiles()
-    missle = hero.findNearest(missiles)
-    if len(missiles) > 0:
-        coors1[0] = missle.pos.x
-        coors1[1] = missle.pos.y
-        y = findTheY(coors1[0], coors2[0], coors1[1], coors2[1], hero.pos.x)
-        if y > 15:
-            moveTo({'x': hero.pos.x, 'y': 10}, False)
-        else:
-            moveTo({'x': hero.pos.x, 'y': 20}, False)
-        coors2[0] = coors1[0]
-        coors2[1] = coors1[1]
+    lowest = 9999
+    dying = None
+    if len(friends):
+        for friend in friends:
+            hp = friend.health
+            if hp < friend.maxHealth / 3 and hp < lowest and hp > 0:
+                lowest = hp
+                dying = friend
+    return dying
 
 
-def RunTrought():
-    robots = hero.findByType('robot-walker')
-    summonTroops()
-    up = True
-    mid = True
-    douwn = True
-    for robot in robots:
-        if (robot.pos.y < 20 and robot.pos.y > 10):
-            mid = False
-        if (robot.pos.y > 20):
-            up = False
-        if (robot.pos.y < 10):
-            down = False
-    if (mid):
-        coorY = 15
-    if (down):
-        coorY = 6
-    if (up):
-        coorY = 22
-    if (hero.pos.x < 16):
-        hero.moveXY(16, coorY)
-    elif (hero.pos < 59):
-        moveTo({'x': 60, 'y': coorY}, False)
+def soldierAtk(soldier):
+    selfDying(soldier)
+    enemies = hero.findByType("ogre")
+    if not len(enemies):
+        enemy = soldier.findNearestEnemy()
     else:
-        moveTo({'x': 79, 'y': 14}, False)
-
-
-def findTheY(x1, x2, y1, y2, x):
-    if (y2 != y1):
-        y = (x - x1) / (x2 - x1) * (y2 - y1) + y1
+        enemy = enemies[0]
+    if enemy:
+        hero.command(soldier, "attack", enemy)
     else:
-        y = y1
-    return y
+        hero.command(soldier, "move", soldier.pos)
 
 
-def findTheMiddle(pos1, pos2):
-    return {'x': (pos1.x + pos2.x) / 2, 'y': (pos1.y + pos2.y) / 2}
-
-
-while True:  # hero.say(hero.findEnemies()[0].type)
-    witch = hero.findNearest(hero.findByType('witch'))
-    chieftain = hero.findNearest(hero.findByType('chieftain'))
-    if witch or chieftain:
-        RunFrom()
+def archerAtk(archer):
+    enemies = hero.findByType("chieftain")
+    if not len(enemies):
+        enemy = archer.findNearestEnemy()
     else:
-        RunTrought()
-    commandTroops()
+        enemy = enemies[0]
+    if enemy and archer.pos.x > 53 and archer.pos.y < 40:
+        hero.command(archer, "attack", enemy)
+    elif hero.time > 6:
+        hero.command(archer, "move", dest)
+
+
+def riderAtk(rider):
+    enemies = hero.findByType("robot-walker")
+    if len(enemies):
+        hero.command(rider, "move", {'x': enemies[0].pos.x / 2 + enemies[1].pos.x / 2,
+                                     'y': enemies[0].pos.y / 2 + enemies[1].pos.y / 2})
+
+
+def palaAtk(pala):
+    selfDying(pala)
+    dying = lowHP()
+    enemies = hero.findByType("witch")
+    if not len(enemies):
+        enemy = pala.findNearestEnemy()
+    else:
+        enemy = enemies[0]
+    if dying and pala.canCast('heal'):
+        hero.command(pala, "cast", 'heal', dying)
+    else:
+        hero.command(pala, "move", dest)
+    if pala.canCast('heal') and hero.health < 2 * hero.maxHealth / 3:
+        hero.command(pala, "cast", 'heal', hero)
+    if pala.pos == dest:
+        hero.command(pala, "shield")
+
+
+def summon(soldier):
+    while hero.gold >= hero.costOf(soldier):
+        hero.summon(soldier)
+
+
+def command():
+    for unit in hero.findFriends():
+        t = unit.type
+        if t == 'griffin-rider':
+            riderAtk(unit)
+        elif t == 'soldier':
+            soldierAtk(unit)
+        elif t == 'paladin':
+            palaAtk(unit)
+        elif t == 'archer':
+            archerAtk(unit)
+
+
+def atk():
+    if hero.gold > hero.costOf('griffin-rider'):
+        hero.summon('griffin-rider')
+    command()
+
+    enemies = hero.findByType("robot-walker")
+    if len(enemies):
+        pass
+    else:
+        enemy = hero.findNearest([e for e in hero.findEnemies() if e.type not in ['ice-yak', 'cow']])
+        if enemy:
+            command()
+            if hero.canCast("chain-lightning", enemy) and hero.time > 7:
+                hero.cast("chain-lightning", enemy)
+        elif not len(enemies):
+            hero.move({'x': 78, 'y': 14})
+    return True
+
+
+def run():
+    while True:
+        evade()
+        atk()
+
+
+run()
