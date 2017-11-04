@@ -1,13 +1,8 @@
-# http://codecombat.com/play/level/kelvintaph-crusader
-# Вы можете находить друзей сквозь стены. Но не врагов.
-# Берегитесь гладких, скользких ледяных участков!
-# commands attack
 def moveTo(position, fast=True):
     if (hero.isReady("jump") and fast):
         hero.jumpTo(position)
     else:
         hero.move(position)
-
 
 def commandTroops():
     for index, friend in enumerate(hero.findFriends()):
@@ -52,12 +47,10 @@ def CommandPaladin(paladin):
         if (target):
             hero.command(paladin, "attack", target)
 
-
 def CommandSoldier(soldier):
     target = findWorstEnemy()
     if (target):
         hero.command(soldier, "attack", target)
-
 
 def findWorstEnemy():
     witch = hero.findNearest(hero.findByType('witch'))
@@ -72,7 +65,6 @@ def findWorstEnemy():
     else:
         return None
 
-
 def lowestHealthFriend():
     lowestHealth = 99999
     lowestFriend = None
@@ -84,7 +76,6 @@ def lowestHealthFriend():
 
     return lowestFriend
 
-
 def attack(target):
     if target:
         if (hero.distanceTo(target) > 10):
@@ -93,7 +84,6 @@ def attack(target):
             hero.bash(target)
         else:
             hero.attack(target)
-
 
 while True:
     commandTroops()
