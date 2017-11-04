@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Coded Orders  - Кодированные приказы
 
-{link}
+https://codecombat.com/play/level/coded-orders
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CodedOrders.py)
 
 </li>
 </td>
