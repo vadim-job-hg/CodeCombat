@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Binary Deployment
 
-{link}
+https://codecombat.com/play/level/binary-deployment
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BinaryDeployment.py)
 
 </li>
 </td>
