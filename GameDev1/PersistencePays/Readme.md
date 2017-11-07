@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Persistence Pays
 
-{link}
+https://codecombat.com/play/level/persistence-pays
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PersistencePays.py)
 
 </li>
 </td>
