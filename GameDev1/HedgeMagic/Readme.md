@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Hedge Magic
 
-{link}
+https://codecombat.com/play/level/hedge-magic
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](HedgeMagic.py)
 
 </li>
 </td>

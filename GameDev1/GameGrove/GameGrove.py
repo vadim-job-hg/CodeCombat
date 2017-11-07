@@ -1,4 +1,3 @@
-# https://codecombat.com/play/level/game-grove
 # Make your own game by changing the code below!
 # Spawn a maze. Change the number for a different maze!
 game.spawnMaze(1)

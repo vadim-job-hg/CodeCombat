@@ -1,4 +1,3 @@
-# https://codecombat.com/play/level/gemtacular
 game.spawnHeroXY(9, 18)
 game.addCollectGoal()
 

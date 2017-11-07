@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# HerosJourney
 
-{link}
+https://codecombat.com/play/level/heros-journey
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](HerosJourney.py)
 
 </li>
 </td>

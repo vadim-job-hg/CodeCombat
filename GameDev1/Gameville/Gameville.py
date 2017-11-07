@@ -1,4 +1,3 @@
-# https://codecombat.com/play/level/gameville
 # Should fill in some default source
 # Should fill in some default source
 game.addSurviveGoal()

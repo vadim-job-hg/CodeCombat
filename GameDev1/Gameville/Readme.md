@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Gameville
 
-{link}
+https://codecombat.com/play/level/gameville
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Gameville.py)
 
 </li>
 </td>

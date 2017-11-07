@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Give And Take
 
-{link}
+https://codecombat.com/play/level/give-and-take
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GiveAndTake.py)
 
 </li>
 </td>
