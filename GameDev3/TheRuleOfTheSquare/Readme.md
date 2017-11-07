@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# The Rule Of The Square
 
-{link}
+https://codecombat.com/play/level/the-rule-of-the-square
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TheRuleOfTheSquare.py)
 
 </li>
 </td>
