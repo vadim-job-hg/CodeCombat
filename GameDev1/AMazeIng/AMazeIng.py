@@ -1,4 +1,3 @@
-# https://codecombat.com/play/level/a-maze-ing
 game.addCollectGoal()
 game.spawnHeroXY(9, 59)
 game.spawnXY("chest", 8, 14)

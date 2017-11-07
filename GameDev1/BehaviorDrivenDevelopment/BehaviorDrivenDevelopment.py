@@ -1,4 +1,3 @@
-# https://codecombat.com/play/level/behavior-driven-development
 # Assign behaviors to units with the behavior property.
 
 skeleton1 = game.spawnXY("skeleton", 60, 50)

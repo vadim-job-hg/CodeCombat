@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Click Gait
 
-{link}
+https://codecombat.com/play/level/click-gait
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ClickGait.py)
 
 </li>
 </td>

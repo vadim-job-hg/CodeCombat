@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CrushingIt 
 
-{link}
+https://codecombat.com/play/level/crushing-it
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CrushingIt.py)
 
 </li>
 </td>

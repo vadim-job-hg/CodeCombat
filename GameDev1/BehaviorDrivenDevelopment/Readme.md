@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Behavior Driven Development
 
-{link}
+https://codecombat.com/play/level/behavior-driven-development
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BehaviorDrivenDevelopment.py)
 
 </li>
 </td>
