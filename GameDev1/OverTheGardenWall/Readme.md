@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Over The Garden Wall
 
-{link}
+https://codecombat.com/play/level/over-the-garden-wall
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](OverTheGardenWall.py)
 
 </li>
 </td>
