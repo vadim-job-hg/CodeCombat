@@ -1,6 +1,6 @@
-# Dread Door - Страшная дверь
+# {name}  - {name} 
 
-https://codecombat.com/play/level/dread-door
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ https://codecombat.com/play/level/dread-door
 <ul>
 <li>
 
-[PYTHON](DreadDoor.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

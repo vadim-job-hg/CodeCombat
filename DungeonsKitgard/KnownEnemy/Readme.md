@@ -1,6 +1,6 @@
-# Known Enemy  - Известный враг 
+# {name}  - {name} 
 
-https://codecombat.com/play/level/known-enemy
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ https://codecombat.com/play/level/known-enemy
 <ul>
 <li>
 
-[PYTHON](KnownEnemy.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# Ice Life  - Ледяная жизнь
+# {name}  - {name} 
 
-https://codecombat.com/play/level/ice-life
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ https://codecombat.com/play/level/ice-life
 <ul>
 <li>
 
-[PYTHON](IceLife.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

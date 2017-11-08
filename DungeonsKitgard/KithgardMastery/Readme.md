@@ -1,6 +1,6 @@
-# Kithgard Mastery  - Китгардское мастерство
+# {name}  - {name} 
 
-https://codecombat.com/play/level/kithgard-mastery
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ https://codecombat.com/play/level/kithgard-mastery
 <ul>
 <li>
 
-[PYTHON](KithgardMastery.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

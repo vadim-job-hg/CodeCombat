@@ -1,6 +1,6 @@
-# The Second Kithmaze  - Второй лабиринт Китгарда
+# {name}  - {name} 
 
-http://codecombat.com/play/level/the-second-kithmaze
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ http://codecombat.com/play/level/the-second-kithmaze
 <ul>
 <li>
 
-[PYTHON](TheSecondKithmaze.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

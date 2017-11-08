@@ -1,6 +1,6 @@
-# Signs And Portents  - Предсказания и знамения
+# {name}  - {name} 
 
-https://codecombat.com/play/level/signs-and-portents
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,7 @@ https://codecombat.com/play/level/signs-and-portents
 <ul>
 <li>
 
-[PYTHON](SignsAndPortents.py)
-
-</li>
-<li>
-
-[JAVASCRIPT](SignsAndPortents.js)
+[PYTHON]({link}.py)
 
 </li>
 </td>

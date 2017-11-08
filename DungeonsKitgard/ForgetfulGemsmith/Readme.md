@@ -1,6 +1,6 @@
-# Forgetful Gemsmith  - Забывчивый ювелир
+# {name}  - {name} 
 
-http://codecombat.com/play/level/forgetful-gemsmith
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,7 @@ http://codecombat.com/play/level/forgetful-gemsmith
 <ul>
 <li>
 
-[PYTHON](ForgetfulGemsmith.py)
-
-</li>
-<li>
-
-[JAVASCRIPT](ForgetfulGemsmith.js)
+[PYTHON]({link}.py)
 
 </li>
 </td>

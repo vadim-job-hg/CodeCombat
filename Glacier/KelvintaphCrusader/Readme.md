@@ -1,6 +1,6 @@
-# Kelvintaph Crusader  - Крестоносец Келвинтафа
+# {name}  - {name} 
 
-http://codecombat.com/play/level/kelvintaph-crusader
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ http://codecombat.com/play/level/kelvintaph-crusader
 <ul>
 <li>
 
-[PYTHON](KelvintaphCrusader.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

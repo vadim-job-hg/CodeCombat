@@ -1,6 +1,6 @@
-# Circle Walking  - Прогулка по кругу
+# {name}  - {name} 
 
-https://codecombat.com/play/level/circle-walking
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ https://codecombat.com/play/level/circle-walking
 <ul>
 <li>
 
-[PYTHON](CircleWalking.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

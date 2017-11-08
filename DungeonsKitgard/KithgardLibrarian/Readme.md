@@ -1,6 +1,6 @@
-# Kithgard Librarian  - Библиотекарь Китгарда
+# {name}  - {name} 
 
-http://codecombat.com/play/level/kithgard-librarian
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,7 @@ http://codecombat.com/play/level/kithgard-librarian
 <ul>
 <li>
 
-[PYTHON](KithgardLibrarian.py)
-
-</li>
-<li>
-
-[JAVASCRIPT](KithgardLibrarian.js)
+[PYTHON]({link}.py)
 
 </li>
 </td>
