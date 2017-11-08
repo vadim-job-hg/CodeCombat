@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Them Bones
 
-{link}
+https://codecombat.com/play/level/them-bones
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ThemBones.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Vorpal Mouse
 
-{link}
+https://codecombat.com/play/level/vorpal-mouse
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](VorpalMouse.py)
 
 </li>
 </td>

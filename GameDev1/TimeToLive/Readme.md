@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Time To Live
 
-{link}
+https://codecombat.com/play/level/time-to-live
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TimeToLive.py)
 
 </li>
 </td>

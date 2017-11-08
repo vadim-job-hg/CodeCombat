@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Seeing Is Believing
 
-{link}
+https://codecombat.com/play/level/seeing-is-believing
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SeeingIsBelieving.py)
 
 </li>
 </td>

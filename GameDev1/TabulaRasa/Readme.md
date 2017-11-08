@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Tabula Rasa
 
-{link}
+https://codecombat.com/play/level/tabula-rasa
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TabulaRasa.py)
 
 </li>
 </td>
