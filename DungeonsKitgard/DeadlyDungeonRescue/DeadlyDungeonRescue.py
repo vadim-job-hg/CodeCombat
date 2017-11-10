@@ -4,8 +4,8 @@
 # Убийство охранников может привести к нежелательным последствиям.
 # Если вы сможете собрать все сокровища, вы можете получить дополнительную награду.
 hero.moveXY(36, 123)
-hero.attack("Vault Door 1")
-hero.attack("Vault Door 1")
+hero.attack("North Vault Door")
+hero.attack("North Vault Door")
 hero.moveXY(30, 102)
 hero.moveXY(63, 102)
 hero.moveXY(46, 78)
@@ -27,8 +27,10 @@ hero.say("Follow me if you want to live!")
 hero.moveXY(150, 25)
 hero.moveXY(150, 10)
 hero.moveXY(47, 9)
-hero.attack("Vault Door 2")
-hero.attack("Vault Door 2")
+hero.attack("South Vault Door")
+hero.attack("South Vault Door")
+hero.moveXY(49, 50)
+hero.wait(5)
 hero.moveXY(49, 114)
 hero.moveXY(81, 121)
 

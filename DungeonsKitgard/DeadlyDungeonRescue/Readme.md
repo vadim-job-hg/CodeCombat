@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# Deadly Dungeon Rescue
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DeadlyDungeonRescue.py)
 
 </li>
 </td>
