@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Descending Further
 
-{link}
+http://codecombat.com/play/level/descending-further
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DescendingFurther.py)
 
 </li>
 </td>
