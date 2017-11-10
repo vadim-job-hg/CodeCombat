@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Attack Wisely
 
-{link}
+http://codecombat.com/play/level/attack-wisely
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AttackWisely.py)
 
 </li>
 </td>
