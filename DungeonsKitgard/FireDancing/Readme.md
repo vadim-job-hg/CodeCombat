@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FireDancing
 
-{link}
+http://codecombat.com/play/level/fire-dancing
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](FireDancing.py)
 
 </li>
 </td>
