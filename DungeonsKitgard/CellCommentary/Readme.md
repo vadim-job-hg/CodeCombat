@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Cell Commentary
 
-{link}
+https://codecombat.com/play/level/cell-commentary
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CellCommentary.py)
 
 </li>
 </td>
