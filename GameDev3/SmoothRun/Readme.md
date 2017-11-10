@@ -1,6 +1,6 @@
-# Banefire
+# The Rule Of The Square
 
-http://codecombat.com/play/level/banefire
+https://codecombat.com/play/level/smooth-run
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ http://codecombat.com/play/level/banefire
 <ul>
 <li>
 
-[PYTHON](Banefire.py)
+[PYTHON](SmoothRun.py)
 
 </li>
 </td>
