@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Crawlways Of Kithgard
 
-{link}
+http://codecombat.com/play/level/crawlways-of-kithgard
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CrawlwaysOfKithgard.py)
 
 </li>
 </td>

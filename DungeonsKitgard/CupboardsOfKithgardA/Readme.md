@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Cupboards Of Kithgard A
 
-{link}
+https://codecombat.com/play/level/cupboards-of-kithgard-a
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CupboardsOfKithgardA.py)
 
 </li>
 </td>
