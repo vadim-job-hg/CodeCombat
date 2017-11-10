@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Dungeons Of Kitgard
 
-{link}
+http://codecombat.com/play/level/dungeons-of-kitgard
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DungeonsOfKitgard.py)
 
 </li>
 </td>
