@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Destroying Angel
 
-{link}
+http://codecombat.com/play/level/destroying-angel
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DestroyingAngel.py)
 
 </li>
 </td>
