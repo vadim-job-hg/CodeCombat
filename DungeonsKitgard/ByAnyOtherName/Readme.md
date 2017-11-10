@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# By Any Other Name
 
-{link}
+http://codecombat.com/play/level/by-any-other-name
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ByAnyOtherName.py)
 
 </li>
 </td>
