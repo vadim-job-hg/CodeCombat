@@ -1,6 +1,6 @@
-# Haunted Kithmaze  - Лабиринт с привидениями
+# {name}  - {name} 
 
-http://codecombat.com/play/level/haunted-kithmaze
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ http://codecombat.com/play/level/haunted-kithmaze
 <ul>
 <li>
 
-[PYTHON](HauntedKithmaze.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

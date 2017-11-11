@@ -1,0 +1,18 @@
+hero.moveDown()
+hero.moveRight()
+hero.moveDown()
+hero.moveDown()
+hero.moveRight()
+hero.moveRight()
+hero.moveRight()
+hero.moveUp()
+hero.moveLeft()
+hero.moveUp()
+hero.moveRight()
+hero.moveUp()
+hero.moveLeft()
+hero.moveDown()
+while True:
+    enemy = hero.findNearestEnemy()
+    if enemy:
+        hero.attack(enemy)

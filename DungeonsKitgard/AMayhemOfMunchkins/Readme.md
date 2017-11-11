@@ -1,6 +1,6 @@
-# A Mayhem Of Munchkins  - Разгром Мачкинов
+# A Mayhem Of Munchkins
 
-https://codecombat.com/play/level/a-mayhem-of-munchkins
+{link}
 <table>
 <tr>
 <td>

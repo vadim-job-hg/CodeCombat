@@ -1,6 +1,6 @@
-# Dread Door - Страшная дверь
+# DreadDoor
 
-https://codecombat.com/play/level/dread-door
+http://codecombat.com/play/level/dread-door
 <table>
 <tr>
 <td>

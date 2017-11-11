@@ -1,6 +1,6 @@
-# Gems In The Depth  - Самоцветы в глубине
+# {name}  - {name} 
 
-https://codecombat.com/play/level/gems-in-the-deep
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,7 @@ https://codecombat.com/play/level/gems-in-the-deep
 <ul>
 <li>
 
-[PYTHON](GemsInTheDepth.py)
-
-</li>
-<li>
-
-[JAVASCRIPT](GemsInTheDepth.js)
+[PYTHON]({link}.py)
 
 </li>
 </td>

@@ -1,4 +1,4 @@
-# Fire Dancing  - Танцы с огнём
+# FireDancing
 
 http://codecombat.com/play/level/fire-dancing
 <table>

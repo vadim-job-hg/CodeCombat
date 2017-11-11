@@ -1,6 +1,6 @@
-# The Raised Sword  - Воздетый меч
+# {name}  - {name} 
 
-https://codecombat.com/play/level/the-raised-sword
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,7 @@ https://codecombat.com/play/level/the-raised-sword
 <ul>
 <li>
 
-[PYTHON](TheRaisedSword.py)
-
-</li>
-<li>
-
-[JAVASCRIPT](TheRaisedSword.js)
+[PYTHON]({link}.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# True Names  - Верные имена
+# {name}  - {name} 
 
-http://codecombat.com/play/level/true-names
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,7 @@ http://codecombat.com/play/level/true-names
 <ul>
 <li>
 
-[PYTHON](TrueNames.py)
-
-</li>
-<li>
-
-[JAVASCRIPT](TrueNames.js)
+[PYTHON]({link}.py)
 
 </li>
 </td>

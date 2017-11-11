@@ -1,6 +1,6 @@
-# Dungeons Of Kitgard - Подземелья Китгарда
+# Dungeons Of Kitgard
 
-https://codecombat.com/play/level/dungeons-of-kithgard
+http://codecombat.com/play/level/dungeons-of-kitgard
 <table>
 <tr>
 <td>
@@ -13,11 +13,6 @@ https://codecombat.com/play/level/dungeons-of-kithgard
 <li>
 
 [PYTHON](DungeonsOfKitgard.py)
-
-</li>
-<li>
-
-[JAVASCRIPT](DungeonsOfKitgard.js)
 
 </li>
 </td>

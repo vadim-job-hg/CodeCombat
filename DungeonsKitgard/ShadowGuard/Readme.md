@@ -1,6 +1,6 @@
-# Shadow Guard  - Охранник в тени
+# {name}  - {name} 
 
-https://codecombat.com/play/level/shadow-guard
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,7 @@ https://codecombat.com/play/level/shadow-guard
 <ul>
 <li>
 
-[PYTHON](ShadowGuard.py)
-
-</li>
-<li>
-
-[JAVASCRIPT](ShadowGuard.js)
+[PYTHON]({link}.py)
 
 </li>
 </td>

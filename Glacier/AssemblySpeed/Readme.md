@@ -1,6 +1,6 @@
-# Assembly Speed  - Скорость сборки 
+# {name}  - {name} 
 
-http://codecombat.com/play/level/assembly-speed
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ http://codecombat.com/play/level/assembly-speed
 <ul>
 <li>
 
-[PYTHON](AssemblySpeed.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>

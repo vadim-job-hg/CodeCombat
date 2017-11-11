@@ -1,6 +1,6 @@
-# Loop Da Loop  - Цикл за циклом
+# {name}  - {name} 
 
-http://codecombat.com/play/level/loop-da-loop
+{link}
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@ http://codecombat.com/play/level/loop-da-loop
 <ul>
 <li>
 
-[PYTHON](LoopDaLoop.py)
+[PYTHON]({link}.py)
 
 </li>
 </td>
