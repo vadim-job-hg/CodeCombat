@@ -1,6 +1,6 @@
 # {name}  - {name} 
 
-{link}
+http://codecombat.com/play/level/kelvintaph-defiler
 <table>
 <tr>
 <td>
