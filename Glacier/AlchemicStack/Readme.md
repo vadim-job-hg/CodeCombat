@@ -1,4 +1,4 @@
-# AlchemicStack 
+# Alchemic Stack 
 
 https://codecombat.com/play/level/alchemic-stack
 <table>

@@ -1,4 +1,4 @@
-# CoordinatedDefense 
+# Coordinated Defense 
 
 https://codecombat.com/play/level/coordinated-defense
 <table>

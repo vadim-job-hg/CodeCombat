@@ -1,4 +1,4 @@
-# ContinuousAlchemy 
+# Continuous Alchemy 
 
 http://codecombat.com/play/level/continuous-alchemy
 <table>

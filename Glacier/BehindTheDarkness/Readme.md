@@ -1,4 +1,4 @@
-# BehindTheDarkness 
+# Behind The Darkness 
 
 https://codecombat.com/play/level/behind-the-darkness
 <table>
