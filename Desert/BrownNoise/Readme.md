@@ -1,4 +1,4 @@
-# BrownNoise 
+# Brown Noise 
 
 https://codecombat.com/play/level/brown-noise
 <table>

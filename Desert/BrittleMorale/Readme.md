@@ -1,4 +1,4 @@
-# BrittleMorale 
+# Brittle Morale 
 
 http://codecombat.com/play/level/brittle-morale
 <table>
