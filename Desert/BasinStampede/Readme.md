@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON]({link-file}.py)
 
 </li>
 </td>

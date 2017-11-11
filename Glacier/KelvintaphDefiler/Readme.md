@@ -12,7 +12,7 @@ http://codecombat.com/play/level/kelvintaph-defiler
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON]({link-file}.py)
 
 </li>
 </td>
