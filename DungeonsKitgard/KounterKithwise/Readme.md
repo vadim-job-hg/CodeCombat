@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# KounterKithwise 
 
-{link}
+http://codecombat.com/play/level/kounter-kithwise
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](KounterKithwise.py)
 
 </li>
 </td>

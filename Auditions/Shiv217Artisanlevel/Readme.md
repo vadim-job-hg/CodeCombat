@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Shiv217Artisanlevel 
 
-{link}
+http://codecombat.com/play/level/shiv217-artisanlevel
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Shiv217Artisanlevel.py)
 
 </li>
 </td>

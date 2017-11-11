@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CoinHunter 
 
-{link}
+https://codecombat.com/play/level/coin-hunter
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](CoinHunter.py)
 
 </li>
 </td>

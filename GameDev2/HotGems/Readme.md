@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# HotGems 
 
-{link}
+https://codecombat.com/play/level/hot-gems
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](HotGems.py)
 
 </li>
 </td>

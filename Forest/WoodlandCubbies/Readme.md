@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# WoodlandCubbies 
 
-{link}
+https://codecombat.com/play/level/woodland-cubbies
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](WoodlandCubbies.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ReturnToThornbushFarm 
 
-{link}
+https://codecombat.com/play/level/return-to-thornbush-farm
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ReturnToThornbushFarm.py)
 
 </li>
 </td>

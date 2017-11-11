@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BackwoodsAmbush 
 
-{link}
+http://codecombat.com/play/level/backwoods-ambush
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BackwoodsAmbush.py)
 
 </li>
 </td>

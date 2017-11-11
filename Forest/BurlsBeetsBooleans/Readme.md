@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BurlsBeetsBooleans 
 
-{link}
+http://codecombat.com/play/level/burls-beets-booleans
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BurlsBeetsBooleans.py)
 
 </li>
 </td>

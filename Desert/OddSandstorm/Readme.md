@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# OddSandstorm 
 
-{link}
+http://codecombat.com/play/level/odd-sandstorm
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](OddSandstorm.py)
 
 </li>
 </td>

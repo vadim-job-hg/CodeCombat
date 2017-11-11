@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BankRaid 
 
-{link}
+https://codecombat.com/play/level/bank-raid
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BankRaid.py)
 
 </li>
 </td>

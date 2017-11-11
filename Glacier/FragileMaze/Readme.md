@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FragileMaze 
 
-{link}
+http://codecombat.com/play/level/fragile-maze
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](FragileMaze.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BackwoodsBombardier 
 
-{link}
+http://codecombat.com/play/level/backwoods-bombardier
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BackwoodsBombardier.py)
 
 </li>
 </td>

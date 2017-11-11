@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RiddlingKithmaze 
 
-{link}
+https://codecombat.com/play/level/riddling-kithmaze
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](RiddlingKithmaze.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Rampage 
 
-{link}
+http://codecombat.com/play/level/rampage
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Rampage.py)
 
 </li>
 </td>

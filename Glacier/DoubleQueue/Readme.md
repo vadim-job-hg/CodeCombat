@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DoubleQueue 
 
-{link}
+https://codecombat.com/play/level/double-queue
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](DoubleQueue.py)
 
 </li>
 </td>

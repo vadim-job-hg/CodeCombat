@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LoudQuietness 
 
-{link}
+https://codecombat.com/play/level/loud-quietness
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](LoudQuietness.py)
 
 </li>
 </td>

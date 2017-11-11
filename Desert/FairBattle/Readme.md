@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FairBattle 
 
-{link}
+http://codecombat.com/play/level/fair-battle
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](FairBattle.py)
 
 </li>
 </td>

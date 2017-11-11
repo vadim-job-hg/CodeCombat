@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SwiftDagger 
 
-{link}
+https://codecombat.com/play/level/swift-dagger
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](SwiftDagger.py)
 
 </li>
 </td>

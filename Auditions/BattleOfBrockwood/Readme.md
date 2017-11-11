@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BattleOfBrockwood 
 
-{link}
+http://codecombat.com/play/level/battle-of-brockwood
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BattleOfBrockwood.py)
 
 </li>
 </td>

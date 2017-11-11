@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BoulderWoods 
 
-{link}
+http://codecombat.com/play/level/boulder-woods
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BoulderWoods.py)
 
 </li>
 </td>

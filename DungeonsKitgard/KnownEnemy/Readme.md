@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# KnownEnemy 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](KnownEnemy.py)
 
 </li>
 </td>

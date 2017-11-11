@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AceOfCoders 
 
-{link}
+http://codecombat.com/play/ladder/ace-of-coders
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](AceOfCoders.py)
 
 </li>
 </td>

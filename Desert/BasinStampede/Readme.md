@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BasinStampede 
 
-{link}
+http://codecombat.com/play/level/basin-stampede
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BasinStampede.py)
 
 </li>
 </td>

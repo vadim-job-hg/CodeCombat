@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CannonLandingForce 
 
-{link}
+https://codecombat.com/play/level/cannon-landing-force
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](CannonLandingForce.py)
 
 </li>
 </td>

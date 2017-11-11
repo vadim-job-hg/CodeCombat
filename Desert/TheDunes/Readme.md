@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TheDunes 
 
-{link}
+https://codecombat.com/play/level/the-dunes
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](TheDunes.py)
 
 </li>
 </td>

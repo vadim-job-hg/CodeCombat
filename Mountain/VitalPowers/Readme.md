@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# VitalPowers 
 
-{link}
+http://codecombat.com/play/level/vital-powers
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](VitalPowers.py)
 
 </li>
 </td>

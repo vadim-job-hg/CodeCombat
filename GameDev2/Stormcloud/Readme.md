@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Stormcloud 
 
-{link}
+https://codecombat.com/play/level/stormcloud
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Stormcloud.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BackwoodsStandoffB 
 
-{link}
+https://codecombat.com/play/level/backwoods-standoff-b
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BackwoodsStandoffB.py)
 
 </li>
 </td>

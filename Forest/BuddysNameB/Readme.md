@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BuddysNameB 
 
-{link}
+https://codecombat.com/play/level/buddys-name-b
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BuddysNameB.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RaidersOfTheLongDark 
 
-{link}
+https://codecombat.com/play/level/raiders-of-the-long-dark?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](RaidersOfTheLongDark.py)
 
 </li>
 </td>

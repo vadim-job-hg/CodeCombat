@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BattleForTheCoinTowers 
 
-{link}
+http://codecombat.com/play/level/battle-for-the-coin-towers
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BattleForTheCoinTowers.py)
 
 </li>
 </td>

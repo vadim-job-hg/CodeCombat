@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SlumberingSample 
 
-{link}
+http://codecombat.com/play/level/slumbering-sample
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](SlumberingSample.py)
 
 </li>
 </td>

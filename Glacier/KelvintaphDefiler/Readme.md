@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# KelvintaphDefiler 
 
 http://codecombat.com/play/level/kelvintaph-defiler
 <table>
@@ -12,7 +12,7 @@ http://codecombat.com/play/level/kelvintaph-defiler
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](KelvintaphDefiler.py)
 
 </li>
 </td>

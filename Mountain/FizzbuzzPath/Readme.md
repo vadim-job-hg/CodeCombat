@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FizzbuzzPath 
 
-{link}
+https://codecombat.com/play/level/fizzbuzz-path
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](FizzbuzzPath.py)
 
 </li>
 </td>

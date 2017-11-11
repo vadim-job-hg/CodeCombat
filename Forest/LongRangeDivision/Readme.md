@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LongRangeDivision 
 
-{link}
+http://codecombat.com/play/level/long-range-division
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](LongRangeDivision.py)
 
 </li>
 </td>

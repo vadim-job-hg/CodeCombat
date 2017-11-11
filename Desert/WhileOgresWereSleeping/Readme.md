@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# WhileOgresWereSleeping 
 
-{link}
+http://codecombat.com/play/level/while-ogres-were-sleeping
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](WhileOgresWereSleeping.py)
 
 </li>
 </td>

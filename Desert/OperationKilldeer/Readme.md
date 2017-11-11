@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# OperationKilldeer 
 
-{link}
+http://codecombat.com/play/level/operation-killdeer
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](OperationKilldeer.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Bonemender 
 
-{link}
+https://codecombat.com/play/level/bonemender
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Bonemender.py)
 
 </li>
 </td>

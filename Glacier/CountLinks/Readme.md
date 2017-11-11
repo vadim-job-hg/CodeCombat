@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CountLinks 
 
-{link}
+https://codecombat.com/play/level/count-links
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](CountLinks.py)
 
 </li>
 </td>

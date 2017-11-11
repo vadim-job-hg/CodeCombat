@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Highlanders 
 
-{link}
+http://codecombat.com/play/level/highlanders
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Highlanders.py)
 
 </li>
 </td>

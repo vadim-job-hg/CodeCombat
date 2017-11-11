@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TrojanYeti 
 
-{link}
+https://codecombat.com/play/level/trojan-yeti
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](TrojanYeti.py)
 
 </li>
 </td>

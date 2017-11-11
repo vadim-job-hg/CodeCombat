@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# VillageChampion 
 
-{link}
+https://codecombat.com/play/level/village-champion
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](VillageChampion.py)
 
 </li>
 </td>

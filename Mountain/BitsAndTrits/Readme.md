@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BitsAndTrits 
 
-{link}
+http://codecombat.com/play/level/bits-and-trits
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BitsAndTrits.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CaptureTheirFlag 
 
-{link}
+http://codecombat.com/play/ladder/capture-their-flag
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](CaptureTheirFlag.py)
 
 </li>
 </td>

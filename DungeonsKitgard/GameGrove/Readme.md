@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GameGrove 
 
-{link}
+https://codecombat.com/play/level/game-grove
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](GameGrove.py)
 
 </li>
 </td>

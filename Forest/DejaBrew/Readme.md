@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DejaBrew 
 
-{link}
+http://codecombat.com/play/level/deja-brew
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](DejaBrew.py)
 
 </li>
 </td>

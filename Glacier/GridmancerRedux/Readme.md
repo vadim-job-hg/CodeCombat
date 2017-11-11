@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GridmancerRedux 
 
-{link}
+http://codecombat.com/play/level/gridmancer-redux
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](GridmancerRedux.py)
 
 </li>
 </td>

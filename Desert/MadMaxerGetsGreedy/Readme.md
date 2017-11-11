@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MadMaxerGetsGreedy 
 
-{link}
+https://codecombat.com/play/level/mad-maxer-gets-greedy
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](MadMaxerGetsGreedy.py)
 
 </li>
 </td>

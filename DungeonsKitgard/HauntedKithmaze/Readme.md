@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# HauntedKithmaze 
 
-{link}
+http://codecombat.com/play/level/haunted-kithmaze
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](HauntedKithmaze.py)
 
 </li>
 </td>

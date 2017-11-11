@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GreedTraps 
 
-{link}
+https://codecombat.com/play/level/greed-traps
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](GreedTraps.py)
 
 </li>
 </td>

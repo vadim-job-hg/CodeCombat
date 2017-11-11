@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MightierThanTheSword 
 
-{link}
+https://codecombat.com/play/level/mightier-than-the-sword
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](MightierThanTheSword.py)
 
 </li>
 </td>

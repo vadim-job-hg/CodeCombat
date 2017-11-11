@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PatrolBusterA 
 
-{link}
+https://codecombat.com/play/level/patrol-buster-a
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](PatrolBusterA.py)
 
 </li>
 </td>

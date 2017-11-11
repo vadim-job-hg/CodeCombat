@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TheWizardsDoor 
 
-{link}
+https://codecombat.com/play/level/the-wizards-door
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](TheWizardsDoor.py)
 
 </li>
 </td>

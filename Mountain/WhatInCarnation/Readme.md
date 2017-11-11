@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# WhatInCarnation 
 
-{link}
+https://codecombat.com/play/level/what-in-carnation
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](WhatInCarnation.py)
 
 </li>
 </td>

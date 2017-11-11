@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ExplosiveSorting 
 
-{link}
+https://codecombat.com/play/level/explosive-sorting
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ExplosiveSorting.py)
 
 </li>
 </td>

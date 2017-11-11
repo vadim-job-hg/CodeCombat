@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Chameleons 
 
-{link}
+https://codecombat.com/play/level/chameleons
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Chameleons.py)
 
 </li>
 </td>

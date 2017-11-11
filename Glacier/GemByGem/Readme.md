@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GemByGem 
 
-{link}
+https://codecombat.com/play/level/gem-by-gem
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](GemByGem.py)
 
 </li>
 </td>

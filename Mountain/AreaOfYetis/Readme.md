@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AreaOfYetis 
 
-{link}
+https://codecombat.com/play/level/area-of-yetis
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](AreaOfYetis.py)
 
 </li>
 </td>

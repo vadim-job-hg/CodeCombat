@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PetTranslator 
 
-{link}
+https://codecombat.com/play/level/pet-translator
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](PetTranslator.py)
 
 </li>
 </td>

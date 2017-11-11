@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GoFetch 
 
-{link}
+https://codecombat.com/play/level/go-fetch
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](GoFetch.py)
 
 </li>
 </td>

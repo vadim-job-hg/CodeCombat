@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Northwest 
 
-{link}
+https://codecombat.com/play/level/northwest
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Northwest.py)
 
 </li>
 </td>

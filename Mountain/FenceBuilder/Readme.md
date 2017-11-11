@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FenceBuilder 
 
-{link}
+https://codecombat.com/play/level/fence-builder
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](FenceBuilder.py)
 
 </li>
 </td>

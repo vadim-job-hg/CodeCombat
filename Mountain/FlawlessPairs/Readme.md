@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FlawlessPairs 
 
-{link}
+https://codecombat.com/play/level/flawless-pairs
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](FlawlessPairs.py)
 
 </li>
 </td>

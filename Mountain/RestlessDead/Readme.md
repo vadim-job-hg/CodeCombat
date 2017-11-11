@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RestlessDead 
 
-{link}
+https://codecombat.com/play/level/restless-dead
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](RestlessDead.py)
 
 </li>
 </td>

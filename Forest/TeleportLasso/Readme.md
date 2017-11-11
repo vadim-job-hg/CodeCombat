@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TeleportLasso 
 
-{link}
+https://codecombat.com/play/level/teleport-lasso
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](TeleportLasso.py)
 
 </li>
 </td>

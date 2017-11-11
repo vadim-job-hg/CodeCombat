@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SpringThunder 
 
-{link}
+https://codecombat.com/play/level/spring-thunder
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](SpringThunder.py)
 
 </li>
 </td>

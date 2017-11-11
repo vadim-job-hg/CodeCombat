@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# РunterМalley 
 
-{link}
+https://codecombat.com/play/level/hunter-valley
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](РunterМalley.py)
 
 </li>
 </td>

@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# MasterOfNames 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](MasterOfNames.py)
 
 </li>
 </td>

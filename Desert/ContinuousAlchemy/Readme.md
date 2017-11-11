@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ContinuousAlchemy 
 
-{link}
+http://codecombat.com/play/level/continuous-alchemy
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ContinuousAlchemy.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Airdrop 
 
-{link}
+https://codecombat.com/play/level/airdrop
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Airdrop.py)
 
 </li>
 </td>

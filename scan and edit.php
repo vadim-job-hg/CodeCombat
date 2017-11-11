@@ -23,9 +23,9 @@ foreach($dirs as $dir){
             echo $url.PHP_EOL;
         }
         $readme = file_get_contents($dir.DIRECTORY_SEPARATOR.'Readme.md');
-        $readme = str_replace('{name}  - {name}', $fileName, $readme);
+        $readme = str_replace('{name}  - {name}',end(explode(DIRECTORY_SEPARATOR, $dir)), $readme);
         if($url) $readme = str_replace('{link}', $url, $readme);
-        $readme = str_replace('{link-file}', $dir, $readme);
+        $readme = str_replace('{link-file}', end(explode(DIRECTORY_SEPARATOR, $dir)), $readme);
         file_put_contents($dir.DIRECTORY_SEPARATOR.'Readme.md', $readme);
     }
 }

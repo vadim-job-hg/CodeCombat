@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ForestShadow 
 
-{link}
+https://codecombat.com/play/level/forest-shadow
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ForestShadow.py)
 
 </li>
 </td>

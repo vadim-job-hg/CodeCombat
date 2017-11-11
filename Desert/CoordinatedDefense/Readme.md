@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CoordinatedDefense 
 
-{link}
+https://codecombat.com/play/level/coordinated-defense
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](CoordinatedDefense.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Crossroads 
 
-{link}
+http://codecombat.com/play/level/crossroads
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Crossroads.py)
 
 </li>
 </td>

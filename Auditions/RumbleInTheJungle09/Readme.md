@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RumbleInTheJungle09 
 
-{link}
+http://codecombat.com/play/level/rumble-in-the-jungle-09
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](RumbleInTheJungle09.py)
 
 </li>
 </td>

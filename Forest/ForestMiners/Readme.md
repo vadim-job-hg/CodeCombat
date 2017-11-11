@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ForestMiners 
 
-{link}
+https://codecombat.com/play/level/forest-miners
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ForestMiners.py)
 
 </li>
 </td>

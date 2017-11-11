@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FreezeTag 
 
-{link}
+https://codecombat.com/play/level/freeze-tag
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](FreezeTag.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Interception 
 
-{link}
+http://codecombat.com/play/level/interception
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Interception.py)
 
 </li>
 </td>

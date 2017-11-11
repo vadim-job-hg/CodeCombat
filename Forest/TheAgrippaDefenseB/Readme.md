@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TheAgrippaDefenseB 
 
-{link}
+http://codecombat.com/play/level/the-agrippa-defense-b
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](TheAgrippaDefenseB.py)
 
 </li>
 </td>

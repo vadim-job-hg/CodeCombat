@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# IceHunter 
 
-{link}
+https://codecombat.com/play/level/ice-hunter
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](IceHunter.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RitualOfRectangling 
 
-{link}
+http://codecombat.com/play/level/ritual-of-rectangling
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](RitualOfRectangling.py)
 
 </li>
 </td>

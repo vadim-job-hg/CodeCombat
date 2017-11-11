@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LogicalCircle 
 
-{link}
+http://codecombat.com/play/level/logical-circle
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](LogicalCircle.py)
 
 </li>
 </td>

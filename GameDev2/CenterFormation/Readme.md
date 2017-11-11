@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CenterFormation 
 
-{link}
+https://codecombat.com/play/level/center-formation
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](CenterFormation.py)
 
 </li>
 </td>

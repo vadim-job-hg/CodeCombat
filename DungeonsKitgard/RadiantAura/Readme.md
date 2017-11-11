@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RadiantAura 
 
-{link}
+http://codecombat.com/play/level/radiant-aura
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](RadiantAura.py)
 
 </li>
 </td>

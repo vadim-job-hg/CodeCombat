@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DoubleGaps 
 
-{link}
+https://codecombat.com/play/level/double-gaps
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](DoubleGaps.py)
 
 </li>
 </td>

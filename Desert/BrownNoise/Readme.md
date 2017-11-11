@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BrownNoise 
 
-{link}
+https://codecombat.com/play/level/brown-noise
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BrownNoise.py)
 
 </li>
 </td>

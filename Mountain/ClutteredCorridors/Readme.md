@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ClutteredCorridors 
 
-{link}
+https://codecombat.com/play/level/cluttered-corridors
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ClutteredCorridors.py)
 
 </li>
 </td>

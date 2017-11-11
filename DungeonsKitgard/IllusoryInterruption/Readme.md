@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# IllusoryInterruption 
 
-{link}
+http://codecombat.com/play/level/illusory-interruption
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](IllusoryInterruption.py)
 
 </li>
 </td>

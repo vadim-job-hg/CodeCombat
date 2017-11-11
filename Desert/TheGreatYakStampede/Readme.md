@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TheGreatYakStampede 
 
-{link}
+https://codecombat.com/play/level/the-great-yak-stampede
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](TheGreatYakStampede.py)
 
 </li>
 </td>

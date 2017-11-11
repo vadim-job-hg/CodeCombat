@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TouchOfDeath 
 
-{link}
+https://codecombat.com/play/level/touch-of-death
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](TouchOfDeath.py)
 
 </li>
 </td>

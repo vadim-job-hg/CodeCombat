@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# YakHeist 
 
-{link}
+http://codecombat.com/play/level/yak-heist
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](YakHeist.py)
 
 </li>
 </td>

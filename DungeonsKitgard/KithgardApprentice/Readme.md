@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# KithgardApprentice 
 
-{link}
+http://codecombat.com/play/level/kithgard-apprentice
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](KithgardApprentice.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SandMushrooms 
 
-{link}
+https://codecombat.com/play/level/sand-mushrooms
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](SandMushrooms.py)
 
 </li>
 </td>

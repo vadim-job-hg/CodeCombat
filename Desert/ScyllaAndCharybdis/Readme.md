@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ScyllaAndCharybdis 
 
-{link}
+https://codecombat.com/play/level/scylla-and-charybdis
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ScyllaAndCharybdis.py)
 
 </li>
 </td>

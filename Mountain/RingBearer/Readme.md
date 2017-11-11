@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RingBearer 
 
-{link}
+http://codecombat.com/play/level/ring-bearer
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](RingBearer.py)
 
 </li>
 </td>

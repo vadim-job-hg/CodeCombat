@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DanceOff 
 
-{link}
+https://codecombat.com/play/level/dance-off
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](DanceOff.py)
 
 </li>
 </td>

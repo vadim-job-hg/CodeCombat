@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BaitAndSwitch 
 
-{link}
+https://codecombat.com/play/level/bait-and-switch
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BaitAndSwitch.py)
 
 </li>
 </td>

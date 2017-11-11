@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PreferentialTreatment 
 
-{link}
+http://codecombat.com/play/level/preferential-treatment?course=56462f935afde0c6fd30fc8c&course-instance=56fc25d7263b0220002aff0e
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](PreferentialTreatment.py)
 
 </li>
 </td>

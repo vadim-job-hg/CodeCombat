@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ReindeerTender 
 
-{link}
+http://codecombat.com/play/level/reindeer-tender
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ReindeerTender.py)
 
 </li>
 </td>

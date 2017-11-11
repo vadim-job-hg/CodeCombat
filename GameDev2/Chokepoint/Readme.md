@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Chokepoint 
 
-{link}
+https://codecombat.com/play/level/chokepoint
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Chokepoint.py)
 
 </li>
 </td>

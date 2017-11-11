@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# UsualDay 
 
-{link}
+https://codecombat.com/play/level/usual-day
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](UsualDay.py)
 
 </li>
 </td>

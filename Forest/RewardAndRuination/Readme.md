@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RewardAndRuination 
 
-{link}
+http://codecombat.com/play/level/reward-and-ruination
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](RewardAndRuination.py)
 
 </li>
 </td>

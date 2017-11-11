@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ForestEvasion 
 
-{link}
+https://codecombat.com/play/level/forest-evasion
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ForestEvasion.py)
 
 </li>
 </td>

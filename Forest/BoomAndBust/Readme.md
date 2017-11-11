@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BoomAndBust 
 
-{link}
+http://codecombat.com/play/level/boom-and-bust
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](BoomAndBust.py)
 
 </li>
 </td>

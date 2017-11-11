@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AnonymousBank 
 
-{link}
+https://codecombat.com/play/level/anonymous-bank
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](AnonymousBank.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# KelvintaphPillars 
 
-{link}
+http://codecombat.com/play/level/kelvintaph-pillars
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](KelvintaphPillars.py)
 
 </li>
 </td>

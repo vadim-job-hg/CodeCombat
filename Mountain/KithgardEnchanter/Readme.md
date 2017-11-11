@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# KithgardEnchanter 
 
-{link}
+http://codecombat.com/play/level/kithgard-enchanter
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](KithgardEnchanter.py)
 
 </li>
 </td>

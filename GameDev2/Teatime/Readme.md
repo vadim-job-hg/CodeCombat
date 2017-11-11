@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Teatime 
 
-{link}
+https://codecombat.com/play/level/teatime
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Teatime.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TheWizardsPlane 
 
-{link}
+http://codecombat.com/play/level/the-wizards-plane
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](TheWizardsPlane.py)
 
 </li>
 </td>

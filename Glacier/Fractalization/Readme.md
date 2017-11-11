@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Fractalization 
 
-{link}
+https://codecombat.com/play/level/fractalization
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Fractalization.py)
 
 </li>
 </td>

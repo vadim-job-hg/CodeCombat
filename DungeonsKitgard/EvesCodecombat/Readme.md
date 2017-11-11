@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# EvesCodecombat 
 
-{link}
+https://codecombat.com/play/level/eves-codecombat
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](EvesCodecombat.py)
 
 </li>
 </td>

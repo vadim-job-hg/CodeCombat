@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# EpicFlagBattle 
 
-{link}
+http://codecombat.com/play/level/epic-flag-battle
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](EpicFlagBattle.py)
 
 </li>
 </td>

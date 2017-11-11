@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LostInTheStacks 
 
-{link}
+https://codecombat.com/play/level/lost-in-the-stacks
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](LostInTheStacks.py)
 
 </li>
 </td>

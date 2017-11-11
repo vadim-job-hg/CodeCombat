@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Wonderglade 
 
-{link}
+https://codecombat.com/play/level/wonderglade
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Wonderglade.py)
 
 </li>
 </td>

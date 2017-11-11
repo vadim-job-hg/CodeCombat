@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Hitman 
 
-{link}
+https://codecombat.com/play/level/hitman
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Hitman.py)
 
 </li>
 </td>

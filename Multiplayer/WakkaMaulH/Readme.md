@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# WakkaMaulH 
 
-{link}
+https://codecombat.com/play/ladder/wakka-maul
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](WakkaMaulH.py)
 
 </li>
 </td>

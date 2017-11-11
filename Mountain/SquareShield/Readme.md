@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SquareShield 
 
-{link}
+http://codecombat.com/play/level/square-shield
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](SquareShield.py)
 
 </li>
 </td>

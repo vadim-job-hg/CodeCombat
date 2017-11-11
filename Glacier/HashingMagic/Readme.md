@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# HashingMagic 
 
-{link}
+https://codecombat.com/play/level/hashing-magic
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](HashingMagic.py)
 
 </li>
 </td>

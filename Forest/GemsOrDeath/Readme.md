@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GemsOrDeath 
 
-{link}
+https://codecombat.com/play/level/gems-or-death
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](GemsOrDeath.py)
 
 </li>
 </td>

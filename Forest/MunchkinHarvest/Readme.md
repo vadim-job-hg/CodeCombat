@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MunchkinHarvest 
 
-{link}
+http://codecombat.com/play/level/munchkin-harvest
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](MunchkinHarvest.py)
 
 </li>
 </td>

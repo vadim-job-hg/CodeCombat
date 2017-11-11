@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LogicalConclusion 
 
-{link}
+http://codecombat.com/play/level/logical-conclusion
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](LogicalConclusion.py)
 
 </li>
 </td>

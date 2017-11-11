@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CubicMinefield 
 
-{link}
+http://codecombat.com/play/level/cubic-minefield
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](CubicMinefield.py)
 
 </li>
 </td>

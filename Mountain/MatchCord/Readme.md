@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MatchCord 
 
-{link}
+http://codecombat.com/play/level/match-cord
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](MatchCord.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ReapingFire 
 
-{link}
+http://codecombat.com/play/level/reaping-fire
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ReapingFire.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Ttestbraen 
 
-{link}
+http://codecombat.com/play/level/testbraen
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Ttestbraen.py)
 
 </li>
 </td>

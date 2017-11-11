@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ElementalWars 
 
-{link}
+http://codecombat.com/play/level/elemental-wars
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ElementalWars.py)
 
 </li>
 </td>

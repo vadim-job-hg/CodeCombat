@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DangerousTracks 
 
-{link}
+https://codecombat.com/play/level/dangerous-tracks
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](DangerousTracks.py)
 
 </li>
 </td>

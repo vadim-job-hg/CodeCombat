@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Brewball 
 
-{link}
+http://codecombat.com/play/level/brewball
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Brewball.py)
 
 </li>
 </td>

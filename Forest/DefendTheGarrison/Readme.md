@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DefendTheGarrison 
 
-{link}
+https://codecombat.com/play/level/defend-the-garrison
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](DefendTheGarrison.py)
 
 </li>
 </td>

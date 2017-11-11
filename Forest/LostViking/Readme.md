@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LostViking 
 
-{link}
+http://codecombat.com/play/level/lost-viking
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](LostViking.py)
 
 </li>
 </td>

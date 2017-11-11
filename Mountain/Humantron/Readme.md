@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Humantron 
 
-{link}
+https://codecombat.com/play/level/humantron
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](Humantron.py)
 
 </li>
 </td>

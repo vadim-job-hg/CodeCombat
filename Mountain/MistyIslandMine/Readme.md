@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MistyIslandMine 
 
-{link}
+https://codecombat.com/play/level/misty-island-mine
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](MistyIslandMine.py)
 
 </li>
 </td>

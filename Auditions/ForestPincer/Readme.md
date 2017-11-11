@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ForestPincer 
 
-{link}
+http://codecombat.com/play/level/forest-pincer
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](ForestPincer.py)
 
 </li>
 </td>

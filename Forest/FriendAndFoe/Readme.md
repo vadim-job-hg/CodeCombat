@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FriendAndFoe 
 
-{link}
+http://codecombat.com/play/level/friend-and-foe
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](FriendAndFoe.py)
 
 </li>
 </td>
