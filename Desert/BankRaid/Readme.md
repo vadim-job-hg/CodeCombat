@@ -1,4 +1,4 @@
-# BankRaid 
+# Bank Raid 
 
 https://codecombat.com/play/level/bank-raid
 <table>

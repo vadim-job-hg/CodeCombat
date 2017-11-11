@@ -1,4 +1,4 @@
-# BashEmAll 
+# Bash Em All 
 
 https://codecombat.com/play/level/bash-em-all?
 <table>

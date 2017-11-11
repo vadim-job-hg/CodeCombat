@@ -1,4 +1,4 @@
-# BaitAndSwitch 
+# Bait And Switch 
 
 https://codecombat.com/play/level/bait-and-switch
 <table>

@@ -1,4 +1,4 @@
-# AlchemicPower 
+# Alchemic Power 
 
 https://codecombat.com/play/level/alchemic-power
 <table>

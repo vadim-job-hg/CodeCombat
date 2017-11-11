@@ -1,4 +1,4 @@
-# BasinStampede 
+# Basin Stampede 
 
 http://codecombat.com/play/level/basin-stampede
 <table>
