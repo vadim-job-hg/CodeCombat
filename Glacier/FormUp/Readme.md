@@ -1,4 +1,4 @@
-# FormUp 
+# Form Up 
 
 https://codecombat.com/play/level/form-up
 <table>

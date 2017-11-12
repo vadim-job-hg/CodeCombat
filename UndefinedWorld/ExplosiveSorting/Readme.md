@@ -1,4 +1,4 @@
-# ExplosiveSorting 
+# Explosive Sorting 
 
 https://codecombat.com/play/level/explosive-sorting
 <table>
