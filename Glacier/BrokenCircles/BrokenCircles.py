@@ -45,7 +45,7 @@ while True:
         if (hero.distanceTo(nearest) >= threshold):
             hero.debug(angle, hero.distanceTo(nearest))
             hero.moveXY(ix, iy)
-            circle -= circle
+            circle -= 1
             break
 
 

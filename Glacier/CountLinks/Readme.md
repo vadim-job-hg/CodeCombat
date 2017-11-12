@@ -1,4 +1,4 @@
-# CountLinks 
+# Count Links 
 
 https://codecombat.com/play/level/count-links
 <table>

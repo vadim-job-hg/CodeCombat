@@ -1,4 +1,4 @@
-# DoubleQueue 
+# Double Queue 
 
 https://codecombat.com/play/level/double-queue
 <table>
