@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DistractionManeuver 
 
-{link}
+https://codecombat.com/play/level/distraction-maneuver
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DistractionManeuver.py)
 
 </li>
 </td>

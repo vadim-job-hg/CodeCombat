@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AlmostPerfectMinefield 
 
-{link}
+https://codecombat.com/play/level/almost-perfect-minefield
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AlmostPerfectMinefield.py)
 
 </li>
 </td>

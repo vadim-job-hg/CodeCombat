@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SafetyBlanket 
 
-{link}
+https://codecombat.com/play/level/safety-blanket
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SafetyBlanket.py)
 
 </li>
 </td>

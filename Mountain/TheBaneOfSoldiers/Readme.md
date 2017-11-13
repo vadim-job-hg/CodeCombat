@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# TheBaneOfSoldiers 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TheBaneOfSoldiers.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# KitesLanding 
 
-{link}
+http://codecombat.com/play/level/kites-landing
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](KitesLanding.py)
 
 </li>
 </td>

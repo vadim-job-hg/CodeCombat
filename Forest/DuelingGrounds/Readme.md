@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DuelingGrounds 
 
-{link}
+http://codecombat.com/play/level/dueling-grounds
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DuelingGrounds.py)
 
 </li>
 </td>

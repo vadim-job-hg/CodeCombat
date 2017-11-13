@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Harrowland 
 
-{link}
+http://codecombat.com/play/level/harrowland
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Harrowland.py)
 
 </li>
 </td>

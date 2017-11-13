@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SarvenSum 
 
-{link}
+https://codecombat.com/play/level/sarven-sum
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SarvenSum.py)
 
 </li>
 </td>

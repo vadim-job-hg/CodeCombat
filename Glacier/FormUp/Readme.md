@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Form Up 
 
-{link}
+https://codecombat.com/play/level/form-up
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](FormUp.py)
 
 </li>
 </td>

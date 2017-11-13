@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GuardDog 
 
-{link}
+https://codecombat.com/play/level/guard-dog
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GuardDog.py)
 
 </li>
 </td>

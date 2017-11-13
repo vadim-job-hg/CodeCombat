@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# Coded Orders 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CodedOrders.py)
 
 </li>
 </td>

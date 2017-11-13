@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PeskyYaks 
 
-{link}
+https://codecombat.com/play/level/pesky-yaks
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PeskyYaks.py)
 
 </li>
 </td>

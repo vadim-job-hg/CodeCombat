@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AuditionLevel 
 
-{link}
+http://codecombat.com/play/level/audition-level
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AuditionLevel.py)
 
 </li>
 </td>

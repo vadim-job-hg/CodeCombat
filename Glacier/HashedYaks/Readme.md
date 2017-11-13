@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# HashedYaks 
 
-{link}
+https://codecombat.com/play/level/hashed-yaks
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](HashedYaks.py)
 
 </li>
 </td>

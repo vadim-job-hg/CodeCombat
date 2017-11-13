@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# MultiplayerTreasureGrove 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MultiplayerTreasureGrove.py)
 
 </li>
 </td>

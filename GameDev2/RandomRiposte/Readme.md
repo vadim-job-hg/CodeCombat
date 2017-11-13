@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RandomRiposte 
 
-{link}
+https://codecombat.com/play/level/random-riposte
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RandomRiposte.py)
 
 </li>
 </td>

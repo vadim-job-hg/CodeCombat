@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ZigZagAndZoom 
 
-{link}
+http://codecombat.com/play/level/zig-zag-and-zoom
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ZigZagAndZoom.py)
 
 </li>
 </td>

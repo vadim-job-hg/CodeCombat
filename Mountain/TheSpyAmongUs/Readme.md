@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TheSpyAmongUs 
 
-{link}
+http://codecombat.com/play/level/the-spy-among-us
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TheSpyAmongUs.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# YetiAway 
 
-{link}
+https://codecombat.com/play/level/yeti-away
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](YetiAway.py)
 
 </li>
 </td>

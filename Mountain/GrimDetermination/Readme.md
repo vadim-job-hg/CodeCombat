@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GrimDetermination 
 
-{link}
+http://codecombat.com/play/level/grim-determination
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GrimDetermination.py)
 
 </li>
 </td>

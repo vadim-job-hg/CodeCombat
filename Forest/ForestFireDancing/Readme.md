@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ForestFireDancing 
 
-{link}
+http://codecombat.com/play/level/forest-fire-dancing
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ForestFireDancing.py)
 
 </li>
 </td>

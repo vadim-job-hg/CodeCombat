@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DisintegrationArrow 
 
-{link}
+https://codecombat.com/play/level/disintegration-arrow
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DisintegrationArrow.py)
 
 </li>
 </td>

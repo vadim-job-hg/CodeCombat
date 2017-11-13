@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ReindeerWakeup 
 
-{link}
+http://codecombat.com/play/level/reindeer-wakeup
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ReindeerWakeup.py)
 
 </li>
 </td>

@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# CopperMeadows 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CopperMeadows.py)
 
 </li>
 </td>

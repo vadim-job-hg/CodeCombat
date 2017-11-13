@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ReadingRumble 
 
-{link}
+https://codecombat.com/play/level/reading-rumble
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ReadingRumble.py)
 
 </li>
 </td>

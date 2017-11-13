@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FastAndFurryOus 
 
-{link}
+https://codecombat.com/play/level/fast-and-furry-ous
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](FastAndFurryOus.py)
 
 </li>
 </td>

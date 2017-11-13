@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TacticalTiming 
 
-{link}
+https://codecombat.com/play/level/tactical-timing
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TacticalTiming.py)
 
 </li>
 </td>

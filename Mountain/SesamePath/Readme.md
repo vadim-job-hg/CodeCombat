@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SesamePath 
 
-{link}
+http://codecombat.com/play/level/sesame-path
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SesamePath.py)
 
 </li>
 </td>

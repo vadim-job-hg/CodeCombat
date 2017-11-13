@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CrissCrossO 
 
-{link}
+http://codecombat.com/play/level/criss-cross?team=ogres
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CrissCrossO.py)
 
 </li>
 </td>

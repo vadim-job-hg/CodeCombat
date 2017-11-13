@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LeaveItToCleaver 
 
-{link}
+http://codecombat.com/play/level/leave-it-to-cleaver
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](LeaveItToCleaver.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# HitAndFreeze 
 
-{link}
+https://codecombat.com/play/level/hit-and-freeze
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](HitAndFreeze.py)
 
 </li>
 </td>

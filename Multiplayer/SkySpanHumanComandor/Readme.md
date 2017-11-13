@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SkySpanHumanComandor 
 
-{link}
+http://codecombat.com/play/ladder/sky-span
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SkySpanHumanComandor.py)
 
 </li>
 </td>

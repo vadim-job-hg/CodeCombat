@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Yakstraction 
 
-{link}
+https://codecombat.com/play/level/yakstraction
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Yakstraction.py)
 
 </li>
 </td>

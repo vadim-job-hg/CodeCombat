@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MadMaxerSellsOut 
 
-{link}
+https://codecombat.com/play/level/mad-maxer-sells-out
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MadMaxerSellsOut.py)
 
 </li>
 </td>

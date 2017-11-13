@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ThreeStepPassword 
 
-{link}
+https://codecombat.com/play/level/three-step-password
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ThreeStepPassword.py)
 
 </li>
 </td>

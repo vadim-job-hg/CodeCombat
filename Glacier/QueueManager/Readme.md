@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# QueueManager 
 
-{link}
+https://codecombat.com/play/level/queue-manager
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](QueueManager.py)
 
 </li>
 </td>

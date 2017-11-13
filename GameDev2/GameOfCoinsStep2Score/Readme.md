@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GameOfCoinsStep2Score 
 
-{link}
+https://codecombat.com/play/level/game-of-coins-step-2-score?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GameOfCoinsStep2Score.py)
 
 </li>
 </td>

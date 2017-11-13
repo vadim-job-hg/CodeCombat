@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Alchemic Power 
 
-{link}
+https://codecombat.com/play/level/alchemic-power
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AlchemicPower.py)
 
 </li>
 </td>

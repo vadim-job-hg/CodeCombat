@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PoliceRaid 
 
-{link}
+https://codecombat.com/play/level/police-raid
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PoliceRaid.py)
 
 </li>
 </td>

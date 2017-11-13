@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RangeFinder 
 
-{link}
+http://codecombat.com/play/level/range-finder
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RangeFinder.py)
 
 </li>
 </td>

@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# PrimePathing 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PrimePathing.py)
 
 </li>
 </td>

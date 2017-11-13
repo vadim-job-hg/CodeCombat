@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ChainOfCommand 
 
-{link}
+https://codecombat.com/play/level/chain-of-command
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ChainOfCommand.py)
 
 </li>
 </td>

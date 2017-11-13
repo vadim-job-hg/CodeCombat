@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Antipodes 
 
-{link}
+https://codecombat.com/play/level/antipodes
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Antipodes.py)
 
 </li>
 </td>

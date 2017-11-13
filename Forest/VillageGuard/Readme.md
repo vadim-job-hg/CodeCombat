@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# VillageGuard 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](VillageGuard.py)
 
 </li>
 </td>

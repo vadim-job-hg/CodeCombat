@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# HarrowlandAlt 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](HarrowlandAlt.py)
 
 </li>
 </td>

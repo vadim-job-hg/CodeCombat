@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DesertDelta 
 
-{link}
+https://codecombat.com/play/level/desert-delta
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DesertDelta.py)
 
 </li>
 </td>

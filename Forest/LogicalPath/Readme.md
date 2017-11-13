@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LogicalPath 
 
-{link}
+http://codecombat.com/play/level/logical-path
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](LogicalPath.py)
 
 </li>
 </td>

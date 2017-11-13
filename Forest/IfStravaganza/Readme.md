@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# IfStravaganza 
 
-{link}
+https://codecombat.com/play/level/if-stravaganza
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](IfStravaganza.py)
 
 </li>
 </td>

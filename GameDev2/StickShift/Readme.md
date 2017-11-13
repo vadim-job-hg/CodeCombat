@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# StickShift 
 
-{link}
+https://codecombat.com/play/level/stick-shift
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](StickShift.py)
 
 </li>
 </td>

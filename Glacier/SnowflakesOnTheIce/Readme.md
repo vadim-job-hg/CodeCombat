@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SnowflakesOnTheIce 
 
-{link}
+https://codecombat.com/play/level/snowflakes-on-the-ice?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SnowflakesOnTheIce.py)
 
 </li>
 </td>

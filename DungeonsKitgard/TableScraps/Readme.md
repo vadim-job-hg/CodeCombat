@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TableScraps 
 
-{link}
+https://codecombat.com/play/level/table-scraps
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TableScraps.py)
 
 </li>
 </td>

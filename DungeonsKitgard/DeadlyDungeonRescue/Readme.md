@@ -1,6 +1,6 @@
 # Deadly Dungeon Rescue
 
-{link}
+http://codecombat.com/play/level/deadly-dungeon-rescue
 <table>
 <tr>
 <td>

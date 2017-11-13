@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# Thunderhooves 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Thunderhooves.py)
 
 </li>
 </td>

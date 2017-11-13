@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# StormingTheFarmhouse 
 
-{link}
+http://codecombat.com/play/level/storming-the-farmhouse
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](StormingTheFarmhouse.py)
 
 </li>
 </td>

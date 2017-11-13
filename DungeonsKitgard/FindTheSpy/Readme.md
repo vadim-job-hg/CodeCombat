@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FindTheSpy 
 
-{link}
+http://codecombat.com/play/level/find-the-spy?skip_protect_api=false
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](FindTheSpy.py)
 
 </li>
 </td>

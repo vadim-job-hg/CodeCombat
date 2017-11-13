@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# ClashOfClones 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ClashOfClones.py)
 
 </li>
 </td>

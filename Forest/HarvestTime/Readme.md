@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# HarvestTime 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](HarvestTime.py)
 
 </li>
 </td>

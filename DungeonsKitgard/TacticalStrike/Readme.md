@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TacticalStrike 
 
-{link}
+http://codecombat.com/play/level/tactical-strike
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TacticalStrike.py)
 
 </li>
 </td>

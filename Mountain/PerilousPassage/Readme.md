@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PerilousPassage 
 
-{link}
+https://codecombat.com/play/level/perilous-passage
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PerilousPassage.py)
 
 </li>
 </td>

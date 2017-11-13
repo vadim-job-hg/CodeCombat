@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TombGhost 
 
-{link}
+https://codecombat.com/play/level/tomb-ghost
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TombGhost.py)
 
 </li>
 </td>

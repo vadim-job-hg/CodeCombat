@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# TrueNames 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TrueNames.py)
 
 </li>
 </td>

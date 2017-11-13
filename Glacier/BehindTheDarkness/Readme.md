@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Behind The Darkness 
 
-{link}
+https://codecombat.com/play/level/behind-the-darkness
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BehindTheDarkness.py)
 
 </li>
 </td>

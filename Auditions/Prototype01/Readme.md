@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Prototype01 
 
-{link}
+http://codecombat.com/play/level/prototype-01
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Prototype01.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# NineGems 
 
-{link}
+https://codecombat.com/play/level/nine-gems
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](NineGems.py)
 
 </li>
 </td>

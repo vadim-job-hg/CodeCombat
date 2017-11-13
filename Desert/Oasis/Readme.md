@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# Oasis 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Oasis.py)
 
 </li>
 </td>

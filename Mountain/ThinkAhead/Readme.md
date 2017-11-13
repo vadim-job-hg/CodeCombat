@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ThinkAhead 
 
-{link}
+http://codecombat.com/play/level/think-ahead
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ThinkAhead.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Berserker 
 
-{link}
+https://codecombat.com/play/level/berserker
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Berserker.py)
 
 </li>
 </td>

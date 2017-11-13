@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# WanderingSouls 
 
-{link}
+https://codecombat.com/play/level/wandering-souls
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](WanderingSouls.py)
 
 </li>
 </td>

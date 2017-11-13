@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GridSearch 
 
-{link}
+http://codecombat.com/play/level/grid-search
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GridSearch.py)
 
 </li>
 </td>

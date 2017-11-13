@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# CloudripBrawl 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CloudripBrawl.py)
 
 </li>
 </td>

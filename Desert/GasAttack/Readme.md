@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GasAttack 
 
-{link}
+http://codecombat.com/play/level/gas-attack
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GasAttack.py)
 
 </li>
 </td>

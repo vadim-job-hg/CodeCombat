@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Intervention 
 
-{link}
+http://codecombat.com/play/level/intervention
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Intervention.py)
 
 </li>
 </td>

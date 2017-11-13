@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BinarySearch 
 
-{link}
+http://codecombat.com/play/level/binary-search
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BinarySearch.py)
 
 </li>
 </td>

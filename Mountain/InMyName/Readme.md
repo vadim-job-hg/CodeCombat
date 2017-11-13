@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# InMyName 
 
-{link}
+http://codecombat.com/play/level/in-my-name
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](InMyName.py)
 
 </li>
 </td>

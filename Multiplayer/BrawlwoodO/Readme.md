@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BrawlwoodO 
 
-{link}
+http://codecombat.com/play/level/brawlwood?team=ogres
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BrawlwoodO.py)
 
 </li>
 </td>

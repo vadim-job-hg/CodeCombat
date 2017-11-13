@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DangerValley 
 
-{link}
+http://codecombat.com/play/level/danger-valley
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DangerValley.py)
 
 </li>
 </td>

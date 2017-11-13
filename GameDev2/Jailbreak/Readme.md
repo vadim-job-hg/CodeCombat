@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Jailbreak 
 
-{link}
+https://codecombat.com/play/level/jailbreak
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Jailbreak.py)
 
 </li>
 </td>

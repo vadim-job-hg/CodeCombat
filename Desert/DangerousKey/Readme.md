@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DangerousKey 
 
-{link}
+https://codecombat.com/play/level/dangerous-key
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DangerousKey.py)
 
 </li>
 </td>

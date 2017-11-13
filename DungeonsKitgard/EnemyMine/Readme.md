@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# EnemyMine 
 
-{link}
+https://codecombat.com/play/level/enemy-mine
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](EnemyMine.py)
 
 </li>
 </td>

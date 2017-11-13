@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# OneWrongStep 
 
-{link}
+https://codecombat.com/play/level/one-wrong-step
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](OneWrongStep.py)
 
 </li>
 </td>

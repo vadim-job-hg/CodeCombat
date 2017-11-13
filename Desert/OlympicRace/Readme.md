@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# OlympicRace 
 
-{link}
+https://codecombat.com/play/level/olympic-race
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](OlympicRace.py)
 
 </li>
 </td>

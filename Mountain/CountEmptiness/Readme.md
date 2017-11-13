@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CountEmptiness 
 
-{link}
+https://codecombat.com/play/level/count-emptiness
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CountEmptiness.py)
 
 </li>
 </td>

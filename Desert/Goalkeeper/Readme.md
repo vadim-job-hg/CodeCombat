@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Goalkeeper 
 
-{link}
+http://codecombat.com/play/level/goalkeeper
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Goalkeeper.py)
 
 </li>
 </td>

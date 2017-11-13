@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MedicSchool 
 
-{link}
+https://codecombat.com/play/level/medic-school
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MedicSchool.py)
 
 </li>
 </td>

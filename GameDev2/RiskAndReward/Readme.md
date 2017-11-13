@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RiskAndReward 
 
-{link}
+https://codecombat.com/play/level/risk-and-reward
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RiskAndReward.py)
 
 </li>
 </td>

@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# ZeroSum 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ZeroSum.py)
 
 </li>
 </td>

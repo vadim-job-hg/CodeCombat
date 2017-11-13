@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ExtraExtrapolation 
 
-{link}
+http://codecombat.com/play/level/extra-extrapolation
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ExtraExtrapolation.py)
 
 </li>
 </td>

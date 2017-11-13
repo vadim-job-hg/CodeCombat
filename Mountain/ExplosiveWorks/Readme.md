@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ExplosiveWorks 
 
-{link}
+https://codecombat.com/play/level/explosive-works
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ExplosiveWorks.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CashOut 
 
-{link}
+http://codecombat.com/play/level/cash-out
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CashOut.py)
 
 </li>
 </td>

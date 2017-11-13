@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BlindDistance 
 
-{link}
+https://codecombat.com/play/level/blind-distance
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BlindDistance.py)
 
 </li>
 </td>

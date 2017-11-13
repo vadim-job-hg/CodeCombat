@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# ShineGetter 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ShineGetter.py)
 
 </li>
 </td>

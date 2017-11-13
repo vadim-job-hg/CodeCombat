@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MadMaxerStrikesBack 
 
-{link}
+http://codecombat.com/play/level/mad-maxer-strikes-back
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MadMaxerStrikesBack.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FromDustToDust 
 
-{link}
+https://codecombat.com/play/level/from-dust-to-dust
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](FromDustToDust.py)
 
 </li>
 </td>

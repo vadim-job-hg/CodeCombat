@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ManiacMunchkins 
 
-{link}
+https://codecombat.com/play/level/maniac-munchkins
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ManiacMunchkins.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# KithgardsSecret 
 
-{link}
+https://codecombat.com/play/level/kithgards-secret
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](KithgardsSecret.py)
 
 </li>
 </td>

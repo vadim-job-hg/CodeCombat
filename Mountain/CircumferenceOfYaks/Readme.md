@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CircumferenceOfYaks 
 
-{link}
+https://codecombat.com/play/level/circumference-of-yaks
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CircumferenceOfYaks.py)
 
 </li>
 </td>

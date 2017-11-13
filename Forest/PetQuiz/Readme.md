@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PetQuiz 
 
-{link}
+https://codecombat.com/play/level/pet-quiz
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PetQuiz.py)
 
 </li>
 </td>

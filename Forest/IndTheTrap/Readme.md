@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# IndTheTrap 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](IndTheTrap.py)
 
 </li>
 </td>

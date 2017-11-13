@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# EchoOfWar 
 
-{link}
+https://codecombat.com/play/level/echo-of-war
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](EchoOfWar.py)
 
 </li>
 </td>

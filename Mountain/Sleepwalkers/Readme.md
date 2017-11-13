@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Sleepwalkers 
 
-{link}
+https://codecombat.com/play/level/sleepwalkers
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Sleepwalkers.py)
 
 </li>
 </td>

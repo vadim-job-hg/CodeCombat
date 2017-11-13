@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DontRushBeQuiet 
 
-{link}
+http://codecombat.com/play/level/dont-rush-be-quiet
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DontRushBeQuiet.py)
 
 </li>
 </td>

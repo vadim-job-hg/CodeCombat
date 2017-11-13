@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BurlboleGrove 
 
-{link}
+http://codecombat.com/play/level/burlbole-grove
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BurlboleGrove.py)
 
 </li>
 </td>

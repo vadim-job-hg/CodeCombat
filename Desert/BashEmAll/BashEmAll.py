@@ -1,7 +1,3 @@
-# https://codecombat.com/play/level/bash-em-all?
-# Будь осторожен с ограми .
-# Это специально обученные, обезжиренное убер-огры. Они очень сильны.
-# Ключевое слово: "обезжиренные"
 while True:
     enemy = hero.findNearestEnemy()
     if enemy:

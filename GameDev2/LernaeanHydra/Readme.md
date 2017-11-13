@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LernaeanHydra 
 
-{link}
+https://codecombat.com/play/level/lernaean-hydra
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](LernaeanHydra.py)
 
 </li>
 </td>

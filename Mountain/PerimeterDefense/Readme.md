@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PerimeterDefense 
 
-{link}
+https://codecombat.com/play/level/perimeter-defense
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PerimeterDefense.py)
 
 </li>
 </td>

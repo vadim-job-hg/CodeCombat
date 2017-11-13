@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MakeAdvances 
 
-{link}
+https://codecombat.com/play/level/make-advances
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MakeAdvances.py)
 
 </li>
 </td>

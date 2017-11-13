@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RectangleFormation 
 
-{link}
+https://codecombat.com/play/level/rectangle-formation
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RectangleFormation.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CloseEncounters 
 
-{link}
+http://codecombat.com/play/level/close-encounters
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CloseEncounters.py)
 
 </li>
 </td>

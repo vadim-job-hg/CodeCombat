@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ChaseThem 
 
-{link}
+https://codecombat.com/play/level/chase-them
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ChaseThem.py)
 
 </li>
 </td>

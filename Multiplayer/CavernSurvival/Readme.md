@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# CavernSurvival 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CavernSurvival.py)
 
 </li>
 </td>

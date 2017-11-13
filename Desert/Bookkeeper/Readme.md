@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Bookkeeper 
 
-{link}
+http://codecombat.com/play/level/bookkeeper
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Bookkeeper.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ShortSightedBurl 
 
-{link}
+https://codecombat.com/play/level/short-sighted-burl
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ShortSightedBurl.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FlagCombat 
 
-{link}
+http://codecombat.com/play/level/flag-combat
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](FlagCombat.py)
 
 </li>
 </td>

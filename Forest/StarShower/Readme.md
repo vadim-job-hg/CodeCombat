@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# StarShower 
 
-{link}
+https://codecombat.com/play/level/star-shower
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](StarShower.py)
 
 </li>
 </td>

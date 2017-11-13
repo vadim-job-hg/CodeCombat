@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MinedGems 
 
-{link}
+https://codecombat.com/play/level/mined-gems
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MinedGems.py)
 
 </li>
 </td>

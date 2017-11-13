@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# WishingWell 
 
-{link}
+http://codecombat.com/play/level/wishing-well
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](WishingWell.py)
 
 </li>
 </td>

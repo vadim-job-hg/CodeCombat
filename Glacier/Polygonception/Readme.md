@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Polygonception 
 
-{link}
+https://codecombat.com/play/level/polygonception
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Polygonception.py)
 
 </li>
 </td>

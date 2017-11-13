@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DoubleAgent 
 
-{link}
+https://codecombat.com/play/level/double-agent
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DoubleAgent.py)
 
 </li>
 </td>

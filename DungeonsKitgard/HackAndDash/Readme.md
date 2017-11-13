@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# HackAndDash 
 
-{link}
+http://codecombat.com/play/level/hack-and-dash
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](HackAndDash.py)
 
 </li>
 </td>

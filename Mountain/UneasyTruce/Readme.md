@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# UneasyTruce 
 
-{link}
+https://codecombat.com/play/level/uneasy-truce
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](UneasyTruce.py)
 
 </li>
 </td>

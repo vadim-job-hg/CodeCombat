@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# QuickFort 
 
-{link}
+https://codecombat.com/play/level/quick-fort
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](QuickFort.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TheHuntBegins 
 
-{link}
+http://codecombat.com/play/level/the-hunt-begins
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TheHuntBegins.py)
 
 </li>
 </td>

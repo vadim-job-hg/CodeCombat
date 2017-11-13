@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RunForGold 
 
-{link}
+https://codecombat.com/play/level/run-for-gold?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RunForGold.py)
 
 </li>
 </td>

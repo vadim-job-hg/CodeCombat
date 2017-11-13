@@ -1,32 +1,32 @@
-# http://codecombat.com/play/level/bookkeeper
-def attack(target):
-    if target:
-        if (hero.isReady("bash")):
-            hero.bash(target)
-        elif (hero.canCast('chain-lightning', target)):
-            hero.cast('chain-lightning', target)
-        else:
-            hero.attack(target)
-
-
-eCount = 0
-iCount = 0
-hero.wait(1)
-while True:  # enemy = hero.findNearestEnemy()
+defeated = 0
+while True:
     enemy = hero.findNearestEnemy()
-    # item  = hero.findNearestItem()
+    if enemy:
+        hero.attack(enemy)
+        if enemy.health <= 0:
+            defeated += 1
+    if hero.time > 15:
+        break
+
+hero.moveXY(59, 33)
+hero.say(defeated)
+gold = 0
+while True:
     item = hero.findNearestItem()
-    if (enemy):
-        attack(enemy)
-        attack(enemy)
-        eCount = eCount + 1
-        iCount = 0
-        hero.wait(1)
-    elif (item and hero.now() <= 30):
+    if(item):
         hero.moveXY(item.pos.x, item.pos.y)
-        iCount = hero.gold
-        eCount = 0
-    else:
-        hero.moveXY(59, 33)
-        if (eCount > 0 or iCount > 0):
-            hero.say(eCount + iCount)
+    if hero.time > 30:
+        break
+
+hero.say(hero.gold)
+defeated = 0
+while True:
+    enemy = hero.findNearestEnemy()
+    if enemy:
+        hero.attack(enemy)
+        if enemy.health <= 0:
+            defeated += 1
+    if hero.time > 45:
+        break
+hero.moveXY(59, 33)
+hero.say(defeated)

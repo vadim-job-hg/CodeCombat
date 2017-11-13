@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ArrowproofWolf 
 
-{link}
+https://codecombat.com/play/level/arrowproof-wolf
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ArrowproofWolf.py)
 
 </li>
 </td>

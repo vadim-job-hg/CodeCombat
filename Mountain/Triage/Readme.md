@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Triage 
 
-{link}
+https://codecombat.com/play/level/triage
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Triage.py)
 
 </li>
 </td>

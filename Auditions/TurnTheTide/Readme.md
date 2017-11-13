@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TurnTheTide 
 
-{link}
+http://codecombat.com/play/level/turn-the-tide
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TurnTheTide.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MadMaxerRedemption 
 
-{link}
+https://codecombat.com/play/level/mad-maxer-redemption
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MadMaxerRedemption.py)
 
 </li>
 </td>

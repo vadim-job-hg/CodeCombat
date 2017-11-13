@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# MunchkinSwarm 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MunchkinSwarm.py)
 
 </li>
 </td>

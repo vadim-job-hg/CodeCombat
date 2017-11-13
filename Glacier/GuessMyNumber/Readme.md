@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GuessMyNumber 
 
-{link}
+https://codecombat.com/play/level/guess-my-number
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GuessMyNumber.py)
 
 </li>
 </td>

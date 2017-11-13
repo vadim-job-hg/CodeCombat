@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# СursedValley 
 
-{link}
+http://codecombat.com/play/level/cursed-valley
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](СursedValley.py)
 
 </li>
 </td>

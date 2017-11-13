@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TwinsPower 
 
-{link}
+https://codecombat.com/play/level/twins-power
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TwinsPower.py)
 
 </li>
 </td>

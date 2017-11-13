@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GameOfCoinsStep4PowerUps 
 
-{link}
+https://codecombat.com/play/level/game-of-coins-step-4-power-ups?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GameOfCoinsStep4PowerUps.py)
 
 </li>
 </td>

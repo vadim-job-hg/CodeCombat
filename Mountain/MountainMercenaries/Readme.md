@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# MountainMercenaries 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MountainMercenaries.py)
 
 </li>
 </td>

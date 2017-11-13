@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# TheSkeleton 
 
-{link}
+http://codecombat.com/play/level/the-skeleton
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](TheSkeleton.py)
 
 </li>
 </td>

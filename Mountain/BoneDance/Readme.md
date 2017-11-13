@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BoneDance 
 
-{link}
+https://codecombat.com/play/level/bone-dance
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BoneDance.py)
 
 </li>
 </td>

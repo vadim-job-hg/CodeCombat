@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# FootstepsInAMaze 
 
-{link}
+https://codecombat.com/play/level/footsteps-in-a-maze
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](FootstepsInAMaze.py)
 
 </li>
 </td>

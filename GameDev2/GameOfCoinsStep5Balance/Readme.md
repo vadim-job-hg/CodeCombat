@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GameOfCoinsStep5Balance 
 
-{link}
+https://codecombat.com/play/level/game-of-coins-step-5-balance?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GameOfCoinsStep5Balance.py)
 
 </li>
 </td>

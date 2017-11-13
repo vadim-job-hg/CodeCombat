@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MirageMaker 
 
-{link}
+http://codecombat.com/play/level/mirage-maker
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MirageMaker.py)
 
 </li>
 </td>

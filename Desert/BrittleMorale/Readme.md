@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Brittle Morale 
 
-{link}
+http://codecombat.com/play/level/brittle-morale
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BrittleMorale.py)
 
 </li>
 </td>

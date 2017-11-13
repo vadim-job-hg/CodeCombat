@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GdCollides 
 
-{link}
+https://codecombat.com/play/level/gd-collides
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GdCollides.py)
 
 </li>
 </td>

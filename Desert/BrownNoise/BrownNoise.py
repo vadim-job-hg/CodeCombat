@@ -6,6 +6,8 @@ pet.moveXY(32, 28)
 hero.moveXY(10, 19)
 # Distract the skeleton.
 pet.distractionNoise()
+enemy = hero.findNearestEnemy()
+hero.backstab(enemy)
 # Sneak while the skeleton is distracted.
 hero.moveXY(10, 46)
 hero.moveXY(49, 47)

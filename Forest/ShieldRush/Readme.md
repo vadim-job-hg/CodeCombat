@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# ShieldRush 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ShieldRush.py)
 
 </li>
 </td>

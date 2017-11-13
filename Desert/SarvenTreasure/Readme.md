@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SarvenTreasure 
 
-{link}
+http://codecombat.com/play/level/sarven-treasure
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SarvenTreasure.py)
 
 </li>
 </td>

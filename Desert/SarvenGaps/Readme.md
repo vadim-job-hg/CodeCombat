@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SarvenGaps 
 
-{link}
+http://codecombat.com/play/level/sarven-gaps
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SarvenGaps.py)
 
 </li>
 </td>

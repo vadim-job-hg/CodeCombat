@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Bash Em All 
 
-{link}
+https://codecombat.com/play/level/bash-em-all?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BashEmAll.py)
 
 </li>
 </td>

@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# KelvintaphCrusader 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](KelvintaphCrusader.py)
 
 </li>
 </td>

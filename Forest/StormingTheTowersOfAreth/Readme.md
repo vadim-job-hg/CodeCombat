@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# StormingTheTowersOfAreth 
 
-{link}
+http://codecombat.com/play/level/storming-the-towers-of-areth
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](StormingTheTowersOfAreth.py)
 
 </li>
 </td>

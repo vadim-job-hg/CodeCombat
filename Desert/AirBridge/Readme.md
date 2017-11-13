@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Air Bridge 
 
-{link}
+https://codecombat.com/play/level/air-bridge
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AirBridge.py)
 
 </li>
 </td>

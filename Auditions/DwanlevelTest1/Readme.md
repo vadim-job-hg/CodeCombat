@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DwanlevelTest1 
 
-{link}
+http://codecombat.com/play/level/swanlevel-test-1
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DwanlevelTest1.py)
 
 </li>
 </td>

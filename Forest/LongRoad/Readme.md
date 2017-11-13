@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LongRoad 
 
-{link}
+https://codecombat.com/play/level/long-road
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](LongRoad.py)
 
 </li>
 </td>

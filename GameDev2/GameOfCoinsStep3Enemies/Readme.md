@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# GameOfCoinsStep3Enemies 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GameOfCoinsStep3Enemies.py)
 
 </li>
 </td>

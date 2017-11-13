@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# VolcanoFighters 
 
-{link}
+https://codecombat.com/play/level/volcano-fighters
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](VolcanoFighters.py)
 
 </li>
 </td>

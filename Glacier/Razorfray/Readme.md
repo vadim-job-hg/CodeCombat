@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Razorfray 
 
-{link}
+https://codecombat.com/play/level/razorfray
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Razorfray.py)
 
 </li>
 </td>

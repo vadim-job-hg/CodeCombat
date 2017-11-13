@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Alchemic Stack 
 
-{link}
+https://codecombat.com/play/level/alchemic-stack
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AlchemicStack.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SkeletonPuzzle 
 
-{link}
+https://codecombat.com/play/level/skeleton-puzzle
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SkeletonPuzzle.py)
 
 </li>
 </td>

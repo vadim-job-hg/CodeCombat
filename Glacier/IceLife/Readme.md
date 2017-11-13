@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# IceLife 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](IceLife.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CanyonOfStorms 
 
-{link}
+https://codecombat.com/play/level/canyon-of-storms
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CanyonOfStorms.py)
 
 </li>
 </td>

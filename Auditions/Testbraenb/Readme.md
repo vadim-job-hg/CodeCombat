@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Testbraenb 
 
-{link}
+http://codecombat.com/play/level/testbraenb
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Testbraenb.py)
 
 </li>
 </td>

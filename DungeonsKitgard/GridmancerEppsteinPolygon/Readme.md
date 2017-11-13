@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GridmancerEppsteinPolygon 
 
-{link}
+http://codecombat.com/play/level/gridmancer-eppstein-polygon
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GridmancerEppsteinPolygon.py)
 
 </li>
 </td>

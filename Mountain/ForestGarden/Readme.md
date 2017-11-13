@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ForestGarden 
 
-{link}
+https://codecombat.com/play/level/forest-garden
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ForestGarden.py)
 
 </li>
 </td>

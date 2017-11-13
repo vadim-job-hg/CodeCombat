@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PassingThrough 
 
-{link}
+https://codecombat.com/play/level/passing-through
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PassingThrough.py)
 
 </li>
 </td>

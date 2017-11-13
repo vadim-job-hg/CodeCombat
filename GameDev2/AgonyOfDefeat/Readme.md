@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AgonyOfDefeat 
 
-{link}
+https://codecombat.com/play/level/agony-of-defeat
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AgonyOfDefeat.py)
 
 </li>
 </td>

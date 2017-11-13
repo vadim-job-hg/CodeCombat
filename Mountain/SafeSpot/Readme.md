@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SafeSpot 
 
-{link}
+https://codecombat.com/play/level/safe-spot
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SafeSpot.py)
 
 </li>
 </td>

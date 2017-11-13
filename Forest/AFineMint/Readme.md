@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AFineMint 
 
-{link}
+http://codecombat.com/play/level/a-fine-mint
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AFineMint.py)
 
 </li>
 </td>

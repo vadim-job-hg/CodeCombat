@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DiamondDozen 
 
-{link}
+http://codecombat.com/play/level/diamond-dozen
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DiamondDozen.py)
 
 </li>
 </td>

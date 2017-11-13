@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# SignalCorpse 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SignalCorpse.py)
 
 </li>
 </td>

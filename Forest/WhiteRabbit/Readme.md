@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# WhiteRabbit 
 
-{link}
+https://codecombat.com/play/level/white-rabbit
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](WhiteRabbit.py)
 
 </li>
 </td>

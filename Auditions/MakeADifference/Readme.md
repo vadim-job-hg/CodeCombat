@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MakeADifference 
 
-{link}
+http://codecombat.com/play/level/make-a-difference
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MakeADifference.py)
 
 </li>
 </td>

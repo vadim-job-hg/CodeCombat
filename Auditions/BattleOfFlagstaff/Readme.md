@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BattleOfFlagstaff 
 
-{link}
+http://codecombat.com/play/level/battle-of-flagstaff
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BattleOfFlagstaff.py)
 
 </li>
 </td>

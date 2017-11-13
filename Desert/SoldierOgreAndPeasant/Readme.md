@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SoldierOgreAndPeasant 
 
-{link}
+https://codecombat.com/play/level/soldier-ogre-and-peasant
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SoldierOgreAndPeasant.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PetAdjutant 
 
-{link}
+https://codecombat.com/play/level/pet-adjutant
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PetAdjutant.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Array Leve Desert 
 
-{link}
+https://codecombat.com/play/level/array-level-desert
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ArrayLevelDesert.py)
 
 </li>
 </td>

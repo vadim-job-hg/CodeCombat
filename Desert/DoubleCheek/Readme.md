@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DoubleCheek 
 
-{link}
+https://codecombat.com/play/level/double-cheek
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DoubleCheek.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SubarrayRetreat 
 
-{link}
+https://codecombat.com/play/level/subarray-retreat?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SubarrayRetreat.py)
 
 </li>
 </td>

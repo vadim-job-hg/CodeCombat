@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# GameOfCoinsStep1Layout 
 
-{link}
+https://codecombat.com/play/level/game-of-coins-step-1-layout?
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](GameOfCoinsStep1Layout.py)
 
 </li>
 </td>

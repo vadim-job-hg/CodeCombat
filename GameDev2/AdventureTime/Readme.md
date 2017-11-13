@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AdventureTime 
 
-{link}
+https://codecombat.com/play/level/adventure-time
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AdventureTime.py)
 
 </li>
 </td>

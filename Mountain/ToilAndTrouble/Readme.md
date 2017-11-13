@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# ToilAndTrouble 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ToilAndTrouble.py)
 
 </li>
 </td>

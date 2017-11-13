@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# SummitsGate 
 
 {link}
 <table>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SummitsGate.py)
 
 </li>
 </td>

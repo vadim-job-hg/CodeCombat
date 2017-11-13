@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# HotGate 
 
-{link}
+https://codecombat.com/play/level/hot-gate
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](HotGate.py)
 
 </li>
 </td>

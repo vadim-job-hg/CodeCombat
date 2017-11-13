@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RampageUnleashed 
 
-{link}
+http://codecombat.com/play/level/rampage-unleashed
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RampageUnleashed.py)
 
 </li>
 </td>

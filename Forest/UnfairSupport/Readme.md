@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# UnfairSupport 
 
-{link}
+https://codecombat.com/play/level/unfair-support
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](UnfairSupport.py)
 
 </li>
 </td>

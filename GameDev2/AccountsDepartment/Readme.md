@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# AccountsDepartment 
 
-{link}
+https://codecombat.com/play/level/accounts-department
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](AccountsDepartment.py)
 
 </li>
 </td>

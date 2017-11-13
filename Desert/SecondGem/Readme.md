@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SecondGem 
 
-{link}
+https://codecombat.com/play/level/second-gem
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SecondGem.py)
 
 </li>
 </td>

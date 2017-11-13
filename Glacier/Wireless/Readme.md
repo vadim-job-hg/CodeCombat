@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Wireless 
 
-{link}
+https://codecombat.com/play/level/wireless
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Wireless.py)
 
 </li>
 </td>

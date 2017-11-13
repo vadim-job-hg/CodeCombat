@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# KeyTraps 
 
-{link}
+https://codecombat.com/play/level/key-traps
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](KeyTraps.py)
 
 </li>
 </td>

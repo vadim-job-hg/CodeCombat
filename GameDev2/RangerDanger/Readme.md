@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RangerDanger 
 
-{link}
+https://codecombat.com/play/level/ranger-danger
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RangerDanger.py)
 
 </li>
 </td>

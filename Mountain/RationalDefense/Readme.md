@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RationalDefense 
 
-{link}
+https://codecombat.com/play/level/rational-defense
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RationalDefense.py)
 
 </li>
 </td>

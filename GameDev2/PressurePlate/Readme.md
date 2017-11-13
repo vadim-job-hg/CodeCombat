@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# PressurePlate 
 
-{link}
+https://codecombat.com/play/level/pressure-plate
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](PressurePlate.py)
 
 </li>
 </td>

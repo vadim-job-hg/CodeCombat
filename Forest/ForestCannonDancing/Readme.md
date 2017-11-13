@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# ForestCannonDancing 
 
-{link}
+https://codecombat.com/play/level/forest-cannon-dancing
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](ForestCannonDancing.py)
 
 </li>
 </td>

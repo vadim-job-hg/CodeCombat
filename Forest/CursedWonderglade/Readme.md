@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# CursedWonderglade 
 
-{link}
+https://codecombat.com/play/level/cursed-wonderglade
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](CursedWonderglade.py)
 
 </li>
 </td>

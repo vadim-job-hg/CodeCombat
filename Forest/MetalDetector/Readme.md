@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MetalDetector 
 
-{link}
+https://codecombat.com/play/level/metal-detector
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MetalDetector.py)
 
 </li>
 </td>

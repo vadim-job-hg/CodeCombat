@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LinkedKeys 
 
-{link}
+https://codecombat.com/play/level/linked-keys
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](LinkedKeys.py)
 
 </li>
 </td>

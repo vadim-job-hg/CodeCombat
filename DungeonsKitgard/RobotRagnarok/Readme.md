@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# RobotRagnarok 
 
-{link}
+http://codecombat.com/play/level/robot-ragnarok
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](RobotRagnarok.py)
 
 </li>
 </td>

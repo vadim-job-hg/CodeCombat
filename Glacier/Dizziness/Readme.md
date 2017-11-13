@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Dizziness 
 
-{link}
+https://codecombat.com/play/level/dizziness
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](Dizziness.py)
 
 </li>
 </td>

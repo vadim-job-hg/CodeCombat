@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MushroomNoise 
 
-{link}
+https://codecombat.com/play/level/mushroom-noise
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MushroomNoise.py)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BrawlerHunt 
 
-{link}
+https://codecombat.com/play/level/brawler-hunt
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BrawlerHunt.py)
 
 </li>
 </td>

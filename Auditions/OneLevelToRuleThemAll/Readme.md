@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# OneLevelToRuleThemAll 
 
-{link}
+http://codecombat.com/play/level/one-level-to-rule-them-all
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](OneLevelToRuleThemAll.py)
 
 </li>
 </td>

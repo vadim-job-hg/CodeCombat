@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# DontTouchThem 
 
-{link}
+https://codecombat.com/play/level/dont-touch-them
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](DontTouchThem.py)
 
 </li>
 </td>

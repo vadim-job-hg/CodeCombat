@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# SeekAndHide 
 
-{link}
+https://codecombat.com/play/level/seek-and-hide
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](SeekAndHide.py)
 
 </li>
 </td>

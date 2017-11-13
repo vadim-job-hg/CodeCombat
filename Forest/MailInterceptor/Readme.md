@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# MailInterceptor 
 
-{link}
+https://codecombat.com/play/level/mail-interceptor
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](MailInterceptor.py)
 
 </li>
 </td>

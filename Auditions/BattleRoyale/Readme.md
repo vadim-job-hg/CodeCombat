@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# BattleRoyale 
 
-{link}
+http://codecombat.com/play/level/battle-royale
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link}.py)
+[PYTHON](BattleRoyale.py)
 
 </li>
 </td>
