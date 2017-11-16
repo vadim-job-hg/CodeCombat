@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[HUMANS - JAVASCRIPT](CrossBonesHuman.js)
+[HUMAN - JAVASCRIPT](CrossBonesHuman.js)
 
 </li>
 <li>
