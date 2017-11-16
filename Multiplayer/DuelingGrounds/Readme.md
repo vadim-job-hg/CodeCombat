@@ -1,6 +1,6 @@
-# DuelingGrounds 
+# Dueling Grounds 
 
-{link}
+https://codecombat.com/play/ladder/dueling-grounds
 <table>
 <tr>
 <td>
