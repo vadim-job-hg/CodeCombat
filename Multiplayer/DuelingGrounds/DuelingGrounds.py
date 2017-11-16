@@ -68,7 +68,6 @@ def attack(target):
         else:
             hero.attack(target)
 
-
 summonTypes = ['paladin']
 def summonTroops():
     type = summonTypes[len(hero.built) % len(summonTypes)]

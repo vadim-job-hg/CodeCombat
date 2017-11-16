@@ -1,4 +1,4 @@
-# {name}  - {name} 
+# Cross Bones
 
 {link}
 <table>
@@ -12,7 +12,12 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[HUMANS - JAVASCRIPT](CrossBonesHuman.js)
+
+</li>
+<li>
+
+[OGRES - JAVASCRIPT](CrossBonesOgres.js)
 
 </li>
 </td>
