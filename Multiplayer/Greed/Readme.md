@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# Greed
 
-{link}
+https://codecombat.com/play/ladder/greed
 <table>
 <tr>
 <td>
