@@ -12,7 +12,12 @@ http://codecombat.com/play/ladder/ace-of-coders
 <ul>
 <li>
 
-[PYTHON](AceOfCoders.py)
+[HUMAN - PYTHON](AceOfCodersHuman.py)
+
+</li>
+<li>
+
+[OGRES - PYTHON](AceOfCodersOgres.py)
 
 </li>
 </td>
