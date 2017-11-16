@@ -53,13 +53,11 @@ def attack(target):
             hero.cast('summon-burl')
         elif (hero.canCast('summon-undead')):
             hero.cast('summon-undead')
-        elif (hero.canCast('invisibility', hero)):
-            hero.cast('invisibility', hero)
-        elif (hero.canCast('raise-dead')):
-            hero.cast('raise-dead')
-        elif (hero.canCast('drain-life', target)):
+        #elif (hero.canCast('raise-dead')):
+        #    hero.cast('raise-dead')
+        elif (hero.canCast('drain-life', target) and hero.distanceTo(target)<30):
             hero.cast('drain-life', target)
-        elif (hero.canCast('poison-cloud', target)):
+        elif (hero.canCast('poison-cloud', target) and hero.distanceTo(target)<30):
             hero.cast('poison-cloud', target)
         elif (hero.canCast('fear', target)):
             hero.cast('fear', target)
@@ -70,10 +68,8 @@ def attack(target):
         else:
             hero.attack(target)
 
-summonTypes = ['paladin', 'paladin', 'paladin', 'archer', 'archer', 'archer', 'archer', 'archer', 'archer', 'archer',
-               'archer', 'archer', 'archer']
 
-
+summonTypes = ['paladin']
 def summonTroops():
     type = summonTypes[len(hero.built) % len(summonTypes)]
     if hero.gold > hero.costOf(type):
@@ -85,7 +81,7 @@ def commandTroops():
             CommandArcher(friend)
         elif friend.type == 'paladin':
             CommandPaladin(friend)
-        elif friend.type == 'soldier':
+        elif friend.type == 'soldier' or friend.type == 'skeleton':
             CommandSoldier(friend)
         elif friend.type == 'peasant':
             CommandPeasant(friend)
