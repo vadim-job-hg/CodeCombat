@@ -20,6 +20,11 @@ http://codecombat.com/play/ladder/ace-of-coders
 [OGRES - PYTHON](AceOfCodersOgres.py)
 
 </li>
+<li>
+
+[WINNING STRATEGY - JAVASCRIPT](AceOfCodersWinningStrategy.js)
+
+</li>
 </td>
 </tr>
 <table>
