@@ -43,16 +43,16 @@ this.summonTroops = function(){
     if(this.gold > this.costOf(type))
         this.summon(type);
 };
-this.placeFlag({'x':120, 'y':63});
-this.placeFlag({'x':160, 'y':109});
-this.placeFlag({'x':160, 'y':9});
+this.placeFlag({'x':20, 'y':60});
+this.placeFlag({'x':-6, 'y':109});
+this.placeFlag({'x':-7, 'y':9});
 var target;
 var captured = false;
-while(true){
+loop {
     var flags = '';
     flags = this.findByType('flag');
     for(var i in flags){
-        if(flags[i].team=='humans' && flags[i].pos.x<70){
+        if(flags[i].team=='ogres' && flags[i].pos.x>70){
             target = flags[i];
             break;
         }
@@ -67,8 +67,8 @@ while(true){
          //this.moveTo(target.pos);
          this.move(target.pos);
     } else if(captured)  {
-         this.move({'x':74, 'y':this.now()});
-         if(this.pos.x>=74){
+         this.move({'x':65, 'y':this.now()});
+         if(this.pos.x<=67){
                 captured = false;
         }
     }

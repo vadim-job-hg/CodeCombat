@@ -1,6 +1,6 @@
 # BrawlwoodH
 
-http://codecombat.com/play/level/brawlwood
+http://codecombat.com/play/ladder/brawlwood
 <table>
 <tr>
 <td>
