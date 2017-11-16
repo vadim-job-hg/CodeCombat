@@ -1,4 +1,4 @@
-# BrawlwoodH 
+# BrawlwoodH
 
 http://codecombat.com/play/level/brawlwood
 <table>
@@ -12,7 +12,12 @@ http://codecombat.com/play/level/brawlwood
 <ul>
 <li>
 
-[PYTHON](BrawlwoodH.py)
+[HUMAN - PYTHON](BrawlwoodHuman.py)
+
+</li>
+<li>
+
+[OGRES - PYTHON](BrawlwoodOgres.py)
 
 </li>
 </td>
