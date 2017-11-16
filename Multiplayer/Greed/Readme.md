@@ -12,7 +12,12 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[HUMAN - JAVASCRIPT](GreedHuman.js)
+
+</li>
+<li>
+
+[OGRES - JAVASCRIPT](GreedOgres.js)
 
 </li>
 </td>
