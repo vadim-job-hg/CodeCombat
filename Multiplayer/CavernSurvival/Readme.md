@@ -12,7 +12,12 @@
 <ul>
 <li>
 
-[PYTHON](CavernSurvival.py)
+[PYTHON](CavernSurvivalHuman.py)
+
+</li>
+<li>
+
+[PYTHON](CavernSurvivalOgres.py)
 
 </li>
 </td>
