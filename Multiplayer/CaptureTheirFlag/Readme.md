@@ -1,4 +1,4 @@
-# CaptureTheirFlag 
+# Capture Their Flag 
 
 http://codecombat.com/play/ladder/capture-their-flag
 <table>
@@ -12,7 +12,12 @@ http://codecombat.com/play/ladder/capture-their-flag
 <ul>
 <li>
 
-[PYTHON](CaptureTheirFlag.py)
+[HUMANS - JAVASCRIPT](CaptureTheirFlagHumans.js)
+
+</li>
+<li>
+
+[OGRES - JAVASCRIPT](CaptureTheirFlagOgres.js)
 
 </li>
 </td>

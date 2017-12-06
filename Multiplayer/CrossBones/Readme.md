@@ -1,6 +1,6 @@
-# ZeroSum 
+# Cross Bones
 
-https://codecombat.com/play/ladder/zero-sum
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,12 @@ https://codecombat.com/play/ladder/zero-sum
 <ul>
 <li>
 
-[PYTHON](ZeroSum.py)
+[HUMAN - JAVASCRIPT](CrossBonesHuman.js)
 
 </li>
 <li>
 
-[WINNING STRATEGY - JAVASCRIPT](ZeroSum.js)
+[OGRES - JAVASCRIPT](CrossBonesOgres.js)
 
 </li>
 </td>

@@ -1,6 +1,6 @@
-# ZeroSum 
+# BrawlwoodH
 
-https://codecombat.com/play/ladder/zero-sum
+http://codecombat.com/play/ladder/brawlwood
 <table>
 <tr>
 <td>
@@ -12,12 +12,12 @@ https://codecombat.com/play/ladder/zero-sum
 <ul>
 <li>
 
-[PYTHON](ZeroSum.py)
+[HUMAN - PYTHON](BrawlwoodHuman.py)
 
 </li>
 <li>
 
-[WINNING STRATEGY - JAVASCRIPT](ZeroSum.js)
+[OGRES - PYTHON](BrawlwoodOgres.py)
 
 </li>
 </td>

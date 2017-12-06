@@ -1,6 +1,6 @@
-# ZeroSum 
+# {name}  - {name} 
 
-https://codecombat.com/play/ladder/zero-sum
+{link}
 <table>
 <tr>
 <td>
@@ -12,12 +12,12 @@ https://codecombat.com/play/ladder/zero-sum
 <ul>
 <li>
 
-[PYTHON](ZeroSum.py)
+[PYTHON]({link-file}.py)
 
 </li>
 <li>
 
-[WINNING STRATEGY - JAVASCRIPT](ZeroSum.js)
+[PYTHON]({link-file}.py)
 
 </li>
 </td>

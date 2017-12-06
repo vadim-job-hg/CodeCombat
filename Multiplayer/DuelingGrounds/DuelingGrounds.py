@@ -23,7 +23,6 @@ enemy_types['munchkin'] = {'danger': 2, 'focus': 15}
 enemy_types['yak'] = {'danger': -1, 'focus': 0}
 enemy_types['ice-yak'] = {'danger': -1, 'focus': 0}
 
-
 def findTarget():
     danger = 0
     enemy_return = None
@@ -33,18 +32,14 @@ def findTarget():
             if enemy and hero.distanceTo(enemy) < enemy_types[type].focus:
                 enemy_return = enemy
                 danger = enemy_types[type].danger
-    if enemy_return:
-        pass
-    else:
-        enemy_return = hero.findNearestEnemy()
+    if not(enemy_return):
+        enemy_return = hero.findNearest(hero.findEnemies())
     return enemy_return
-
 
 def pickUpNearestItem(items):
     nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
-
 
 def moveTo(position, fast=True):
     if (hero.isReady("jump") and hero.distanceTo(position) > 10 and fast):
@@ -52,30 +47,32 @@ def moveTo(position, fast=True):
     else:
         hero.move(position)
 
-
 def attack(target):
     if target:
-        if (hero.distanceTo(target) > 10):
-            moveTo(target.pos)
-        elif (hero.isReady("bash")):
-            hero.bash(target)
+        if (hero.canCast('summon-burl', hero)):
+            hero.cast('summon-burl')
+        elif (hero.canCast('summon-undead')):
+            hero.cast('summon-undead')
+        #elif (hero.canCast('raise-dead')):
+        #    hero.cast('raise-dead')
+        elif (hero.canCast('drain-life', target) and hero.distanceTo(target)<30):
+            hero.cast('drain-life', target)
+        elif (hero.canCast('poison-cloud', target) and hero.distanceTo(target)<30):
+            hero.cast('poison-cloud', target)
+        elif (hero.canCast('fear', target)):
+            hero.cast('fear', target)
+        elif (hero.canCast('earthskin', hero)):
+            hero.cast('earthskin', hero)
         elif (hero.canCast('chain-lightning', target)):
             hero.cast('chain-lightning', target)
-        elif (hero.isReady("attack")):
-            hero.attack(target)
         else:
-            hero.shield()
+            hero.attack(target)
 
-
-summonTypes = ['paladin', 'paladin', 'paladin', 'archer', 'archer', 'archer', 'archer', 'archer', 'archer', 'archer',
-               'archer', 'archer', 'archer']
-
-
+summonTypes = ['paladin']
 def summonTroops():
     type = summonTypes[len(hero.built) % len(summonTypes)]
     if hero.gold > hero.costOf(type):
         hero.summon(type)
-
 
 def commandTroops():
     for index, friend in enumerate(hero.findFriends()):
@@ -83,40 +80,27 @@ def commandTroops():
             CommandArcher(friend)
         elif friend.type == 'paladin':
             CommandPaladin(friend)
-        elif friend.type == 'soldier':
+        elif friend.type == 'soldier' or friend.type == 'skeleton':
             CommandSoldier(friend)
         elif friend.type == 'peasant':
             CommandPeasant(friend)
 
-
 def CommandPaladin(paladin):
-    if (paladin.canCast("heal")):
-        if (hero.health < hero.maxHealth * 0.6):
-            target = self
-        else:
-            target = lowestHealthFriend()
-        if target:
-            hero.command(paladin, "cast", "heal", target)
+    if (paladin.canCast("heal") and hero.health < hero.maxHealth * 0.6):
+        hero.command(paladin, "cast", "heal", hero)
     elif (paladin.health < 10):
         hero.command(paladin, "shield")
     else:
-        if enemyattack:
-            hero.command(paladin, "attack", enemyattack)
-
+        hero.command(paladin, "defend", hero)
 
 def CommandSoldier(soldier):
-    pass
-
+    hero.command(soldier, "defend", hero)
 
 def CommandArcher(soldier):
-    if enemyattack:
-        hero.command(soldier, "attack", enemyattack)
-
+    hero.command(soldier, "defend", hero)
 
 def CommandPeasant(soldier):
-    if enemyattack:
-        hero.command(soldier, "attack", enemyattack)
-
+    pass
 
 def lowestHealthFriend():
     lowestHealth = 99999
@@ -126,24 +110,18 @@ def lowestHealthFriend():
         if friend.health < lowestHealth and friend.health < friend.maxHealth:
             lowestHealth = friend.health
             lowestFriend = friend
-
     return lowestFriend
-
 
 while True:
     summonTroops()
     commandTroops()
     items = hero.findItems()
     enimies = hero.findEnemies()
-    # for enemy in enimies:
-    #    hero.say(enemy.type)
     if (len(items) > 0 and hero.health < hero.maxHealth * 0.5):
         pickUpNearestItem(items)
     else:
         enemyattack = findTarget()
-        if not enemyattack:
-            enemyattack = hero.findNearestEnemy()
         if (enemyattack):
             attack(enemyattack)
         else:
-            hero.shield()
+            hero.wait(1)

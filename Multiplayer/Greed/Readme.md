@@ -1,6 +1,6 @@
-# ZeroSum 
+# Greed
 
-https://codecombat.com/play/ladder/zero-sum
+https://codecombat.com/play/ladder/greed
 <table>
 <tr>
 <td>
@@ -12,12 +12,12 @@ https://codecombat.com/play/ladder/zero-sum
 <ul>
 <li>
 
-[PYTHON](ZeroSum.py)
+[HUMAN - JAVASCRIPT](GreedHuman.js)
 
 </li>
 <li>
 
-[WINNING STRATEGY - JAVASCRIPT](ZeroSum.js)
+[OGRES - JAVASCRIPT](GreedOgres.js)
 
 </li>
 </td>
