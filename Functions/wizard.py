@@ -112,13 +112,13 @@ def attack():
             hero.cast('summon-burl')
         elif (hero.canCast('summon-undead')):
             hero.cast('summon-undead')
-        elif (False or hero.canCast('fear', target) and hero.distanceTo(target)<25):
+        elif (False and hero.canCast('fear', target) and hero.distanceTo(target)<25):
             hero.cast('fear', target)
         elif (hero.canCast('raise-dead') and corps and hero.distanceTo(corps)<20):
             hero.cast('raise-dead')
         elif (hero.canCast('drain-life', target) and hero.distanceTo(target)<15):
             hero.cast('drain-life', target)
-        elif (hero.canCast('poison-cloud', target) and hero.distanceTo(target)<30):
+        elif (False and hero.canCast('poison-cloud', target) and hero.distanceTo(target)<30):
             hero.cast('poison-cloud', target)
         elif (hero.canCast('chain-lightning', target) and hero.distanceTo(target)<30):
                 hero.cast('chain-lightning', target)
