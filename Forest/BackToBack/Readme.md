@@ -1,6 +1,6 @@
 # BackToBack 
 
-{link}
+https://codecombat.com/play/level/back-to-back
 <table>
 <tr>
 <td>
