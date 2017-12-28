@@ -20,6 +20,7 @@ https://codecombat.com/play/level/kithgard-brawl
 <tr>
 <td>
 </td>
+<td>
 <ul>
 <li>
 
