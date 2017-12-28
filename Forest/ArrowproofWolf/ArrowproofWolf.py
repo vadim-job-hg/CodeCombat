@@ -1,6 +1,3 @@
-# https://codecombat.com/play/level/arrowproof-wolf
-# Collect mushrooms.
-# First, come to the wolf pet and wake up it (say).
 def onHear(b):
     while True:
         m = hero.findEnemyMissiles()
@@ -12,9 +9,7 @@ def onHear(b):
 
 hero.moveXY(12, 34)
 pet.on('hear', onHear)
-hero.say("ВСТАВАЙ, СКОТИНА")
-# Next collect mushrooms just usual items.
-
-loop:
-item = hero.findNearestItem()
-hero.moveXY(item.pos.x, item.pos.y)
+hero.say("BOOOOO")
+while True:
+    item = hero.findNearestItem()
+    hero.moveXY(item.pos.x, item.pos.y)

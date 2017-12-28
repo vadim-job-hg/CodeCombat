@@ -1,4 +1,3 @@
-# http://codecombat.com/play/level/arcane-ally
 def attack(target):
     if target:
         if (hero.distanceTo(target) > 10):
