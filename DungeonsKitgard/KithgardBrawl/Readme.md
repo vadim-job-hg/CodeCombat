@@ -1,4 +1,17 @@
+<table>
+<tr>
+<td>
+
 # Kithgard Brawl
+
+</td>
+<td>
+
+![Hero Strike](strike.png?raw=true "Hero Strike")
+
+</td>
+</tr>
+</table>
 https://codecombat.com/play/level/kithgard-brawl
 <table>
 <tr>
