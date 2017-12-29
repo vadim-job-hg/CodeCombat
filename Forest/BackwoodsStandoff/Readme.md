@@ -1,6 +1,6 @@
 # BackwoodsStandoff 
 
-{link}
+https://codecombat.com/play/level/backwoods-standoff
 <table>
 <tr>
 <td>
