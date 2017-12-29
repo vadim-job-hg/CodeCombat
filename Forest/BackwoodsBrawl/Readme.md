@@ -40,16 +40,6 @@ https://codecombat.com/play/level/backwoods-brawl
 <ul>
 <li>
 
-[PYTHON-VERSION 8](BackwoodsBrawl9.py)
-
-</li>
-<li>
-
-[PYTHON-VERSION 7](BackwoodsBrawl8.py)
-
-</li>
-<li>
-
 [PYTHON-VERSION 6](BackwoodsBrawl6.py)
 
 </li>

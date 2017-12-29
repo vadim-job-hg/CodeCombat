@@ -40,27 +40,22 @@ https://codecombat.com/play/level/backwoods-brawl
 <ul>
 <li>
 
-[PYTHON-VERSION 6](BackwoodsTreasure1.py)
+[PYTHON-VERSION 5](BackwoodsTreasure5.py)
 
 </li>
 <li>
 
-[PYTHON-VERSION 5](BackwoodsTreasure1.py)
+[PYTHON-VERSION 4](BackwoodsTreasure4.py)
 
 </li>
 <li>
 
-[PYTHON-VERSION 4](BackwoodsTreasure1.py)
+[PYTHON-VERSION 3](BackwoodsTreasure3.py)
 
 </li>
 <li>
 
-[PYTHON-VERSION 3](BackwoodsTreasure1.py)
-
-</li>
-<li>
-
-[PYTHON-VERSION 2](BackwoodsTreasure1.py)
+[PYTHON-VERSION 2](BackwoodsTreasure2.py)
 
 </li>
 <li>
