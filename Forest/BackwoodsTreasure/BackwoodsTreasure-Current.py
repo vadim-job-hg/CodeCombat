@@ -13,7 +13,6 @@ def CommandSoldier(soldier):
     pass
 
 
-# todo: use peasant here
 def pickUpNearestItem(items):
     nearestItem = self.findNearest(items)
     if nearestItem and (nearestItem.pos.x < 38 or nearestItem.pos.y < 33):
@@ -70,7 +69,7 @@ while True:
     items = self.findItems()
     action()
     commandTroops()
-    flag = hero.findFlag();
+    flag = hero.findFlag()
     if (flag):
         hero.pickUpFlag(flag)
     elif len(items) > 0 and hero.now() > 10:
