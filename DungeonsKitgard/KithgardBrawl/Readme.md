@@ -13,9 +13,6 @@
 <tr><td>
 https://codecombat.com/play/level/kithgard-brawl
 </td></tr>
-</table>
-
-<table>
 <tr>
 <td>
 
