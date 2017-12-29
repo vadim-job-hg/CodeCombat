@@ -26,9 +26,13 @@ def attack(target):
             hero.attack(enemy)
 
 
-def summonSoldier():
-    if hero.gold > hero.costOf('soldier'):
-        hero.summon('soldier')
+summonTypes = ['griffin-rider', 'soldier', 'archer']
+
+
+def summonTroops():
+    type = summonTypes[len(hero.built) % len(summonTypes)]
+    if hero.gold > hero.costOf(type):
+        hero.summon(type)
 
 
 # commands attack
@@ -40,7 +44,7 @@ def commandSoldiers():
 
 
 while True:
-    summonSoldier()
+    summonTroops()
     commandSoldiers()
     items = hero.findItems()
     if (len(items) > 0):

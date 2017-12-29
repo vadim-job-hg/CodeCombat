@@ -55,7 +55,7 @@ def attack(target):
             hero.shield()
 
 
-summonTypes = ['paladin', 'archer', 'soldier']
+summonTypes = ['soldier']
 
 
 def summonTroops():
@@ -77,14 +77,11 @@ def commandTroops():
 
 
 def CommandPaladin(paladin):
-    if (paladin.canCast("heal")):
-        if (hero.health < hero.maxHealth * 0.6):
-            target = self
-        else:
-            target = lowestHealthFriend()
+    if (paladin.canCast("heal") and hero.health < hero.maxHealth * 0.6):
+        target = self
         if target:
             hero.command(paladin, "cast", "heal", target)
-    elif (paladin.health < 100):
+    elif (paladin.health < paladin.maxHealth * 0.3):
         hero.command(paladin, "shield")
     else:
         if enemyattack:
@@ -92,7 +89,9 @@ def CommandPaladin(paladin):
 
 
 def CommandSoldier(soldier):
-    pass
+    enemy = soldier.findNearestEnemy()
+    if enemy:
+        hero.command(soldier, "attack", enemy)
 
 
 def CommandArcher(soldier):

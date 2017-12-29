@@ -55,24 +55,27 @@ def attack(target):
             hero.bash(target)
 
 
-buildTypes = ["fire-trap"]
+buildTypes = ["fire-trap", "decoy"]
 
 
 def buildTroops():
     enemy = hero.findNearestEnemy()
     items = hero.findItems()
+    if enemy:
+        pass
+        # if(hero.isReady("bash")):
+        #    hero.bash(enemy)
+        # elif(hero.canCast('chain-lightning', enemy)):
+        #    hero.cast('chain-lightning', enemy)
     paladins = hero.findByType('paladin')
-    if len(items) > 0:
+    if len(items) > 0 and hero.distanceTo(items[0]) < 10:
         pickUpNearestItem(items)
-    elif len(paladins) > 0:
+    elif len(paladins) > 1:
         hero.shield()
     elif enemy and hero.distanceTo(enemy) < 10:
         type = buildTypes[len(hero.built) % len(buildTypes)]
         if hero.gold > hero.costOf(type):
             hero.buildXY(type, enemy.pos.x, enemy.pos.y)
-            hero.shield()
-            hero.shield()
-            hero.shield()
             hero.shield()
             hero.shield()
         else:
@@ -83,9 +86,16 @@ def buildTroops():
 
 while True:
     commandTroops()
-    buildTroops()
-    if hero.health < hero.maxHealth * 0.6:
-        paladins = hero.findByType('paladin')
-        if len(paladins) == 0:
-            summonTroops()
-            summonTroops()
+    if (hero.canCast('invisibility', self)):
+        hero.cast('invisibility', self)
+    elif hero.hasEffect('invisibility'):
+        hero.shield()
+    else:
+        if (hero.canCast('earthskin', self)):
+            hero.cast('earthskin', self)
+        buildTroops()
+        if hero.health < hero.maxHealth * 0.6:
+            paladins = hero.findByType('paladin')
+            if len(paladins) == 0:
+                summonTroops()
+                summonTroops()

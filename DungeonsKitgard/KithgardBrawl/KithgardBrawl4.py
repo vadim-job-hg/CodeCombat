@@ -3,7 +3,7 @@ while True:
     item = hero.findNearest(items)
     enemies = hero.findEnemies()
     enemy = hero.findNearest(enemies)
-    if (hero.health < hero.maxHealth / 3):
+    if (hero.health < hero.maxHealth / 3 * 2):
         item = hero.findNearestItem()
         if (item):
             if (hero.isReady("jump")):
@@ -22,3 +22,13 @@ while True:
             hero.cleave(enemy)
         else:
             hero.attack(enemy)
+    if hero.gold > hero.costOf("soldier"):
+        hero.summon("soldier")
+        enemy = hero.findNearestEnemy()
+        if enemy:
+            soldiers = hero.findFriends()
+            soldierIndex = 0
+            while (soldierIndex < len(soldiers)):
+                soldier = soldiers[soldierIndex]
+                hero.command(soldier, "attack", enemy)
+                soldierIndex += 1

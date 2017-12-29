@@ -27,10 +27,8 @@ def attack(target):
 
 
 def summonSoldier():
-    if hero.gold > hero.costOf('archer') * 3:
-        hero.summon('archer')
-        hero.summon('archer')
-        hero.summon('archer')
+    if hero.gold > hero.costOf('soldier'):
+        hero.summon('soldier')
 
 
 # commands attack
@@ -49,4 +47,9 @@ while True:
         pickUpNearestItem(items)
     else:
         enemy = hero.findNearestEnemy()
-        attack(enemy)
+        if (enemy and hero.distanceTo(enemy) < 10):
+            attack(enemy)
+        elif (hero.pos.x != 13 and hero.pos.y != 51):
+            moveTo({'x': 13, 'y': 51})
+        else:
+            hero.shield()

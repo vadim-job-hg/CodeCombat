@@ -23,7 +23,7 @@ https://codecombat.com/play/level/kithgard-brawl
 <ul>
 <li>
 
-[PYTHON-VERSION Current](KithgardBrawl-Current.py)
+[PYTHON-VERSION Current](KithgardBrawl13.py)
 
 </li>
 </ul>
@@ -36,32 +36,57 @@ https://codecombat.com/play/level/kithgard-brawl
 <ul>
 <li>
 
-[PYTHON-VERSION 8](KithgardBrawl9.py)
+[PYTHON-VERSION 13](KithgardBrawl13.py)
 
 </li>
 <li>
 
-[PYTHON-VERSION 7](KithgardBrawl8.py)
+[PYTHON-VERSION 12](KithgardBrawl12.py)
 
 </li>
 <li>
 
-[PYTHON-VERSION 6](KithgardBrawl6.py)
+[PYTHON-VERSION 11](KithgardBrawl11.py)
 
 </li>
 <li>
 
-[PYTHON-VERSION 5](KithgardBrawl5.py)
+[PYTHON-VERSION 10](KithgardBrawl10.py)
 
 </li>
 <li>
 
-[PYTHON-VERSION 4](KithgardBrawl4.py)
+[PYTHON-VERSION 9](KithgardBrawl9.py)
 
 </li>
 <li>
 
-[PYTHON-VERSION 3](KithgardBrawl3.py)
+[PYTHON-VERSION 8](KithgardBrawl8.py)
+
+</li>
+<li>
+
+[PYTHON-VERSION 7](KithgardBrawl7.py)
+
+</li>
+<li>
+
+[PYTHON-VERSION 6](KithgardBrawl5.py)
+
+</li>
+<li>
+
+[PYTHON-VERSION 5](KithgardBrawl4.py)
+
+</li>
+<li>
+
+[PYTHON-VERSION 4](KithgardBrawl3.py)
+
+</li>
+<li>
+
+[PYTHON-VERSION 3](KithgardBrawl2.py)
 
 </li>
 <li>
