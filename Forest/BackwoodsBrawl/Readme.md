@@ -1,7 +1,23 @@
+<table>
+<tr>
+<td>
+
 # Backwoods Brawl
 
+</td>
+<td rowspan="2" align="center">
+
+![Hero Strike](strike.png?raw=true "Hero Strike")
+
+</td>
+</tr>
+<tr>
+<td>
+
 https://codecombat.com/play/level/backwoods-brawl
-<table>
+
+</td>
+</tr>
 <tr>
 <td>
 

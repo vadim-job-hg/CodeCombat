@@ -4,7 +4,7 @@
 
 # Kithgard Brawl
 </td>
-<td rowspan="2">
+<td rowspan="2" align="center">
 
 ![Hero Strike](strike.png?raw=true "Hero Strike")
 
