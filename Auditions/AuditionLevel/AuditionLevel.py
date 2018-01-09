@@ -1,7 +1,4 @@
-# http://codecombat.com/play/level/audition-level
-
 summonTypes = ['paladin']
-
 
 def summonTroops():
     type = summonTypes[len(hero.built) % len(summonTypes)]
@@ -59,5 +56,3 @@ while True:
         enemy = hero.findNearestEnemy()
         if enemy:
             attack(enemy)
-            # find some enemy to attack
-            # use cleave when ready

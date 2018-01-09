@@ -2,7 +2,6 @@ def collectUntil(enoughGold):
     while enoughGold>hero.gold:
         item = hero.findNearestItem()
         hero.move(item.pos)
-    pass
 
 collectUntil(25)
 hero.buildXY("decoy", 40, 52)

@@ -1,6 +1,4 @@
-# http://codecombat.com/play/level/audition-level-javier-rizzo
 enemy_types = {}
-# humans hero types
 enemy_types['knight'] = {'danger': 100, 'focus': 100}
 enemy_types['ranger'] = {'danger': 100, 'focus': 100}
 enemy_types['librarian'] = {'danger': 100, 'focus': 100}
@@ -110,5 +108,3 @@ while True:
         enemy = findTarget()
         if enemy:
             attack(enemy)
-            # find some enemy to attack
-            # use cleave when ready

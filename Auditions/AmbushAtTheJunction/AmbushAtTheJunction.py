@@ -1,7 +1,4 @@
-# <%= survive %>
-# <%= beware_outnumbered %>
-# <%= need_support_of_allies. %>
-while True:  # <%= how_to_place_flags %>
+while True:
     flag = hero.findFlag()
     enemy = hero.findNearestEnemy()
     if flag:

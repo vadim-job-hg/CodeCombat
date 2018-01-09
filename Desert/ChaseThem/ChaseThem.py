@@ -1,8 +1,3 @@
-# https://codecombat.com/play/level/chase-them
-
-# Defeat the ogres and cure the hero.
-
-# The pet is your only hope.
 def onSpawn(e):
     while True:
         enemy = pet.findNearestByType("munchkin")
@@ -12,6 +7,4 @@ def onSpawn(e):
         potion = pet.findNearestByType("potion")
         if potion:
             pet.fetch(potion)
-
-# Assign "onSpawn" handler on the "spawn" event:
 pet.on('spawn', onSpawn)

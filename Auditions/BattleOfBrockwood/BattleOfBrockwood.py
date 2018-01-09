@@ -1,6 +1,4 @@
-# http://codecombat.com/play/level/battle-of-brockwood
 enemy_types = {}
-# humans hero types
 enemy_types['knight'] = {'danger': 100, 'focus': 100}
 enemy_types['ranger'] = {'danger': 100, 'focus': 100}
 enemy_types['librarian'] = {'danger': 100, 'focus': 100}
@@ -9,7 +7,6 @@ enemy_types['trapper'] = {'danger': 100, 'focus': 100}
 enemy_types['samurai'] = {'danger': 100, 'focus': 50}
 enemy_types['forest-archer'] = {'danger': 100, 'focus': 50}
 enemy_types['sorcerer'] = {'danger': 100, 'focus': 50}
-# ogres types
 enemy_types['shaman'] = {'danger': 10, 'focus': 100}
 enemy_types['warlock'] = {'danger': 10, 'focus': 30}
 enemy_types['arrow-tower'] = {'danger': 10, 'focus': 20}
@@ -28,18 +25,15 @@ enemy_types['munchkin'] = {'danger': 2, 'focus': 15}
 enemy_types['yak'] = {'danger': -1, 'focus': 0}
 enemy_types['ice-yak'] = {'danger': -1, 'focus': 0}
 
-
 def pickUpNearestItem(items):
     nearestItem = hero.findNearest(items)
     if nearestItem:
         moveTo(nearestItem.pos)
 
-
 if hero.team == 'humans':
     team = 'humans'
 else:
     team = 'ogres'
-
 
 def findTarget():
     danger = 0
@@ -54,10 +48,7 @@ def findTarget():
         enemy_return = hero.findNearestEnemy()
     return enemy_return
 
-
 summonTypes = ['paladin']
-
-
 def summonTroops():
     type = summonTypes[len(hero.built) % len(summonTypes)]
     if hero.gold > hero.costOf(type):
@@ -70,7 +61,6 @@ def commandTroops():
             CommandPaladin(friend)
         else:
             CommandSoldier(friend)
-
 
 def CommandSoldier(soldier):
     target = hero.findNearestEnemy()
