@@ -1,9 +1,3 @@
-# http://codecombat.com/play/level/cubic-minefield
-# Walk through the minefield
-# To find the path use a cubic equation
-# You can find coefficients for the equation on the tower
-
-# This function returns the number multiplied by the times
 def mult(number, times):
     total = 0
     while times > 0:

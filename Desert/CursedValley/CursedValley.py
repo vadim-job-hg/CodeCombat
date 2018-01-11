@@ -1,9 +1,3 @@
-# http://codecombat.com/play/level/cursed-valley
-# It's too hot out here! Each second you lose you health.
-# You need to kill 3 enemy skeletons.
-# You can only drink one potion. Choose your time wisely.
-# Graverobbing is bad luck! Do not steal the coins.
-
 while (True):
     enemy = hero.findNearestEnemy()
     # Attack only skeletons AND if they are on the "ogres" team.
