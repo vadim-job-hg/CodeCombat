@@ -1,124 +1,109 @@
-enemy_types = {}
-# ogres types
-enemy_types['door'] = {'danger': 1000, 'focus': 200}
-enemy_types['knight'] = {'danger': 100, 'focus': 100}
-enemy_types['potion-master'] = {'danger': 100, 'focus': 100}
-enemy_types['ranger'] = {'danger': 100, 'focus': 100}
-enemy_types['trapper'] = {'danger': 100, 'focus': 100}
-enemy_types['samurai'] = {'danger': 100, 'focus': 100}
-enemy_types['librarian'] = {'danger': 100, 'focus': 100}
-enemy_types['sorcerer'] = {'danger': 100, 'focus': 100}
-enemy_types['hero-placeholder'] = {'danger': 99, 'focus': 100}
-enemy_types['hero-placeholder-1'] = {'danger': 99, 'focus': 100}
-enemy_types['hero-placeholder-2'] = {'danger': 99, 'focus': 100}
-enemy_types['necromancer'] = {'danger': 100, 'focus': 100}
-enemy_types['captain'] = {'danger': 100, 'focus': 100}
-enemy_types['goliath'] = {'danger': 100, 'focus': 50}
-enemy_types['captain'] = {'danger': 100, 'focus': 100}
-enemy_types['forest-archer'] = {'danger': 100, 'focus': 50}
-enemy_types['ninja'] = {'danger': 100, 'focus': 50}
-enemy_types['skeleton'] = {'danger': 5, 'focus': 22}
-enemy_types['shaman'] = {'danger': 10, 'focus': 100}
-enemy_types['warlock'] = {'danger': 10, 'focus': 30}
-enemy_types['arrow-tower'] = {'danger': 10, 'focus': 20}
-enemy_types['catapult'] = {'danger': 10, 'focus': 100}
-enemy_types['burl'] = {'danger': 10, 'focus': 20}
-enemy_types['artillery'] = {'danger': 10, 'focus': 100}
-enemy_types['witch'] = {'danger': 8, 'focus': 100}
-enemy_types['brawler'] = {'danger': 7, 'focus': 55}
-enemy_types['ogre'] = {'danger': 5, 'focus': 40}
-enemy_types['chieftain'] = {'danger': 6, 'focus': 35}
-enemy_types['fangrider'] = {'danger': 4, 'focus': 22}
-enemy_types['skeleton'] = {'danger': 5, 'focus': 22}
-enemy_types['scout'] = {'danger': 4, 'focus': 22}
-enemy_types['thrower'] = {'danger': 3, 'focus': 22}
-enemy_types['munchkin'] = {'danger': 2, 'focus': 15}
-if hero.team == 'humans':
-    team = 'humans'
-else:
-    team = 'ogres'
+class Game:
+    summonTypes = ['paladin']
+    excludeType = ['door', 'decoy']
+    priorityType = []
+    priorityId = {'Hero Placeholder 1': 999, 'Hero Placeholder': 999}
+    tacticks = {
+        'skeleton': 'attack',
+        'paladin': 'defend'
+    }
 
-def findTarget():
-    danger = 0
-    enemy_return = None
-    for type in enemy_types.keys():
-        if enemy_types[type] and enemy_types[type].danger > danger:
-            enemy = hero.findNearest(hero.findByType(type))
-            if enemy and enemy.team != team and hero.distanceTo(enemy) < enemy_types[type].focus and enemy.type!='door' and (enemy.pos.x<80 or hero.distanceTo(enemy)<30):
-                enemy_return = enemy
-                danger = enemy_types[type].danger
-    if enemy_return is None:
-        enemy_return = hero.findNearest(hero.findEnemies())
-    if enemy_return and enemy_return.type=='door':
-        enemy_return = None
-    return enemy_return
+    def __init__(self):
+        self.team = hero.team
+        self.best_target = None
+        self.best_target_distance = 9999
+        hero._earthskin = -10
 
-def moveTo(position):
-    if position:
+    def findTarget(self):  # exclude  decoy
+        best = 0
+        enemies = hero.findEnemies()
+        self.best_target = None
+        self.best_target_distance = 9999
+        for enemy in enemies:
+            if enemy.type in self.excludeType:
+                continue
+            distance = hero.distanceTo(enemy)
+            current = enemy.maxHealth * self.priorityId.get(enemy.id, 1) / (distance * 10)
+            # hero.debug(enemy.id,enemy.type, current)
+            if (best > current):
+                best = current
+                self.best_target = enemy
+                self.best_target_distance = distance
+
+        if (not (self.best_target)):
+            self.best_target = hero.findNearestEnemy()
+            self.best_target_distance = hero.distanceTo(self.best_target)
+        hero.debug("best target", self.best_target)
+
+    def moveTo(self, position):
         if (hero.isReady("jump")):
             hero.jumpTo(position)
         else:
             hero.move(position)
 
-summonTypes = ['paladin']
-def summonTroops():
-    type = summonTypes[len(hero.built) % len(summonTypes)]
-    if hero.gold > hero.costOf(type):
-        hero.summon(type)
+    def summonTroops(self):
+        type = self.summonTypes[len(hero.built) % len(self.summonTypes)]
+        if hero.gold > hero.costOf(type):
+            hero.summon(type)
 
-def commandTroops():
-    for index, friend in enumerate(hero.findFriends()):
-        if friend.type == 'paladin':
-            CommandPaladin(friend)
-        elif friend.type == 'soldier' or friend.type == 'archer' or friend.type == 'griffin-rider'  or friend.type == 'skeleton':
-            CommandSoldier(friend)
-        elif friend.type == 'peasant':
-            CommandPeasant(friend)
+    def commandTroops(self):
+        for friend in hero.findFriends():
+            if friend.type == 'paladin':
+                self._commandPaladin(friend)
+            elif friend.type == 'soldier' or friend.type == 'archer' or friend.type == 'griffin-rider' or friend.type == 'skeleton':
+                self._commandSoldier(friend)
+            elif friend.type == 'peasant':
+                self._commandPeasant(friend)
 
-def CommandSoldier(soldier):
-    hero.command(soldier, "defend", hero)
+    def _commandSoldier(self, soldier):
+        hero.command(soldier, "defend", hero)
 
-def CommandPeasant(soldier):
-    item = soldier.findNearestItem()
-    if item:
-        hero.command(soldier, "move", item.pos)
+    def _commandPeasant(self, soldier):
+        item = soldier.findNearestItem()
+        if item:
+            hero.command(soldier, "move", item.pos)
 
+    def _commandPaladin(self, paladin):
+        if (paladin.canCast("heal") and hero.health < hero.maxHealth):
+            hero.command(paladin, "cast", "heal", hero)
+        else:
+            hero.command(paladin, "defend", hero)
 
-def CommandPaladin(paladin):
-    if (paladin.canCast("heal") and hero.health<hero.maxHealth):
-        hero.command(paladin, "cast", "heal", self)
-    else:
-        hero.command(paladin, "shield")
+    def pickUpNearestItem(self, items):
+        nearestItem = hero.findNearest(items)
+        if nearestItem:
+            moveTo(nearestItem.pos)
 
-def pickUpNearestItem(items):
-    nearestItem = hero.findNearest(items)
-    if nearestItem:
-        moveTo(nearestItem.pos)
-
-def attack():
-    target = findTarget()
-    if target:
+    def attack(self):
         if (hero.canCast('summon-burl', hero)):
             hero.cast('summon-burl')
-        elif (hero.canCast('summon-undead')):
-            hero.cast('summon-undead')
-        elif (hero.canCast('fear', target) and hero.distanceTo(target)<25):
-            hero.cast('fear', target)
+        elif (hero.canCast('earthskin', hero)):
+            hero.cast('earthskin', hero)
+            self._earthskin = hero.now()
         elif (hero.canCast('raise-dead')):
             hero.cast('raise-dead')
-        elif (hero.canCast('drain-life', target) and hero.distanceTo(target)<15):
-            hero.cast('drain-life', target)
-        elif (hero.canCast('poison-cloud', target) and hero.distanceTo(target)<30):
-            hero.cast('poison-cloud', target)
-        else:
-            if (hero.canCast('chain-lightning', target) and hero.distanceTo(target)<30):
-                hero.cast('chain-lightning', target)
+        elif (hero.canCast('summon-undead')):  # todo: check for bodies
+            hero.cast('summon-undead')
+        # todo: mass targets
+        elif self.best_target is not None:
+            if (hero.canCast('fear', self.best_target) and self.best_target_distance < 25):
+                hero.cast('fear', self.best_target)
+            elif (hero.canCast('drain-life', self.best_target) and self.best_target_distance < 15):
+                hero.cast('drain-life', self.best_target)
+            # elif (hero.canCast('poison-cloud', self.best_target) and hero.distanceTo(self.best_target)<30):
+            #    hero.cast('poison-cloud', self.best_target)
+            elif (hero.canCast('chain-lightning', self.best_target) and self.best_target_distance < 30):
+                hero.cast('chain-lightning', self.best_target)
             else:
-                hero.attack(target)
+                hero.attack(self.best_target)
 
+    def run(self):
+        self.findTarget()
+        self.summonTroops()
+        self.commandTroops()
+        self.attack()
+
+
+game = Game()
 while True:
-    commandTroops()
-    if (hero.canCast('earthskin', self)):
-        hero.cast('earthskin', self)
-    attack()
-    summonTroops()
+    game.run()
