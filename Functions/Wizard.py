@@ -32,12 +32,12 @@ class Game:
 
         if (not (self.best_target)):
             self.best_target = hero.findNearestEnemy()
-            if(self.best_target):
+            if (self.best_target):
                 self.best_target_distance = hero.distanceTo(self.best_target)
 
-        if (self.enemy_hero and hero.distanceTo(self.enemy_hero) < 40):
+        if (self.enemy_hero):
             self.best_target = self.enemy_hero
-            if(self.best_target):
+            if (self.best_target):
                 self.best_target_distance = hero.distanceTo(self.best_target)
 
         hero.debug("best target", self.best_target)
@@ -63,7 +63,10 @@ class Game:
                 self._commandPeasant(friend)
 
     def _commandSoldier(self, soldier):
-        hero.command(soldier, "defend", hero)
+        if self.best_target and soldier.distanceTo(self.best_target) < 30:
+            hero.command(soldier, "attack", self.best_target)
+        else:
+            hero.command(soldier, "defend", hero)
 
     def _commandPeasant(self, soldier):
         item = soldier.findNearestItem()
@@ -74,7 +77,10 @@ class Game:
         if (paladin.canCast("heal") and hero.health < hero.maxHealth * 2 / 3):
             hero.command(paladin, "cast", "heal", hero)
         else:
-            hero.command(paladin, "defend", hero)
+            if self.best_target and paladin.distanceTo(self.best_target) < 30:
+                hero.command(paladin, "attack", self.best_target)
+            else:
+                hero.command(paladin, "defend", hero)
 
     def pickUpNearestItem(self, items):
         nearestItem = hero.findNearest(items)
@@ -99,7 +105,7 @@ class Game:
     def _canDevour(self):
         if not (hero.isReady('devour')):
             return None
-        enemy = hero.findNearestEnemy()
+        enemy = hero.findNearestEnemy()  # todo: not only closest
         if (enemy and enemy.health < 200):
             return enemy
         return None
@@ -110,17 +116,27 @@ class Game:
         # hero.devour(enemy)
         if (devourTarget):
             hero.devour(devourTarget)
-        elif (hero.canCast('summon-burl', hero)):
+            return
+        if (hero.canCast('summon-burl', hero)):
             hero.cast('summon-burl')
-        elif (hero.canCast('earthskin', hero) and hero.now() > 3):
+            return
+        if (hero.canCast('earthskin', hero) and hero.now() > 3):
             hero.cast('earthskin', hero)
             self._earthskin = hero.now()
-        elif (hero.canCast('raise-dead')):
-            hero.cast('raise-dead')
-        elif (hero.canCast('summon-undead')):  # todo: check for bodies
+            return
+        if (hero.canCast('raise-dead')):
+            courpses = hero.findCorpses()
+            closest = 0
+            for courpse in courpses:
+                if (hero.distanceTo(courpse) <= 20):
+                    closest += 1
+                if (closest > 5):
+                    hero.cast('raise-dead')
+                    return
+        if (hero.canCast('summon-undead')):  # todo: check for bodies
             hero.cast('summon-undead')
-        else:
-            self.attack()
+            return
+        self.attack()
 
     def run(self):
         self.findTarget()
@@ -129,6 +145,18 @@ class Game:
         self._action()
 
 
+def onSpawn(e):
+    while True:
+        enemy = hero.findNearestEnemy()  # todo: list of closest
+        if enemy and pet.isReady("chase") and enemy.maxHealth < enemy.maxHealth / 1:
+            pet.chase(enemy)
+        # Find and fetch a "potion":
+        potion = pet.findNearestByType("potion")
+        if potion:
+            pet.fetch(potion)
+
+
+pet.on('spawn', onSpawn)
 game = Game()
 while True:
     game.run()
