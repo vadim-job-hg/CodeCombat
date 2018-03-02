@@ -32,11 +32,13 @@ class Game:
 
         if (not (self.best_target)):
             self.best_target = hero.findNearestEnemy()
-            self.best_target_distance = hero.distanceTo(self.best_target)
+            if(self.best_target):
+                self.best_target_distance = hero.distanceTo(self.best_target)
 
         if (self.enemy_hero and hero.distanceTo(self.enemy_hero) < 40):
             self.best_target = self.enemy_hero
-            self.best_target_distance = hero.distanceTo(self.best_target)
+            if(self.best_target):
+                self.best_target_distance = hero.distanceTo(self.best_target)
 
         hero.debug("best target", self.best_target)
 
@@ -98,7 +100,7 @@ class Game:
         if not (hero.isReady('devour')):
             return None
         enemy = hero.findNearestEnemy()
-        if (enemy.health < 200):
+        if (enemy and enemy.health < 200):
             return enemy
         return None
 
