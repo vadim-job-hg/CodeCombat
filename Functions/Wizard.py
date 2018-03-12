@@ -81,7 +81,7 @@ class Game:
     def pickUpNearestItem(self, items):
         nearestItem = hero.findNearest(items)
         if nearestItem:
-            moveTo(nearestItem.pos)
+            self.moveTo(nearestItem.pos)
 
     def attack(self):
         # todo: mass targets
@@ -95,10 +95,10 @@ class Game:
                 hero.cast('poison-cloud', self.best_target)
             elif (hero.canCast('chain-lightning', self.best_target) and self.best_target_distance < 30):
                 hero.cast('chain-lightning', self.best_target)
-            elif(self.best_target_distance<hero.attackRange):
+            elif (self.best_target_distance < hero.attackRange):
                 hero.attack(self.best_target)
             else:
-                hero.move(Vector(61, 65))
+                self.moveTo(self.best_target.pos)
 
     def _canDevour(self):
         if not (hero.isReady('devour')):
@@ -106,17 +106,27 @@ class Game:
         best_enemy = None
         best_enemy_distance = 9999
         enemies = hero.findEnemies()
+        for friend in hero.findFriends():
+            if (friend.health < 200 and hero.distanceTo(friend) < best_enemy_distance and hero.health < hero.maxHealth * 1 / 3):
+                best_enemy = friend
+                best_enemy_distance = hero.distanceTo(friend)
+
         for enemy in enemies:
             if (enemy.health < 200 and hero.distanceTo(enemy) < best_enemy_distance):
                 best_enemy = enemy
                 best_enemy_distance = hero.distanceTo(enemy)
         if (best_enemy and best_enemy_distance > 10):
             self.moveTo(best_enemy.pos)
+
         return best_enemy
 
     def _choseSacrifice(self):
         for friend in hero.findFriends():
-            if hero.distanceTo(friend) < 35:
+            if friend.type == 'burl':
+                return friend
+
+        for friend in hero.findFriends():
+            if hero.distanceTo(friend) < 50:
                 return friend
         return None
 
@@ -125,7 +135,8 @@ class Game:
         if (devourTarget):
             hero.devour(devourTarget)
             return
-        if (hero.health < hero.maxHealth * 2 / 3):
+
+        if (hero.health < hero.maxHealth * 1 / 3):
             saticfire = self._choseSacrifice()
             if (saticfire):
                 hero.cast("sacrifice", saticfire, hero)
