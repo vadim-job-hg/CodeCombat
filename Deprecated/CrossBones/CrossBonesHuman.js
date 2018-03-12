@@ -1,4 +1,4 @@
-//http://codecombat.com/play/level/cross-bones?team=humans
+// http://codecombat.com/play/level/cross-bones?team=humans
 // Welcome to Cross Bones!
 // Accumulate coins to raise a suitable army.
 // Move to the X Markers to hire troops.

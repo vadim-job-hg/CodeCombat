@@ -1,6 +1,6 @@
 class Game:
-    summonTypes = ['soldier']
-    excludeType = ['door', 'decoy']
+    summonTypes = ['paladin']
+    excludeType = ['decoy']
     priorityType = []
     tacticks = {'skeleton': 'attack', 'paladin': 'defend'}
 
@@ -21,16 +21,27 @@ class Game:
         self.best_target = None
         self.best_target_distance = 9999
         self.enemy_hero = [e for e in hero.findEnemies() if e.id in ["Hero Placeholder", "Hero Placeholder 1"]][0]
-        for enemy in enemies:
-            if enemy.type in self.excludeType:
-                continue
-            distance = hero.distanceTo(enemy)
-            current = enemy.maxHealth / distance
-            # hero.debug(enemy.id,enemy.type, current)
-            if (best > current):
-                best = current
-                self.best_target = enemy
-                self.best_target_distance = distance
+
+        if self.enemy_hero:
+            self.best_target = self.enemy_hero
+            self.best_target_distance = hero.distanceTo(self.best_target)
+
+        door = hero.findNearest(hero.findByType('door'))
+        if door:
+            self.best_target = door
+            self.best_target_distance = hero.distanceTo(door)
+
+        if (not (self.best_target)):
+            for enemy in enemies:
+                if enemy.type in self.excludeType:
+                    continue
+                distance = hero.distanceTo(enemy)
+                current = enemy.maxHealth * 10 / distance
+                # hero.debug(enemy.id,enemy.type, current)
+                if (best > current):
+                    best = current
+                    self.best_target = enemy
+                    self.best_target_distance = distance
 
         if (not (self.best_target)):
             self.best_target = hero.findNearestEnemy()
@@ -38,10 +49,6 @@ class Game:
                 self.best_target_distance = hero.distanceTo(self.best_target)
             else:
                 self.best_target = None
-
-        if (self.enemy_hero):
-            self.best_target = self.enemy_hero
-            self.best_target_distance = hero.distanceTo(self.best_target)
 
         hero.debug("best target", self.best_target)
 
@@ -92,77 +99,24 @@ class Game:
 
     def attack(self):
         if self.best_target is not None:
-            if (hero.canCast('chain-lightning', self.best_target) and self.best_target_distance < 30):
+            if hero.isReady("throw") and self.best_target.type != 'door':
+                if self.best_target_distance < hero.throwRange:
+                    hero.throw(self.best_target)
+                else:
+                    self.moveTo(self.best_target.pos)
+            elif (hero.canCast('chain-lightning', self.best_target) and self.best_target_distance < 30):
                 hero.cast('chain-lightning', self.best_target)
             elif (self.best_target_distance < hero.attackRange):
-                hero.attack(self.best_target)
+                hero.scattershot(self.best_target)
             else:
                 self.moveTo(self.best_target.pos)
         else:
             if self.position == 'left':
-                game.moveTo(Vector(50, 70))
+                self.moveTo(Vector(50, 70))
             else:
-                game.moveTo(Vector(110, 70))
-
-    def _canDevour(self):
-        if not (hero.isReady('devour')):
-            return None
-        best_enemy = None
-        best_enemy_distance = 9999
-        enemies = hero.findEnemies()
-        for friend in hero.findFriends():
-            if (friend.health < 200 and hero.distanceTo(friend) < best_enemy_distance):
-                best_enemy = friend
-                best_enemy_distance = hero.distanceTo(friend)
-
-        for enemy in enemies:
-            if (enemy.health < 200 and hero.distanceTo(enemy) < best_enemy_distance):
-                best_enemy = enemy
-                best_enemy_distance = hero.distanceTo(enemy)
-        if (best_enemy and best_enemy_distance > 10):
-            self.moveTo(best_enemy.pos)
-
-        return best_enemy
-
-    def _choseSacrifice(self):
-        for friend in hero.findFriends():
-            if friend.type == 'burl':
-                return friend
-
-        for friend in hero.findFriends():
-            if hero.distanceTo(friend) < 50:
-                return friend
-        return None
+                self.moveTo(Vector(110, 70))
 
     def _action(self):
-        devourTarget = self._canDevour()
-        if (devourTarget):
-            hero.devour(devourTarget)
-            return
-        if (hero.health < hero.maxHealth * 1 / 2):
-            saticfire = self._choseSacrifice()
-            if (saticfire):
-                hero.cast("sacrifice", saticfire, hero)
-
-        if (hero.canCast('summon-burl', hero)):
-            hero.cast('summon-burl')
-            return
-        if (hero.canCast('earthskin', hero) and hero.now() > 3):
-            hero.cast('earthskin', hero)
-            self._earthskin = hero.now()
-            return
-        if (hero.canCast('raise-dead')):
-            courpses = hero.findCorpses()
-            closest = 0
-            for courpse in courpses:
-                if (hero.distanceTo(courpse) <= 20):
-                    closest += 1
-                if (closest > 5):
-                    hero.cast('raise-dead')
-                    return
-        if (hero.canCast('summon-undead')):  # todo: check for bodies
-            hero.cast('summon-undead')
-            return
         self.attack()
 
     def run(self):
@@ -175,7 +129,7 @@ class Game:
 def onSpawn(e):
     while True:
         enemy = hero.findNearestEnemy()  # todo: list of closest
-        if enemy and pet.isReady("chase") and enemy.maxHealth < enemy.maxHealth / 1:
+        if enemy and pet.isReady("chase") and enemy.maxHealth < enemy.maxHealth / 10:
             pet.chase(enemy)
         # Find and fetch a "potion":
         potion = pet.findNearestByType("potion")
