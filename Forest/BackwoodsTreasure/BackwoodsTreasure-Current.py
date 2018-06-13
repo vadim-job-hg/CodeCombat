@@ -13,6 +13,7 @@ def CommandSoldier(soldier):
     pass
 
 
+# todo: use peasant here
 def pickUpNearestItem(items):
     nearestItem = self.findNearest(items)
     if nearestItem and (nearestItem.pos.x < 38 or nearestItem.pos.y < 33):
@@ -30,12 +31,17 @@ def moveTo(position, fast=True):
 
 def action():
     target = self.findNearest(self.findEnemies())
+    corpes = hero.findNearest(hero.findCorpses())
     if (hero.canCast('summon-burl', hero)):
         hero.cast('summon-burl')
+    elif (corpes and hero.canCast('raise-dead')):
+        hero.cast('raise-dead')
     elif (hero.canCast('summon-undead')):
         hero.cast('summon-undead')
     elif (target and hero.canCast('fear', target)):
         hero.cast('fear', target)
+    elif (target):
+        hero.attack(target);
 
 
 def onSpawn(event):
@@ -69,8 +75,6 @@ while True:
     items = self.findItems()
     action()
     commandTroops()
-    flag = hero.findFlag()
+    flag = hero.findFlag();
     if (flag):
         hero.pickUpFlag(flag)
-    elif len(items) > 0 and hero.now() > 10:
-        pickUpNearestItem(items)

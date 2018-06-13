@@ -197,7 +197,6 @@ def onSpawn(e):
         if potion:
             pet.fetch(potion)
 
-
 pet.on('spawn', onSpawn)
 game = Game()
 while True:

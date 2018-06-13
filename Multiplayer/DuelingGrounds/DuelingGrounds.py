@@ -6,7 +6,6 @@ class Game:
         'skeleton': 'attack',
         'paladin': 'defend'
     }
-
     def __init__(self):
         self.team = hero.team
         self.best_target = None
@@ -127,7 +126,6 @@ class Game:
         self.summonTroops()
         self.commandTroops()
         self._action()
-
 
 game = Game()
 while True:
