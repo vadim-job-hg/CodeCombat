@@ -27,8 +27,8 @@ class Game:
             distance = hero.distanceTo(enemy)
             current = enemy.maxHealth / distance
             # hero.debug(enemy.id,enemy.type, current)
-            if (best > current and ((self.position == 'left' and current.pos.x < 70) or (
-                    self.position != 'left' and current.pos.x > 90))):
+            if (best > current and (
+                (self.position == 'left' and current.pos.x < 70) or (self.position != 'left' and current.pos.x > 90))):
                 best = current
                 self.best_target = enemy
                 self.best_target_distance = distance
@@ -42,7 +42,7 @@ class Game:
                 self.best_target = None
 
         if (self.enemy_hero and ((hero.distanceTo(self.enemy_hero) < 20 or hero.now() > 120) or (
-                (self.position == 'left' and self.enemy_hero.pos.x < 70) or (
+            (self.position == 'left' and self.enemy_hero.pos.x < 70) or (
                 self.position != 'left' and self.enemy_hero.pos.x > 90)))):
             self.best_target = self.enemy_hero
             self.best_target_distance = hero.distanceTo(self.best_target)
@@ -196,6 +196,7 @@ def onSpawn(e):
         potion = pet.findNearestByType("potion")
         if potion:
             pet.fetch(potion)
+
 
 pet.on('spawn', onSpawn)
 game = Game()

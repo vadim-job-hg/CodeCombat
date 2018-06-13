@@ -1,6 +1,6 @@
 # {name}  - {name} 
 
-{link}
+https://codecombat.com/play/level/pong-pong
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](PongPong.py)
 
 </li>
 </td>
