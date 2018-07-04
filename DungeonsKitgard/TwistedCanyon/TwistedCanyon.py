@@ -3,7 +3,7 @@
 hero.attack("Treasure Chest")
 hero.moveUp()
 hero.moveDown()
-hero.attack("Door")
+hero.attack("Wicket")
 hero.moveRight()
 hero.moveUp(2)
 hero.moveDown(2)
