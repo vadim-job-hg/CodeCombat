@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# LostViking 
 
-{link}
+https://codecombat.com/play/level/magic-exam
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](MagicExam.py)
 
 </li>
 </td>
