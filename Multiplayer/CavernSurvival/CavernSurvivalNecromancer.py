@@ -20,7 +20,7 @@ class Game:
         enemies = hero.findEnemies()
         self.best_target = None
         self.best_target_distance = 9999
-        self.h
+        self.enemy_hero = [e for e in hero.findEnemies() if e.id in ["Hero Placeholder", "Hero Placeholder 1"]][0]
         for enemy in enemies:
             if enemy.type in self.excludeType:
                 continue
