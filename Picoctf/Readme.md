@@ -1,6 +1,6 @@
-# {name}  - {name} 
+# The Rule Of The Square
 
-{link}
+https://codecombat.com/play/level/smooth-run
 <table>
 <tr>
 <td>
@@ -12,7 +12,7 @@
 <ul>
 <li>
 
-[PYTHON]({link-file}.py)
+[PYTHON](LooneyGems.py)
 
 </li>
 </td>
