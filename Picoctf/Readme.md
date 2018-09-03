@@ -1,6 +1,6 @@
-# The Rule Of The Square
+# 
 
-https://codecombat.com/play/level/smooth-run
+https://codecombat.com/play/picoctf
 <table>
 <tr>
 <td>
