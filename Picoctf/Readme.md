@@ -12,7 +12,7 @@ https://codecombat.com/play/picoctf
 <ul>
 <li>
 
-[PYTHON](LooneyGems.py)
+[PYTHON](.py)
 
 </li>
 </td>
