@@ -41,7 +41,7 @@ class Game:
             else:
                 self.best_target = None
 
-        if (self.enemy_hero and ((hero.distanceTo(self.enemy_hero) < 20 or hero.now() > 120) or (
+        if (self.enemy_hero and ((hero.distanceTo(self.enemy_hero) < 50 or hero.now() > 120) or (
             (self.position == 'left' and self.enemy_hero.pos.x < 70) or (
                 self.position != 'left' and self.enemy_hero.pos.x > 90)))):
             self.best_target = self.enemy_hero
@@ -97,12 +97,14 @@ class Game:
     def attack(self):
         # todo: mass targets
         if self.best_target is not None:
-            if (hero.canCast('fear', self.best_target) and self.best_target_distance < 25):
+            if (hero.canCast('fear', self.best_target) and self.best_target_distance < 25 and self.best_target.id in [
+                "Hero Placeholder", "Hero Placeholder 1"]):
                 hero.cast('fear', self.best_target)
             elif (hero.canCast('drain-life', self.best_target) and self.best_target_distance < 15):
                 hero.cast('drain-life', self.best_target)
             elif (hero.canCast('poison-cloud',
-                               self.best_target) and self.best_target_distance < 30 and self.best_target_distance > 10):
+                               self.best_target) and self.best_target_distance < 30 and self.best_target_distance > 10 and self.best_target.id in [
+                "Hero Placeholder", "Hero Placeholder 1"]):
                 hero.cast('poison-cloud', self.best_target)
             elif (hero.canCast('chain-lightning', self.best_target) and self.best_target_distance < 30):
                 hero.cast('chain-lightning', self.best_target)
