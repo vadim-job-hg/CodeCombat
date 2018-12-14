@@ -1,6 +1,6 @@
 # TheFinalKithmaze 
 
-{link}
+https://codecombat.com/play/level/the-final-kithmaze?
 <table>
 <tr>
 <td>

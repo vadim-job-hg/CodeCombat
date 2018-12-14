@@ -1,6 +1,6 @@
 # MasterOfNames 
 
-{link}
+https://codecombat.com/play/level/master-of-names?
 <table>
 <tr>
 <td>

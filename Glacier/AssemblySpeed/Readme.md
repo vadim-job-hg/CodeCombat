@@ -1,6 +1,6 @@
 # AssemblySpeed 
 
-{link}
+https://codecombat.com/play/level/assembly-speed
 <table>
 <tr>
 <td>

@@ -8,4 +8,4 @@ while True:
         # Attack the enemy if it exists:
         hero.attack(enemy)
     else:
-        hero.move(40, 34)
+        hero.moveXY(40, 34)
