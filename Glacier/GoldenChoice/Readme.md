@@ -1,6 +1,6 @@
 # GoldenChoice 
 
-{link}
+https://codecombat.com/play/level/golden-choice
 <table>
 <tr>
 <td>

@@ -1,6 +1,6 @@
 # {name}  - {name} 
 
-{link}
+http://codecombat.com/play/ladder/gold-rush
 <table>
 <tr>
 <td>

@@ -1,6 +1,6 @@
 # TheTwoFlowers 
 
-{link}
+https://codecombat.com/play/level/the-two-flowers?
 <table>
 <tr>
 <td>

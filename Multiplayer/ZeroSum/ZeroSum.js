@@ -1004,7 +1004,7 @@ if (// main loop ---------------------------------------------------------------
     // the knight, instead of their sorc.
     // Just kill this guy.
     this.findEnemies()[0].type === 'knight') {
-    loop {
+    while(true) {
         this.attack(this.findEnemies()[0]);
     }
 }
