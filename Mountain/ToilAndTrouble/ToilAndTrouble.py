@@ -24,9 +24,9 @@ def chooseTarget(friend):
     # the code errors is allright
     if friend.type == "archer":
         if len(hero.findByType("thrower")) > 0:
-            return friend.findNearest(friend.findByType("thrower"))
+            return friend.findNearest(hero.findByType("thrower"))
         elif len(hero.findByType("witch")) > 0:
-            return friend.findNearest(friend.findByType("witch"))
+            return friend.findNearest(hero.findByType("witch"))
         else:
             return friend.findNearest(hero.findEnemies())
     elif friend.type == "soldier":
