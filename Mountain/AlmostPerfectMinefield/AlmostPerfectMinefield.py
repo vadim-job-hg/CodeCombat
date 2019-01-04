@@ -4,7 +4,7 @@
 
 trapDistance = 6
 trapRange = 2
-jump = ['right', 'right', 'up', 'up', 'left', 'up', 'up', 'right', 'right','right', 'right', 'right']
+jump = ['up', 'up', 'up', 'up', 'right', 'right', 'right', 'down', 'down','left', 'down', 'down', 'right', 'right', 'right', 'right']
 index =  0
 # Jump, Jump, JUMP!!!
 while index<len(jump):
